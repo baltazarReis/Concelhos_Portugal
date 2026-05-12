@@ -15,144 +15,140 @@
 
     <header>
       <h1>Concelhos de Portugal - Quiz</h1>
-      <div id="placar">Pontos: <span id = "pontos"> 0 </span></div>
     </header>
 
     <main id="main_screen">
-      <button id="start_button">Place Holder</button>
 
-      <p>Alterar distritos do quiz</p>
-      <button onclick="changePage('main_screen', 'district_options_page')">Configurar Distritos</button> 
+      <button id="start_button">Place Holder</button>
+      
+      <button onclick="changePage('main_screen', 'district_options_page')">Alterar Distritos</button> 
+
     </main>
 
     
 
     <div id="district_options_page" style = "display: none;">
 
-      <h2>Selecione os Distritos que estarão presentes no Quiz</h2>
+      <h2 id="district_options_header">SELECIONE OS DISTRITOS PARA O QUIZ</h2>
 
-      <div class="options_grid"></div>
-
-        <script language="JavaScript">
-          function toggle(source) {
-            checkboxes = document.getElementsByName('distritos_selecionados');
-            for(var i=0, n=checkboxes.length;i<n;i++) {
-              checkboxes[i].checked = source.checked;
-            }
-          }
-        </script>
+      <div class="options_grid">
 
 
         <div class="option option_all">
-          <input type="checkbox" onClick="toggle(this)" id="Todos" name="toggle_all">
+          <input type="checkbox" id="Todos" name="toggle_all" checked>
           <label for="Todos">Todos</label>
         </div>
         
         <div class="option">
-          <input type="checkbox" id="Aveiro" name="distritos_selecionados">
+          <input type="checkbox" id="Aveiro" name="distritos_selecionados" checked>
           <label for="Aveiro">Aveiro</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Beja" name="distritos_selecionados">
+          <input type="checkbox" id="Beja" name="distritos_selecionados" checked>
           <label for="Beja">Beja</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Braga" name="distritos_selecionados">
+          <input type="checkbox" id="Braga" name="distritos_selecionados" checked>
           <label for="Braga">Braga</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Braganca" name="distritos_selecionados">
+          <input type="checkbox" id="Braganca" name="distritos_selecionados" checked>
           <label for="Braganca">Bragança</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Castelo Branco" name="distritos_selecionados">
+          <input type="checkbox" id="Castelo Branco" name="distritos_selecionados" checked>
           <label for="Castelo Branco">Castelo Branco</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Coimbra" name="distritos_selecionados">
+          <input type="checkbox" id="Coimbra" name="distritos_selecionados" checked>
           <label for="Coimbra">Coimbra</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Evora" name="distritos_selecionados">
+          <input type="checkbox" id="Evora" name="distritos_selecionados" checked>
           <label for="Evora">Évora</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Faro" name="distritos_selecionados">
+          <input type="checkbox" id="Faro" name="distritos_selecionados" checked>
           <label for="Faro">Faro</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Guarda" name="distritos_selecionados">
+          <input type="checkbox" id="Guarda" name="distritos_selecionados" checked>
           <label for="Guarda">Guarda</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Leiria" name="distritos_selecionados">
+          <input type="checkbox" id="Leiria" name="distritos_selecionados" checked>
           <label for="Leiria">Leiria</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Lisboa" name="distritos_selecionados">
+          <input type="checkbox" id="Lisboa" name="distritos_selecionados" checked>
           <label for="Lisboa">Lisboa</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Portalegre" name="distritos_selecionados">
+          <input type="checkbox" id="Portalegre" name="distritos_selecionados" checked>
           <label for="Portalegre">Portalegre</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Porto" name="distritos_selecionados">
+          <input type="checkbox" id="Porto" name="distritos_selecionados" checked>
           <label for="Porto">Porto</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Santarem" name="distritos_selecionados">
+          <input type="checkbox" id="Santarem" name="distritos_selecionados" checked>
           <label for="Santarem">Santarém</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Setubal" name="distritos_selecionados">
+          <input type="checkbox" id="Setubal" name="distritos_selecionados" checked>
           <label for="Setubal">Setúbal</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Viana do Castelo" name="distritos_selecionados">
+          <input type="checkbox" id="Viana do Castelo" name="distritos_selecionados" checked>
           <label for="Viana do Castelo">Viana do Castelo</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Vila Real" name="distritos_selecionados">
+          <input type="checkbox" id="Vila Real" name="distritos_selecionados" checked>
           <label for="Vila Real">Vila Real</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Viseu" name="distritos_selecionados">
+          <input type="checkbox" id="Viseu" name="distritos_selecionados" checked>
           <label for="Viseu">Viseu</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Madeira" name="distritos_selecionados">
+          <input type="checkbox" id="Madeira" name="distritos_selecionados" checked>
           <label for="Madeira">Madeira</label>
         </div>
 
         <div class="option">
-          <input type="checkbox" id="Acores" name="distritos_selecionados">
+          <input type="checkbox" id="Acores" name="distritos_selecionados" checked>
           <label for="Acores">Açores</label>
         </div>
-
-        <br>
-        <button onclick="confirm_selection()">Confirmar e Voltar</button>
       </div>
 
-    </div>
+        <br>
+        <div class="button-container">
+          <button onclick="confirm_selection()">Confirmar e Voltar</button>
+        </div>
+        
+      </div> <!-- página de seleção dos distritos -->
+      
+    </div> 
+    
 
 
     <script src="script.js" type="module"></script>

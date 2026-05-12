@@ -44,10 +44,11 @@ function changePage(current_page, target_page) {
 function confirm_selection() {
     const checkboxes = document.querySelectorAll('input[name="distritos_selecionados"]:checked');
 
+    /*
     if (checkboxes.length === 0) {
         alert("Selecione pelo menos um distrito.");
         return;
-    }
+    }*/
 
     console.log("Opções selecionadas:", checkboxes.length);
     changePage("district_options_page","main_screen");

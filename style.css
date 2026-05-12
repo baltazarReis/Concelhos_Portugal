@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f2f5;
@@ -5,7 +9,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa a altura total do ecrã */
+    min-height: 100vh; /* Ocupa a altura total do ecrã */
     margin: 0;
 }
 
@@ -14,8 +18,16 @@ header {
     margin-bottom: 20px;
 }
 
+#district_options_header {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
 /* Estilo para a área principal do jogo */
-#ecra-jogo {
+#main_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     padding: 40px;
     border-radius: 15px;
@@ -29,37 +41,58 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 20px;
+    font-size: 25px;
     border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+#main_screen button {
+    background-color: #007bff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: white;
+    padding: 15px 20px;
+    border: 1px;
+    font-size: 25px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
-button:hover {
-    background-color: #0056b3;
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
 }
 
-#placar {
-    font-weight: bold;
-    color: #333;
+button:hover {
+    background-color: #014287;
+}
+
+#start_button:hover, #main_screen button:hover {
+    background-color: #0056b3;
 }
 
 /* Contentor principal das opções */
 #district_options_page {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 30px;
     background-color: #f4f4f4;
     border-radius: 10px;
 }
 
 /* Criar a grelha de distritos */
-.options-grid {
+.options_grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    gap: 5px;
+    margin-top: 10px;
 }
 
 /* Estilo de cada "caixa" de opção */
@@ -67,10 +100,10 @@ button:hover {
     display: flex;
     align-items: center;
     background: white;
+    user-select: none;
     border-radius: 5px;
     padding-left: 10px;
     border: 1px solid #ddd;
-    margin: 1px;
     transition: 0.2s;
 }
 
@@ -79,12 +112,14 @@ button:hover {
 }
 
 .option input {
-    margin-right: 10px;
     cursor: pointer;
+    margin: 0px;
 }
 
 .option label {
     cursor: pointer;
+    font-weight: 470;
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     flex-grow: 1;
