@@ -1,138 +1,155 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Ocupa a altura total do ecrã */
-    margin: 0;
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #2170d9;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
+/* Contentor e Zoom do Mapa */
+#mapa-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* Centra o SVG no ecrã */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#district_options_header {
-    font-size: 20px;
-    letter-spacing: 0.2px;
+#mapa-viewport {
+  width: 100%;
+  height: 100%;
+  /* Altera a origem da transformação do canto (0 0) para o centro */
+  transform-origin: 0 0;
+  transition: transform 0.05s linear;
 }
 
-/* Estilo para a área principal do jogo */
-#main_screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    min-width: 300px;
+#mapa-wrapper:active {
+  cursor: grabbing;
 }
 
-/* Estilo para o botão */
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    font-size: 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    user-select: none;
-    transition: background-color 0.3s;
+
+#mapa-svg {
+  width: 100%;
+  height: 100%;
 }
 
-#main_screen button {
-    background-color: #007bff;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%;
-    color: white;
-    padding: 15px 20px;
-    border: 1px;
-    font-size: 25px;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Painéis de Interface (HUD Fixo) */
+.painel-hud {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    width: 100%;
+.painel-top-right {
+  top: 20px;
+  right: 20px;
+  align-items: flex-end;
 }
 
-button:hover {
-    background-color: #014287;
+.painel-bottom-left {
+  bottom: 20px;
+  left: 20px;
 }
 
-#start_button:hover, #main_screen button:hover {
-    background-color: #0056b3;
+.caixa-hud {
+  background: #ffffff;
+  color: #111111;
+  padding: 8px 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  min-width: 160px;
+  text-align: right;
 }
 
-/* Contentor principal das opções */
-#district_options_page {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
+.painel-bottom-left .caixa-hud {
+  text-align: left;
 }
 
-/* Criar a grelha de distritos */
-.options_grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 5px;
-    margin-top: 10px;
+.label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666666;
+  font-weight: 700;
+  margin-bottom: 2px;
 }
 
-/* Estilo de cada "caixa" de opção */
-.option {
-    display: flex;
-    align-items: center;
-    background: white;
-    user-select: none;
-    border-radius: 5px;
-    padding-left: 10px;
-    border: 1px solid #ddd;
-    transition: 0.2s;
+.valor, .valor-concelho {
+  font-size: 18px;
+  font-weight: 800;
 }
 
-.option:hover {
-    background-color: #e9ecef;
+.valor-concelho {
+  color: #111111;
 }
 
-.option input {
-    cursor: pointer;
-    margin: 0px;
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #e74c3c;
+  color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background 0.2s;
 }
 
-.option label {
-    cursor: pointer;
-    font-weight: 470;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    flex-grow: 1;
+.btn:hover {
+  background-color: #c0392b;
 }
 
-.option_all {
-    grid-column: 1 / -1; 
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-    margin-bottom: 15px;
+/* ESTILOS SVG E FRONTEIRAS SUAVES */
+svg path[data-concelho] {
+  cursor: pointer !important;
+  transition: fill 0.15s ease !important;
+  
+  /* Mantém as bordas sempre visíveis e suaves */
+  paint-order: stroke fill !important;
+  stroke: #444444 !important;
+  
+  /* Mantém a espessura da linha constante independentemente do zoom */
+  vector-effect: non-scaling-stroke !important;
+  stroke-width: 1.1px !important;
+  
+  /* Suaviza as pontas e as junções dos ângulos */
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
 }
 
-.option_all:hover {
-    background-color: #0056b3;
+svg path[data-concelho]:hover {
+  fill: #f1c40f !important; /* Destaque amarelo ao passar o rato */
+}
+
+/* Estado: Acertou à primeira (Verde) */
+svg path.correto, 
+svg path.correto:hover {
+  fill: #2ecc71 !important;
+}
+
+/* Estado: Acertou com erros (Laranja) */
+svg path.com-erros, 
+svg path.com-erros:hover {
+  fill: #e67e22 !important;
+}
+
+/* Estado: Passou à frente / Skip (Vermelho) */
+svg path.pular, 
+svg path.pular:hover {
+  fill: #e74c3c !important;
 }

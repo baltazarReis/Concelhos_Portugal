@@ -129,7 +129,7 @@ map_distrito_concelhos.set("Faro", [
 "Aljezur",
 "Castro Marim",
 "Faro",
-"Lagoa (Continente)",
+"Lagoa",
 "Lagos",
 "Loulé",
 "Monchique",
@@ -210,7 +210,7 @@ map_distrito_concelhos.set("Portalegre", [
 "Marvão",
 "Monforte",
 "Nisa",
-"Ponte de Sôr",
+"Ponte de Sor",
 "Portalegre",
 "Sousel"])
 
@@ -237,7 +237,7 @@ map_distrito_concelhos.set("Porto", [
 
 
 map_distrito_concelhos.set("Madeira", [
-"Calheta (Madeira)",
+"Calheta",
 "Câmara de Lobos",
 "Funchal",
 "Machico",
@@ -252,10 +252,10 @@ map_distrito_concelhos.set("Madeira", [
 
 map_distrito_concelhos.set("Açores", [
 "Angra do Heroísmo",
-"Calheta (Açores)",
+"Calheta",
 "Corvo",
 "Horta",
-"Lagoa (Ilhas)",
+"Lagoa",
 "Lajes das Flores",
 "Lajes do Pico",
 "Madalena",
@@ -368,4 +368,4 @@ map_distrito_concelhos.set("Viseu", [
 "Viseu",
 "Vouzela"])
 
-export default map_distrito_concelhos;
+export {map_distrito_concelhos};
