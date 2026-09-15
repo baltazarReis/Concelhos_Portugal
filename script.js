@@ -35,12 +35,13 @@ function iniciarJogoDirecto() {
 }
 
 function proximoConcelho() {
+  // Se a lista estiver vazia, marca que já não há concelho ativo
   if (concelhosRestantes.length === 0) {
-    finalizarJogo();
+    concelhoAtual = null;
     return;
   }
   
-  errosNoConcelhoAtual = 0; // Reseta os erros para o novo concelho
+  errosNoConcelhoAtual = 0;
   
   const indiceAleatorio = Math.floor(Math.random() * concelhosRestantes.length);
   concelhoAtual = concelhosRestantes.splice(indiceAleatorio, 1)[0];
@@ -53,27 +54,23 @@ function proximoConcelho() {
 // Clique com Botão Esquerdo nos Concelhos
 document.querySelectorAll("svg path[data-concelho]").forEach(path => {
   path.addEventListener("click", (e) => {
-    // Garante que só responde ao botão esquerdo (button 0)
     if (e.button !== 0 || !concelhoAtual) return;
     
     const concelhoClicado = e.target.getAttribute("data-concelho");
     tentativasTotais++;
     elTentativas.textContent = tentativasTotais;
 
-    if (concelhoClicado === concelhoAtual) {
+    if (concelhoClicado === concelhoAtual || concelhoClicado.startsWith(concelhoAtual)) {
       pontuacao++;
       
       if (errosNoConcelhoAtual === 0) {
-        // Acertou à primeira -> Verde
-        pintarConcelho(concelhoAtual, "correto");
+        pintarConcelho(concelhoClicado, "correto");
       } else {
-        // Acertou após ter falhado -> Laranja
-        pintarConcelho(concelhoAtual, "com-erros");
+        pintarConcelho(concelhoClicado, "com-erros");
       }
       
-      proximoConcelho();
+      processarFimDeJogada();
     } else {
-      // Errou -> Incrementa contagem de erros sem mudar a cor do mapa
       errosNoConcelhoAtual++;
     }
   });
@@ -84,12 +81,27 @@ btnSkip.addEventListener("click", () => {
   if (!concelhoAtual) return;
   
   pintarConcelho(concelhoAtual, "pular");
-  proximoConcelho();
+  processarFimDeJogada();
 });
 
-// Função para pintar o concelho e limpar o atributo style inline
+// Função central para avançar ou terminar o jogo
+function processarFimDeJogada() {
+  proximoConcelho();
+
+  // Avalia se a lista esgotou DEPOIS de processar a jogada atual
+  if (!concelhoAtual) {
+    elPontuacao.textContent = `${pontuacao}/308`;
+    elNomeConcelho.textContent = "Fim do Jogo!";
+    finalizarJogo();
+  }
+}
+
+// Função para pintar o concelho (incluindo duplicados/sufixos)
 function pintarConcelho(nomeConcelho, classeCSS) {
-  const elementos = document.querySelectorAll(`svg path[data-concelho="${nomeConcelho}"]`);
+  const elementos = document.querySelectorAll(
+    `svg path[data-concelho="${nomeConcelho}"], svg path[data-concelho^="${nomeConcelho} ("]`
+  );
+  
   elementos.forEach(el => {
     el.removeAttribute("style");
     el.classList.add(classeCSS);
@@ -107,7 +119,9 @@ function iniciarTimer() {
 
 function finalizarJogo() {
   clearInterval(intervaloTimer);
-  alert(`Jogo Concluído!\nPontuação: ${pontuacao}/308\nTentativas: ${tentativasTotais}\nTempo: ${elTimer.textContent}`);
+  setTimeout(() => {
+    alert(`Jogo Concluído!\nPontuação: ${pontuacao}/308\nTentativas: ${tentativasTotais}\nTempo: ${elTimer.textContent}`);
+  }, 100);
 }
 
 function configurarZoomEPan() {
@@ -121,49 +135,38 @@ function configurarZoomEPan() {
   let startY = 0;
   let isDragging = false;
 
-  // Bloquear menu de contexto do botão direito
-  wrapper.addEventListener("contextmenu", (e) => e.preventDefault());
-
-  // No updateTransform deixa apenas a transformação limpa:
-function updateTransform() {
-  viewport.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
-}
-
-// No evento mousemove aplica o limite apenas ao arrastar:
-window.addEventListener("mousemove", (e) => {
-  if (!isDragging) return;
-  pointX = e.clientX - startX;
-  pointY = e.clientY - startY;
-  
-  limitarLimites(); // Limita o arrasto manual sem estragar o zoom no cursor
-  updateTransform();
-});
+  function updateTransform() {
+    viewport.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+  }
 
   // Zoom no ponto EXATO do cursor
   wrapper.addEventListener("wheel", (e) => {
     e.preventDefault();
 
     const rect = wrapper.getBoundingClientRect();
-    // Posição real do cursor relativa ao canto superior esquerdo do mapa
     const clientX = e.clientX - rect.left;
     const clientY = e.clientY - rect.top;
 
-    // Fator de escala
     const delta = -e.deltaY;
     const factor = delta > 0 ? 1.15 : 1 / 1.15;
     const newScale = Math.min(Math.max(1, scale * factor), 15);
 
-    // Ajusta o desfasamento para prender o ponto sob o rato
-    pointX = clientX - (clientX - pointX) * (newScale / scale);
-    pointY = clientY - (clientY - pointY) * (newScale / scale);
-    scale = newScale;
+    // Se voltar ao zoom base (1), recentra automaticamente o mapa
+    if (newScale === 1) {
+      pointX = 0;
+      pointY = 0;
+    } else {
+      pointX = clientX - (clientX - pointX) * (newScale / scale);
+      pointY = clientY - (clientY - pointY) * (newScale / scale);
+    }
 
+    scale = newScale;
     updateTransform();
   });
 
-  // Arrasto com o Botão Direito
+  // Arrasto permitido APENAS se houver zoom ativo (scale > 1)
   wrapper.addEventListener("mousedown", (e) => {
-    if (e.button === 2) {
+    if (e.button === 2 && scale > 1) {
       isDragging = true;
       startX = e.clientX - pointX;
       startY = e.clientY - pointY;
@@ -181,5 +184,13 @@ window.addEventListener("mousemove", (e) => {
     if (e.button === 2) {
       isDragging = false;
     }
+  });
+
+  // Recentra o mapa limparmente ao redimensionar ou minimizar a janela
+  window.addEventListener("resize", () => {
+    scale = 1;
+    pointX = 0;
+    pointY = 0;
+    updateTransform();
   });
 }

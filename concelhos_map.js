@@ -16,7 +16,7 @@ map_distrito_concelhos.set("Aveiro", [
 "Oliveira de Azeméis",
 "Oliveira do Bairro",
 "Ovar",
-"S. João da Madeira",
+"São João da Madeira",
 "Santa Maria da Feira",
 "Sever do Vouga",
 "Vagos",
@@ -129,7 +129,7 @@ map_distrito_concelhos.set("Faro", [
 "Aljezur",
 "Castro Marim",
 "Faro",
-"Lagoa",
+"Lagoa (Continente)",
 "Lagos",
 "Loulé",
 "Monchique",
@@ -161,12 +161,12 @@ map_distrito_concelhos.set("Guarda", [
 
 map_distrito_concelhos.set("Leiria", [
 "Alcobaça",
-"Alvaiázare",
+"Alvaiázere",
 "Ansião",
 "Batalha",
 "Bombarral",
 "Caldas da Rainha",
-"Castanheira de Pêra",
+"Castanheira de Pera",
 "Figueiró dos Vinhos",
 "Leiria",
 "Marinha Grande",
@@ -237,7 +237,7 @@ map_distrito_concelhos.set("Porto", [
 
 
 map_distrito_concelhos.set("Madeira", [
-"Calheta",
+"Calheta (Madeira)",
 "Câmara de Lobos",
 "Funchal",
 "Machico",
@@ -252,10 +252,10 @@ map_distrito_concelhos.set("Madeira", [
 
 map_distrito_concelhos.set("Açores", [
 "Angra do Heroísmo",
-"Calheta",
+"Calheta (Açores)",
 "Corvo",
 "Horta",
-"Lagoa",
+"Lagoa (Ilhas)",
 "Lajes das Flores",
 "Lajes do Pico",
 "Madalena",
@@ -263,13 +263,13 @@ map_distrito_concelhos.set("Açores", [
 "Ponta Delgada",
 "Povoação",
 "Ribeira Grande",
-"S. Roque do Pico",
+"São Roque do Pico",
 "Santa Cruz da Graciosa",
 "Santa Cruz das Flores",
 "Velas",
 "Vila do Porto",
 "Vila Franca do Campo",
-"Vila Praia da Vitória"])
+"Praia da Vitória"])
 
 
 map_distrito_concelhos.set("Santarém", [
@@ -356,8 +356,8 @@ map_distrito_concelhos.set("Viseu", [
 "Penalva do Castelo",
 "Penedono",
 "Resende",
-"S. João da Pesqueira",
-"S. Pedro do Sul",
+"São João da Pesqueira",
+"São Pedro do Sul",
 "Santa Comba Dão",
 "Sátão",
 "Sernancelhe",
