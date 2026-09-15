@@ -1,3 +1,26 @@
+/* ==========================================
+   PALETA DE CORES (Edita aqui as tuas cores)
+   ========================================== */
+:root {
+  /* Fundo da pagina / Oceano */
+  --cor-fundo: #bbdae7;
+
+  /* Cores base dos concelhos */
+  --cor-fronteiras: #444444;
+  --cor-hover: #fdcb00; /* Destaque amarelo ao passar o rato */
+
+  /* Cores dos estados do jogo */
+  --cor-acertou: #0e6f36;      /* Verde (Acertou a primeira) */
+  --cor-com-erros: #e67e22;    /* Laranja (Acertou com falhas) */
+  --cor-pular: #d54130;        /* Vermelho (Passou a frente / Skip) */
+
+  /* Interface (HUD) */
+  --cor-hud-bg: #ffffff;
+  --cor-hud-texto: #111111;
+  --cor-hud-subtexto: #666666;
+  --cor-btn-hover: #c0392b;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,7 +31,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #2170d9;
+  background-color: var(--cor-fundo);
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   user-select: none;
 }
@@ -30,8 +53,9 @@ html, body {
 #mapa-viewport {
   width: 100%;
   height: 100%;
-  /* Altera a origem da transformação do canto (0 0) para o centro */
   transform-origin: 0 0;
+  
+  /* Mantém apenas uma transição suave sem forçar camadas 3D rígidas */
   transition: transform 0.05s linear;
 }
 
@@ -39,13 +63,15 @@ html, body {
   cursor: grabbing;
 }
 
-
 #mapa-svg {
   display: block;
   width: 100%;
   height: 100%;
-}
 
+  /* Alternativa mais compatível para manter as linhas afiadas */
+  shape-rendering: crispedges;
+  text-rendering: optimizeLegibility;
+}
 /* Painéis de Interface (HUD Fixo) */
 .painel-hud {
   position: fixed;
@@ -67,8 +93,8 @@ html, body {
 }
 
 .caixa-hud {
-  background: #ffffff;
-  color: #111111;
+  background: var(--cor-hud-bg);
+  color: var(--cor-hud-texto);
   padding: 8px 14px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
@@ -85,7 +111,7 @@ html, body {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  color: #666666;
+  color: var(--cor-hud-subtexto);
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -96,7 +122,7 @@ html, body {
 }
 
 .valor-concelho {
-  color: #111111;
+  color: var(--cor-hud-texto);
 }
 
 .btn {
@@ -105,14 +131,14 @@ html, body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  background-color: #e74c3c;
+  background-color: var(--cor-pular);
   color: #ffffff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
   transition: background 0.2s;
 }
 
 .btn:hover {
-  background-color: #c0392b;
+  background-color: var(--cor-btn-hover);
 }
 
 /* ESTILOS SVG E FRONTEIRAS SUAVES */
@@ -122,11 +148,11 @@ svg path[data-concelho] {
   
   /* Mantém as bordas sempre visíveis e suaves */
   paint-order: stroke fill !important;
-  stroke: #444444 !important;
+  stroke: var(--cor-fronteiras) !important;
   
   /* Mantém a espessura da linha constante independentemente do zoom */
   vector-effect: non-scaling-stroke !important;
-  stroke-width: 1.1px !important;
+  stroke-width: 1px !important;
   
   /* Suaviza as pontas e as junções dos ângulos */
   stroke-linecap: round !important;
@@ -134,23 +160,23 @@ svg path[data-concelho] {
 }
 
 svg path[data-concelho]:hover {
-  fill: #f1c40f !important; /* Destaque amarelo ao passar o rato */
+  fill: var(--cor-hover) !important; /* Destaque amarelo ao passar o rato */
 }
 
 /* Estado: Acertou à primeira (Verde) */
 svg path.correto, 
 svg path.correto:hover {
-  fill: #2ecc71 !important;
+  fill: var(--cor-acertou) !important;
 }
 
 /* Estado: Acertou com erros (Laranja) */
 svg path.com-erros, 
 svg path.com-erros:hover {
-  fill: #e67e22 !important;
+  fill: var(--cor-com-erros) !important;
 }
 
 /* Estado: Passou à frente / Skip (Vermelho) */
 svg path.pular, 
 svg path.pular:hover {
-  fill: #e74c3c !important;
+  fill: var(--cor-pular) !important;
 }

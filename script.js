@@ -149,7 +149,7 @@ function configurarZoomEPan() {
 
     const delta = -e.deltaY;
     const factor = delta > 0 ? 1.15 : 1 / 1.15;
-    const newScale = Math.min(Math.max(1, scale * factor), 15);
+    const newScale = Math.min(Math.max(1, scale * factor), 4);
 
     // Se voltar ao zoom base (1), recentra automaticamente o mapa
     if (newScale === 1) {
