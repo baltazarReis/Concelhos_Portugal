@@ -7,12 +7,12 @@
 
   /* Cores base dos concelhos */
   --cor-fronteiras: #444444;
-  --cor-hover: #fdcb00; /* Destaque amarelo ao passar o rato */
+  --cor-hover: #ffc94d; /* Amarelo-dourado: destaque quente e vivo ao passar o rato */
 
   /* Cores dos estados do jogo */
-  --cor-acertou: #0e6f36;      /* Verde (Acertou a primeira) */
-  --cor-com-erros: #e67e22;    /* Laranja (Acertou com falhas) */
-  --cor-pular: #d54130;        /* Vermelho (Passou a frente / Skip) */
+  --cor-acertou: #218147;      /* Verde (Acertou a primeira) — contraste frio vs. o tom quente do mapa */
+  --cor-com-erros: #e8892f;    /* Laranja (Acertou com falhas) — intermédio entre sucesso e falha */
+  --cor-pular: #c43030;        /* Vermelho (Passou a frente / Skip) */
 
   /* Interface (HUD) */
   --cor-hud-bg: #ffffff;
@@ -53,10 +53,6 @@ html, body {
 #mapa-viewport {
   width: 100%;
   height: 100%;
-  transform-origin: 0 0;
-  
-  /* Mantém apenas uma transição suave sem forçar camadas 3D rígidas */
-  transition: transform 0.05s linear;
 }
 
 #mapa-wrapper:active {
@@ -68,8 +64,6 @@ html, body {
   width: 100%;
   height: 100%;
 
-  /* Alternativa mais compatível para manter as linhas afiadas */
-  shape-rendering: crispedges;
   text-rendering: optimizeLegibility;
 }
 /* Painéis de Interface (HUD Fixo) */
@@ -150,9 +144,9 @@ svg path[data-concelho] {
   paint-order: stroke fill !important;
   stroke: var(--cor-fronteiras) !important;
   
-  /* Mantém a espessura da linha constante independentemente do zoom */
-  vector-effect: non-scaling-stroke !important;
-  stroke-width: 1px !important;
+  /* Espessura em unidades do próprio SVG: escala com o zoom (viewBox),
+     tal como as fronteiras distritais, em vez de ficar sempre fixa */
+  stroke-width: 2;
   
   /* Suaviza as pontas e as junções dos ângulos */
   stroke-linecap: round !important;
