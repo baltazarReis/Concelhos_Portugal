@@ -17,7 +17,7 @@ const somErro = new Audio('./sounds/wrong.mp3');
 
 // Ajustar o Volume (0.0 a 1.0)
 somAcerto.volume = 0.6; // 60% do volume
-somErro.volume = 0.4;   // 40% do volume;
+somErro.volume = 0.25;   // 40% do volume;
 
 /**
  * Função para tocar áudio com suporte a corte de som antigo e duração limite
@@ -43,12 +43,14 @@ function tocarSom(audio, duracaoMs = null) {
   }
 }
 
-// Elementos da Interface (HUD)
+// INÍCIO: DECLARAÇÃO DE ELEMENTOS (HUD & TOOLTIP)
 const elNomeConcelho = document.getElementById("nome-concelho");
 const elPontuacao = document.getElementById("pontuacao");
 const elTentativas = document.getElementById("tentativas");
 const elTimer = document.getElementById("timer");
 const btnSkip = document.getElementById("btn-skip");
+const elTooltip = document.getElementById("tooltip-concelho");
+// FIM: DECLARAÇÃO DE ELEMENTOS (HUD & TOOLTIP)
 
 window.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("contextmenu", (e) => e.preventDefault());
@@ -83,8 +85,9 @@ function proximoConcelho() {
   elTentativas.textContent = tentativasTotais;
 }
 
-// Clique com Botão Esquerdo nos Concelhos
+// INÍCIO: EVENTOS DOS CONCELHOS (CLIQUE E HOVER SELECCIONADOS)
 document.querySelectorAll("svg path[data-concelho]").forEach(path => {
+  // Evento de Clique
   path.addEventListener("click", (e) => {
     if (e.button !== 0 || !concelhoAtual) return;
     
@@ -92,7 +95,6 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
     tentativasTotais++;
     elTentativas.textContent = tentativasTotais;
 
-    // Comparação de strings direta e exata
     if (concelhoClicado === concelhoAtual) {
       tocarSom(somAcerto, 2000);
       pontuacao++;
@@ -109,7 +111,31 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
       errosNoConcelhoAtual++;
     }
   });
+
+  // Mostrar caixa de texto apenas em concelhos já selecionados
+  path.addEventListener("mouseenter", (e) => {
+    const el = e.target;
+    const jaFoiSelecionado = el.classList.contains("correto") || 
+                             el.classList.contains("com-erros") || 
+                             el.classList.contains("pular");
+
+    if (jaFoiSelecionado) {
+      const nomeConcelho = el.getAttribute("data-concelho");
+      if (elTooltip) {
+        elTooltip.textContent = nomeConcelho;
+        elTooltip.classList.add("ativo");
+      }
+    }
+  });
+
+  // Esconder a caixa ao sair do concelho
+  path.addEventListener("mouseleave", () => {
+    if (elTooltip) {
+      elTooltip.classList.remove("ativo");
+    }
+  });
 });
+// FIM: EVENTOS DOS CONCELHOS (CLIQUE E HOVER SELECCIONADOS)
 
 // Botão Passar à Frente -> Vermelho
 btnSkip.addEventListener("click", () => {

@@ -174,3 +174,27 @@ svg path.pular,
 svg path.pular:hover {
   fill: var(--cor-pular) !important;
 }
+
+/* ==========================================
+   TOOLTIP DO CONCELHO (Canto Inferior Direito)
+   ========================================== */
+#tooltip-concelho {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(40, 40, 40, 0.85); /* Fundo cinzento com fade/transparência */
+  color: #ffffff;                             /* Texto a branco */
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  pointer-events: none;                       /* Evita interferir com os cliques */
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 10000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#tooltip-concelho.ativo {
+  opacity: 1;
+}
