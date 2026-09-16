@@ -43,19 +43,45 @@ function tocarSom(audio, duracaoMs = null) {
   }
 }
 
-// INÍCIO: DECLARAÇÃO DE ELEMENTOS (HUD & TOOLTIP)
+// INÍCIO: DECLARAÇÃO DE ELEMENTOS
 const elNomeConcelho = document.getElementById("nome-concelho");
 const elPontuacao = document.getElementById("pontuacao");
 const elTentativas = document.getElementById("tentativas");
 const elTimer = document.getElementById("timer");
 const btnSkip = document.getElementById("btn-skip");
 const elTooltip = document.getElementById("tooltip-concelho");
-// FIM: DECLARAÇÃO DE ELEMENTOS (HUD & TOOLTIP)
 
+const menuInicial = document.getElementById("menu-inicial");
+const btnIniciar = document.getElementById("btn-iniciar");
+
+// Elementos Fim de Jogo
+const painelTopRight = document.querySelector(".painel-top-right");
+const painelFimJogo = document.getElementById("painel-fim-jogo");
+const elFimPontuacao = document.getElementById("fim-pontuacao");
+const elFimTempo = document.getElementById("fim-tempo");
+const elFimTentativas = document.getElementById("fim-tentativas");
+const elListaDistritos = document.getElementById("lista-distritos-resumo");
+const btnReiniciar = document.getElementById("btn-reiniciar");
+
+// Objeto para registar os acertos sem erros por distrito
+let acertosPorDistrito = {};
+// FIM: DECLARAÇÃO DE ELEMENTOS
+
+// INÍCIO: LÓGICA DE INÍCIO E REINÍCIO
 window.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("contextmenu", (e) => e.preventDefault());
-  iniciarJogoDirecto();
   configurarZoomEPan();
+
+  btnIniciar.addEventListener("click", () => {
+    menuInicial.classList.add("escondido");
+    iniciarJogoDirecto();
+  });
+
+  // INÍCIO: EVENTO DE REINICIAR (RELOAD DA PÁGINA)
+btnReiniciar.addEventListener("click", () => {
+  window.location.reload();
+});
+// FIM: EVENTO DE REINICIAR (RELOAD DA PÁGINA)
 });
 
 function iniciarJogoDirecto() {
@@ -64,9 +90,22 @@ function iniciarJogoDirecto() {
   tentativasTotais = 0;
   tempoSegundos = 0;
   
+  // Inicializa contador por distrito
+  acertosPorDistrito = {};
+  map_distrito_concelhos.forEach((_, distrito) => {
+    acertosPorDistrito[distrito] = 0;
+  });
+
   iniciarTimer();
   proximoConcelho();
 }
+
+function limparMapa() {
+  document.querySelectorAll("svg path[data-concelho]").forEach(el => {
+    el.classList.remove("correto", "com-erros", "pular");
+  });
+}
+// FIM: LÓGICA DE INÍCIO E REINÍCIO
 
 function proximoConcelho() {
   // Se a lista estiver vazia, marca que já não há concelho ativo
@@ -85,9 +124,8 @@ function proximoConcelho() {
   elTentativas.textContent = tentativasTotais;
 }
 
-// INÍCIO: EVENTOS DOS CONCELHOS (CLIQUE E HOVER SELECCIONADOS)
+// INÍCIO: REGISTO DE ACERTOS NO CLIQUE
 document.querySelectorAll("svg path[data-concelho]").forEach(path => {
-  // Evento de Clique
   path.addEventListener("click", (e) => {
     if (e.button !== 0 || !concelhoAtual) return;
     
@@ -99,8 +137,20 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
       tocarSom(somAcerto, 2000);
       pontuacao++;
       
+      // Procura o distrito pertencente
+      let distritoDoConcelho = null;
+      for (const [distrito, lista] of map_distrito_concelhos.entries()) {
+        if (lista.includes(concelhoClicado)) {
+          distritoDoConcelho = distrito;
+          break;
+        }
+      }
+
       if (errosNoConcelhoAtual === 0) {
         pintarConcelho(concelhoClicado, "correto");
+        if (distritoDoConcelho) {
+          acertosPorDistrito[distritoDoConcelho]++;
+        }
       } else {
         pintarConcelho(concelhoClicado, "com-erros");
       }
@@ -112,30 +162,24 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
     }
   });
 
-  // Mostrar caixa de texto apenas em concelhos já selecionados
+  // Hover Tooltip
   path.addEventListener("mouseenter", (e) => {
     const el = e.target;
     const jaFoiSelecionado = el.classList.contains("correto") || 
                              el.classList.contains("com-erros") || 
                              el.classList.contains("pular");
 
-    if (jaFoiSelecionado) {
-      const nomeConcelho = el.getAttribute("data-concelho");
-      if (elTooltip) {
-        elTooltip.textContent = nomeConcelho;
-        elTooltip.classList.add("ativo");
-      }
+    if (jaFoiSelecionado && elTooltip) {
+      elTooltip.textContent = el.getAttribute("data-concelho");
+      elTooltip.classList.add("ativo");
     }
   });
 
-  // Esconder a caixa ao sair do concelho
   path.addEventListener("mouseleave", () => {
-    if (elTooltip) {
-      elTooltip.classList.remove("ativo");
-    }
+    if (elTooltip) elTooltip.classList.remove("ativo");
   });
 });
-// FIM: EVENTOS DOS CONCELHOS (CLIQUE E HOVER SELECCIONADOS)
+// FIM: REGISTO DE ACERTOS NO CLIQUE
 
 // Botão Passar à Frente -> Vermelho
 btnSkip.addEventListener("click", () => {
@@ -178,12 +222,48 @@ function iniciarTimer() {
   }, 1000);
 }
 
+// INÍCIO: FINALIZAR JOGO E RESUMO ORDENADO POR PERCENTAGEM
 function finalizarJogo() {
   clearInterval(intervaloTimer);
-  setTimeout(() => {
-    alert(`Jogo Concluído!\nPontuação: ${pontuacao}/308\nTentativas: ${tentativasTotais}\nTempo: ${elTimer.textContent}`);
-  }, 100);
+  
+  // Oculta o HUD da direita e mostra o painel de resumo
+  painelTopRight.classList.add("escondido");
+  painelFimJogo.classList.remove("escondido");
+
+  elFimPontuacao.textContent = `${pontuacao}/308 - ${Math.round((pontuacao / 308) * 100)}%`;
+  elFimTempo.textContent = elTimer.textContent;
+  elFimTentativas.textContent = tentativasTotais;
+
+  // Limpa a lista
+  elListaDistritos.innerHTML = "";
+  
+  // 1. Mapeia os dados de cada distrito para um array com a percentagem calculada
+  const resumoDistritos = Array.from(map_distrito_concelhos.entries()).map(([distrito, concelhos]) => {
+    const totalConcelhosDistrito = concelhos.length;
+    const acertos = acertosPorDistrito[distrito] || 0;
+    const percentagem = Math.round((acertos / totalConcelhosDistrito) * 100);
+
+    return {
+      distrito,
+      acertos,
+      totalConcelhosDistrito,
+      percentagem
+    };
+  });
+
+  // 2. Ordena o array por ordem decrescente de percentagem (maior % em cima)
+  resumoDistritos.sort((a, b) => b.percentagem - a.percentagem);
+
+  // 3. Preenche a lista no DOM já ordenada
+  resumoDistritos.forEach(itemData => {
+    const item = document.createElement("div");
+    item.className = "item-distrito";
+    item.textContent = `${itemData.distrito}: ${itemData.acertos}/${itemData.totalConcelhosDistrito} - ${itemData.percentagem}%`;
+    
+    elListaDistritos.appendChild(item);
+  });
 }
+// FIM: FINALIZAR JOGO E RESUMO ORDENADO POR PERCENTAGEM
 
 function configurarZoomEPan() {
   const wrapper = document.getElementById("mapa-wrapper");

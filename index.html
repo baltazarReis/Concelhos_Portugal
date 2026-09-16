@@ -9,6 +9,16 @@
 </head>
 <body>
 
+   <!-- INÍCIO: MENU INICIAL -->
+<div id="menu-inicial">
+  <div class="caixa-menu">
+    <h1>Jogo dos Concelhos</h1>
+    <p>Identifica os 308 concelhos de Portugal no mapa.</p>
+    <button id="btn-iniciar" class="btn-start">Iniciar Jogo</button>
+  </div>
+</div>
+<!-- FIM: MENU INICIAL -->
+
   <!-- HUD: Canto Superior Direito -->
   <div class="painel-hud painel-top-right">
     <div class="caixa-hud">
@@ -2493,6 +2503,24 @@
 
     </div>
   </main>
+
+  <!-- INÍCIO: PAINEL DE FIM DE JOGO -->
+<div id="painel-fim-jogo" class="escondido">
+  <h2>Resumo do Jogo</h2>
+  
+  <div class="estatisticas-gerais">
+    <p><strong>Pontuação:</strong> <span id="fim-pontuacao">0/308</span></p>
+    <p><strong>Tempo:</strong> <span id="fim-tempo">00:00</span></p>
+    <p><strong>Tentativas:</strong> <span id="fim-tentativas">0</span></p>
+  </div>
+
+  <div class="caixa-distritos-scroll" id="lista-distritos-resumo">
+    <!-- Lista dos distritos gerada dinamicamente pelo JS -->
+  </div>
+
+  <button id="btn-reiniciar" class="btn-reiniciar">Jogar Novamente</button>
+</div>
+<!-- FIM: PAINEL DE FIM DE JOGO -->
 
 </body>
 </html>

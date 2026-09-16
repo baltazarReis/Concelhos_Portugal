@@ -198,3 +198,139 @@ svg path.pular:hover {
 #tooltip-concelho.ativo {
   opacity: 1;
 }
+
+/* ==========================================
+   MENU INICIAL (Overlay)
+   ========================================== */
+#menu-inicial {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
+  backdrop-filter: blur(4px);            /* Efeito de desfocagem no fundo */
+  z-index: 20000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#menu-inicial.escondido {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.caixa-menu {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+}
+
+.caixa-menu h1 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-size: 26px;
+}
+
+.caixa-menu p {
+  margin-bottom: 24px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.btn-start {
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #27ae60;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-start:hover {
+  background-color: #219150;
+  transform: scale(1.03);
+}
+
+/* ==========================================
+   PAINEL DE FIM DE JOGO (Lateral Direito)
+   ========================================== */
+#painel-fim-jogo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 280px;
+  max-height: calc(100vh - 40px);
+  background-color: var(--cor-hud-bg);
+  color: var(--cor-hud-texto);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#painel-fim-jogo.escondido,
+.painel-top-right.escondido {
+  display: none !important;
+}
+
+#painel-fim-jogo h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.estatisticas-gerais p {
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: var(--cor-hud-texto);
+}
+
+.caixa-distritos-scroll {
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  padding: 12px;
+  max-height: 220px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-distrito {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.btn-reiniciar {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #27ae60; /* Verde coerente com o botão Iniciar Jogo */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  width: 100%;
+}
+
+.btn-reiniciar:hover {
+  background-color: #219150;
+  transform: scale(1.02);
+}
