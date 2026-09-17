@@ -66,33 +66,34 @@ html, body {
 
   text-rendering: optimizeLegibility;
 }
+
 /* Painéis de Interface (HUD Fixo) */
 .painel-hud {
   position: fixed;
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 13px;
 }
 
 .painel-top-right {
-  top: 20px;
-  right: 20px;
+  top: 25px;
+  right: 25px;
   align-items: flex-end;
 }
 
 .painel-bottom-left {
-  bottom: 20px;
-  left: 20px;
+  bottom: 25px;
+  left: 25px;
 }
 
 .caixa-hud {
   background: var(--cor-hud-bg);
   color: var(--cor-hud-texto);
-  padding: 8px 14px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  min-width: 160px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  min-width: 200px;
   text-align: right;
 }
 
@@ -102,16 +103,16 @@ html, body {
 
 .label {
   display: block;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   color: var(--cor-hud-subtexto);
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 .valor, .valor-concelho {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 800;
 }
 
@@ -120,14 +121,15 @@ html, body {
 }
 
 .btn {
-  padding: 10px 16px;
+  padding: 13px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  font-size: 16px;
   font-weight: bold;
   background-color: var(--cor-pular);
   color: #ffffff;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: background 0.2s;
 }
 
@@ -146,7 +148,7 @@ svg path[data-concelho] {
   
   /* Espessura em unidades do próprio SVG: escala com o zoom (viewBox),
      tal como as fronteiras distritais, em vez de ficar sempre fixa */
-  stroke-width: 2;
+  stroke-width: 2.5;
   
   /* Suaviza as pontas e as junções dos ângulos */
   stroke-linecap: round !important;
@@ -180,19 +182,19 @@ svg path.pular:hover {
    ========================================== */
 #tooltip-concelho {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   background-color: rgba(40, 40, 40, 0.85); /* Fundo cinzento com fade/transparência */
   color: #ffffff;                             /* Texto a branco */
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 23px;
   font-weight: 600;
   pointer-events: none;                       /* Evita interferir com os cliques */
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   z-index: 10000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #tooltip-concelho.ativo {
@@ -209,7 +211,7 @@ svg path.pular:hover {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
-  backdrop-filter: blur(4px);            /* Efeito de desfocagem no fundo */
+  backdrop-filter: blur(5px);            /* Efeito de desfocagem no fundo */
   z-index: 20000;
   display: flex;
   justify-content: center;
@@ -225,34 +227,34 @@ svg path.pular:hover {
 
 .caixa-menu {
   background: #ffffff;
-  padding: 30px 40px;
-  border-radius: 12px;
+  padding: 38px 50px;
+  border-radius: 15px;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
   width: 90%;
 }
 
 .caixa-menu h1 {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   color: #2c3e50;
-  font-size: 26px;
+  font-size: 33px;
 }
 
 .caixa-menu p {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   color: #666666;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .btn-start {
-  padding: 12px 28px;
-  font-size: 16px;
+  padding: 15px 35px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #27ae60;
   color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
 }
@@ -267,19 +269,19 @@ svg path.pular:hover {
    ========================================== */
 #painel-fim-jogo {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 280px;
-  max-height: calc(100vh - 40px);
+  top: 25px;
+  right: 25px;
+  width: 350px;
+  max-height: calc(100vh - 50px);
   background-color: var(--cor-hud-bg);
   color: var(--cor-hud-texto);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 19px;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -289,42 +291,42 @@ svg path.pular:hover {
 }
 
 #painel-fim-jogo h2 {
-  font-size: 20px;
-  margin-bottom: 5px;
+  font-size: 25px;
+  margin-bottom: 6px;
   text-align: center;
 }
 
 .estatisticas-gerais p {
-  font-size: 14px;
-  margin-bottom: 4px;
+  font-size: 18px;
+  margin-bottom: 5px;
   color: var(--cor-hud-texto);
 }
 
 .caixa-distritos-scroll {
   background-color: #e2e8f0;
-  border-radius: 8px;
-  padding: 12px;
-  max-height: 220px;
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 275px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .item-distrito {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   color: #2d3748;
 }
 
 .btn-reiniciar {
-  padding: 12px;
-  font-size: 15px;
+  padding: 15px;
+  font-size: 19px;
   font-weight: bold;
   background-color: #27ae60; /* Verde coerente com o botão Iniciar Jogo */
   color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
   width: 100%;
