@@ -327,9 +327,14 @@ function configurarZoomEPan() {
   }
 
   function limitarPan() {
-    vx = Math.min(Math.max(vx, baseX), baseX + baseW - vw);
-    vy = Math.min(Math.max(vy, baseY), baseY + baseH - vh);
-  }
+  // Ajusta este valor (em unidades do SVG) para aumentar ou diminuir a margem de arrasto.
+  // Exemplo: baseW * 0.15 adiciona 15% da largura original como margem de manobra.
+  const margemX = baseW * 0.15; 
+  const margemY = baseH * 0.30; 
+
+  vx = Math.min(Math.max(vx, baseX - margemX), baseX + baseW - vw + margemX);
+  vy = Math.min(Math.max(vy, baseY - margemY), baseY + baseH - vh + margemY);
+}
 
   // Zoom no ponto EXATO do cursor
   wrapper.addEventListener("wheel", (e) => {
@@ -361,14 +366,14 @@ function configurarZoomEPan() {
 
   // Arrasto permitido APENAS se houver zoom ativo (zoom > 1)
   wrapper.addEventListener("mousedown", (e) => {
-    if (e.button === 2 && zoom > 1) {
-      isDragging = true;
-      dragStartClientX = e.clientX;
-      dragStartClientY = e.clientY;
-      dragStartVx = vx;
-      dragStartVy = vy;
-    }
-  });
+  if (e.button === 2) { // Permite arrastar com o botão direito em qualquer nível de zoom
+    isDragging = true;
+    dragStartClientX = e.clientX;
+    dragStartClientY = e.clientY;
+    dragStartVx = vx;
+    dragStartVy = vy;
+  }
+});
 
   window.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
