@@ -25,6 +25,15 @@ somErro.volume = 0.25;   // 40% do volume;
  * @param {number|null} duracaoMs - Duração máxima em milissegundos (opcional)
  */
 function tocarSom(audio, duracaoMs = null) {
+  // 0. Cancela qualquer corte agendado por uma reprodução anterior deste
+  //    mesmo áudio. Sem isto, um temporizador antigo (de um clique anterior)
+  //    pode disparar sobre a reprodução atual e cortá-la num ponto
+  //    imprevisível — é essa a causa dos cortes "aleatórios" a meio do som.
+  if (audio._timeoutCorte) {
+    clearTimeout(audio._timeoutCorte);
+    audio._timeoutCorte = null;
+  }
+
   // 1. Interrompe o som se já estiver a tocar e volta ao início
   audio.pause();
   audio.currentTime = 0;
@@ -36,9 +45,10 @@ function tocarSom(audio, duracaoMs = null) {
 
   // 3. Corta o som após o tempo definido (se fornecido)
   if (duracaoMs) {
-    setTimeout(() => {
+    audio._timeoutCorte = setTimeout(() => {
       audio.pause();
       audio.currentTime = 0;
+      audio._timeoutCorte = null;
     }, duracaoMs);
   }
 }
@@ -128,8 +138,21 @@ function proximoConcelho() {
 document.querySelectorAll("svg path[data-concelho]").forEach(path => {
   path.addEventListener("click", (e) => {
     if (e.button !== 0 || !concelhoAtual) return;
-    
-    const concelhoClicado = e.target.getAttribute("data-concelho");
+
+    const elClicado = e.target;
+
+    // Ignora cliques em concelhos já respondidos (acertados ou passados à
+    // frente): não deve contar como tentativa nem interferir com o som
+    // que estiver a tocar.
+    if (
+      elClicado.classList.contains("correto") ||
+      elClicado.classList.contains("com-erros") ||
+      elClicado.classList.contains("pular")
+    ) {
+      return;
+    }
+
+    const concelhoClicado = elClicado.getAttribute("data-concelho");
     tentativasTotais++;
     elTentativas.textContent = tentativasTotais;
 
