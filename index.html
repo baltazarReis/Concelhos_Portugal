@@ -19,9 +19,8 @@
 </div>
 <!-- FIM: MENU INICIAL -->
 
-  <!-- HUD Superior: Concelho / Pontuação / Tentativas / Tempo -->
-  <!-- Desktop: canto superior direito. Mobile: barra fixa a toda a largura no topo. -->
-  <div id="hud-superior" class="painel-hud painel-top-right">
+  <!-- HUD: Canto Superior Direito -->
+  <div class="painel-hud painel-top-right">
     <div class="caixa-hud">
       <span class="label">Concelho</span>
       <span id="nome-concelho" class="valor-concelho">---</span>
@@ -34,20 +33,11 @@
       <span class="label">Tentativas</span>
       <span id="tentativas" class="valor">0</span>
     </div>
-    <div class="caixa-hud">
-      <span class="label">Tempo</span>
-      <span id="timer" class="valor">00:00</span>
-    </div>
-  </div>
-
-  <!-- HUD Inferior: Ações do jogador -->
-  <!-- Desktop: canto inferior esquerdo. Mobile: barra fixa a toda a largura no fundo. -->
-  <div id="hud-inferior" class="painel-hud painel-bottom-left">
-    <button id="btn-ajuda" class="btn btn-ajuda" title="Revelar pistas sobre o concelho&#10;Atenção: A pontuação deste concelho ficará indisponível.">
-      ? Pistas
-    </button>
     <button id="btn-skip" class="btn">Passar à frente</button>
-  </div>
+    <button id="btn-ajuda" class="btn btn-ajuda" title="Revelar pistas sobre o concelho&#10;Atenção: A pontuação deste concelho ficará indisponível.">
+    ?
+  </button>
+</div>
 
 <!-- MODAL DE INFORMAÇÃO ADICIONAL DO CONCELHO -->
 <div id="modal-info-concelho" class="escondido">
@@ -65,8 +55,17 @@
   </div>
 </div>
 
+  <!-- HUD: Canto Inferior Esquerdo -->
+  <div class="painel-hud painel-bottom-left">
+    <div class="caixa-hud">
+      <span class="label">Tempo</span>
+      <span id="timer" class="valor">00:00</span>
+    </div>
+  </div>
+
   <!-- HUD: Canto Inferior Direito -->
   <div id="tooltip-concelho"></div>
+
 
   <!-- Contentor do Mapa (Área de Pan/Zoom) -->
   <main id="mapa-wrapper">

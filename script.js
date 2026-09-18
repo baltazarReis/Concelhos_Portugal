@@ -258,7 +258,6 @@ function finalizarJogo() {
   
   // Oculta o HUD da direita e mostra o painel de resumo
   painelTopRight.classList.add("escondido");
-  document.getElementById("hud-inferior").classList.add("escondido");
   painelFimJogo.classList.remove("escondido");
 
   elFimPontuacao.textContent = `${pontuacao}/308 - ${Math.round((pontuacao / 308) * 100)}%`;
