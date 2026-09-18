@@ -562,3 +562,72 @@ svg path.pular:hover {
     justify-content: center;
   }
 }
+
+/* ==========================================================================
+   ADAPTAÇÃO PARA TELEMÓVEL / TABLET (MOBILE RESPONSIVE)
+   ========================================================================== */
+@media (max-width: 768px) {
+  
+  /* Ajuste dos painéis do jogo para não taparem o ecrã inteiro */
+  .painel-hud {
+    padding: 8px 12px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  .painel-top-right {
+    top: 10px;
+    right: 10px;
+  }
+
+  .painel-bottom-left {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  /* Redução do tamanho do texto e contadores */
+  .caixa-hud {
+    min-width: 50px;
+  }
+
+  .caixa-hud .label {
+    font-size: 0.65rem;
+  }
+
+  .caixa-hud .valor,
+  .caixa-hud .valor-concelho {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .btn-ajuda {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  /* Otimização dos Modais e Menus para ecrãs verticais */
+  .caixa-menu,
+  .conteudo-modal {
+    width: 92%;
+    padding: 20px;
+    max-height: 80vh;
+  }
+
+  .caixa-menu h1 {
+    font-size: 1.5rem;
+  }
+
+  #modal-imagem-container {
+    max-height: 160px;
+  }
+
+  /* Esconde o tooltip de ponteiro em ecrãs táteis para não encravar o toque */
+  #tooltip-concelho {
+    display: none !important;
+  }
+}
