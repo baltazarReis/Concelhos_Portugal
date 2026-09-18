@@ -19,8 +19,9 @@
 </div>
 <!-- FIM: MENU INICIAL -->
 
-  <!-- HUD: Canto Superior Direito -->
-  <div class="painel-hud painel-top-right">
+  <!-- HUD Superior: Concelho / Pontuação / Tentativas / Tempo -->
+  <!-- Desktop: canto superior direito. Mobile: barra fixa a toda a largura no topo. -->
+  <div id="hud-superior" class="painel-hud painel-top-right">
     <div class="caixa-hud">
       <span class="label">Concelho</span>
       <span id="nome-concelho" class="valor-concelho">---</span>
@@ -33,16 +34,36 @@
       <span class="label">Tentativas</span>
       <span id="tentativas" class="valor">0</span>
     </div>
-    <button id="btn-skip" class="btn">Passar à frente</button>
-  </div>
-
-  <!-- HUD: Canto Inferior Esquerdo -->
-  <div class="painel-hud painel-bottom-left">
     <div class="caixa-hud">
       <span class="label">Tempo</span>
       <span id="timer" class="valor">00:00</span>
     </div>
   </div>
+
+  <!-- HUD Inferior: Ações do jogador -->
+  <!-- Desktop: canto inferior esquerdo. Mobile: barra fixa a toda a largura no fundo. -->
+  <div id="hud-inferior" class="painel-hud painel-bottom-left">
+    <button id="btn-ajuda" class="btn btn-ajuda" title="Revelar pistas sobre o concelho&#10;Atenção: A pontuação deste concelho ficará indisponível.">
+      ? Pistas
+    </button>
+    <button id="btn-skip" class="btn">Passar à frente</button>
+  </div>
+
+<!-- MODAL DE INFORMAÇÃO ADICIONAL DO CONCELHO -->
+<div id="modal-info-concelho" class="escondido">
+  <div class="conteudo-modal">
+    <span id="fechar-modal">&times;</span>
+    <h2 id="modal-titulo-concelho">Informação do Concelho</h2>
+    
+    <div class="corpo-modal">
+      <div id="modal-imagem-container">
+        <!-- Imagem carregada dinamicamente pelo JS -->
+        <img id="modal-imagem" src="" alt="Imagem do concelho" class="escondido">
+      </div>
+      <p id="modal-descricao">Carregando informações do concelho...</p>
+    </div>
+  </div>
+</div>
 
   <!-- HUD: Canto Inferior Direito -->
   <div id="tooltip-concelho"></div>

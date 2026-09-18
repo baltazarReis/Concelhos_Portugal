@@ -73,6 +73,13 @@ const elFimTentativas = document.getElementById("fim-tentativas");
 const elListaDistritos = document.getElementById("lista-distritos-resumo");
 const btnReiniciar = document.getElementById("btn-reiniciar");
 
+const btnAjuda = document.getElementById("btn-ajuda");
+const modalInfo = document.getElementById("modal-info-concelho");
+const fecharModal = document.getElementById("fechar-modal");
+const modalTitulo = document.getElementById("modal-titulo-concelho");
+const modalDescricao = document.getElementById("modal-descricao");
+const modalImagem = document.getElementById("modal-imagem");
+
 // Objeto para registar os acertos sem erros por distrito
 let acertosPorDistrito = {};
 // FIM: DECLARAÇÃO DE ELEMENTOS
@@ -251,6 +258,7 @@ function finalizarJogo() {
   
   // Oculta o HUD da direita e mostra o painel de resumo
   painelTopRight.classList.add("escondido");
+  document.getElementById("hud-inferior").classList.add("escondido");
   painelFimJogo.classList.remove("escondido");
 
   elFimPontuacao.textContent = `${pontuacao}/308 - ${Math.round((pontuacao / 308) * 100)}%`;
@@ -308,6 +316,29 @@ function configurarZoomEPan() {
   let vh = baseH;
   let zoom = 1;
   const ZOOM_MAX = 4;
+
+  // Em ecrãs pequenos (telemóvel), começa com um zoom ligeiramente mais
+  // aproximado para facilitar o primeiro toque nos concelhos.
+  const ZOOM_INICIAL_MOBILE = 1.3;
+
+  function ehMobile() {
+    return window.matchMedia("(max-width: 768px)").matches;
+  }
+
+  function estadoInicial() {
+    const z = ehMobile() ? ZOOM_INICIAL_MOBILE : 1;
+    const w = baseW / z;
+    const h = baseH / z;
+    return {
+      zoom: z,
+      vw: w,
+      vh: h,
+      vx: baseX + (baseW - w) / 2,
+      vy: baseY + (baseH - h) / 2,
+    };
+  }
+
+  ({ zoom, vw, vh, vx, vy } = estadoInicial());
 
   let isDragging = false;
   let dragStartClientX = 0;
@@ -394,15 +425,187 @@ function configurarZoomEPan() {
     }
   });
 
+  // ---------- SUPORTE A GESTOS TÁTEIS (pinch-to-zoom e pan com 1 dedo) ----------
+  // Usa exatamente a mesma matemática do zoom/pan de rato, só que a partir
+  // da distância entre dois dedos (pinch) ou do movimento de um só dedo (pan).
+
+  const toque = {
+    modo: null, // null | "pinch" | "pan-candidato" | "pan"
+    moveu: false,
+    distanciaInicial: 0,
+    zoomInicial: 1,
+    vwInicial: 0,
+    vhInicial: 0,
+    vxInicial: 0,
+    vyInicial: 0,
+    midClientXInicial: 0,
+    midClientYInicial: 0,
+    clientXInicial: 0,
+    clientYInicial: 0,
+  };
+
+  function distanciaEntreToques(t0, t1) {
+    return Math.hypot(t1.clientX - t0.clientX, t1.clientY - t0.clientY);
+  }
+
+  function pontoMedioToques(t0, t1) {
+    return {
+      x: (t0.clientX + t1.clientX) / 2,
+      y: (t0.clientY + t1.clientY) / 2,
+    };
+  }
+
+  function iniciarPanCandidato(touch) {
+    toque.modo = "pan-candidato";
+    toque.moveu = false;
+    toque.clientXInicial = touch.clientX;
+    toque.clientYInicial = touch.clientY;
+    toque.vxInicial = vx;
+    toque.vyInicial = vy;
+  }
+
+  wrapper.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length === 2) {
+        // Início de um gesto de pinch-to-zoom
+        e.preventDefault();
+        toque.modo = "pinch";
+        toque.distanciaInicial = distanciaEntreToques(e.touches[0], e.touches[1]);
+        toque.zoomInicial = zoom;
+        toque.vwInicial = vw;
+        toque.vhInicial = vh;
+        toque.vxInicial = vx;
+        toque.vyInicial = vy;
+        const meio = pontoMedioToques(e.touches[0], e.touches[1]);
+        toque.midClientXInicial = meio.x;
+        toque.midClientYInicial = meio.y;
+      } else if (e.touches.length === 1) {
+        // Pode ser um simples toque (seleção de concelho) ou o início de um
+        // arrasto — só decidimos ao ver se o dedo se move o suficiente.
+        iniciarPanCandidato(e.touches[0]);
+      }
+    },
+    { passive: false }
+  );
+
+  wrapper.addEventListener(
+    "touchmove",
+    (e) => {
+      if (toque.modo === "pinch" && e.touches.length === 2) {
+        e.preventDefault();
+
+        const novaDistancia = distanciaEntreToques(e.touches[0], e.touches[1]);
+        const factor = novaDistancia / toque.distanciaInicial;
+        const novoZoom = Math.min(Math.max(1, toque.zoomInicial * factor), ZOOM_MAX);
+
+        // Ponto do mapa (em coordenadas SVG) que estava sob o meio dos dois
+        // dedos no início do gesto — mantém-se fixo enquanto se faz pinch.
+        const rect = wrapper.getBoundingClientRect();
+        const relX = (toque.midClientXInicial - rect.left) / rect.width;
+        const relY = (toque.midClientYInicial - rect.top) / rect.height;
+        const svgX = toque.vxInicial + relX * toque.vwInicial;
+        const svgY = toque.vyInicial + relY * toque.vhInicial;
+
+        zoom = novoZoom;
+        vw = baseW / zoom;
+        vh = baseH / zoom;
+
+        if (zoom === 1) {
+          vx = baseX;
+          vy = baseY;
+        } else {
+          vx = svgX - relX * vw;
+          vy = svgY - relY * vh;
+          limitarPan();
+        }
+
+        aplicarViewBox();
+        return;
+      }
+
+      if (
+        (toque.modo === "pan-candidato" || toque.modo === "pan") &&
+        e.touches.length === 1
+      ) {
+        const dxClient = e.touches[0].clientX - toque.clientXInicial;
+        const dyClient = e.touches[0].clientY - toque.clientYInicial;
+
+        // Só passa a "pan" depois de um movimento mínimo, para não interferir
+        // com um simples toque a selecionar um concelho.
+        if (!toque.moveu && Math.hypot(dxClient, dyClient) > 8) {
+          toque.moveu = true;
+          toque.modo = "pan";
+        }
+
+        if (toque.modo === "pan" && zoom > 1) {
+          e.preventDefault();
+          const rect = wrapper.getBoundingClientRect();
+          const deltaX = dxClient * (vw / rect.width);
+          const deltaY = dyClient * (vh / rect.height);
+
+          vx = toque.vxInicial - deltaX;
+          vy = toque.vyInicial - deltaY;
+          limitarPan();
+          aplicarViewBox();
+        }
+      }
+    },
+    { passive: false }
+  );
+
+  wrapper.addEventListener("touchend", (e) => {
+    if (e.touches.length === 0) {
+      toque.modo = null;
+    } else if (e.touches.length === 1) {
+      // Se ainda sobra um dedo depois de um pinch com dois, recomeça
+      // como um possível arrasto a partir daqui.
+      iniciarPanCandidato(e.touches[0]);
+    }
+  });
+
+  wrapper.addEventListener("touchcancel", () => {
+    toque.modo = null;
+  });
+
   // Recentra o mapa limparmente ao redimensionar ou minimizar a janela
+  // (também cobre a rotação do ecrã em telemóveis)
   window.addEventListener("resize", () => {
-    zoom = 1;
-    vx = baseX;
-    vy = baseY;
-    vw = baseW;
-    vh = baseH;
+    ({ zoom, vw, vh, vx, vy } = estadoInicial());
     aplicarViewBox();
   });
 
   aplicarViewBox();
 }
+
+// Evento ao clicar no botão de Ajuda
+btnAjuda.addEventListener("click", () => {
+  if (!concelhoAtual) return;
+
+  // Força o concelho a contar como "com erros/ajudado"
+  // Garantindo que quando for acertado fica a LARANJA e não dá ponto total
+  errosNoConcelhoAtual++;
+
+  // Preenche os dados da modal
+  modalTitulo.textContent = `${concelhoAtual}`;
+  
+  // Aqui podes futuramente carregar dados de um ficheiro JSON/Objeto com as fotos e factos
+  modalDescricao.textContent = `Aqui podes colocar os detalhes, monumentos ou gastronomia sobre ${concelhoAtual}.`;
+  
+  // Exemplo de como podes meter a imagem no futuro:
+  // modalImagem.src = `./imagens/concelhos/${concelhoAtual}.jpg`;
+  // modalImagem.classList.remove("escondido");
+
+  modalInfo.classList.remove("escondido");
+});
+
+// Fechar a caixa de informação
+fecharModal.addEventListener("click", () => {
+  modalInfo.classList.add("escondido");
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === modalInfo) {
+    modalInfo.classList.add("escondido");
+  }
+});

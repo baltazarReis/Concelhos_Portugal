@@ -48,6 +48,10 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* Deixa o JS controlar por completo pinch-zoom/pan; evita que o browser
+     tente fazer o seu próprio zoom/scroll nativo por cima do nosso */
+  touch-action: none;
 }
 
 #mapa-viewport {
@@ -155,8 +159,10 @@ svg path[data-concelho] {
   stroke-linejoin: round !important;
 }
 
-svg path[data-concelho]:hover {
-  fill: var(--cor-hover) !important; /* Destaque amarelo ao passar o rato */
+@media (hover: hover) {
+  svg path[data-concelho]:hover {
+    fill: var(--cor-hover) !important; /* Destaque amarelo ao passar o rato */
+  }
 }
 
 /* Estado: Acertou à primeira (Verde) */
@@ -286,7 +292,8 @@ svg path.pular:hover {
 }
 
 #painel-fim-jogo.escondido,
-.painel-top-right.escondido {
+.painel-top-right.escondido,
+.painel-bottom-left.escondido {
   display: none !important;
 }
 
@@ -335,4 +342,223 @@ svg path.pular:hover {
 .btn-reiniciar:hover {
   background-color: #219150;
   transform: scale(1.02);
+}
+
+/* ==========================================
+   BOTÃO DE AJUDA / DICAS
+   ========================================== */
+.btn-ajuda {
+  background-color: #2980b9; /* Azul informativo */
+  margin-top: 6px;
+  border-radius: 8px;
+}
+
+.btn-ajuda:hover {
+  background-color: #1f6391;
+}
+
+/* ==========================================
+   MODAL DE INFORMAÇÕES DO CONCELHO
+   ========================================== */
+#modal-info-concelho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 25000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-info-concelho.escondido {
+  display: none !important;
+}
+
+.conteudo-modal {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+#fechar-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #7f8c8d;
+  cursor: pointer;
+}
+
+#fechar-modal:hover {
+  color: #2c3e50;
+}
+
+.corpo-modal {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#modal-imagem {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* ==========================================================
+   ADAPTAÇÃO MÓVEL (ecrãs < 768px)
+   Estrutura: barra fixa no topo + área do mapa + barra fixa
+   no fundo. O mapa fica genuinamente confinado entre as duas
+   barras (não é uma sobreposição): nunca há paths do SVG por
+   baixo delas, logo nunca há cliques "roubados" pela barra.
+   ========================================================== */
+@media (max-width: 768px) {
+
+  :root {
+    --altura-hud-superior: 64px;
+    --altura-hud-inferior: 68px;
+  }
+
+  /* ---------- Barra Superior (Concelho / Pontuação / Tentativas / Tempo) ---------- */
+  #hud-superior.painel-hud {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--altura-hud-superior);
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 6px 8px;
+    background: var(--cor-hud-bg);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+
+  #hud-superior .caixa-hud {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px 4px;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  #hud-superior .label {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+
+  #hud-superior .valor,
+  #hud-superior .valor-concelho {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  /* ---------- Barra Inferior (Ações) ---------- */
+  #hud-inferior.painel-hud {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--altura-hud-inferior);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: var(--cor-hud-bg);
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+
+  #hud-inferior .btn {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 15px;
+    /* Alvo de toque confortável (recomendação mínima ~44px) */
+    min-height: 44px;
+  }
+
+  /* ---------- Área do Mapa: confinada entre as duas barras ---------- */
+  #mapa-wrapper {
+    top: var(--altura-hud-superior);
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - var(--altura-hud-superior) - var(--altura-hud-inferior));
+  }
+
+  /* ---------- Tooltip: afasta-se da barra inferior ---------- */
+  #tooltip-concelho {
+    left: 12px;
+    right: 12px;
+    bottom: calc(var(--altura-hud-inferior) + 12px);
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* ---------- Menu Inicial: caixa mais estreita em ecrãs pequenos ---------- */
+  .caixa-menu {
+    padding: 28px 24px;
+  }
+
+  /* ---------- Painel de Fim de Jogo: Bottom Sheet ---------- */
+  #painel-fim-jogo {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 18px 18px 0 0;
+    padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* ---------- Modal de Informação do Concelho: ecrã inteiro ---------- */
+  .conteudo-modal {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    padding: 20px;
+    padding-top: calc(20px + env(safe-area-inset-top, 0px));
+  }
+
+  #fechar-modal {
+    font-size: 32px;
+    padding: 8px;
+    /* Alvo de toque maior para dedos */
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
