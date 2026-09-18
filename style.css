@@ -427,8 +427,8 @@ svg path.pular:hover {
 @media (max-width: 768px) {
 
   :root {
-    --altura-hud-superior: 64px;
-    --altura-hud-inferior: 68px;
+    --altura-hud-superior: 0px;
+    --altura-hud-inferior: 0px;
   }
 
   /* ---------- Barra Superior (Concelho / Pontuação / Tentativas / Tempo) ---------- */
