@@ -631,3 +631,130 @@ svg path.pular:hover {
     display: none !important;
   }
 }
+
+/* Esconder elementos */
+.escondido {
+  display: none !important;
+}
+
+/* Painel Lateral de Ajuda (Substitui o antigo modal central) */
+#modal-info-concelho {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important; /* Força o alinhamento à direita */
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal-conteudo {
+  position: relative;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Botão de Fechar */
+#fechar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  line-height: 1;
+}
+
+#fechar-modal:hover {
+  color: #e74c3c;
+}
+
+/* 1. Nome do Concelho Centrado */
+#modal-titulo-concelho {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  width: 100%;
+}
+
+/* 2. Contentor da Heráldica */
+#modal-imagem-container {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#modal-imagem {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* 3. Descrição */
+#modal-descricao {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  text-align: justify;
+  width: 100%;
+}
+
+/* Lightbox / Zoom da Heráldica */
+#modal-zoom-heraldica {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px); /* Desfoca o fundo */
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999; /* Fica acima de todo o HUD e mapa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#modal-zoom-heraldica.escondido {
+  display: none !important;
+}
+
+#imagem-zoom-heraldica {
+  max-width: 85vw;
+  max-height: 85vh;
+  object-fit: contain;
+  cursor: default;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+#fechar-zoom-heraldica {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px 10px;
+  transition: transform 0.2s ease;
+}
+
+#fechar-zoom-heraldica:hover {
+  transform: scale(1.2);
+}

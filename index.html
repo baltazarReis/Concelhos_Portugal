@@ -9,15 +9,15 @@
 </head>
 <body>
 
-   <!-- INÍCIO: MENU INICIAL -->
-<div id="menu-inicial">
-  <div class="caixa-menu">
-    <h1>Concelhos de Portugal</h1>
-    <p>Identifica os 308 concelhos de Portugal no mapa.</p>
-    <button id="btn-iniciar" class="btn-start">Iniciar Jogo</button>
+  <!-- INÍCIO: MENU INICIAL -->
+  <div id="menu-inicial">
+    <div class="caixa-menu">
+      <h1>Concelhos de Portugal</h1>
+      <p>Identifica os 308 concelhos de Portugal no mapa.</p>
+      <button id="btn-iniciar" class="btn-start">Iniciar Jogo</button>
+    </div>
   </div>
-</div>
-<!-- FIM: MENU INICIAL -->
+  <!-- FIM: MENU INICIAL -->
 
   <!-- HUD: Canto Superior Direito -->
   <div class="painel-hud painel-top-right">
@@ -35,25 +35,27 @@
     </div>
     <button id="btn-skip" class="btn">Passar à frente</button>
     <button id="btn-ajuda" class="btn btn-ajuda" title="Revelar pistas sobre o concelho&#10;Atenção: A pontuação deste concelho ficará indisponível.">
-    ?
-  </button>
-</div>
+      ?
+    </button>
+  </div>
 
-<!-- MODAL DE INFORMAÇÃO ADICIONAL DO CONCELHO -->
-<div id="modal-info-concelho" class="escondido">
-  <div class="conteudo-modal">
-    <span id="fechar-modal">&times;</span>
-    <h2 id="modal-titulo-concelho">Informação do Concelho</h2>
-    
-    <div class="corpo-modal">
+  <!-- PAINEL DE AJUDA / DICAS (FAIXA DO LADO DIREITO) -->
+  <div id="modal-info-concelho" class="escondido">
+    <div class="modal-conteudo">
+      <span id="fechar-modal">&times;</span>
+      
+      <!-- 1º: Nome do Concelho Centrado -->
+      <h2 id="modal-titulo-concelho"></h2>
+      
+      <!-- 2º: Imagem da Heráldica do Concelho -->
       <div id="modal-imagem-container">
-        <!-- Imagem carregada dinamicamente pelo JS -->
-        <img id="modal-imagem" src="" alt="Imagem do concelho" class="escondido">
+        <img id="modal-imagem" src="" alt="Heráldica do concelho" class="escondido" loading="lazy" decoding="async">
       </div>
-      <p id="modal-descricao">Carregando informações do concelho...</p>
+
+      <!-- 3º: Descrição/Texto da Ajuda -->
+      <p id="modal-descricao"></p>
     </div>
   </div>
-</div>
 
   <!-- HUD: Canto Inferior Esquerdo -->
   <div class="painel-hud painel-bottom-left">
@@ -66,13 +68,11 @@
   <!-- HUD: Canto Inferior Direito -->
   <div id="tooltip-concelho"></div>
 
-
   <!-- Contentor do Mapa (Área de Pan/Zoom) -->
   <main id="mapa-wrapper">
     <div id="mapa-viewport">
-      <!-- O TEU SVG ENTRA AQUI -->
-      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
+      <!-- O SVG DO MAPA PERMANECE AQUI -->
+       <svg
    id="mapa-svg"
    viewBox="0 0 1032.618 1168.729"
    version="1.1"
@@ -2519,10 +2519,14 @@
        d="m 132.606,251.85 v 158.734 l -116.94,-0.15" />
   </g>
 </svg>
-
-
     </div>
   </main>
+
+  <!-- Modal Zoom da Heráldica -->
+<div id="modal-zoom-heraldica" class="escondido">
+  <button id="fechar-zoom-heraldica" aria-label="Fechar">&times;</button>
+  <img id="imagem-zoom-heraldica" src="" alt="Heráldica em tamanho grande">
+</div>
 
   <!-- INÍCIO: PAINEL DE FIM DE JOGO -->
 <div id="painel-fim-jogo" class="escondido">

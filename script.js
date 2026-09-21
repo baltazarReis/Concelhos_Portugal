@@ -15,15 +15,9 @@ let intervaloTimer = null;
 const somAcerto = new Audio('./sounds/correct.mp3');
 const somErro = new Audio('./sounds/wrong.mp3');
 
-// Ajustar o Volume (0.0 a 1.0)
-somAcerto.volume = 0.6; // 60% do volume
-somErro.volume = 0.25;   // 40% do volume;
+somAcerto.volume = 0.6;
+somErro.volume = 0.25;
 
-/**
- * Função para tocar áudio com suporte a corte de som antigo e duração limite
- * @param {HTMLAudioElement} audio - O elemento de áudio a tocar
- * @param {number|null} duracaoMs - Duração máxima em milissegundos (opcional)
- */
 function tocarSom(audio, duracaoMs = null) {
   // 0. Cancela qualquer corte agendado por uma reprodução anterior deste
   //    mesmo áudio. Sem isto, um temporizador antigo (de um clique anterior)
@@ -73,6 +67,7 @@ const elFimTentativas = document.getElementById("fim-tentativas");
 const elListaDistritos = document.getElementById("lista-distritos-resumo");
 const btnReiniciar = document.getElementById("btn-reiniciar");
 
+// Elementos do Painel de Ajuda / Pistas
 const btnAjuda = document.getElementById("btn-ajuda");
 const modalInfo = document.getElementById("modal-info-concelho");
 const fecharModal = document.getElementById("fechar-modal");
@@ -95,9 +90,9 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // INÍCIO: EVENTO DE REINICIAR (RELOAD DA PÁGINA)
-btnReiniciar.addEventListener("click", () => {
-  window.location.reload();
-});
+  btnReiniciar.addEventListener("click", () => {
+    window.location.reload();
+  });
 // FIM: EVENTO DE REINICIAR (RELOAD DA PÁGINA)
 });
 
@@ -125,7 +120,6 @@ function limparMapa() {
 // FIM: LÓGICA DE INÍCIO E REINÍCIO
 
 function proximoConcelho() {
-  // Se a lista estiver vazia, marca que já não há concelho ativo
   if (concelhosRestantes.length === 0) {
     concelhoAtual = null;
     return;
@@ -164,6 +158,7 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
     elTentativas.textContent = tentativasTotais;
 
     if (concelhoClicado === concelhoAtual) {
+      fecharPainelAjuda();
       tocarSom(somAcerto, 2000);
       pontuacao++;
       
@@ -215,6 +210,7 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
 btnSkip.addEventListener("click", () => {
   if (!concelhoAtual) return;
   
+  fecharPainelAjuda();
   pintarConcelho(concelhoAtual, "pular");
   processarFimDeJogada();
 });
@@ -255,6 +251,7 @@ function iniciarTimer() {
 // INÍCIO: FINALIZAR JOGO E RESUMO ORDENADO POR PERCENTAGEM
 function finalizarJogo() {
   clearInterval(intervaloTimer);
+  fecharPainelAjuda();
   
   // Oculta o HUD da direita e mostra o painel de resumo
   painelTopRight.classList.add("escondido");
@@ -281,10 +278,8 @@ function finalizarJogo() {
     };
   });
 
-  // 2. Ordena o array por ordem decrescente de percentagem (maior % em cima)
   resumoDistritos.sort((a, b) => b.percentagem - a.percentagem);
 
-  // 3. Preenche a lista no DOM já ordenada
   resumoDistritos.forEach(itemData => {
     const item = document.createElement("div");
     item.className = "item-distrito";
@@ -293,8 +288,91 @@ function finalizarJogo() {
     elListaDistritos.appendChild(item);
   });
 }
-// FIM: FINALIZAR JOGO E RESUMO ORDENADO POR PERCENTAGEM
 
+// INÍCIO: GESTÃO DO PAINEL DE AJUDA / PISTAS
+btnAjuda.addEventListener("click", async () => {
+  if (!concelhoAtual) return;
+
+  errosNoConcelhoAtual++;
+
+  modalTitulo.textContent = concelhoAtual;
+  modalImagem.classList.add("escondido");
+  modalImagem.src = "";
+
+  const extensoes = [".png", ".webp", ".jfif", ".gif", ".jpg", ".jpeg"];
+  let imagemEncontrada = null;
+
+  // Percorre as extensões e verifica qual existe no servidor/servidor local
+  for (const ext of extensoes) {
+    const caminho = `./images/Heráldicas Municipais/${encodeURIComponent(concelhoAtual)}${ext}`;
+    try {
+      const resposta = await fetch(caminho, { method: "HEAD" });
+      if (resposta.ok) {
+        imagemEncontrada = caminho;
+        break; // Encontrou o ficheiro correto, para de procurar
+      }
+    } catch (e) {
+      // Continua para a próxima extensão se falhar
+    }
+  }
+
+  // Se encontrou a extensão correta, exibe-a
+  if (imagemEncontrada) {
+    modalImagem.src = imagemEncontrada;
+    modalImagem.classList.remove("escondido");
+  }
+
+  modalDescricao.textContent = `Informações e pistas sobre o concelho de ${concelhoAtual}.`;
+
+  modalInfo.classList.remove("escondido");
+  if (painelTopRight) {
+    painelTopRight.classList.add("escondido");
+  }
+});
+
+function fecharPainelAjuda() {
+  if (modalInfo) modalInfo.classList.add("escondido");
+  if (modalImagem) {
+    modalImagem.src = "";
+    modalImagem.classList.add("escondido");
+  }
+  if (painelTopRight) {
+    painelTopRight.classList.remove("escondido");
+  }
+}
+
+fecharModal.addEventListener("click", fecharPainelAjuda);
+
+// 1. Torna a imagem da heráldica no painel lateral clicável
+if (modalImagem) {
+  modalImagem.style.cursor = "zoom-in";
+  modalImagem.addEventListener("click", () => {
+    if (modalImagem.src && !modalImagem.classList.contains("escondido")) {
+      imagemZoom.src = modalImagem.src;
+      modalZoom.classList.remove("escondido");
+    }
+  });
+}
+
+// 2. Função para fechar o zoom e impedir que o clique afete elementos por baixo
+function fecharModalZoom(e) {
+  if (e) {
+    e.stopPropagation(); // Impede que o clique passe para o mapa ou botões inferiores
+    e.preventDefault();
+  }
+  modalZoom.classList.add("escondido");
+  imagemZoom.src = "";
+}
+
+// 3. Eventos para fechar (no 'X' ou em qualquer parte do ecrã)
+fecharZoom.addEventListener("click", fecharModalZoom);
+
+modalZoom.addEventListener("click", (e) => {
+  // Fecha quer se clique no fundo desfocado ou na imagem
+  fecharModalZoom(e);
+});
+
+// ZOOM E PAN NO MAPA
 function configurarZoomEPan() {
   const wrapper = document.getElementById("mapa-wrapper");
   const svg = document.getElementById("mapa-svg");
@@ -357,21 +435,18 @@ function configurarZoomEPan() {
   }
 
   function limitarPan() {
-  // Ajusta este valor (em unidades do SVG) para aumentar ou diminuir a margem de arrasto.
-  // Exemplo: baseW * 0.15 adiciona 15% da largura original como margem de manobra.
-  const margemX = baseW * 0.15; 
-  const margemY = baseH * 0.30; 
+    const margemX = baseW * 0.15; 
+    const margemY = baseH * 0.30; 
 
-  vx = Math.min(Math.max(vx, baseX - margemX), baseX + baseW - vw + margemX);
-  vy = Math.min(Math.max(vy, baseY - margemY), baseY + baseH - vh + margemY);
-}
+    vx = Math.min(Math.max(vx, baseX - margemX), baseX + baseW - vw + margemX);
+    vy = Math.min(Math.max(vy, baseY - margemY), baseY + baseH - vh + margemY);
+  }
 
   // Zoom no ponto EXATO do cursor
   wrapper.addEventListener("wheel", (e) => {
     e.preventDefault();
 
     const antes = pontoParaSvg(e.clientX, e.clientY);
-
     const delta = -e.deltaY;
     const factor = delta > 0 ? 1.15 : 1 / 1.15;
     const novoZoom = Math.min(Math.max(1, zoom * factor), ZOOM_MAX);
@@ -396,14 +471,14 @@ function configurarZoomEPan() {
 
   // Arrasto permitido APENAS se houver zoom ativo (zoom > 1)
   wrapper.addEventListener("mousedown", (e) => {
-  if (e.button === 2) { // Permite arrastar com o botão direito em qualquer nível de zoom
-    isDragging = true;
-    dragStartClientX = e.clientX;
-    dragStartClientY = e.clientY;
-    dragStartVx = vx;
-    dragStartVy = vy;
-  }
-});
+    if (e.button === 2) {
+      isDragging = true;
+      dragStartClientX = e.clientX;
+      dragStartClientY = e.clientY;
+      dragStartVx = vx;
+      dragStartVy = vy;
+    }
+  });
 
   window.addEventListener("mousemove", (e) => {
     if (!isDragging) return;
@@ -429,7 +504,7 @@ function configurarZoomEPan() {
   // da distância entre dois dedos (pinch) ou do movimento de um só dedo (pan).
 
   const toque = {
-    modo: null, // null | "pinch" | "pan-candidato" | "pan"
+    modo: null,
     moveu: false,
     distanciaInicial: 0,
     zoomInicial: 1,
@@ -463,102 +538,82 @@ function configurarZoomEPan() {
     toque.vyInicial = vy;
   }
 
-  wrapper.addEventListener(
-    "touchstart",
-    (e) => {
-      if (e.touches.length === 2) {
-        // Início de um gesto de pinch-to-zoom
-        e.preventDefault();
-        toque.modo = "pinch";
-        toque.distanciaInicial = distanciaEntreToques(e.touches[0], e.touches[1]);
-        toque.zoomInicial = zoom;
-        toque.vwInicial = vw;
-        toque.vhInicial = vh;
-        toque.vxInicial = vx;
-        toque.vyInicial = vy;
-        const meio = pontoMedioToques(e.touches[0], e.touches[1]);
-        toque.midClientXInicial = meio.x;
-        toque.midClientYInicial = meio.y;
-      } else if (e.touches.length === 1) {
-        // Pode ser um simples toque (seleção de concelho) ou o início de um
-        // arrasto — só decidimos ao ver se o dedo se move o suficiente.
-        iniciarPanCandidato(e.touches[0]);
+  wrapper.addEventListener("touchstart", (e) => {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      toque.modo = "pinch";
+      toque.distanciaInicial = distanciaEntreToques(e.touches[0], e.touches[1]);
+      toque.zoomInicial = zoom;
+      toque.vwInicial = vw;
+      toque.vhInicial = vh;
+      toque.vxInicial = vx;
+      toque.vyInicial = vy;
+      const meio = pontoMedioToques(e.touches[0], e.touches[1]);
+      toque.midClientXInicial = meio.x;
+      toque.midClientYInicial = meio.y;
+    } else if (e.touches.length === 1) {
+      iniciarPanCandidato(e.touches[0]);
+    }
+  }, { passive: false });
+
+  wrapper.addEventListener("touchmove", (e) => {
+    if (toque.modo === "pinch" && e.touches.length === 2) {
+      e.preventDefault();
+
+      const novaDistancia = distanciaEntreToques(e.touches[0], e.touches[1]);
+      const factor = novaDistancia / toque.distanciaInicial;
+      const novoZoom = Math.min(Math.max(1, toque.zoomInicial * factor), ZOOM_MAX);
+
+      const rect = wrapper.getBoundingClientRect();
+      const relX = (toque.midClientXInicial - rect.left) / rect.width;
+      const relY = (toque.midClientYInicial - rect.top) / rect.height;
+      const svgX = toque.vxInicial + relX * toque.vwInicial;
+      const svgY = toque.vyInicial + relY * toque.vhInicial;
+
+      zoom = novoZoom;
+      vw = baseW / zoom;
+      vh = baseH / zoom;
+
+      if (zoom === 1) {
+        vx = baseX;
+        vy = baseY;
+      } else {
+        vx = svgX - relX * vw;
+        vy = svgY - relY * vh;
+        limitarPan();
       }
-    },
-    { passive: false }
-  );
 
-  wrapper.addEventListener(
-    "touchmove",
-    (e) => {
-      if (toque.modo === "pinch" && e.touches.length === 2) {
+      aplicarViewBox();
+      return;
+    }
+
+    if ((toque.modo === "pan-candidato" || toque.modo === "pan") && e.touches.length === 1) {
+      const dxClient = e.touches[0].clientX - toque.clientXInicial;
+      const dyClient = e.touches[0].clientY - toque.clientYInicial;
+
+      if (!toque.moveu && Math.hypot(dxClient, dyClient) > 8) {
+        toque.moveu = true;
+        toque.modo = "pan";
+      }
+
+      if (toque.modo === "pan" && zoom > 1) {
         e.preventDefault();
-
-        const novaDistancia = distanciaEntreToques(e.touches[0], e.touches[1]);
-        const factor = novaDistancia / toque.distanciaInicial;
-        const novoZoom = Math.min(Math.max(1, toque.zoomInicial * factor), ZOOM_MAX);
-
-        // Ponto do mapa (em coordenadas SVG) que estava sob o meio dos dois
-        // dedos no início do gesto — mantém-se fixo enquanto se faz pinch.
         const rect = wrapper.getBoundingClientRect();
-        const relX = (toque.midClientXInicial - rect.left) / rect.width;
-        const relY = (toque.midClientYInicial - rect.top) / rect.height;
-        const svgX = toque.vxInicial + relX * toque.vwInicial;
-        const svgY = toque.vyInicial + relY * toque.vhInicial;
+        const deltaX = dxClient * (vw / rect.width);
+        const deltaY = dyClient * (vh / rect.height);
 
-        zoom = novoZoom;
-        vw = baseW / zoom;
-        vh = baseH / zoom;
-
-        if (zoom === 1) {
-          vx = baseX;
-          vy = baseY;
-        } else {
-          vx = svgX - relX * vw;
-          vy = svgY - relY * vh;
-          limitarPan();
-        }
-
+        vx = toque.vxInicial - deltaX;
+        vy = toque.vyInicial - deltaY;
+        limitarPan();
         aplicarViewBox();
-        return;
       }
-
-      if (
-        (toque.modo === "pan-candidato" || toque.modo === "pan") &&
-        e.touches.length === 1
-      ) {
-        const dxClient = e.touches[0].clientX - toque.clientXInicial;
-        const dyClient = e.touches[0].clientY - toque.clientYInicial;
-
-        // Só passa a "pan" depois de um movimento mínimo, para não interferir
-        // com um simples toque a selecionar um concelho.
-        if (!toque.moveu && Math.hypot(dxClient, dyClient) > 8) {
-          toque.moveu = true;
-          toque.modo = "pan";
-        }
-
-        if (toque.modo === "pan" && zoom > 1) {
-          e.preventDefault();
-          const rect = wrapper.getBoundingClientRect();
-          const deltaX = dxClient * (vw / rect.width);
-          const deltaY = dyClient * (vh / rect.height);
-
-          vx = toque.vxInicial - deltaX;
-          vy = toque.vyInicial - deltaY;
-          limitarPan();
-          aplicarViewBox();
-        }
-      }
-    },
-    { passive: false }
-  );
+    }
+  }, { passive: false });
 
   wrapper.addEventListener("touchend", (e) => {
     if (e.touches.length === 0) {
       toque.modo = null;
     } else if (e.touches.length === 1) {
-      // Se ainda sobra um dedo depois de um pinch com dois, recomeça
-      // como um possível arrasto a partir daqui.
       iniciarPanCandidato(e.touches[0]);
     }
   });
@@ -567,8 +622,6 @@ function configurarZoomEPan() {
     toque.modo = null;
   });
 
-  // Recentra o mapa limparmente ao redimensionar ou minimizar a janela
-  // (também cobre a rotação do ecrã em telemóveis)
   window.addEventListener("resize", () => {
     ({ zoom, vw, vh, vx, vy } = estadoInicial());
     aplicarViewBox();
@@ -576,35 +629,3 @@ function configurarZoomEPan() {
 
   aplicarViewBox();
 }
-
-// Evento ao clicar no botão de Ajuda
-btnAjuda.addEventListener("click", () => {
-  if (!concelhoAtual) return;
-
-  // Força o concelho a contar como "com erros/ajudado"
-  // Garantindo que quando for acertado fica a LARANJA e não dá ponto total
-  errosNoConcelhoAtual++;
-
-  // Preenche os dados da modal
-  modalTitulo.textContent = `${concelhoAtual}`;
-  
-  // Aqui podes futuramente carregar dados de um ficheiro JSON/Objeto com as fotos e factos
-  modalDescricao.textContent = `Aqui podes colocar os detalhes, monumentos ou gastronomia sobre ${concelhoAtual}.`;
-  
-  // Exemplo de como podes meter a imagem no futuro:
-  // modalImagem.src = `./imagens/concelhos/${concelhoAtual}.jpg`;
-  // modalImagem.classList.remove("escondido");
-
-  modalInfo.classList.remove("escondido");
-});
-
-// Fechar a caixa de informação
-fecharModal.addEventListener("click", () => {
-  modalInfo.classList.add("escondido");
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target === modalInfo) {
-    modalInfo.classList.add("escondido");
-  }
-});
