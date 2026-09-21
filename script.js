@@ -75,6 +75,11 @@ const modalTitulo = document.getElementById("modal-titulo-concelho");
 const modalDescricao = document.getElementById("modal-descricao");
 const modalImagem = document.getElementById("modal-imagem");
 
+// Elementos do Zoom da Heráldica (Modal Zoom)
+const modalZoom = document.getElementById("modal-zoom-heraldica");
+const fecharZoom = document.getElementById("fechar-zoom-heraldica");
+const imagemZoom = document.getElementById("imagem-zoom-heraldica");
+
 // Objeto para registar os acertos sem erros por distrito
 let acertosPorDistrito = {};
 // FIM: DECLARAÇÃO DE ELEMENTOS
@@ -160,7 +165,6 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
     if (concelhoClicado === concelhoAtual) {
       fecharPainelAjuda();
       tocarSom(somAcerto, 2000);
-      pontuacao++;
       
       // Procura o distrito pertencente
       let distritoDoConcelho = null;
@@ -173,6 +177,7 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
 
       if (errosNoConcelhoAtual === 0) {
         pintarConcelho(concelhoClicado, "correto");
+        pontuacao++;
         if (distritoDoConcelho) {
           acertosPorDistrito[distritoDoConcelho]++;
         }
@@ -347,7 +352,7 @@ fecharModal.addEventListener("click", fecharPainelAjuda);
 if (modalImagem) {
   modalImagem.style.cursor = "zoom-in";
   modalImagem.addEventListener("click", () => {
-    if (modalImagem.src && !modalImagem.classList.contains("escondido")) {
+    if (modalImagem.src && !modalImagem.classList.contains("escondido") && modalZoom && imagemZoom) {
       imagemZoom.src = modalImagem.src;
       modalZoom.classList.remove("escondido");
     }
@@ -360,17 +365,20 @@ function fecharModalZoom(e) {
     e.stopPropagation(); // Impede que o clique passe para o mapa ou botões inferiores
     e.preventDefault();
   }
-  modalZoom.classList.add("escondido");
-  imagemZoom.src = "";
+  if (modalZoom) modalZoom.classList.add("escondido");
+  if (imagemZoom) imagemZoom.src = "";
 }
 
 // 3. Eventos para fechar (no 'X' ou em qualquer parte do ecrã)
-fecharZoom.addEventListener("click", fecharModalZoom);
+if (fecharZoom) {
+  fecharZoom.addEventListener("click", fecharModalZoom);
+}
 
-modalZoom.addEventListener("click", (e) => {
-  // Fecha quer se clique no fundo desfocado ou na imagem
-  fecharModalZoom(e);
-});
+if (modalZoom) {
+  modalZoom.addEventListener("click", (e) => {
+    fecharModalZoom(e);
+  });
+}
 
 // ZOOM E PAN NO MAPA
 function configurarZoomEPan() {

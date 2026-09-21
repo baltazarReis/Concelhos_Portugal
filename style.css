@@ -758,3 +758,33 @@ svg path.pular:hover {
 #fechar-zoom-heraldica:hover {
   transform: scale(1.2);
 }
+
+/* 1. Remove qualquer bloqueio do contentor pai nos cliques do mapa */
+#hud-direita, .painel-hud {
+  pointer-events: none !important;
+}
+
+/* 2. Garante que APENAS os botões e caixas do HUD capturam cliques */
+.caixa-hud, 
+.btn, 
+.btn-ajuda, 
+.hud-linha-botoes {
+  pointer-events: auto !important;
+}
+
+/* 3. Coloca o botão azul (?) à esquerda do botão de Passar à Frente */
+.hud-linha-botoes {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+/* Ajuste das dimensões do botão de ajuda para ficar em quadrado/círculo limpo ao lado do botão vermelho */
+.btn-ajuda {
+  margin-top: 0 !important; /* Remove margens superiores antigas */
+  padding: 13px 18px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border-radius: 8px !important;
+}
