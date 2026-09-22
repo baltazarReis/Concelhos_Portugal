@@ -136,7 +136,10 @@ function proximoConcelho() {
   errosNoConcelhoAtual = 0;
   
   const indiceAleatorio = Math.floor(Math.random() * concelhosRestantes.length);
-  concelhoAtual = 'Sintra';//concelhosRestantes.splice(indiceAleatorio, 1)[0];
+
+  // DEBUG CONCELHO 'Lisboa';//_
+
+  concelhoAtual = concelhosRestantes.splice(indiceAleatorio, 1)[0];
   
   elNomeConcelho.textContent = concelhoAtual;
   elPontuacao.textContent = `${pontuacao}/308`;
