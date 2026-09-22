@@ -55,10 +55,14 @@
         <img id="modal-imagem" src="" alt="Heráldica do concelho" class="escondido" loading="lazy" decoding="async">
       </div>
 
-      <!-- 3º: Descrição/Texto da Ajuda -->
+      <!-- 3º: Grelha de Imagens (fica entre a Heráldica e a Descrição) -->
+    <div id="modal-galeria" class="galeria-concelho"></div>
+
+      <!-- 4º: Descrição/Texto da Ajuda -->
       <p id="modal-descricao"></p>
     </div>
   </div>
+
 
   <!-- HUD: Canto Inferior Esquerdo -->
   <div class="painel-hud painel-bottom-left">
@@ -2529,6 +2533,20 @@
 <div id="modal-zoom-heraldica" class="escondido">
   <button id="fechar-zoom-heraldica" aria-label="Fechar">&times;</button>
   <img id="imagem-zoom-heraldica" src="" alt="Heráldica em tamanho grande">
+</div>
+
+  <!-- Lightbox para visualização ampliada de imagens com navegação -->
+<div id="lightbox-modal" class="lightbox escondido">
+  <span id="lightbox-fechar" class="lightbox-fechar">&times;</span>
+  
+  <div class="lightbox-conteudo">
+    <button id="lightbox-anterior" class="lightbox-seta seta-esquerda" aria-label="Imagem anterior">&#10094;</button>
+
+    <img id="lightbox-imagem" src="" alt="Imagem ampliada">
+  
+    <button id="lightbox-seguinte" class="lightbox-seta seta-direita" aria-label="Próxima imagem">&#10095;</button>
+   </div>
+  
 </div>
 
   <!-- INÍCIO: PAINEL DE FIM DE JOGO -->

@@ -1,4 +1,5 @@
 import { map_distrito_concelhos } from './concelhos_map.js';
+import { dadosConcelhos } from './info_concelhos.js';
 
 // Lista completa dos 308 concelhos
 const listaConcelhos = Array.from(map_distrito_concelhos.values()).flatMap(lista => lista);
@@ -80,6 +81,13 @@ const modalZoom = document.getElementById("modal-zoom-heraldica");
 const fecharZoom = document.getElementById("fechar-zoom-heraldica");
 const imagemZoom = document.getElementById("imagem-zoom-heraldica");
 
+// Elementos da Lightbox
+const lightboxModal = document.getElementById("lightbox-modal");
+const lightboxImagem = document.getElementById("lightbox-imagem");
+const btnFecharLightbox = document.getElementById("lightbox-fechar");
+const btnAnteriorLightbox = document.getElementById("lightbox-anterior");
+const btnSeguinteLightbox = document.getElementById("lightbox-seguinte");
+
 // Objeto para registar os acertos sem erros por distrito
 let acertosPorDistrito = {};
 // FIM: DECLARAÇÃO DE ELEMENTOS
@@ -117,11 +125,6 @@ function iniciarJogoDirecto() {
   proximoConcelho();
 }
 
-function limparMapa() {
-  document.querySelectorAll("svg path[data-concelho]").forEach(el => {
-    el.classList.remove("correto", "com-erros", "pular");
-  });
-}
 // FIM: LÓGICA DE INÍCIO E REINÍCIO
 
 function proximoConcelho() {
@@ -133,7 +136,7 @@ function proximoConcelho() {
   errosNoConcelhoAtual = 0;
   
   const indiceAleatorio = Math.floor(Math.random() * concelhosRestantes.length);
-  concelhoAtual = concelhosRestantes.splice(indiceAleatorio, 1)[0];
+  concelhoAtual = 'Sintra';//concelhosRestantes.splice(indiceAleatorio, 1)[0];
   
   elNomeConcelho.textContent = concelhoAtual;
   elPontuacao.textContent = `${pontuacao}/308`;
@@ -327,7 +330,35 @@ btnAjuda.addEventListener("click", async () => {
     modalImagem.classList.remove("escondido");
   }
 
-  modalDescricao.textContent = `Informações e pistas sobre o concelho de ${concelhoAtual}.`;
+  const dados = dadosConcelhos[concelhoAtual];
+
+  if (dados) {
+    let htmlGaleria = "";
+
+    if (dados.imagens && dados.imagens.length > 0) {
+      htmlGaleria = `<div class="galeria-concelho">`;
+      dados.imagens.forEach((imgUrl, idx) => {
+        htmlGaleria += `<img src="${imgUrl}" class="galeria-miniatura" data-index="${idx}" alt="Fotografia de ${concelhoAtual}">`;
+      });
+      htmlGaleria += `</div>`;
+    }
+
+    // A GALERIA FICA EM CIMA DA DESCRIÇÃO/PISTAS
+    modalDescricao.innerHTML = htmlGaleria + dados.pistas;
+
+    // Regista o clique nas miniaturas recém-criadas
+    if (dados.imagens && dados.imagens.length > 0) {
+      const miniaturas = modalDescricao.querySelectorAll(".galeria-miniatura");
+      miniaturas.forEach(miniatura => {
+        miniatura.addEventListener("click", (e) => {
+          const index = parseInt(e.target.getAttribute("data-index"), 10);
+          abrirLightbox(dados.imagens, index);
+        });
+      });
+    }
+  } else {
+    modalDescricao.innerHTML = `<p>Informações e pistas sobre o concelho de <strong>${concelhoAtual}</strong> estarão disponíveis brevemente.</p>`;
+  }
 
   modalInfo.classList.remove("escondido");
   if (painelTopRight) {
@@ -477,14 +508,17 @@ function configurarZoomEPan() {
     aplicarViewBox();
   });
 
-  // Arrasto permitido APENAS se houver zoom ativo (zoom > 1)
+  // Arrasto permitido APENAS com o botão direito do rato (e.button === 2)
   wrapper.addEventListener("mousedown", (e) => {
-    if (e.button === 2) {
+    if (e.button === 2) { // 2 = Botão Direito do Rato
       isDragging = true;
       dragStartClientX = e.clientX;
       dragStartClientY = e.clientY;
       dragStartVx = vx;
       dragStartVy = vy;
+      
+      // Adiciona a classe visual para o cursor "grabbing"
+      wrapper.classList.add("a-arrastar");
     }
   });
 
@@ -504,6 +538,9 @@ function configurarZoomEPan() {
   window.addEventListener("mouseup", (e) => {
     if (e.button === 2) {
       isDragging = false;
+      
+      // Remove a classe do cursor ao soltar o botão direito
+      wrapper.classList.remove("a-arrastar");
     }
   });
 
@@ -637,3 +674,65 @@ function configurarZoomEPan() {
 
   aplicarViewBox();
 }
+
+// Lightbox (Imagens dos concelhos no painel de ajuda)
+
+// VARIÁVEIS DE CONTROLO DA LIGHTBOX
+let imagensLightboxAtuais = [];
+let indiceImagemAtual = 0;
+
+// Abrir Lightbox num determinado índice
+function abrirLightbox(listaImagens, indiceInicial) {
+  imagensLightboxAtuais = listaImagens;
+  indiceImagemAtual = indiceInicial;
+  
+  atualizarImagemLightbox();
+  lightboxModal.classList.remove("escondido");
+}
+
+// Atualizar imagem visível
+function atualizarImagemLightbox() {
+  lightboxImagem.src = imagensLightboxAtuais[indiceImagemAtual];
+}
+
+// Navegação entre imagens
+function imagemAnterior() {
+  indiceImagemAtual = (indiceImagemAtual - 1 + imagensLightboxAtuais.length) % imagensLightboxAtuais.length;
+  atualizarImagemLightbox();
+}
+
+function imagemSeguinte() {
+  indiceImagemAtual = (indiceImagemAtual + 1) % imagensLightboxAtuais.length;
+  atualizarImagemLightbox();
+}
+
+// Eventos de clique nas setas e fechar
+btnAnteriorLightbox.addEventListener("click", (e) => {
+  e.stopPropagation();
+  imagemAnterior();
+});
+
+btnSeguinteLightbox.addEventListener("click", (e) => {
+  e.stopPropagation();
+  imagemSeguinte();
+});
+
+btnFecharLightbox.addEventListener("click", () => {
+  lightboxModal.classList.add("escondido");
+});
+
+// Fechar ao clicar fora da imagem e das setas
+lightboxModal.addEventListener("click", (e) => {
+  if (e.target === lightboxModal || e.target.classList.contains("lightbox-conteudo")) {
+    lightboxModal.classList.add("escondido");
+  }
+});
+
+// Atalhos de teclado (Setas e Escape)
+document.addEventListener("keydown", (e) => {
+  if (lightboxModal.classList.contains("escondido")) return;
+  
+  if (e.key === "Escape") lightboxModal.classList.add("escondido");
+  if (e.key === "ArrowLeft") imagemAnterior();
+  if (e.key === "ArrowRight") imagemSeguinte();
+});
