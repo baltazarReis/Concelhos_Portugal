@@ -1,6 +1,6 @@
 export const dadosConcelhos = {
 
-// Distrito de Lisboa
+// Início Lisboa
 
   "Sintra": {
     imagens: [
@@ -30,7 +30,7 @@ export const dadosConcelhos = {
       <li><strong>Localização e Geografia:</strong> Localizada na margem norte do estuário do Tejo, é a capital de Portugal, o principal centro político, económico e cultural do país e a cidade mais populosa.</li>
       <li><strong>Reconquista Cristã:</strong> Foi conquistada aos Mouros em 1147 por D. Afonso Henriques com o auxílio dos cruzados, destacando-se o célebre episódio de Martim Moniz, que sacrificou a vida ao entalar o próprio corpo nas portas do castelo para impedir que estas se fechassem e permitir a entrada das tropas.</li>
       <li><strong>História e Património:</strong> Serviu como um importante centro de partida e chegada das armadas durante a Época dos Descobrimentos, estando fortemente associada às viagens portuguesas para o Oriente, incluindo a expedição de Vasco da Gama à Índia. Exibe monumentos emblemáticos dessa época, como a Torre de Belém e o Mosteiro dos Jerónimos, que integram conjuntamente um bem classificado como Património Mundial da UNESCO desde 1983, além do Castelo de São Jorge e da Baixa Pombalina, reconstruída após o terramoto de 1755.</li>
-      <li><strong>Gastronomia:</strong> Destaca-se pela pastelaria de referência mundial com os Pastéis de Belém, pratos tradicionais de peixe e marisco, e petiscos icónicos como os peixinhos da horta e o bacalhau à brás.</li>
+      <li><strong>Gastronomia:</strong> Destaca-se pela pastelaria de referência mundial com os pastéis de nata, pratos tradicionais de peixe e marisco, e petiscos icónicos como os peixinhos da horta e o bacalhau à brás.</li>
     </ul>
   `
   },
@@ -288,9 +288,296 @@ export const dadosConcelhos = {
 },
 
 
-// Fim do Distrito de Lisboa
+// Fim Lisboa
 
-// Distrito de Setúbal
+// Início Setúbal
 
-  
+"Almada": {
+    imagens: [
+    "./images/Concelhos/Almada1.png",
+    "./images/Concelhos/Almada2.png",
+    "./images/Concelhos/Almada3.png",
+    "./images/Concelhos/Almada4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, situado na margem sul do rio Tejo e com uma extensa frente atlântica. O território inclui zonas urbanas junto ao Tejo, a Costa da Caparica e áreas de pinhal e arriba ao longo do litoral.</li>
+
+      <li><strong>Cristo Rei:</strong> O Santuário do Cristo Rei foi inaugurado em 1959. O monumento, com 110 metros de altura incluindo o pedestal, encontra-se no Pragal e foi construído segundo o projecto do arquitecto António Lino, com escultura de Francisco Franco.</li>
+
+      <li><strong>Cacilhas e o Tejo:</strong> Cacilhas desenvolveu-se historicamente em torno das actividades portuárias, da pesca e das ligações fluviais com Lisboa. A zona conserva elementos relacionados com essa actividade, incluindo o antigo estaleiro naval do Ginjal, o Chafariz de Cacilhas e vestígios de salgas romanas.</li>
+
+      <li><strong>Costa da Caparica:</strong> A costa atlântica do concelho inclui a Costa da Caparica e várias praias até à Fonte da Telha. A actividade piscatória e as tradicionais embarcações de meia-lua estiveram historicamente ligadas à comunidade piscatória da Costa.</li>
+
+      <li><strong>Património da Caparica:</strong> No alto da arriba encontra-se o Convento dos Capuchos, fundado no século XVI para frades franciscanos. A sua localização proporciona uma vista sobre a Costa da Caparica e o Atlântico.</li>
+
+      <li><strong>Alfeite e actividade naval:</strong> A zona do Alfeite está ligada à actividade naval e militar portuguesa, incluindo a Base Naval de Lisboa e o Arsenal do Alfeite. O Palácio do Alfeite, construído no século XVII e posteriormente ampliado, encontra-se integrado neste complexo.</li>
+    </ul>
+  `
+},
+
+"Seixal": {
+    imagens: [
+    "./images/Concelhos/Seixal1.png",
+    "./images/Concelhos/Seixal2.png",
+    "./images/Concelhos/Seixal3.png",
+    "./images/Concelhos/Seixal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, integrado na Área Metropolitana de Lisboa, situado na margem sul do estuário do Tejo. A Baía do Seixal, formada por uma reentrância do estuário, é um dos principais elementos geográficos do território.</li>
+
+      <li><strong>História e Rio:</strong> O desenvolvimento do concelho esteve durante séculos ligado ao Tejo. A pesca, a construção naval, o transporte fluvial e o comércio de produtos agrícolas contribuíram para o crescimento das povoações junto à baía.</li>
+
+      <li><strong>Moinhos de Maré:</strong> O aproveitamento da energia das marés teve grande importância no território. O Moinho de Maré de Corroios foi construído em 1403 por iniciativa de Nuno Álvares Pereira e utilizava a variação das marés para moer cereais. Existem ainda vestígios de vários outros moinhos de maré nas margens da baía.</li>
+
+      <li><strong>Olaria Romana:</strong> Na Quinta do Rouxinol, em Corroios, foi identificada uma olaria romana utilizada para produzir cerâmica, incluindo ânforas destinadas ao transporte de produtos. O sítio arqueológico está classificado como Monumento Nacional.</li>
+
+      <li><strong>Património Naval:</strong> A construção e reparação de embarcações fizeram parte da actividade económica tradicional do concelho. Em Arrentela encontra-se o Núcleo Naval do Museu Municipal, dedicado à construção naval tradicional e às embarcações utilizadas no estuário do Tejo.</li>
+    </ul>
+  `
+},
+
+"Barreiro": {
+    imagens: [
+    "./images/Concelhos/Barreiro1.png",
+    "./images/Concelhos/Barreiro2.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, integrado na Área Metropolitana de Lisboa, situado na margem sul do estuário do Tejo. O território é marcado pelos esteiros do Tejo e do Coina e por uma extensa frente ribeirinha.</li>
+
+      <li><strong>História:</strong> A antiga povoação do Barreiro desenvolveu-se junto ao Tejo, com actividades ligadas à pesca, à agricultura, à extracção de sal e à moagem. Foi elevada a vila em 1521 e a cidade em 1984.</li>
+
+      <li><strong>Caminho-de-Ferro:</strong> O Barreiro tornou-se um importante ponto ferroviário a partir de 1861, com a abertura do primeiro troço do Caminho de Ferro do Sul entre Barreiro e Vendas Novas. A ligação ferroviária ao Sul do país contribuiu para a transformação económica e urbana da vila.</li>
+
+      <li><strong>CUF e Industrialização:</strong> A Companhia União Fabril instalou o seu grande complexo industrial no Barreiro a partir de 1907. A expansão das fábricas de produtos químicos e de outras indústrias transformou o concelho num dos principais centros industriais portugueses durante o século XX.</li>
+
+      <li><strong>Bairros Operários:</strong> O crescimento industrial levou à construção de bairros destinados aos trabalhadores das fábricas e dos caminhos-de-ferro. O Bairro Operário da CUF começou a ser construído em 1908 e foi sendo ampliado nas décadas seguintes.</li>
+    </ul>
+  `
+},
+
+"Moita": {
+    imagens: [
+    "./images/Concelhos/Moita1.png",
+    "./images/Concelhos/Moita2.png",
+    "./images/Concelhos/Moita3.png",
+    "./images/Concelhos/Moita4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, integrado na Área Metropolitana de Lisboa, situado junto ao estuário do Tejo e aos esteiros da Moita e do Montijo. O território é marcado pela extensa frente ribeirinha e pelas zonas húmidas associadas ao estuário.</li>
+
+      <li><strong>Actividade Fluvial:</strong> A proximidade do Tejo condicionou durante séculos a economia local. Moita esteve ligada à pesca, ao transporte fluvial e à cabotagem, com embarcações que asseguravam a circulação de pessoas e mercadorias entre as margens do Tejo e Lisboa.</li>
+
+      <li><strong>Moinhos de Maré:</strong> A utilização da força das marés para a moagem de cereais esteve presente em vários pontos do concelho. Destaca-se o Moinho de Maré de Alhos Vedros, situado junto ao esteiro, que faz parte do património ligado às antigas actividades económicas da região.</li>
+
+      <li><strong>Tauromaquia e Festas:</strong>Moita possui uma longa tradição tauromáquica. As Festas em Honra de Nossa Senhora da Boa Viagem estão associadas a largadas de touros, corridas e outras manifestações relacionadas com a tauromaquia.</li>
+    </ul>
+  `
+},
+
+"Alcochete": {
+    imagens: [
+    "./images/Concelhos/Alcochete1.png",
+    "./images/Concelhos/Alcochete2.png",
+    "./images/Concelhos/Alcochete3.png",
+    "./images/Concelhos/Alcochete4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, integrado na Área Metropolitana de Lisboa, situado na margem sul do estuário do Tejo. O território inclui extensas zonas de sapal e salinas, sobretudo junto ao estuário.</li>
+
+      <li><strong>Salinas:</strong> A extracção de sal foi durante séculos uma das principais actividades económicas de Alcochete. No século XX existiam cerca de 90 salinas no concelho. Actualmente, a Marinha do Canto, integrada no complexo de salinas do Samouco, é a única salina ainda produtora de sal no estuário do Tejo.</li>
+
+      <li><strong>Tauromaquia:</strong> A tauromaquia tem uma presença documentada no concelho desde o século XV. As Festas do Barrete Verde e das Salinas, realizadas anualmente em Agosto, incluem largadas de toiros, corridas e outras manifestações associadas aos campinos e à criação de gado bravo. A tauromaquia está reconhecida como Património Cultural Imaterial de Interesse Municipal.</li>
+
+      <li><strong>Estuário do Tejo:</strong> As zonas húmidas e salinas do concelho fazem parte do sistema natural do Estuário do Tejo e são utilizadas por numerosas espécies de aves aquáticas, incluindo espécies migratórias.</li>
+    </ul>
+  `
+},
+
+"Montijo": {
+    imagens: [
+    "./images/Concelhos/Montijo1.png",
+    "./images/Concelhos/Montijo2.png",
+    "./images/Concelhos/Montijo3.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, integrado na Área Metropolitana de Lisboa, situado na margem sul do estuário do Tejo. O território é geograficamente descontínuo, com uma parte junto ao Tejo e outra mais interior, na zona de Pegões e Canha.</li>
+
+      <li><strong>História:</strong> A actual cidade do Montijo chamou-se Aldeia Galega do Ribatejo até 1930. A povoação desenvolveu-se ligada ao Tejo, à pesca, às salinas, à agricultura e ao transporte fluvial. Recebeu foral de D. Manuel I em 1515 e foi elevada a cidade em 1985.</li>
+
+      <li><strong>Tejo e Actividades Ribeirinhas:</strong> Durante séculos, o Montijo funcionou como ponto de ligação entre a margem sul e Lisboa. A pesca, o transporte fluvial, o comércio de produtos agrícolas e a exploração de salinas tiveram importância na economia local. O Museu do Pescador conserva objectos e memórias relacionadas com estas actividades.</li>
+
+      <li><strong>Moinhos de Maré:</strong> A utilização das marés para a moagem de cereais deixou vários vestígios no concelho. O Moinho de Maré da Lançada, junto ao estuário do Tejo, tem registos documentais desde 1386 e continuou a funcionar até à segunda metade do século XX.</li>
+    </ul>
+  `
+},
+
+"Palmela": {
+    imagens: [
+    "./images/Concelhos/Palmela1.png",
+    "./images/Concelhos/Palmela2.png",
+    "./images/Concelhos/Palmela3.png",
+    "./images/Concelhos/Palmela4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, situado entre o Parque Natural da Arrábida e os estuários do Tejo e do Sado. O território inclui áreas de serra, zonas agrícolas e extensas áreas de vinha.</li>
+
+      <li><strong>Castelo e Ordem de Santiago:</strong> O Castelo de Palmela ocupa uma posição elevada sobre a península de Setúbal. Em 1185, D. Afonso Henriques concedeu foral à povoação e entregou o castelo à Ordem de Santiago. A partir do século XV, Palmela tornou-se sede da Ordem Militar de Santiago em Portugal, que permaneceu no castelo até à extinção das ordens religiosas e militares em 1834.</li>
+
+      <li><strong>Vinho e Moscatel:</strong> A viticultura é uma das actividades agrícolas mais importantes do concelho. Palmela está integrada na região vitivinícola da Península de Setúbal e é particularmente conhecida pela produção de Moscatel de Setúbal e pelos vinhos da região. A Festa das Vindimas realiza-se anualmente desde 1963.</li>
+
+      <li><strong>Serra do Louro e Moinhos:</strong> A Serra do Louro, junto à vila de Palmela, conserva uma paisagem marcada por afloramentos rochosos, vinhas e antigos moinhos de vento. A serra possui também importantes vestígios arqueológicos, incluindo o Castro de Chibanes e outros sítios associados à ocupação pré-histórica.</li>
+    </ul>
+  `
+},
+
+"Setúbal": {
+    imagens: [
+    "./images/Concelhos/Setúbal1.png",
+    "./images/Concelhos/Setúbal2.png",
+    "./images/Concelhos/Setúbal3.png",
+    "./images/Concelhos/Setúbal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, integrado na Área Metropolitana de Lisboa, entre o estuário do Sado e a Serra da Arrábida. O território inclui a cidade de Setúbal, a zona rural de Azeitão e áreas naturais junto ao estuário e ao litoral.</li>
+
+      <li><strong>Convento de Jesus:</strong> O Convento de Jesus foi fundado no final do século XV e está associado à arquitectura manuelina. A Igreja de Jesus possui um importante conjunto de azulejos e a chamada brecha da Arrábida, uma pedra ornamental característica da região.</li>
+
+      <li><strong>Arrábida:</strong> Parte significativa do concelho integra o Parque Natural da Arrábida, com áreas de serra, falésias e praias como o Portinho da Arrábida. A serra possui também vários sítios arqueológicos e vestígios de antigas actividades humanas.</li>
+
+      <li><strong>Estuário do Sado e Golfinhos:</strong> O estuário do Sado constitui uma importante zona húmida e área protegida. As águas do estuário são habitat de uma população residente de roazes-corvineiros, sendo também observadas numerosas espécies de aves.</li>
+
+      <li><strong>Azeitão:</strong> A freguesia de Azeitão ocupa a zona norte da Arrábida e conserva património rural e aristocrático, incluindo a Quinta da Bacalhôa e o Palácio dos Duques de Aveiro. A região está também associada à produção de vinho, Moscatel de Setúbal e Queijo de Azeitão.</li>
+
+      <li><strong>Pesca e Gastronomia:</strong> A actividade piscatória e a transformação de pescado tiveram grande importância na história económica de Setúbal. O choco frito tornou-se um dos pratos mais associados à gastronomia local, juntamente com sardinha, peixe fresco e outros produtos do estuário e da costa.</li>
+    </ul>
+  `
+},
+
+"Sesimbra": {
+    imagens: [
+    "./images/Concelhos/Sesimbra1.png",
+    "./images/Concelhos/Sesimbra2.png",
+    "./images/Concelhos/Sesimbra3.png",
+    "./images/Concelhos/Sesimbra4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal, integrado na Área Metropolitana de Lisboa, entre o oceano Atlântico, o estuário do Sado e a Serra da Arrábida. O território inclui a vila de Sesimbra, o Cabo Espichel, áreas da Arrábida e a freguesia da Quinta do Conde.</li>
+
+      <li><strong>Castelo e História Medieval:</strong> O Castelo de Sesimbra tem origem no período da ocupação islâmica e foi integrado no domínio cristão no século XII. Depois de uma primeira conquista por D. Afonso Henriques em 1165 e de nova perda do território, a integração definitiva ocorreu no reinado de D. Sancho I, que concedeu foral a Sesimbra em 1201.</li>
+
+      <li><strong>Pesca:</strong> A relação com o mar é uma das características históricas de Sesimbra. A pesca está documentada desde a Pré-História e desenvolveu-se particularmente durante os períodos romano e medieval. A vila cresceu progressivamente do interior do castelo para a frente marítima, onde se tornou um importante porto de pesca.</li>
+
+      <li><strong>Fortaleza de Santiago:</strong> A Fortaleza de Santiago foi construída entre 1640 e 1648, no contexto da Restauração da Independência, para reforçar a defesa do porto e da costa. Faz parte de um conjunto de fortificações que protegiam o litoral entre Sesimbra e o Cabo Espichel.</li>
+
+      <li><strong>Cabo Espichel:</strong> O Cabo Espichel é uma das zonas mais características do concelho. No local encontra-se o Santuário de Nossa Senhora do Cabo Espichel, construído entre os séculos XVII e XVIII, bem como importantes jazidas de pegadas de dinossauros, incluindo a Pedra da Mua e a Pedreira do Avelino.</li>
+
+      <li><strong>Arrábida e Litoral:</strong> Uma parte significativa do território está integrada no Parque Natural da Arrábida. O concelho possui uma costa diversificada, com praias como Sesimbra, Meco, Bicas e Rio da Prata, além de zonas de arriba e áreas de vegetação mediterrânica.</li>
+
+      <li><strong>Arqueologia:</strong> O território possui vestígios de ocupação humana desde o Paleolítico. Na zona do Cabo Espichel encontram-se icnofósseis de dinossauros, enquanto junto à vila foram identificados vestígios de uma unidade romana de produção e conservação de preparados de peixe.</li>
+    </ul>
+  `
+},
+
+"Alcácer do Sal": {
+    imagens: [
+    "./images/Concelhos/Alcácer do Sal1.png",
+    "./images/Concelhos/Alcácer do Sal2.png",
+    "./images/Concelhos/Alcácer do Sal3.png",
+    "./images/Concelhos/Alcácer do Sal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral, atravessado pelo rio Sado e com um território que se estende desde a cidade de Alcácer até à Comporta e ao Torrão. É um dos maiores concelhos portugueses em área e inclui seis freguesias.</li>
+
+      <li><strong>História:</strong> A ocupação humana do território remonta à Pré-História. Na Antiguidade, Alcácer foi um importante centro portuário romano, conhecido como Salacia. Passou por períodos de ocupação islâmica, tendo sido integrada definitivamente no domínio português em 1217 e entregue à Ordem de Santiago.</li>
+
+      <li><strong>Castelo de Alcácer do Sal:</strong> O castelo ocupa a colina sobre a cidade e conserva extensas muralhas construídas em taipa. No interior encontram-se a Igreja de Santa Maria do Castelo, a Cripta Arqueológica e vestígios de diferentes períodos de ocupação, desde a Pré-História até à época medieval.</li>
+
+      <li><strong>Salacia e os Romanos:</strong> Durante o período romano, Salacia destacou-se como cidade portuária ligada ao comércio marítimo e à exploração dos recursos do Sado. A produção e conservação de preparados de peixe e a exploração do sal tiveram grande importância económica na região.</li>
+
+      <li><strong>Rio Sado e Navegação:</strong> O Sado foi durante séculos uma importante via de transporte entre o litoral e o interior alentejano. Embarcações como os galeões do sal, os laitéus e as canoas eram utilizadas para transportar sal, arroz, cereais e outros produtos ao longo do rio.</li>
+
+      <li><strong>Arroz:</strong> Os arrozais ocupam extensas áreas das zonas baixas do concelho, sobretudo nas freguesias da Comporta, Santa Maria do Castelo e São Martinho. A cultura do arroz está ligada aos canais de rega e às zonas húmidas do vale do Sado e continua a ter importância na agricultura local.</li>
+    </ul>
+  `
+},
+
+"Grândola": {
+    imagens: [
+    "./images/Concelhos/Grândola1.png",
+    "./images/Concelhos/Grândola2.png",
+    "./images/Concelhos/Grândola3.png",
+    "./images/Concelhos/Grândola4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral, entre a Serra de Grândola e o oceano Atlântico. O território inclui áreas de serra, planícies agrícolas, arrozais, zonas de pinhal e uma extensa faixa litoral, abrangendo freguesias como Melides, Carvalhal e Azinheira dos Barros.</li>
+
+      <li><strong>Minas do Lousal:</strong> O Lousal foi um importante centro de exploração mineira, sobretudo de pirite, entre 1900 e 1988. A actividade mineira originou uma povoação operária que chegou a ter cerca de 2000 habitantes.</li>
+
+      <li><strong>Carvalhal e Litoral:</strong> A freguesia do Carvalhal inclui uma extensa faixa costeira com praias como o Carvalhal, Pego e Comporta, além de zonas de dunas e pinhal. A paisagem litoral é marcada pela transição entre o oceano, o sistema dunar e as áreas agrícolas interiores.</li>
+
+      <li><strong>Património Arqueológico:</strong> O concelho possui monumentos megalíticos e necrópoles pré-históricas, incluindo o Monumento Megalítico da Pedra Branca, o Monumento Megalítico da Pata do Cavalo e a Necrópole de Cistas das Casas Velhas, em Melides.</li>
+    </ul>
+  `
+},
+
+"Santiago do Cacém": {
+    imagens: [
+    "./images/Concelhos/Santiago Do Cacém1.png",
+    "./images/Concelhos/Santiago Do Cacém2.png",
+    "./images/Concelhos/Santiago Do Cacém3.png",
+    "./images/Concelhos/Santiago Do Cacém4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral, entre a Serra de Grândola e o litoral atlântico, com um território que se estende desde o vale do Sado até às lagoas e praias da costa. É um dos maiores concelhos portugueses em área e inclui nove freguesias.</li>
+
+      <li><strong>Castelo e Ordem de Santiago:</strong> O Castelo de Santiago do Cacém ocupa uma elevação sobre a cidade e tem origem na ocupação islâmica. O território foi reconquistado pelos cristãos em 1217 e ficou ligado à Ordem de Santiago, que teve um papel importante na organização medieval da vila.</li>
+
+      <li><strong>Heráldica:</strong> O brasão de Santiago do Cacém representa Santiago a cavalo, armado com espada e segurando um escudo com a cruz da Ordem de Santiago. A representação foi inspirada num relevo do século XIV existente na Igreja Matriz e está relacionada com a ligação histórica da vila à Ordem de Santiago.</li>
+
+      <li><strong>Miróbriga:</strong> Junto à cidade encontram-se as ruínas de Miróbriga, um importante povoado pré-romano que foi romanizado e desenvolvido entre a Idade do Ferro e o século IV d.C. O complexo conserva um fórum, templos, termas e um hipódromo, considerado o único conhecido em Portugal.</li>
+    </ul>
+  `
+},
+
+"Sines": {
+    imagens: [
+    "./images/Concelhos/Sines1.png",
+    "./images/Concelhos/Sines2.png",
+    "./images/Concelhos/Sines3.png",
+    "./images/Concelhos/Sines4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral, situado junto ao oceano Atlântico, entre Santiago do Cacém e Odemira. O território inclui a cidade de Sines, a freguesia de Porto Covo e a Ilha do Pessegueiro, combinando falésias, praias, zonas de pinhal e áreas portuárias e industriais.</li>
+
+      <li><strong>História e Reconquista:</strong> A ocupação humana do território remonta à Pré-História e existem vestígios de presença romana e visigótica. Na sequência da Reconquista cristã, Sines foi integrada entre o final do século XII e o início do século XIII e ficou ligada à Ordem de Santiago.</li>
+
+      <li><strong>Vasco da Gama:</strong> Vasco da Gama nasceu em Sines por volta de 1469, filho de Estêvão da Gama, alcaide-mor da vila. A sua ligação à cidade é visível no Castelo, na Igreja Matriz e na Ermida de Nossa Senhora das Salas, cuja reconstrução esteve ligada ao navegador.</li>
+
+      <li><strong>Castelo de Sines:</strong> O Castelo de Sines foi construído para reforçar a defesa da vila e da costa, tendo a sua construção sido concluída no final do século XV. A Torre de Menagem está associada à memória de Vasco da Gama e alberga actualmente um núcleo dedicado ao navegador.</li>
+      
+      <li><strong>Litoral e Áreas Naturais:</strong> O concelho possui uma costa diversificada, com praias como São Torpes, Vieirinha, Praia Grande de Porto Covo e Ilha do Pessegueiro. A Lagoa da Sancha integra, juntamente com a Lagoa de Santo André, uma reserva natural com importantes habitats costeiros e zonas húmidas.</li>
+
+      <li><strong>Porto e Industrialização:</strong> A partir da década de 1970, Sines foi profundamente transformada pela construção de uma grande plataforma portuária e industrial. O porto passou a receber navios de grande dimensão e o concelho tornou-se um dos principais centros portuários e industriais de Portugal.</li>
+    </ul>
+  `
+},
+
+// Fim Setúbal
+
+// Início Beja
+
+
 };
