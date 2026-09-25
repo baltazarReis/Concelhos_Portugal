@@ -533,10 +533,10 @@ export const dadosConcelhos = {
 
 "Santiago do Cacém": {
     imagens: [
-    "./images/Concelhos/Santiago Do Cacém1.png",
-    "./images/Concelhos/Santiago Do Cacém2.png",
-    "./images/Concelhos/Santiago Do Cacém3.png",
-    "./images/Concelhos/Santiago Do Cacém4.png",
+    "./images/Concelhos/Santiago do Cacém1.png",
+    "./images/Concelhos/Santiago do Cacém2.png",
+    "./images/Concelhos/Santiago do Cacém3.png",
+    "./images/Concelhos/Santiago do Cacém4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
