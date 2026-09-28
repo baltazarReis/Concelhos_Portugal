@@ -32,7 +32,7 @@ export const dadosConcelhos = {
     pistas:`
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Localizada na margem norte do estuário do Tejo, é a capital de Portugal e capital distrital, o principal centro político, económico e cultural do país e a cidade mais populosa.</li>
-      <li><strong>Reconquista Cristã:</strong> Foi conquistada aos Mouros em 1147 por D. Afonso Henriques com o auxílio dos cruzados, destacando-se o célebre episódio de Martim Moniz, que sacrificou a vida ao entalar o próprio corpo nas portas do castelo para impedir que estas se fechassem e permitir a entrada das tropas.</li>
+      <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos Mouros em 1147 por D. Afonso Henriques com o auxílio dos cruzados, destacando-se o célebre episódio de Martim Moniz, que sacrificou a vida ao entalar o próprio corpo nas portas do castelo para impedir que estas se fechassem e permitir a entrada das tropas.</li>
       <li><strong>História e Património:</strong> Serviu como um importante centro de partida e chegada das armadas durante a Época dos Descobrimentos, estando fortemente associada às viagens portuguesas para o Oriente, incluindo a expedição de Vasco da Gama à Índia. Exibe monumentos emblemáticos dessa época, como a Torre de Belém e o Mosteiro dos Jerónimos, que integram conjuntamente um bem classificado como Património Mundial da UNESCO desde 1983, além do Castelo de São Jorge e da Baixa Pombalina, reconstruída após o terramoto de 1755.</li>
       <li><strong>Gastronomia:</strong> Destaca-se pela pastelaria de referência mundial com os pastéis de nata, pratos tradicionais de peixe e marisco, e petiscos icónicos como os peixinhos da horta e o bacalhau à brás.</li>
     </ul>
@@ -48,7 +48,7 @@ export const dadosConcelhos = {
     pistas:`
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Situado na costa atlântica e pertencente ao distrito de Lisboa, na extremidade oeste da Área Metropolitana de Lisboa, marca a transição entre o estuário do Tejo e a costa aberta a ocidente, abrigando marcos naturais emblemáticos como a Boca do Inferno e o Cabo Raso.</li>
-      <li><strong>Reconquista Cristã:</strong> Na sequência da conquista cristã de Lisboa e Sintra em 1147, o território de Cascais passou para o domínio cristão e ficou integrado no termo de Sintra. O crescimento da povoação, favorecido pela sua importância como porto de pesca e de apoio ao comércio, levou à sua elevação a vila por D. Pedro I em 1364, separando-a administrativamente de Sintra. Em 1514, D. Manuel I concedeu-lhe o primeiro foral próprio.</li>
+      <li><strong>Reconquista Cristã:</strong> Na sequência da reconquista cristã de Lisboa e Sintra em 1147, o território de Cascais passou para o domínio cristão e ficou integrado no termo de Sintra. O crescimento da povoação, favorecido pela sua importância como porto de pesca e de apoio ao comércio, levou à sua elevação a vila por D. Pedro I em 1364, separando-a administrativamente de Sintra. Em 1514, D. Manuel I concedeu-lhe o primeiro foral próprio.</li>
       <li><strong>História e Património:</strong> A partir da segunda metade do século XIX, Cascais afirmou-se como importante estância balnear e destino da Corte portuguesa, atraindo posteriormente a aristocracia e numerosas figuras da realeza e das elites europeias, sobretudo durante o século XX. Destacam-se a Cidadela de Cascais, o Farol da Guia e a importante herança arquitetónica de palacetes e vilas senhoriais.</li>
       <li><strong>Gastronomia:</strong> Mantém uma forte ligação às tradições do mar, destacando-se pratos de peixe fresco e marisco (como a caldeirada), além da doçaria tradicional com as célebres Areias de Cascais.</li>
     </ul>
@@ -486,7 +486,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da Península de Setúbal e pertencente ao distrito de Setúbal, integrado na Área Metropolitana de Lisboa, entre o oceano Atlântico, o estuário do Sado e a Serra da Arrábida. O território inclui a vila de Sesimbra, o Cabo Espichel, áreas da Arrábida e a freguesia da Quinta do Conde.</li>
 
-      <li><strong>Castelo e História Medieval:</strong> O Castelo de Sesimbra tem origem no período da ocupação islâmica e foi integrado no domínio cristão no século XII. Depois de uma primeira conquista por D. Afonso Henriques em 1165 e de nova perda do território, a integração definitiva ocorreu no reinado de D. Sancho I, que concedeu foral a Sesimbra em 1201.</li>
+      <li><strong>Castelo e História Medieval:</strong> O Castelo de Sesimbra tem origem no período da ocupação islâmica e foi reintegrado no domínio cristão no século XII. Depois de uma primeira conquista por D. Afonso Henriques em 1165 e de nova perda do território, a integração definitiva ocorreu no reinado de D. Sancho I, que concedeu foral a Sesimbra em 1201.</li>
 
       <li><strong>Pesca:</strong> A relação com o mar é uma das características históricas de Sesimbra. A pesca está documentada desde a Pré-História e desenvolveu-se particularmente durante os períodos romano e medieval. A vila cresceu progressivamente do interior do castelo para a frente marítima, onde se tornou um importante porto de pesca.</li>
 
@@ -895,6 +895,1708 @@ export const dadosConcelhos = {
 
 // Fim Beja
 
-// Início de Faro
+// Início Faro
+ 
+"Albufeira": {
+    imagens: [
+    "./images/Concelhos/Albufeira1.png",
+    "./images/Concelhos/Albufeira2.png",
+    "./images/Concelhos/Albufeira3.png",
+    "./images/Concelhos/Albufeira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho algarvio pertencente ao distrito de Faro, situado no litoral central da região, marcado por uma sucessão de praias de areia dourada, arribas recortadas e grutas marinhas.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1249, no reinado de D. Afonso III, na campanha final que integrou definitivamente todo o Algarve no Reino de Portugal.</li>
+ 
+      <li><strong>Origem do Nome:</strong> O topónimo Albufeira deriva do árabe "Al-Buhera", que significa "castelo do mar", recordando a antiga povoação fortificada muçulmana que existia no local.</li>
+ 
+      <li><strong>Turismo e Costa:</strong> De antiga vila piscatória, Albufeira transformou-se a partir da segunda metade do século XX no principal destino turístico do Algarve, mantendo junto ao centro histórico formações rochosas emblemáticas como os arcos da Praia de São Rafael.</li>
+ 
+      <li><strong>Gastronomia:</strong> Destaca-se pela cataplana de marisco, pelas amêijoas e por doces tradicionais à base de amêndoa e figo.</li>
+    </ul>
+  `
+}, //a
+ 
+"Alcoutim": {
+    imagens: [
+    "./images/Concelhos/Alcoutim1.png",
+    "./images/Concelhos/Alcoutim2.png",
+    "./images/Concelhos/Alcoutim3.png",
+    "./images/Concelhos/Alcoutim4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Faro, no extremo nordeste do Algarve, situado na margem esquerda do rio Guadiana, que aqui serve de fronteira natural com Espanha.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> O território foi incorporado no Reino de Portugal em meados do século XIII, na sequência da reconquista definitiva do Algarve aos mouros.</li>
+ 
+      <li><strong>Castelo e Tratado de Alcoutim:</strong> O castelo medieval, junto ao Guadiana, foi palco em 1371 do Tratado de Alcoutim, assinado entre D. Fernando I de Portugal e D. Henrique II de Castela.</li>
+ 
+      <li><strong>Travessia do Guadiana:</strong> Do outro lado do rio situa-se a vila espanhola de Sanlúcar de Guadiana, sendo tradicional a travessia de barco entre as duas margens, hoje também assinalada por festivais transfronteiriços.</li>
+ 
+      <li><strong>Produtos Tradicionais:</strong> A Serra do Caldeirão marca a paisagem interior do concelho, associada à produção de mel e de aguardente de medronho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Aljezur": {
+    imagens: [
+    "./images/Concelhos/Aljezur1.png",
+    "./images/Concelhos/Aljezur2.png",
+    "./images/Concelhos/Aljezur3.png",
+    "./images/Concelhos/Aljezur4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no extremo oeste do Algarve, na Costa Vicentina, integrado no Parque Natural do Sudoeste Alentejano e Costa Vicentina.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> O castelo mourisco de Aljezur foi conquistado em 1249 por D. Paio Peres Correia, mestre da Ordem de Santiago, na campanha que completou a reconquista cristã do Algarve.</li>
+ 
+      <li><strong>Praias da Costa Vicentina:</strong> O litoral do concelho inclui praias procuradas pelos surfistas, como a Arrifana, o Amado e Monte Clérigo, enquadradas por arribas e por uma paisagem natural preservada.</li>
+ 
+      <li><strong>Batata-doce de Aljezur:</strong> As várzeas junto às ribeiras do concelho são propícias ao cultivo da batata-doce de Aljezur, produto que serve de base para diversos pratos e doces tradicionais.</li>
+    </ul>
+  `
+}, //a
+ 
+"Castro Marim": {
+    imagens: [
+    "./images/Concelhos/Castro Marim1.png",
+    "./images/Concelhos/Castro Marim2.png",
+    "./images/Concelhos/Castro Marim3.png",
+    "./images/Concelhos/Castro Marim4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no extremo este do Algarve, junto à foz do rio Guadiana, que aqui marca a fronteira com Espanha.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> O território foi conquistado aos mouros em meados do século XIII, integrando-se então na linha defensiva fronteiriça do reino junto ao Guadiana.</li>
+ 
+      <li><strong>Castelo e Ordem de Cristo:</strong> Dominado pelo castelo medieval e pela Fortaleza de São Sebastião, Castro Marim foi a primeira sede da Ordem de Cristo, fundada em 1319 por D. Dinis, antes de esta se transferir para Tomar.</li>
+ 
+      <li><strong>Sapal e Salinas:</strong> A Reserva Natural do Sapal de Castro Marim e Vila Real de Santo António preserva antigas salinas ainda hoje em produção, das quais se destaca a flor de sal.</li>
+    </ul>
+  `
+}, //a
+ 
+"Faro": {
+    imagens: [
+    "./images/Concelhos/Faro1.png",
+    "./images/Concelhos/Faro2.png",
+    "./images/Concelhos/Faro3.png",
+    "./images/Concelhos/Faro4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Capital do distrito e da região do Algarve, situada no litoral sul de Portugal, junto ao extenso sistema lagunar da Ria Formosa.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi definitivamente reconquistada aos mouros em 1249 por D. Afonso III, completando a integração de todo o Algarve no Reino de Portugal.</li>
+ 
+      <li><strong>História e Património:</strong> De origem romana (Ossonoba), a cidade foi saqueada pelas tropas do Conde de Essex em 1596 e reconstruída após o terramoto de 1755, conservando ainda a Cidade Velha, com as suas muralhas e o Arco da Vila.</li>
+ 
+      <li><strong>Ria Formosa:</strong> O sistema de ilhas-barreira, sapais e canais da Ria Formosa, classificado como reserva natural, condiciona a paisagem e a economia piscatória do concelho.</li>
+ 
+      <li><strong>Tradições:</strong> Destacam-se festividades como a procissão do Enterro, na Sexta-Feira Santa, e a doçaria de amêndoa e figo típica da época da floração das amendoeiras.</li>
+    </ul>
+  `
+}, //a
+ 
+"Lagoa (Continente)": {
+    imagens: [
+    "./images/Concelhos/Lagoa1.png",
+    "./images/Concelhos/Lagoa2.png",
+    "./images/Concelhos/Lagoa3.png",
+    "./images/Concelhos/Lagoa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no litoral central do Algarve, entre Silves e Portimão, um dos mais pequenos da região em área.</li>
+ 
+      <li><strong>História:</strong> Foi separado do concelho de Silves e elevado a concelho autónomo em 1773, por decisão de D. José I.</li>
+ 
+      <li><strong>Vinho:</strong> A região é historicamente ligada à viticultura algarvia, com uma antiga adega cooperativa que ainda hoje produz vinhos da zona.</li>
+ 
+      <li><strong>Costa e Falésias:</strong> O litoral inclui a Praia da Marinha, frequentemente apontada entre as mais belas da Europa, e a Gruta de Benagil, com a sua característica abertura no tecto.</li>
+    </ul>
+  `
+}, //a
+ 
+"Lagos": {
+    imagens: [
+    "./images/Concelhos/Lagos1.png",
+    "./images/Concelhos/Lagos2.png",
+    "./images/Concelhos/Lagos3.png",
+    "./images/Concelhos/Lagos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado na costa ocidental do Algarve, na foz do rio Bensafrim, junto a uma linha de arribas e enseadas.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1249, integrando-se então definitivamente no território algarvio do Reino de Portugal.</li>
+ 
+      <li><strong>Descobrimentos:</strong> No século XV, Lagos serviu de base às navegações promovidas pelo Infante D. Henrique, sendo ponto de partida de diversas expedições ao longo da costa africana.</li>
+ 
+      <li><strong>Ponta da Piedade:</strong> O promontório da Ponta da Piedade, com as suas falésias douradas, arcos e grutas, é um dos ex-líbris naturais do concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Loulé": {
+    imagens: [
+    "./images/Concelhos/Loulé1.png",
+    "./images/Concelhos/Loulé2.png",
+    "./images/Concelhos/Loulé3.png",
+    "./images/Concelhos/Loulé4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro que se estende da serra algarvia até ao litoral, abrangendo freguesias costeiras como Quarteira e a marina de Vilamoura.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1249 por D. Paio Peres Correia, mestre da Ordem de Santiago, na campanha final de reconquista do Algarve.</li>
+ 
+      <li><strong>Carnaval:</strong> É palco de um dos carnavais mais antigos e concorridos de Portugal, com desfiles de carros alegóricos que atraem milhares de visitantes.</li>
+ 
+      <li><strong>Artesanato:</strong> Mantém tradições de olaria, trabalho do cobre e da palma, herdadas de uma longa história rural e comercial.</li>
+    </ul>
+  `
+}, //a
+ 
+"Monchique": {
+    imagens: [
+    "./images/Concelhos/Monchique1.png",
+    "./images/Concelhos/Monchique2.png",
+    "./images/Concelhos/Monchique3.png",
+    "./images/Concelhos/Monchique4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Faro, dominado pela Serra de Monchique, onde se situa a Fóia, o ponto mais alto do Algarve, com 902 metros de altitude.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Tal como o restante interior algarvio, foi integrado no Reino de Portugal em meados do século XIII, após a reconquista aos mouros.</li>
+ 
+      <li><strong>Termas:</strong> As Termas de Monchique, conhecidas desde a época romana pelas suas águas sulfurosas, continuam a ser procuradas por motivos terapêuticos.</li>
+ 
+      <li><strong>Produtos da Serra:</strong> A economia rural do concelho está ligada à castanha, ao mel e, sobretudo e à produção de aguardente de medronho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Olhão": {
+    imagens: [
+    "./images/Concelhos/Olhão1.png",
+    "./images/Concelhos/Olhão2.png",
+    "./images/Concelhos/Olhão3.png",
+    "./images/Concelhos/Olhão4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no litoral sul do Algarve, junto à Ria Formosa, defronte das ilhas-barreira da Culatra e da Armona.</li>
+ 
+      <li><strong>Arquitectura Cubista:</strong> O centro histórico é conhecido pela sua arquitectura em terraço, de influência norte-africana, que valeu à cidade a designação de "cidade cubista".</li>
+ 
+      <li><strong>História Liberal:</strong> Olhão notabilizou-se em 1808 ao ser uma das primeiras povoações a sublevar-se contra as tropas napoleónicas, tendo enviado uma embarcação ao Brasil para informar D. João VI da expulsão dos franceses.</li>
+ 
+      <li><strong>Pesca:</strong> A tradição piscatória mantém-se viva nos mercados junto à ria, onde se vende diariamente peixe e marisco fresco, incluindo polvo e atum.</li>
+    </ul>
+  `
+}, //a
+ 
+"Portimão": {
+    imagens: [
+    "./images/Concelhos/Portimão1.png",
+    "./images/Concelhos/Portimão2.png",
+    "./images/Concelhos/Portimão3.png",
+    "./images/Concelhos/Portimão4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado na foz do rio Arade, no litoral central do Algarve.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1249, no reinado de D. Afonso III, integrando-se então no território algarvio do Reino de Portugal.</li>
+ 
+      <li><strong>Indústria Conserveira:</strong> Desde o século XIX que Portimão está associada à indústria conserveira da sardinha, actividade que marcou profundamente a economia e a identidade da cidade.</li>
+ 
+      <li><strong>Praia da Rocha:</strong> A Praia da Rocha, com as suas falésias de arenito e formações rochosas isoladas, tornou-se desde o início do século XX um dos destinos balneares mais conhecidos do Algarve.</li>
+    </ul>
+  `
+}, //a
+ 
+"São Brás de Alportel": {
+    imagens: [
+    "./images/Concelhos/São Brás de Alportel1.png",
+    "./images/Concelhos/São Brás de Alportel2.png",
+    "./images/Concelhos/São Brás de Alportel3.png",
+    "./images/Concelhos/São Brás de Alportel4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Faro, na Serra do Caldeirão, situado a norte de Faro.</li>
+ 
+      <li><strong>História:</strong> Foi desanexado dos concelhos vizinhos e elevado a concelho autónomo em 1914.</li>
+ 
+      <li><strong>Indústria Corticeira:</strong> Tornou-se um dos mais importantes centros de transformação de cortiça do Algarve, com fábricas que abasteceram mercados internacionais ao longo do século XX.</li>
+ 
+      <li><strong>Tradições:</strong> Realiza anualmente a Feira do Enchido e do Presunto, celebrando os produtos tradicionais da matança do porco e da gastronomia serrana.</li>
+    </ul>
+  `
+}, //a
+ 
+"Silves": {
+    imagens: [
+    "./images/Concelhos/Silves1.png",
+    "./images/Concelhos/Silves2.png",
+    "./images/Concelhos/Silves3.png",
+    "./images/Concelhos/Silves4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no interior do Algarve central, à margem do rio Arade.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi reconquistada em 1189 por D. Sancho I, com o apoio de cruzados do norte da Europa, perdida de novo em 1191 e definitivamente reconquistada em 1249.</li>
+ 
+      <li><strong>Laranjais:</strong> O concelho é um dos maiores produtores de citrinos do país, sendo a laranja um dos símbolos da região, celebrada anualmente numa feira medieval de grande dimensão.</li>
+    </ul>
+  `
+}, //a
+ 
+"Tavira": {
+    imagens: [
+    "./images/Concelhos/Tavira1.png",
+    "./images/Concelhos/Tavira2.png",
+    "./images/Concelhos/Tavira3.png",
+    "./images/Concelhos/Tavira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no litoral leste do Algarve, atravessado pelo rio Gilão.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1242 por D. Paio Peres Correia, na sequência da lenda dos Sete Cavaleiros de Tavira, mortos numa emboscada às portas da vila.</li>
+ 
+      <li><strong>Igrejas e Ponte:</strong> A cidade é conhecida pelo elevado número de igrejas históricas e pela antiga ponte Romana sobre o Gilão, que liga as duas margens do centro histórico.</li>
+ 
+      <li><strong>Ilha e Salinas:</strong> A Ilha de Tavira e as salinas vizinhas marcam a paisagem costeira, associada tradicionalmente à pesca do atum através da chamada arte da armação.</li>
+    </ul>
+  `
+}, //a
+ 
+"Vila do Bispo": {
+    imagens: [
+    "./images/Concelhos/Vila do Bispo1.png",
+    "./images/Concelhos/Vila do Bispo2.png",
+    "./images/Concelhos/Vila do Bispo3.png",
+    "./images/Concelhos/Vila do Bispo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no extremo sudoeste do Algarve e de Portugal continental, incluindo o promontório de Sagres e o Cabo de São Vicente.</li>
+ 
+      <li><strong>Sagres e os Descobrimentos:</strong> A tradição associa Sagres ao Infante D. Henrique e a uma pretensa "escola de navegação", que teria contribuído para o início dos Descobrimentos portugueses no século XV.</li>
+ 
+      <li><strong>Cabo de São Vicente:</strong> Considerado sagrado desde a Antiguidade sob o nome de Promontorium Sacrum, o Cabo de São Vicente é hoje um dos pontos mais emblemáticos da costa portuguesa, assinalado pelo seu farol e marcando o extremo sudoeste da Europa continental.</li>
+ 
+      <li><strong>Surf:</strong> As praias do concelho, como o Beliche e o Tonel, são reconhecidas internacionalmente pela qualidade das suas ondas.</li>
+    </ul>
+  `
+}, //a
+ 
+"Vila Real de Santo António": {
+    imagens: [
+    "./images/Concelhos/Vila Real de Santo António1.png",
+    "./images/Concelhos/Vila Real de Santo António2.png",
+    "./images/Concelhos/Vila Real de Santo António3.png",
+    "./images/Concelhos/Vila Real de Santo António4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do extremo sudeste do distrito de Faro, junto à foz do rio Guadiana, que aqui separa Portugal de Espanha, defronte da localidade espanhola de Ayamonte.</li>
+ 
+      <li><strong>Fundação Pombalina:</strong> A cidade foi fundada por ordem do Marquês de Pombal e construída em apenas cinco meses, em 1774, segundo um plano urbanístico regular semelhante ao da Baixa de Lisboa.</li>
+ 
+      <li><strong>Indústria Conserveira:</strong> Ao longo dos séculos XIX e XX, a cidade foi um dos principais centros da indústria conserveira de atum e sardinha do Algarve.</li>
+ 
+      <li><strong>Ponte Internacional:</strong> A Ponte Internacional do Guadiana liga hoje o concelho a Espanha, reforçando a sua condição de porta de entrada no Algarve.</li>
+    </ul>
+  `
+}, //a
+ 
+// Fim de Faro
+ 
+// Início de Évora
+ 
+"Évora": {
+    imagens: [
+    "./images/Concelhos/Évora1.png",
+    "./images/Concelhos/Évora2.png",
+    "./images/Concelhos/Évora3.png",
+    "./images/Concelhos/Évora4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Capital do distrito e da sub-região do Alentejo Central, situada numa suave elevação da planície alentejana.</li>
+
+      <li><strong>Geraldo Sem Pavor:</strong> Geraldo Geraldes, conhecido como Geraldo Sem Pavor, foi inicialmente um fora-da-lei que, fugido à justiça e passou a viver na fronteira, liderando um bando de salteadores. As suas capacidades militares, porém, revelaram-se extraordinárias: através de ataques rápidos, nocturnos e de surpresa, utilizando tácticas de guerrilha e conhecendo profundamente o território, conseguiu conquistar várias posições muçulmanas. A eficácia das suas campanhas levou D. Afonso Henriques a perdoar os seus crimes e a colocá-lo ao serviço da Coroa.</li>
+
+      <li><strong>Reconquista de Évora e Heráldica:</strong> Em 1165, Geraldo Sem Pavor conquistou Évora aos mouros através de um ataque nocturno e entregou a cidade a D. Afonso Henriques. Como recompensa, foi perdoado e nomeado alcaide de Évora. Geraldo trepou a uma torre defensiva central e decapitou o mouro que a guardava juntamente com a sua filha. O episódio ficou representado na heráldica de Évora, onde podemos ver Geraldo a cavalo a brandir uma espada ensanguentada e as cabeças decepadas dos mouros.</li>
+ 
+      <li><strong>Património Mundial:</strong> O centro histórico foi classificado Património Mundial pela UNESCO em 1986, destacando-se o Templo Romano, a Sé Catedral e a impressionante Capela dos Ossos.</li>
+ 
+      <li><strong>Universidade:</strong> Fundada em 1559, a Universidade de Évora fez da cidade um importante centro de ensino e cultura desde o século XVI.</li>
+ 
+      <li><strong>Gastronomia:</strong> Destacam-se pratos como a açorda alentejana, as migas e o ensopado de borrego, acompanhados por vinhos e queijos da região.</li>
+    </ul>
+  `
+}, //a
+ 
+"Alandroal": {
+    imagens: [
+    "./images/Concelhos/Alandroal1.png",
+    "./images/Concelhos/Alandroal2.png",
+    "./images/Concelhos/Alandroal3.png",
+    "./images/Concelhos/Alandroal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertence ao distrito de Évora e faz fronteira com Espanha.</li>
+ 
+      <li><strong>Castelo:</strong> O castelo de Alandroal, ligado historicamente à Ordem do Hospital e depois à Ordem de Avis, domina a vila a partir de uma pequena elevação.</li>
+ 
+      <li><strong>Terena:</strong> A aldeia de Terena, com o seu castelo e as suas águas termais, é um dos pontos de maior interesse patrimonial e natural do concelho.</li>
+ 
+      <li><strong>Produtos da Terra:</strong> A economia rural assenta na produção de azeite, vinho e mármore, este último extraído na chamada zona dos mármores do Alentejo.</li>
+    </ul>
+  `
+}, //a
+ 
+"Arraiolos": {
+    imagens: [
+    "./images/Concelhos/Arraiolos1.png",
+    "./images/Concelhos/Arraiolos2.png",
+    "./images/Concelhos/Arraiolos3.png",
+    "./images/Concelhos/Arraiolos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, numa paisagem de planície pontuada por montado e olivais.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> O território foi integrado no Reino de Portugal pouco depois da reconquista de Évora aos mouros, em 1165.</li>
+ 
+      <li><strong>Castelo:</strong> O castelo de Arraiolos, mandado erguer por D. Dinis no início do século XIV, distingue-se pela sua invulgar planta circular, rara em Portugal.</li>
+ 
+      <li><strong>Tapetes de Arraiolos:</strong> A vila é internacionalmente conhecida pelos tapetes de Arraiolos, tapeçarias de lã bordadas sobre linho ou juta, com uma tradição que remonta pelo menos ao século XVII.</li>
+    </ul>
+  `
+}, //a
+ 
+"Borba": {
+    imagens: [
+    "./images/Concelhos/Borba1.png",
+    "./images/Concelhos/Borba2.png",
+    "./images/Concelhos/Borba3.png",
+    "./images/Concelhos/Borba4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, integrado na chamada zona dos mármores.</li>
+ 
+      <li><strong>Mármore:</strong> Borba é um dos mais importantes centros de extracção de mármore da Europa.</li>
+ 
+      <li><strong>Vinho:</strong> A produção vinícola tem grande tradição no concelho, com Denominação de Origem própria e uma adega cooperativa fundada em meados do século XX.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Tal como o restante território a norte de Évora, foi reintegrado no domínio cristão na sequência da reconquista da cidade em 1165.</li>
+    </ul>
+  `
+}, //a
+ 
+"Estremoz": {
+    imagens: [
+    "./images/Concelhos/Estremoz1.png",
+    "./images/Concelhos/Estremoz2.png",
+    "./images/Concelhos/Estremoz3.png",
+    "./images/Concelhos/Estremoz4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, junto à fronteira com Espanha, na zona dos mármores alentejanos.</li>
+ 
+      <li><strong>Castelo e Rainha Santa:</strong> O castelo, dominado pela Torre das Três Coroas, foi palco da morte da Rainha Santa Isabel, em 1336, que faleceu no paço real da vila.</li>
+ 
+      <li><strong>Bonecos de Estremoz:</strong> As tradicionais figuras de barro pintado, conhecidas como bonecos de Estremoz, foram reconhecidas pela UNESCO como Património Cultural Imaterial da Humanidade em 2017.</li>
+    </ul>
+  `
+}, //a
+ 
+"Montemor-o-Novo": {
+    imagens: [
+    "./images/Concelhos/Montemor-o-Novo1.png",
+    "./images/Concelhos/Montemor-o-Novo2.png",
+    "./images/Concelhos/Montemor-o-Novo3.png",
+    "./images/Concelhos/Montemor-o-Novo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, na margem do rio Almansor, entre Évora e Lisboa.</li>
+ 
+      <li><strong>Reconquista Cristã:</strong> Foi integrado no Reino de Portugal pouco depois da reconquista de Évora, em 1165, recebendo mais tarde foral de D. Afonso Henriques.</li>
+ 
+      <li><strong>Castelo:</strong> As ruínas do castelo, sobranceiras à vila, testemunham a importância estratégica de Montemor-o-Novo na linha defensiva do Alentejo Central.</li>
+ 
+      <li><strong>São João de Deus:</strong> A vila é terra natal de São João de Deus, fundador da Ordem Hospitaleira dedicada ao cuidado dos doentes, nascido em Montemor-o-Novo em 1495.</li>
+    </ul>
+  `
+}, //a
+ 
+"Mora": {
+    imagens: [
+    "./images/Concelhos/Mora1.png",
+    "./images/Concelhos/Mora2.png",
+    "./images/Concelhos/Mora3.png",
+    "./images/Concelhos/Mora4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, no extremo norte do distrito, numa paisagem de montado e olival.</li>
+ 
+      <li><strong>História:</strong> É um dos concelhos mais recentes do Alentejo Central, elevado a vila e sede de concelho autónomo no início do século XX.</li>
+ 
+      <li><strong>Convento de São Francisco:</strong> O antigo Convento de São Francisco de Mora é um dos principais testemunhos do património religioso da vila.</li>
+ 
+      <li><strong>Economia Rural:</strong> A cortiça, o azeite e a criação de gado continuam a marcar a economia e a paisagem do concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Mourão": {
+    imagens: [
+    "./images/Concelhos/Mourão1.png",
+    "./images/Concelhos/Mourão2.png",
+    "./images/Concelhos/Mourão3.png",
+    "./images/Concelhos/Mourão4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no extremo leste do distrito, junto ao rio Guadiana faz fronteira com Espanha.</li>
+ 
+      <li><strong>Castelo:</strong> O castelo medieval de Mourão ocupa uma posição elevada sobre a paisagem envolvente, reforçando o papel histórico da vila como praça fronteiriça.</li>
+ 
+      <li><strong>Alqueva:</strong> A criação da albufeira do Alqueva, a maior barragem artificial da Europa Ocidental, transformou profundamente a paisagem, a economia e o turismo do concelho.</li>
+ 
+      <li><strong>Vinho e Azeite:</strong> A produção de vinho e de azeite mantém-se como uma das actividades tradicionais mais importantes da região.</li>
+    </ul>
+  `
+}, //a
+ 
+"Portel": {
+    imagens: [
+    "./images/Concelhos/Portel1.png",
+    "./images/Concelhos/Portel2.png",
+    "./images/Concelhos/Portel3.png",
+    "./images/Concelhos/Portel4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, com parte do seu território banhado pela albufeira do Alqueva.</li>
+ 
+      <li><strong>Castelo:</strong> O castelo de Portel, historicamente ligado a importantes famílias senhoriais do Alentejo, domina a vila a partir de uma elevação.</li>
+ 
+      <li><strong>Montado e Cortiça:</strong> A paisagem do concelho é marcada pelo montado de sobro e azinho, sendo a exploração da cortiça uma das actividades económicas tradicionais.</li>
+ 
+      <li><strong>Azeite:</strong> A olivicultura e a produção de azeite têm também grande importância na economia rural do concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Redondo": {
+    imagens: [
+    "./images/Concelhos/Redondo1.png",
+    "./images/Concelhos/Redondo2.png",
+    "./images/Concelhos/Redondo3.png",
+    "./images/Concelhos/Redondo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, no sopé da Serra d'Ossa.</li>
+ 
+      <li><strong>Castelo:</strong> O castelo de Redondo ocupa uma posição dominante sobre a vila e a planície envolvente.</li>
+ 
+      <li><strong>Olaria:</strong> A vila é conhecida pela sua olaria tradicional, distinguida pela loiça de barro preto pintada com motivos brancos.</li>
+ 
+      <li><strong>Vinho:</strong> Redondo dá nome a uma das Denominações de Origem vinícolas mais conhecidas do Alentejo, sendo a viticultura uma actividade central na economia local.</li>
+    </ul>
+  `
+}, //a
+ 
+"Reguengos de Monsaraz": {
+    imagens: [
+    "./images/Concelhos/Reguengos de Monsaraz1.png",
+    "./images/Concelhos/Reguengos de Monsaraz2.png",
+    "./images/Concelhos/Reguengos de Monsaraz3.png",
+    "./images/Concelhos/Reguengos de Monsaraz4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, junto à albufeira do Alqueva.</li>
+ 
+      <li><strong>Monsaraz:</strong> A vila medieval de Monsaraz, amuralhada e situada no cimo de uma colina com vista sobre o Alqueva, é um dos conjuntos históricos mais preservados do Alentejo.</li>
+ 
+      <li><strong>Património Megalítico:</strong> O concelho possui um importante conjunto de monumentos megalíticos, entre os quais se destacam o Cromeleque do Xerez e o Menir de Outeiro.</li>
+ 
+      <li><strong>Vinho:</strong> Reguengos de Monsaraz dá nome a uma das regiões vinícolas mais conhecidas do Alentejo, com forte tradição na produção de vinho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Vendas Novas": {
+    imagens: [
+    "./images/Concelhos/Vendas Novas1.png",
+    "./images/Concelhos/Vendas Novas2.png",
+    "./images/Concelhos/Vendas Novas3.png",
+    "./images/Concelhos/Vendas Novas4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no cruzamento das antigas estradas entre Lisboa e Évora.</li>
+ 
+      <li><strong>Paço de Vendas Novas:</strong> O Paço de Vendas Novas, mandado construir no século XVIII por D. José I como pavilhão de caça, é um dos principais marcos históricos da vila.</li>
+ 
+      <li><strong>Tradição Militar:</strong> Vendas Novas está historicamente ligada à presença de unidades do Exército, nomeadamente de cavalaria, que ainda hoje marcam a identidade da localidade.</li>
+ 
+      <li><strong>Cortiça e Agricultura:</strong> A exploração da cortiça e a agricultura de sequeiro mantêm-se como actividades económicas relevantes no concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Viana do Alentejo": {
+    imagens: [
+    "./images/Concelhos/Viana do Alentejo1.png",
+    "./images/Concelhos/Viana do Alentejo2.png",
+    "./images/Concelhos/Viana do Alentejo3.png",
+    "./images/Concelhos/Viana do Alentejo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, numa paisagem de planície agrícola.</li>
+ 
+      <li><strong>Castelo:</strong> O castelo de Viana do Alentejo, de estilo gótico com influências manuelinas, distingue-se pelas ameias em forma de escamas, um caso único em Portugal.</li>
+ 
+      <li><strong>Santuário de Nossa Senhora d'Aires:</strong> O Santuário de Nossa Senhora d'Aires é destino de uma das romarias mais concorridas do Alentejo, atraindo peregrinos de toda a região.</li>
+ 
+      <li><strong>Azeite e Vinho:</strong> A produção de azeite e de vinho, associada à olaria tradicional, mantém-se como uma das bases da economia local.</li>
+    </ul>
+  `
+}, //a
+ 
+"Vila Viçosa": {
+    imagens: [
+    "./images/Concelhos/Vila Viçosa1.png",
+    "./images/Concelhos/Vila Viçosa2.png",
+    "./images/Concelhos/Vila Viçosa3.png",
+    "./images/Concelhos/Vila Viçosa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, junto à fronteira com Espanha, na zona dos mármores alentejanos.</li>
+ 
+      <li><strong>Paço Ducal:</strong> O Paço Ducal de Vila Viçosa foi a residência principal da Casa de Bragança, dinastia que ascendeu ao trono português em 1640, valendo à vila o epíteto de "Vila dos Duques".</li>
+ 
+      <li><strong>Castelo:</strong> O castelo medieval, anterior ao Paço Ducal, ocupa uma posição dominante sobre a vila e o seu Terreiro do Paço.</li>
+ 
+      <li><strong>Mármore:</strong> Tal como outros concelhos vizinhos, Vila Viçosa é um importante centro de extracção de mármore, presente em grande parte da arquitectura local.</li>
+    </ul>
+  `
+}, //a
+ 
+// Fim de Évora
+ 
+// Início Leiria
+ 
+"Leiria": {
+    imagens: [
+    "./images/Concelhos/Leiria1.png",
+    "./images/Concelhos/Leiria2.png",
+    "./images/Concelhos/Leiria3.png",
+    "./images/Concelhos/Leiria4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Capital do distrito e da sub-região da Região de Leiria, situada no vale do rio Lis.</li>
+ 
+      <li><strong>Castelo:</strong> O castelo de Leiria foi mandado construir por D. Afonso Henriques em 1135, numa zona de fronteira entre cristãos e mouros, tendo sido depois reconstruído por D. Dinis, que aí residiu com a rainha D. Isabel.</li>
+ 
+      <li><strong>Pinhal de Leiria:</strong> O Pinhal de Leiria terá sido mandado plantar por D. Dinis para fixar as dunas litorais e fornecer madeira à construção naval da época dos Descobrimentos.</li>
+ 
+      <li><strong>Gastronomia:</strong> Destaca-se a doçaria conventual e os queijos produzidos na região, associados a uma forte tradição agrícola.</li>
+    </ul>
+  `
+}, //a
+ 
+"Alvaiázere": {
+    imagens: [
+    "./images/Concelhos/Alvaiázere1.png",
+    "./images/Concelhos/Alvaiázere2.png",
+    "./images/Concelhos/Alvaiázere3.png",
+    "./images/Concelhos/Alvaiázere4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Leiria, integrado na sub-região da Região de Leiria, no sopé da Serra de Sicó.</li>
+ 
+      <li><strong>Serra de Sicó:</strong> A paisagem cársica da Serra de Sicó, com as suas numerosas grutas e algares, marca fortemente o território do concelho.</li>
+ 
+      <li><strong>História:</strong> O território está associado a uma antiga rede de povoações e castelos medievais que marcavam a transição entre a Beira e a Estremadura.</li>
+ 
+      <li><strong>Produtos Tradicionais:</strong> A economia rural assenta no azeite, na castanha e na apicultura, produtos característicos da paisagem serrana do concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Ansião": {
+    imagens: [
+    "./images/Concelhos/Ansião1.png",
+    "./images/Concelhos/Ansião2.png",
+    "./images/Concelhos/Ansião3.png",
+    "./images/Concelhos/Ansião4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior norte do distrito de Leiria, integrado na sub-região da Região de Leiria, na transição para a Beira Litoral.</li>
+ 
+      <li><strong>Património Rural:</strong> O território conserva vestígios de antigas estruturas defensivas medievais e um conjunto de aldeias e quintas de carácter rural.</li>
+ 
+      <li><strong>Feira de São Bartolomeu:</strong> A tradicional Feira de São Bartolomeu é um dos principais eventos populares do concelho, reunindo comércio e animação regional.</li>
+ 
+      <li><strong>Floresta e Agricultura:</strong> A economia local está ligada à exploração florestal, sobretudo de pinhal e eucalipto, e à agricultura de sequeiro.</li>
+    </ul>
+  `
+}, //a
+ 
+"Batalha": {
+    imagens: [
+    "./images/Concelhos/Batalha1.png",
+    "./images/Concelhos/Batalha2.png",
+    "./images/Concelhos/Batalha3.png",
+    "./images/Concelhos/Batalha4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região da Região de Leiria, entre os concelhos de Leiria e Porto de Mós.</li>
+ 
+      <li><strong>Mosteiro da Batalha:</strong> O Mosteiro de Santa Maria da Vitória, conhecido como Mosteiro da Batalha, foi mandado construir por D. João I em cumprimento de uma promessa feita antes da Batalha de Aljubarrota, vencida em 1385 contra Castela.</li>
+ 
+      <li><strong>Património Mundial:</strong> Classificado Património Mundial pela UNESCO desde 1983, o mosteiro inclui as chamadas Capelas Imperfeitas e o túmulo do Infante D. Henrique.</li>
+ 
+      <li><strong>Origem da Vila:</strong> A própria vila da Batalha desenvolveu-se em torno do mosteiro, cuja construção atraiu população e actividade ao longo dos séculos.</li>
+    </ul>
+  `
+}, //a
+ 
+"Bombarral": {
+    imagens: [
+    "./images/Concelhos/Bombarral1.png",
+    "./images/Concelhos/Bombarral2.png",
+    "./images/Concelhos/Bombarral3.png",
+    "./images/Concelhos/Bombarral4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região do Oeste, numa paisagem de colinas agrícolas.</li>
+ 
+      <li><strong>Vinho e Fruticultura:</strong> A região é conhecida pela produção de vinho e pela fruticultura, sobretudo de maçã e pêra, cultivadas em pomares que marcam a paisagem do concelho.</li>
+ 
+      <li><strong>Tradições Rurais:</strong> As festas do vinho e da vindima, realizadas anualmente, celebram a forte ligação do concelho à agricultura e à produção vinícola.</li>
+    </ul>
+  `
+}, //a
+ 
+"Caldas da Rainha": {
+    imagens: [
+    "./images/Concelhos/Caldas da Rainha1.png",
+    "./images/Concelhos/Caldas da Rainha2.png",
+    "./images/Concelhos/Caldas da Rainha3.png",
+    "./images/Concelhos/Caldas da Rainha4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região do Oeste, junto à costa atlântica.</li>
+ 
+      <li><strong>Fundação:</strong> A cidade foi fundada em 1485 pela rainha D. Leonor de Lencastre, junto a umas águas sulfurosas às quais atribuiu a cura de uma doença, dando origem ao Hospital Termal ainda hoje em funcionamento.</li>
+ 
+      <li><strong>Cerâmica:</strong> Caldas da Rainha tem uma forte tradição oleira, associada sobretudo à obra de Rafael Bordalo Pinheiro, cujo museu preserva a sua criação artística.</li>
+ 
+      <li><strong>Mercado:</strong> O mercado diário de fruta, legumes e flores, na Praça da República, é um dos símbolos mais vivos da identidade da cidade.</li>
+    </ul>
+  `
+}, //a
+ 
+"Castanheira de Pera": {
+    imagens: [
+    "./images/Concelhos/Castanheira de Pêra1.png",
+    "./images/Concelhos/Castanheira de Pêra2.png",
+    "./images/Concelhos/Castanheira de Pêra3.png",
+    "./images/Concelhos/Castanheira de Pêra4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Leiria, integrado na sub-região da Região de Leiria, na zona serrana próxima da Serra da Lousã.</li>
+ 
+      <li><strong>Floresta:</strong> A economia do concelho esteve historicamente ligada à exploração florestal, nomeadamente ao pinhal e à indústria da madeira e da resina.</li>
+ 
+      <li><strong>Incêndios de 2017:</strong> O concelho foi duramente afectado pelos grandes incêndios florestais de junho de 2017, que motivaram desde então importantes esforços de reflorestação e prevenção.</li>
+ 
+      <li><strong>Produtos Tradicionais:</strong> A castanha e o mel figuram entre os produtos mais associados à identidade rural do concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Figueiró dos Vinhos": {
+    imagens: [
+    "./images/Concelhos/Figueiró dos Vinhos1.png",
+    "./images/Concelhos/Figueiró dos Vinhos2.png",
+    "./images/Concelhos/Figueiró dos Vinhos3.png",
+    "./images/Concelhos/Figueiró dos Vinhos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Leiria, integrado na sub-região da Região de Leiria, junto à Serra da Lousã e próximo do rio Zêzere.</li>
+ 
+      <li><strong>Origem do Nome:</strong> O nome do concelho está historicamente associado à antiga produção de vinho na região, hoje pouco expressiva face à floresta.</li>
+ 
+      <li><strong>Incêndios de 2017:</strong> Tal como o concelho vizinho de Castanheira de Pêra, foi fortemente atingido pelos incêndios florestais de junho de 2017.</li>
+ 
+      <li><strong>Produtos da Serra:</strong> A castanha e o mel são produtos tradicionais da região, associados à paisagem serrana e florestal do concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Marinha Grande": {
+    imagens: [
+    "./images/Concelhos/Marinha Grande1.png",
+    "./images/Concelhos/Marinha Grande2.png",
+    "./images/Concelhos/Marinha Grande3.png",
+    "./images/Concelhos/Marinha Grande4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do litoral do distrito de Leiria, integrado na sub-região da Região de Leiria, entre a cidade de Leiria e o oceano Atlântico.</li>
+ 
+      <li><strong>Indústria do Vidro:</strong> A Real Fábrica de Vidros, fundada em 1769 com o incentivo de D. José I e do empresário inglês Guilherme Stephens, deu origem a uma forte tradição vidreira que ainda hoje caracteriza a cidade.</li>
+ 
+      <li><strong>Indústria de Moldes:</strong> A partir da produção de vidro, desenvolveu-se também na região uma importante indústria de moldes, com relevância internacional.</li>
+ 
+      <li><strong>Pinhal e Praia:</strong> Parte do Pinhal de Leiria estende-se pelo território do concelho, ligando-o à Praia da Vieira, no litoral atlântico.</li>
+    </ul>
+  `
+}, //a
+ 
+"Nazaré": {
+    imagens: [
+    "./images/Concelhos/Nazaré1.png",
+    "./images/Concelhos/Nazaré2.png",
+    "./images/Concelhos/Nazaré3.png",
+    "./images/Concelhos/Nazaré4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do litoral do distrito de Leiria, integrado na sub-região do Oeste, marcado por uma alta falésia sobre o oceano Atlântico.</li>
+ 
+      <li><strong>Vila da Nazaré:</strong> A actual vila desenvolveu-se junto à praia e esteve durante séculos profundamente ligada ao mar. A pesca, a venda de peixe e a construção e reparação de embarcações marcaram a economia e a identidade da população, mantendo-se ainda hoje uma forte ligação às actividades marítimas.</li>
+ 
+      <li><strong>Lenda de Nossa Senhora da Nazaré:</strong> Segundo a tradição, em 1182, D. Fuas Roupinho encontrava-se a caçar no Sítio da Nazaré quando perseguiu um veado através de um espesso nevoeiro. O animal dirigiu-se para o extremo da falésia e, quando o cavaleiro percebeu que estava prestes a precipitar-se, invocou Nossa Senhora. O cavalo parou junto ao abismo, salvando D. Fuas da queda. Em agradecimento, mandou construir a Ermida da Memória sobre a gruta onde era venerada a imagem de Nossa Senhora, dando origem à tradição religiosa que se tornou central na história da Nazaré.</li>
+ 
+      <li><strong>Canhão da Nazaré:</strong> Ao largo da Praia do Norte encontra-se o Canhão da Nazaré, um desfiladeiro submarino que se estende desde grandes profundidades até muito perto da costa. A sua configuração influencia a propagação das ondas e está na origem das ondas de grande dimensão que tornaram a Praia do Norte conhecida internacionalmente pelo surf.</li>
+    </ul>
+  `
+}, //a
+ 
+"Óbidos": {
+    imagens: [
+    "./images/Concelhos/Óbidos1.png",
+    "./images/Concelhos/Óbidos2.png",
+    "./images/Concelhos/Óbidos3.png",
+    "./images/Concelhos/Óbidos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado no litoral da sub-região do Oeste.</li>
+ 
+      <li><strong>Reconquista e História:</strong> Óbidos foi reconquistada aos mouros em 1148 por D. Afonso Henriques. A sua posição fortificada contribuiu para a importância estratégica da vila durante a Idade Média, tendo recebido foral de D. Sancho I em 1195.</li>
+
+      <li><strong>Vila e Castelo:</strong> Óbidos é conhecida pela vila medieval rodeada de muralhas, dominada pelo castelo. O conjunto conserva o traçado urbano histórico, com ruas estreitas, casas caiadas e várias igrejas e edifícios de interesse patrimonial.</li>
+
+      <li><strong>Lagoa de Óbidos:</strong> A Lagoa de Óbidos é uma laguna costeira ligada ao oceano Atlântico por uma abertura entre as praias da Foz do Arelho e do Bom Sucesso. É uma das principais características naturais do concelho e possui importantes zonas de sapal e áreas húmidas.</li>
+ 
+      <li><strong>Ginjinha de Óbidos:</strong> É tradicional servir a ginjinha, licor de ginja, em pequenos copos de chocolate, um costume que se tornou uma das imagens de marca da vila.</li>
+    </ul>
+  `
+}, //a
+ 
+"Pedrógão Grande": {
+    imagens: [
+    "./images/Concelhos/Pedrógão Grande1.png",
+    "./images/Concelhos/Pedrógão Grande2.png",
+    "./images/Concelhos/Pedrógão Grande3.png",
+    "./images/Concelhos/Pedrógão Grande4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Leiria, integrado na sub-região da Região de Leiria, junto à albufeira de Castelo de Bode, no rio Zêzere.</li>
+ 
+      <li><strong>Praias Fluviais:</strong> A albufeira do Zêzere proporciona praias fluviais que constituem um dos principais pontos de atracção turística do concelho.</li>
+ 
+      <li><strong>Incêndio de 2017:</strong> Em junho de 2017, o concelho foi atingido por um dos incêndios florestais mais mortíferos da história de Portugal, que marcou profundamente a memória colectiva da região.</li>
+ 
+      <li><strong>Floresta:</strong> A economia local está historicamente ligada à exploração florestal e, mais recentemente, ao turismo de natureza.</li>
+    </ul>
+  `
+}, //a
+ 
+"Peniche": {
+    imagens: [
+    "./images/Concelhos/Peniche1.png",
+    "./images/Concelhos/Peniche2.png",
+    "./images/Concelhos/Peniche3.png",
+    "./images/Concelhos/Peniche4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região do Oeste, situado numa península rochosa que se projecta sobre o oceano Atlântico. O território inclui também o arquipélago das Berlengas.</li>
+
+      <li><strong>Peniche e a Península:</strong> Peniche foi originalmente uma ilha, separada do continente por um braço de mar que acabou por assorear. A antiga ilha ficou ligada ao continente, formando a actual península, cuja costa é marcada por arribas, praias e formações rochosas.</li>
+
+      <li><strong>Fortaleza de Peniche:</strong> A Fortaleza de Peniche foi construída entre os séculos XVI e XVII para reforçar a defesa da costa. O conjunto tornou-se também uma importante prisão durante o Estado Novo, tendo sido utilizado para deter traidores do regime.</li>
+
+      <li><strong>Pesca e Conservas:</strong> A pesca é uma das actividades tradicionais mais importantes de Peniche. A abundância de peixe contribuiu para o desenvolvimento da indústria conserveira, que teve grande importância económica na cidade durante os séculos XIX e XX.</li>
+
+      <li><strong>Berlengas:</strong> Ao largo de Peniche encontra-se o arquipélago das Berlengas, constituído pela Berlenga Grande e pelos ilhéus Estelas e Farilhões. O arquipélago integra uma reserva natural e destaca-se pelas suas características geológicas e pela importância para várias espécies de aves marinhas.</li>
+
+      <li><strong>Nossa Senhora dos Remédios:</strong> O Santuário de Nossa Senhora dos Remédios, junto ao Cabo Carvoeiro, está associado a uma antiga tradição religiosa e a uma imagem de Nossa Senhora encontrada numa gruta. O local é um dos principais pontos de culto e património religioso do concelho.</li>
+
+      <li><strong>Cabo Carvoeiro:</strong> O Cabo Carvoeiro constitui o extremo ocidental da península de Peniche e é marcado por arribas e formações rochosas esculpidas pela erosão marítima. Ao largo encontra-se o arquipélago das Berlengas, visível em dias de boa visibilidade.</li>
+    
+      <li><strong>Surf:</strong> A costa de Peniche é conhecida pelas condições favoráveis à prática de surf, destacando-se a Praia de Supertubos pelas suas ondas. A cidade tornou-se uma das principais referências portuguesas desta modalidade e recebe competições internacionais.</li>
+    </ul>
+  `
+}, //a
+ 
+"Pombal": {
+    imagens: [
+    "./images/Concelhos/Pombal1.png",
+    "./images/Concelhos/Pombal2.png",
+    "./images/Concelhos/Pombal3.png",
+    "./images/Concelhos/Pombal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região da Região de Leiria, entre as cidades de Leiria e Coimbra.</li>
+ 
+      <li><strong>Castelo Templário:</strong> O castelo de Pombal foi entregue à Ordem do Templo no século XII, tendo sido reconstruído por D. Gualdim Pais, mestre da Ordem em Portugal.</li>
+ 
+      <li><strong>Marquês de Pombal:</strong> A vila está ligada ao nome de Sebastião José de Carvalho e Melo, que recebeu o título de Conde de Pombal antes de se tornar Marquês de Pombal, o célebre ministro de D. José I.</li>
+ 
+      <li><strong>Economia:</strong> A agricultura, a exploração florestal e uma indústria diversificada continuam a marcar a economia do concelho.</li>
+    </ul>
+  `
+}, //a
+ 
+"Porto de Mós": {
+    imagens: [
+    "./images/Concelhos/Porto de Mós1.png",
+    "./images/Concelhos/Porto de Mós2.png",
+    "./images/Concelhos/Porto de Mós3.png",
+    "./images/Concelhos/Porto de Mós4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região da Região de Leiria, situado entre as serras de Aire e Candeeiros. O território é marcado pelo relevo calcário, pelas formações cársicas e por numerosas grutas e cavidades naturais.</li>
+
+      <li><strong>Castelo de Porto de Mós:</strong> O castelo domina a vila a partir de uma posição elevada e distingue-se pelas suas torres cónicas, resultantes das grandes remodelações realizadas no século XV.</li>
+
+      <li><strong>História e Reconquista:</strong> Porto de Mós foi reconquistada aos mouros no século XII e recebeu foral de D. Afonso Henriques em 1182. A posição da vila tornou-a importante na defesa do território e nas ligações entre o litoral e o interior.</li>
+
+      <li><strong>Batalha de Aljubarrota:</strong> O concelho está directamente ligado à Batalha de Aljubarrota, travada em 1385 entre as forças portuguesas comandadas por D. João I e D. Nuno Álvares Pereira e o exército castelhano. A batalha ocorreu nas proximidades de Porto de Mós e foi decisiva para a consolidação da independência Portuguesa.</li>
+
+      <li><strong>Serras de Aire e Candeeiros:</strong> Grande parte do concelho integra o Parque Natural das Serras de Aire e Candeeiros, caracterizado por uma paisagem calcária com escarpas, dolinas, algares e grutas. As formações rochosas resultam da erosão da água sobre o calcário ao longo de milhões de anos.</li>
+
+      <li><strong>Grutas:</strong> O subsolo calcário do concelho possui numerosas cavidades naturais. Entre as mais conhecidas encontram-se as Grutas de Mira de Aire, as Grutas de Alvados e as Grutas de Santo António, associadas ao património geológico das serras.</li>
+
+      <li><strong>Património Industrial:</strong> A indústria têxtil teve grande importância económica em várias localidades do concelho, sobretudo durante os séculos XIX e XX. As fábricas e os antigos bairros operários fazem parte da história industrial de Porto de Mós.</li>
+    </ul>
+  `
+}, //a
+ 
+"Alcobaça": {
+    imagens: [
+    "./images/Concelhos/Alcobaça1.png",
+    "./images/Concelhos/Alcobaça2.png",
+    "./images/Concelhos/Alcobaça3.png",
+    "./images/Concelhos/Alcobaça4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região do Oeste, no vale formado pelos rios Alcoa e Baça.</li>
+ 
+      <li><strong>Mosteiro de Alcobaça:</strong> Fundado em 1153 pelos monges cistercienses, a pedido de D. Afonso Henriques, o Mosteiro de Santa Maria de Alcobaça é a maior igreja medieval de Portugal, classificada Património Mundial pela UNESCO desde 1989.</li>
+ 
+      <li><strong>Castelo de Alcobaça:</strong> O castelo foi construído numa elevação sobranceira à cidade e integrou o sistema defensivo da região durante a Idade Média. Actualmente subsistem principalmente as muralhas e alguns vestígios da fortificação.</li>
+
+      <li><strong>Doçaria Conventual:</strong> A tradição doceira de Alcobaça está ligada à antiga presença dos monges de Cister. Entre as especialidades associadas à região encontram-se as cornucópias, as trouxas de ovos e outras receitas de tradição conventual.</li>
+ 
+      <li><strong>Gastronomia e Fruticultura:</strong> A região é conhecida pela doçaria conventual e pela produção de maçã e de vinho, cultivados nos férteis vales em torno da vila.</li>
+    </ul>
+  `
+}, //a
+ 
+// Fim de Leiria
+
+// Início de Santarém
+
+"Abrantes": {
+    imagens: [
+    "./images/Concelhos/Abrantes1.png",
+    "./images/Concelhos/Abrantes2.png",
+    "./images/Concelhos/Abrantes3.png",
+    "./images/Concelhos/Abrantes4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado junto à confluência dos rios Tejo e Zêzere. O território combina áreas de serra, vales fluviais e extensas zonas de floresta.</li>
+
+      <li><strong>Castelo de Abrantes:</strong> O castelo domina a cidade a partir de uma elevação sobre o Tejo e integrou durante a Idade Média a linha defensiva do território português. A fortificação foi sucessivamente adaptada ao longo dos séculos.</li>
+
+      <li><strong>Tejo e Zêzere:</strong> A posição entre os dois rios marcou a história e a paisagem do concelho. A albufeira do Castelo de Bode estende-se pela zona norte, criando uma paisagem fluvial distinta do restante território.</li>
+
+      <li><strong>História Militar:</strong> Abrantes teve importância estratégica pela sua posição sobre o Tejo e pelas ligações entre Lisboa, o interior e a fronteira. A cidade esteve também envolvida nas campanhas da Guerra Peninsular.</li>
+    </ul>
+  `
+}, //a
+
+"Alcanena": {
+    imagens: [
+    "./images/Concelhos/Alcanena1.png",
+    "./images/Concelhos/Alcanena2.png",
+    "./images/Concelhos/Alcanena3.png",
+    "./images/Concelhos/Alcanena4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado junto à Serra de Aire e integrado na paisagem calcária das Serras de Aire e Candeeiros.</li>
+
+      <li><strong>Indústria dos Curtumes:</strong> Alcanena desenvolveu uma importante indústria de curtumes, actualmente uma das actividades económicas mais características do concelho. A indústria aproveitou historicamente a abundância de água da região.</li>
+
+      <li><strong>Lagoa de Minde:</strong> A Lagoa de Minde é uma formação natural temporária situada numa depressão cársica. Durante períodos de elevada precipitação pode formar uma extensa lagoa, conhecida localmente como o Polje de Minde.</li>
+
+      <li><strong>Minde e o Têxtil:</strong> A vila de Minde desenvolveu uma importante actividade têxtil, ligada sobretudo à produção de mantas e tecidos de lã. A localidade conserva esta tradição através do património e da memória industrial.</li>
+    </ul>
+  `
+}, //a
+
+"Almeirim": {
+    imagens: [
+    "./images/Concelhos/Almeirim1.png",
+    "./images/Concelhos/Almeirim2.png",
+    "./images/Concelhos/Almeirim3.png",
+    "./images/Concelhos/Almeirim4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado na margem sul do Tejo, numa paisagem marcada por lezírias, vinhas e campos agrícolas.</li>
+
+      <li><strong>Paço Real:</strong> Almeirim foi uma importante residência da corte portuguesa durante a dinastia de Avis. O Paço Real foi frequentado por vários monarcas, sobretudo nos séculos XV e XVI, e esteve ligado à vida política e cultural da Corte.</li>
+
+      <li><strong>Sopa da Pedra:</strong> A Sopa da Pedra é a especialidade gastronómica mais associada a Almeirim. A tradição está ligada à conhecida história do frade que, usando uma pedra como ponto de partida, consegue preparar uma sopa com os ingredientes que vai obtendo.</li>
+
+      <li><strong>Vinho:</strong> A viticultura tem grande importância no concelho, integrado na região vitivinícola do Tejo. A paisagem agrícola é marcada por extensas áreas de vinha e outras culturas de regadio.</li>
+    </ul>
+  `
+}, //a
+
+"Alpiarça": {
+    imagens: [
+    "./images/Concelhos/Alpiarca1.png",
+    "./images/Concelhos/Alpiarca2.png",
+    "./images/Concelhos/Alpiarca3.png",
+    "./images/Concelhos/Alpiarca4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado na margem esquerda do rio Tejo, numa paisagem predominantemente agrícola.</li>
+
+      <li><strong>Agricultura:</strong> A economia tradicional do concelho está ligada à lezíria do Tejo e à agricultura, com destaque para a vinha, os cereais e outras culturas de regadio.</li>
+
+      <li><strong>Património Rural:</strong> A paisagem de Alpiarça conserva quintas e antigas propriedades agrícolas associadas à grande exploração agrícola ribatejana.</li>
+    </ul>
+  `
+}, //a
+
+"Benavente": {
+    imagens: [
+    "./images/Concelhos/Benavente1.png",
+    "./images/Concelhos/Benavente2.png",
+    "./images/Concelhos/Benavente3.png",
+    "./images/Concelhos/Benavente4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado na margem sul do Tejo. O território é dominado por lezírias, arrozais, montado e extensas áreas florestais.</li>
+
+      <li><strong>Lezíria e Campinos:</strong> A criação de gado e a agricultura da lezíria marcaram profundamente a identidade de Benavente. A figura do campino, o cavalo e o gado bravo continuam associados às tradições locais.</li>
+
+      <li><strong>Reserva Natural do Estuário do Tejo:</strong> Parte do território concelhio integra as zonas húmidas do estuário do Tejo, importantes para numerosas espécies de aves aquáticas e migratórias.</li>
+
+      <li><strong>Tauromaquia:</strong> As tradições tauromáquicas e equestres fazem parte da cultura ribatejana do concelho, estando associadas às festas, ao gado bravo e às actividades da lezíria.</li>
+    </ul>
+  `
+}, //a
+
+"Cartaxo": {
+    imagens: [
+    "./images/Concelhos/Cartaxo1.png",
+    "./images/Concelhos/Cartaxo2.png",
+    "./images/Concelhos/Cartaxo3.png",
+    "./images/Concelhos/Cartaxo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado a norte do rio Tejo, entre as planícies da lezíria e as zonas mais elevadas do chamado Bairro.</li>
+
+      <li><strong>Vinho:</strong> A viticultura é uma das principais características do concelho. O Cartaxo é conhecido pela produção de vinho e possui uma paisagem marcada por vinhas e adegas.</li>
+
+      <li><strong>História:</strong> O território possui vestígios de ocupação romana e medieval. A povoação desenvolveu-se numa zona de passagem entre Santarém, Lisboa e o interior do Ribatejo.</li>
+
+      <li><strong>Vale de Santarém:</strong> A freguesia de Vale de Santarém conserva um importante património rural e religioso e integra a paisagem agrícola tradicional do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Chamusca": {
+    imagens: [
+    "./images/Concelhos/Chamusca1.png",
+    "./images/Concelhos/Chamusca2.png",
+    "./images/Concelhos/Chamusca3.png",
+    "./images/Concelhos/Chamusca4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado na margem esquerda do Tejo, entre a lezíria e as áreas de montado do interior.</li>
+
+      <li><strong>Tejo:</strong> O rio Tejo atravessa e marca profundamente o concelho, tendo sido durante séculos uma importante via de transporte de pessoas e mercadorias.</li>
+
+      <li><strong>Lezíria e Campinos:</strong> A agricultura, a criação de gado e as actividades ligadas à lezíria fazem parte da identidade tradicional da Chamusca. O cavalo, o campino e o gado bravo estão associados às manifestações populares locais.</li>
+
+      <li><strong>Gastronomia:</strong> A cozinha local está ligada aos produtos da lezíria e às tradições gastronómicas ribatejanas, incluindo pratos de carne, caça e peixe do rio.</li>
+    </ul>
+  `
+}, //a
+
+"Constância": {
+    imagens: [
+    "./images/Concelhos/Constancia1.png",
+    "./images/Concelhos/Constancia2.png",
+    "./images/Concelhos/Constancia3.png",
+    "./images/Concelhos/Constancia4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado na confluência dos rios Tejo e Zêzere. A vila encontra-se numa posição elevada entre os dois cursos de água.</li>
+
+      <li><strong>Tejo e Zêzere:</strong> A confluência dos dois rios é o principal elemento geográfico do concelho e condicionou historicamente as actividades económicas e as ligações entre as diferentes regiões.</li>
+
+      <li><strong>Camões:</strong> A tradição local associa Luís de Camões a Constância, onde teria vivido durante parte da juventude. A memória do poeta está presente no Jardim-Horto de Camões e em outros espaços da vila.</li>
+
+      <li><strong>História:</strong> A vila chamou-se originalmente Punhete e recebeu o nome de Constância em 1833, durante o reinado de D. Maria II.</li>
+
+      <li><strong>Património:</strong> A vila conserva um núcleo histórico com casas tradicionais, igrejas e o conjunto paisagístico formado pelos rios Tejo e Zêzere.</li>
+    </ul>
+  `
+}, //a
+
+"Coruche": {
+    imagens: [
+    "./images/Concelhos/Coruche1.png",
+    "./images/Concelhos/Coruche2.png",
+    "./images/Concelhos/Coruche3.png",
+    "./images/Concelhos/Coruche4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado na margem sul do Tejo e atravessado pelo rio Sorraia. É um dos maiores concelhos do distrito em área.</li>
+
+      <li><strong>Montado de Sobreiros:</strong> Coruche possui uma das maiores áreas de montado de Sobreiros de Portugal. A cortiça é uma das principais actividades económicas e marca profundamente a paisagem rural do concelho.</li>
+
+      <li><strong>Rio Sorraia:</strong> O Sorraia atravessa o concelho e desempenhou um papel importante na agricultura e no povoamento. As suas margens incluem extensas áreas agrícolas e zonas húmidas.</li>
+
+      <li><strong>Campinos e Tauromaquia:</strong> A cultura ribatejana está fortemente presente em Coruche, com tradições ligadas aos campinos, ao cavalo e à criação de gado bravo.</li>
+    </ul>
+  `
+}, //a
+
+"Entroncamento": {
+    imagens: [
+    "./images/Concelhos/Entroncamento1.png",
+    "./images/Concelhos/Entroncamento2.png",
+    "./images/Concelhos/Entroncamento3.png",
+    "./images/Concelhos/Entroncamento4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado numa zona de ligação entre o norte e o sul do país.</li>
+
+      <li><strong>Caminho-de-Ferro:</strong> O Entroncamento nasceu e cresceu em torno do caminho-de-ferro. A localização no cruzamento das linhas do Norte e do Leste transformou a povoação num dos principais centros ferroviários portugueses.</li>
+
+      <li><strong>Museu Nacional Ferroviário:</strong> O Museu Nacional Ferroviário conserva locomotivas, carruagens, equipamentos e outros elementos relacionados com a história dos caminhos-de-ferro em Portugal.</li>
+
+      <li><strong>Origem da Cidade:</strong> O desenvolvimento do Entroncamento ocorreu sobretudo a partir do século XIX, com a construção das linhas ferroviárias e a instalação de oficinas e serviços ligados à exploração ferroviária.</li>
+    </ul>
+  `
+}, //a
+
+"Ferreira do Zêzere": {
+    imagens: [
+    "./images/Concelhos/FerreiraDoZezere1.png",
+    "./images/Concelhos/FerreiraDoZezere2.png",
+    "./images/Concelhos/FerreiraDoZezere3.png",
+    "./images/Concelhos/FerreiraDoZezere4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado numa zona de transição entre o Ribatejo e a Beira, marcada por relevo ondulado e extensas áreas florestais.</li>
+
+      <li><strong>Albufeira de Castelo de Bode:</strong> A albufeira de Castelo de Bode ocupa uma parte importante do concelho e é um dos principais elementos da paisagem. As margens do Zêzere apresentam numerosas zonas arborizadas e pequenas praias fluviais.</li>
+
+      <li><strong>Rio Zêzere:</strong> O rio marca a zona ocidental do concelho e condiciona a paisagem e as actividades recreativas ligadas à água.</li>
+
+      <li><strong>Agricultura:</strong> A agricultura tradicional inclui olival, vinha, pinheiro e produção de azeite. A paisagem rural é marcada também pela floresta e por pequenas propriedades agrícolas.</li>
+
+      <li><strong>Património Religioso:</strong> O concelho conserva várias igrejas e capelas rurais, destacando-se a Igreja Matriz de Ferreira do Zêzere e o património religioso de Dornes.</li>
+    </ul>
+  `
+}, //a
+
+"Golegã": {
+    imagens: [
+    "./images/Concelhos/Golega1.png",
+    "./images/Concelhos/Golega2.png",
+    "./images/Concelhos/Golega3.png",
+    "./images/Concelhos/Golega4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado entre os rios Tejo e Almonda, numa paisagem agrícola de lezíria.</li>
+
+      <li><strong>Cavalo:</strong> A Golegã é particularmente conhecida pela criação e selecção de cavalos, estando historicamente ligada à criação do Cavalo Lusitano e às actividades equestres.</li>
+
+      <li><strong>Feira Nacional do Cavalo:</strong> A Feira Nacional do Cavalo, realizada anualmente em Novembro, é o principal evento do concelho e reúne criadores, cavaleiros e actividades equestres.</li>
+
+      <li><strong>Lezíria:</strong> A agricultura e a criação de cavalos desenvolveram-se numa paisagem de terrenos férteis junto ao Tejo, marcada por campos abertos e antigas quintas agrícolas.</li>
+    </ul>
+  `
+}, //a
+
+"Mação": {
+    imagens: [
+    "./images/Concelhos/Macao1.png",
+    "./images/Concelhos/Macao2.png",
+    "./images/Concelhos/Macao3.png",
+    "./images/Concelhos/Macao4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado no extremo este do distrito, entre o Tejo e as áreas florestais do interior.</li>
+
+      <li><strong>Arqueologia:</strong> Mação possui importantes vestígios arqueológicos de diferentes períodos, desde a Pré-História até à época romana. O Museu de Arte Pré-Histórica e do Sagrado no Vale do Tejo é uma das principais referências arqueológicas do concelho.</li>
+
+      <li><strong>Vale do Tejo:</strong> O território inclui vários sítios arqueológicos associados às margens do Tejo, incluindo gravuras rupestres e vestígios de ocupações pré-históricas.</li>
+
+      <li><strong>Floresta:</strong> A paisagem é dominada por extensas áreas florestais, sobretudo pinheiro e eucalipto, que tiveram grande importância económica no concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Ourém": {
+    imagens: [
+    "./images/Concelhos/Ourem1.png",
+    "./images/Concelhos/Ourem2.png",
+    "./images/Concelhos/Ourem3.png",
+    "./images/Concelhos/Ourem4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado entre o maciço calcário das Serras de Aire e Candeeiros e as áreas mais baixas do território.</li>
+
+      <li><strong>Fátima:</strong> A freguesia de Fátima tornou-se um dos principais centros de peregrinação católica do mundo após as aparições de 1917. O Santuário de Fátima é actualmente o elemento mais conhecido do concelho.</li>
+
+      <li><strong>Castelo e Vila Medieval:</strong> O Castelo de Ourém domina a antiga vila a partir de uma posição elevada. O conjunto medieval inclui o castelo, o Paço dos Condes e uma povoação fortificada adaptada ao relevo.</li>
+    </ul>
+  `
+}, //a
+
+"Rio Maior": {
+    imagens: [
+    "./images/Concelhos/RioMaior1.png",
+    "./images/Concelhos/RioMaior2.png",
+    "./images/Concelhos/RioMaior3.png",
+    "./images/Concelhos/RioMaior4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado junto às Serras de Aire e Candeeiros e na transição entre o litoral Oeste e o Ribatejo.</li>
+
+      <li><strong>Salinas de Rio Maior:</strong> As Salinas da Fonte da Bica são o elemento mais característico do concelho. A água salgada é obtida através de um poço ligado a um curso subterrâneo, sendo depois utilizada na produção artesanal de sal.</li>
+
+      <li><strong>Serra dos Candeeiros:</strong> Parte do concelho integra o Parque Natural das Serras de Aire e Candeeiros, com paisagem calcária, grutas e formas cársicas.</li>
+
+      <li><strong>Villa Romana:</strong> O concelho possui vestígios de ocupação romana, incluindo uma villa romana associada à exploração agrícola do território.</li>
+    </ul>
+  `
+}, //a
+
+"Salvaterra de Magos": {
+    imagens: [
+    "./images/Concelhos/SalvaterraDeMagos1.png",
+    "./images/Concelhos/SalvaterraDeMagos2.png",
+    "./images/Concelhos/SalvaterraDeMagos3.png",
+    "./images/Concelhos/SalvaterraDeMagos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado na margem sul do Tejo, numa paisagem marcada por lezírias, arrozais e zonas húmidas.</li>
+
+      <li><strong>Paço Real:</strong> Salvaterra de Magos foi uma importante residência da família real portuguesa, sobretudo durante os séculos XVIII e XIX. O antigo Paço Real esteve ligado à caça, às actividades equestres e à vida da Corte.</li>
+
+      <li><strong>Falcoaria Real:</strong> A Falcoaria Real de Salvaterra de Magos está ligada à tradição da falcoaria da Casa Real Portuguesa. O edifício actual conserva a memória desta actividade e é um dos elementos mais característicos do património local.</li>
+    </ul>
+  `
+}, //a
+
+"Santarém": {
+    imagens: [
+    "./images/Concelhos/Santarem1.png",
+    "./images/Concelhos/Santarem2.png",
+    "./images/Concelhos/Santarem3.png",
+    "./images/Concelhos/Santarem4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Lezíria do Tejo, pertencente ao distrito de Santarém, situado numa posição elevada sobre o rio Tejo e rodeado pelas planícies da lezíria.</li>
+
+      <li><strong>Reconquista:</strong> Em 1147, D. Afonso Henriques conquistou Santarém aos mouros através de um ataque-surpresa cuidadosamente preparado. O rei partiu de Coimbra com uma pequena força, depois de estudar secretamente as defesas da cidade, e os seus homens escalaram as muralhas durante a noite para abrir as portas ao restante exército.</li>
+
+      <li><strong>Importância Militar:</strong> Após a reconquista, Santarém tornou-se uma posição estratégica na linha do Tejo e serviu de base para o avanço português para sul, contribuindo para a posterior conquista de Lisboa.</li>
+
+      <li><strong>História:</strong> Santarém possui uma história muito antiga, tendo sido um importante centro romano e visigótico.</li>
+    </ul>
+  `
+}, //a
+
+"Sardoal": {
+    imagens: [
+    "./images/Concelhos/Sardoal1.png",
+    "./images/Concelhos/Sardoal2.png",
+    "./images/Concelhos/Sardoal3.png",
+    "./images/Concelhos/Sardoal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado numa zona interior marcada por relevo ondulado e extensas áreas florestais.</li>
+
+      <li><strong>Centro Histórico:</strong> A vila conserva um núcleo urbano antigo com casas tradicionais, igrejas e edifícios de arquitectura religiosa e civil.</li>
+
+      <li><strong>Floresta:</strong> A paisagem do concelho é dominada por áreas florestais e por pequenas zonas agrícolas, características do interior do Médio Tejo.</li>
+    </ul>
+  `
+}, //a
+
+"Tomar": {
+    imagens: [
+    "./images/Concelhos/Tomar1.png",
+    "./images/Concelhos/Tomar2.png",
+    "./images/Concelhos/Tomar3.png",
+    "./images/Concelhos/Tomar4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, atravessado pelo rio Nabão e situado numa zona de transição entre o Ribatejo e o interior centro.</li>
+
+      <li><strong>Templários:</strong> Tomar foi fundada em 1160 por Gualdim Pais, mestre da Ordem dos Templários em Portugal. O castelo e o convento construídos no alto da colina tornaram-se o centro da presença templária na cidade.</li>
+
+      <li><strong>Convento de Cristo:</strong> O Convento de Cristo é o principal monumento de Tomar e reúne elementos românicos, góticos, manuelinos e renascentistas. A Charola templária e a Janela do Capítulo são alguns dos seus elementos mais conhecidos. O conjunto é Património Mundial da UNESCO.</li>
+
+      <li><strong>Ordem de Cristo:</strong> Depois da extinção da Ordem dos Templários em Portugal, os seus bens passaram para a Ordem de Cristo. Tomar manteve-se como um dos principais centros desta ordem, ligada posteriormente à expansão marítima portuguesa.</li>
+
+      <li><strong>Festa dos Tabuleiros:</strong> A Festa dos Tabuleiros é uma das manifestações tradicionais mais conhecidas de Tomar. Realiza-se periodicamente e caracteriza-se pelos grandes tabuleiros de flores e pão transportados pelas ruas da cidade.</li>
+    </ul>
+  `
+}, //a
+
+"Torres Novas": {
+    imagens: [
+    "./images/Concelhos/TorresNovas1.png",
+    "./images/Concelhos/TorresNovas2.png",
+    "./images/Concelhos/TorresNovas3.png",
+    "./images/Concelhos/TorresNovas4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado junto ao rio Almonda e às primeiras elevações das Serras de Aire e Candeeiros.</li>
+
+      <li><strong>Castelo:</strong> O Castelo de Torres Novas domina a cidade e conserva parte das muralhas medievais. A fortificação teve importância na defesa da fronteira durante a Reconquista e na organização do território medieval.</li>
+
+      <li><strong>Rio Almonda:</strong> O rio Almonda nasce na Serra de Aire e atravessa o concelho, tendo desempenhado um papel importante na agricultura e no desenvolvimento industrial da região.</li>
+
+      <li><strong>Paul do Boquilobo:</strong> A Reserva Natural do Paul do Boquilobo, na zona sul do concelho, é uma importante zona húmida e integra a Rede Mundial de Reservas da Biosfera da UNESCO.</li>
+    </ul>
+  `
+}, //a
+
+"Vila Nova da Barquinha": {
+    imagens: [
+    "./images/Concelhos/VilaNovaDaBarquinha1.png",
+    "./images/Concelhos/VilaNovaDaBarquinha2.png",
+    "./images/Concelhos/VilaNovaDaBarquinha3.png",
+    "./images/Concelhos/VilaNovaDaBarquinha4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado junto ao rio Tejo e à confluência com o rio Zêzere. O território tem uma forte relação histórica com a navegação fluvial.</li>
+
+      <li><strong>Castelo de Almourol:</strong> O Castelo de Almourol ergue-se numa pequena ilha do rio Tejo e é um dos castelos mais conhecidos de Portugal. Foi reconstruído pelos Templários no século XII sobre uma antiga fortificação.</li>
+
+      <li><strong>Tancos:</strong> A vila de Tancos conserva uma longa relação com o Tejo e com a actividade militar. A sua localização junto ao rio e em frente ao Castelo de Almourol contribui para a importância histórica da paisagem.</li>
+
+      <li><strong>Tejo:</strong> O rio foi durante séculos uma via de transporte fundamental para o concelho, ligando as povoações ribeirinhas ao interior e a Lisboa.</li>
+    </ul>
+  `
+}, //a
+
+// Fim de Santarém
+
+// Início de Portalegre
+
+"Alter do Chão": {
+    imagens: [
+    "./images/Concelhos/AlterDoChao1.png",
+    "./images/Concelhos/AlterDoChao2.png",
+    "./images/Concelhos/AlterDoChao3.png",
+    "./images/Concelhos/AlterDoChao4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona ocidental do distrito, numa paisagem de planície e montado.</li>
+
+      <li><strong>Alter Real:</strong> A Coudelaria de Alter, fundada em 1748 por D. João V, é uma das instituições mais antigas ligadas à criação de cavalos em Portugal. A raça Lusitana e a tradição equestre estão fortemente associadas ao concelho.</li>
+
+      <li><strong>Castelo:</strong> O Castelo de Alter do Chão foi reconstruído no século XIV por D. Pedro I e distingue-se por ter sido construído no centro da vila, em vez de ocupar uma posição elevada.</li>
+
+      <li><strong>Herança Romana:</strong> O concelho possui importantes vestígios da época romana, destacando-se a Casa da Medusa e o mosaico de Alexandre, o Grande.</li>
+
+      <li><strong>Património Equestre:</strong> A criação de cavalos, as actividades tauromáquicas e a tradição rural do Alto Alentejo fazem parte da identidade cultural do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Arronches": {
+    imagens: [
+    "./images/Concelhos/Arronches1.png",
+    "./images/Concelhos/Arronches2.png",
+    "./images/Concelhos/Arronches3.png",
+    "./images/Concelhos/Arronches4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertence ao distrito de Portalegre, situado no nordeste do distrito e faz fronteira com Espanha.</li>
+
+      <li><strong>Castelo e Fronteira:</strong> A posição fronteiriça de Arronches contribuiu para a construção e reforço das suas fortificações. A vila conserva vestígios das antigas muralhas e do castelo.</li>
+
+      <li><strong>Serra de São Mamede:</strong> Parte do território integra a paisagem da Serra de São Mamede, com relevo mais acentuado, montado e áreas florestais.</li>
+
+      <li><strong>Rio Caia:</strong> O rio Caia atravessa o território e está associado à paisagem rural e agrícola do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Avis": {
+    imagens: [
+    "./images/Concelhos/Avis1.png",
+    "./images/Concelhos/Avis2.png",
+    "./images/Concelhos/Avis3.png",
+    "./images/Concelhos/Avis4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona ocidental do distrito, numa paisagem de montado e albufeiras.</li>
+
+      <li><strong>Ordem de Avis:</strong> A vila está intimamente ligada à Ordem de Avis, ordem militar criada no contexto da Reconquista e que viria a dar nome à dinastia iniciada por D. João I.</li>
+
+      <li><strong>Castelo e Convento:</strong> O castelo de Avis e o antigo convento da Ordem de Avis constituem o principal conjunto monumental da vila, testemunhando a importância que a ordem adquiriu no território.</li>
+
+      <li><strong>Albufeira do Maranhão:</strong> A albufeira do Maranhão é um dos principais elementos naturais do concelho, ocupando o vale da ribeira de Seda e criando uma extensa paisagem de água e montado.</li>
+
+      <li><strong>Agricultura:</strong> O montado, a criação de gado e as culturas agrícolas tradicionais continuam a marcar a paisagem rural de Avis.</li>
+    </ul>
+  `
+}, //a
+
+"Campo Maior": {
+    imagens: [
+    "./images/Concelhos/CampoMaior1.png",
+    "./images/Concelhos/CampoMaior2.png",
+    "./images/Concelhos/CampoMaior3.png",
+    "./images/Concelhos/CampoMaior4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no extremo leste do distrito, fazendo fronteira com Espanha e muito próximo de Elvas e Badajoz.</li>
+
+      <li><strong>Fortificações:</strong> A posição fronteiriça de Campo Maior levou à construção de um importante sistema defensivo. O castelo e as fortificações abaluartadas dominam a vila e testemunham os conflitos entre Portugal e Espanha.</li>
+
+      <li><strong>Café:</strong> A indústria do café tem uma importância excepcional na história económica moderna de Campo Maior. A actividade está sobretudo ligada à família Nabeiro e à criação da Delta Cafés.</li>
+
+      <li><strong>Festas do Povo:</strong> As Festas do Povo são a principal manifestação cultural de Campo Maior. Durante a festa, as ruas da vila são decoradas com milhares de flores de papel produzidas pela própria população.</li>
+
+      <li><strong>História Militar:</strong> Campo Maior esteve envolvido em vários episódios das guerras da Restauração e dos conflitos fronteiriços entre Portugal e Espanha.</li>
+    </ul>
+  `
+}, //a
+
+"Castelo de Vide": {
+    imagens: [
+    "./images/Concelhos/CasteloDeVide1.png",
+    "./images/Concelhos/CasteloDeVide2.png",
+    "./images/Concelhos/CasteloDeVide3.png",
+    "./images/Concelhos/CasteloDeVide4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na Serra de São Mamede e fazendo fronteira com Espanha.</li>
+
+      <li><strong>Castelo e Vila Medieval:</strong> O castelo e as muralhas dominam a parte alta da vila, que conserva um núcleo medieval com ruas estreitas e casas tradicionais.</li>
+
+      <li><strong>Fontes e Termas:</strong> A abundância de água é uma das características da vila. As fontes e as antigas termas de Castelo de Vide contribuíram para a sua fama como local de águas e de veraneio.</li>
+
+      <li><strong>Serra de São Mamede:</strong> O relevo e a vegetação da serra distinguem Castelo de Vide das paisagens mais abertas do restante Alto Alentejo.</li>
+    </ul>
+  `
+}, //a
+
+"Crato": {
+    imagens: [
+    "./images/Concelhos/Crato1.png",
+    "./images/Concelhos/Crato2.png",
+    "./images/Concelhos/Crato3.png",
+    "./images/Concelhos/Crato4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado entre a planície alentejana e as primeiras elevações da Serra de São Mamede.</li>
+
+      <li><strong>Ordem do Hospital:</strong> O Crato foi durante séculos um dos principais centros da Ordem do Hospital em Portugal. A ordem estabeleceu aqui a sua sede e deixou um importante património religioso e militar.</li>
+
+      <li><strong>Crato e Nuno Álvares Pereira:</strong> A história do concelho está fortemente ligada à família de D. Nuno Álvares Pereira e à Ordem do Hospital, da qual o seu pai foi Prior.</li>
+
+      <li><strong>Património Rural:</strong> O concelho conserva uma paisagem de montado, olival e pastagens, característica do Alto Alentejo.</li>
+    </ul>
+  `
+}, //a
+
+"Elvas": {
+    imagens: [
+    "./images/Concelhos/Elvas1.png",
+    "./images/Concelhos/Elvas2.png",
+    "./images/Concelhos/Elvas3.png",
+    "./images/Concelhos/Elvas4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertence ao distrito de Portalegre e faz fronteira com Espanha, em frente a Badajoz. A posição tornou Elvas uma das principais praças militares de Portugal.</li>
+
+      <li><strong>Fortificações:</strong> Elvas possui um dos maiores e mais completos sistemas de fortificações abaluartadas do mundo. O conjunto inclui as muralhas, o Forte de Santa Luzia, o Forte da Graça e vários fortins.</li>
+
+      <li><strong>Património Mundial:</strong> A Cidade-Quartel Fronteiriça de Elvas e as suas Fortificações foram classificadas como Património Mundial pela UNESCO em 2012.</li>
+
+      <li><strong>Aqueduto da Amoreira:</strong> O Aqueduto da Amoreira foi construído para garantir o abastecimento de água à cidade e é um dos elementos mais reconhecíveis da paisagem urbana de Elvas.</li>
+
+      <li><strong>História Militar:</strong> A posição de Elvas foi decisiva durante a Guerra da Restauração, quando a cidade funcionou como principal praça militar portuguesa da fronteira do Alentejo.</li>
+    </ul>
+  `
+}, //a
+
+"Fronteira": {
+    imagens: [
+    "./images/Concelhos/Fronteira1.png",
+    "./images/Concelhos/Fronteira2.png",
+    "./images/Concelhos/Fronteira3.png",
+    "./images/Concelhos/Fronteira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona central do distrito, numa paisagem de planície, montado e olival.</li>
+
+      <li><strong>Batalha dos Atoleiros:</strong> Em 1384, D. Nuno Álvares Pereira derrotou uma força castelhana na Batalha dos Atoleiros, travada nas proximidades da vila. A batalha foi uma das primeiras vitórias portuguesas durante a crise de 1383–1385.</li>
+
+      <li><strong>Memória de Nuno Álvares Pereira:</strong> A ligação à Batalha dos Atoleiros e ao Condestável é uma das principais referências históricas do concelho.</li>
+
+      <li><strong>Castelo:</strong> O castelo de Fronteira foi construído para reforçar a defesa da vila e integra o património medieval do concelho.</li>
+
+      <li><strong>Agricultura:</strong> A paisagem é dominada pelo montado, olivais, vinhas e áreas de pastagem, características do Alto Alentejo.</li>
+    </ul>
+  `
+}, //a
+
+"Gavião": {
+    imagens: [
+    "./images/Concelhos/Gaviao1.png",
+    "./images/Concelhos/Gaviao2.png",
+    "./images/Concelhos/Gaviao3.png",
+    "./images/Concelhos/Gaviao4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado junto ao rio Tejo e às áreas florestais do norte do Alentejo.</li>
+
+      <li><strong>Castelo de Belver:</strong> O Castelo de Belver foi construído no século XII pela Ordem dos Hospitalários para defender a passagem do Tejo. A fortificação ocupa uma posição elevada sobre o rio.</li>
+
+      <li><strong>Tejo:</strong> O rio constitui um dos principais elementos geográficos do concelho, formando uma paisagem de vales e encostas arborizadas.</li>
+
+      <li><strong>Albufeira do Fratel:</strong> A construção da barragem do Fratel transformou a paisagem do Tejo e criou uma extensa albufeira junto às povoações ribeirinhas.</li>
+
+      <li><strong>Belver:</strong> A antiga vila de Belver conserva o castelo e um núcleo histórico associado à presença da Ordem do Hospital.</li>
+    </ul>
+  `
+}, //a
+
+"Marvão": {
+    imagens: [
+    "./images/Concelhos/Marvao1.png",
+    "./images/Concelhos/Marvao2.png",
+    "./images/Concelhos/Marvao3.png",
+    "./images/Concelhos/Marvao4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no alto da Serra de São Mamede e fazendo fronteira com Espanha.</li>
+
+      <li><strong>Castelo de Marvão:</strong> O castelo domina a vila a partir de uma posição muito elevada e foi uma das principais fortificações da fronteira alentejana. As muralhas envolvem grande parte do núcleo histórico.</li>
+
+      <li><strong>Vila Histórica:</strong> Marvão conserva um dos núcleos urbanos medievais mais bem preservados do Alto Alentejo, com ruas estreitas, casas caiadas e uma forte relação com as muralhas.</li>
+
+      <li><strong>Serra de São Mamede:</strong> O concelho integra a zona mais elevada da serra, com paisagens florestais e um clima mais fresco e húmido do que o das planícies alentejanas.</li>
+
+      <li><strong>Património:</strong> A vila e o castelo constituem o principal conjunto patrimonial do concelho, complementado por igrejas, fontes e vestígios arqueológicos espalhados pelo território.</li>
+    </ul>
+  `
+}, //a
+
+"Monforte": {
+    imagens: [
+    "./images/Concelhos/Monforte1.png",
+    "./images/Concelhos/Monforte2.png",
+    "./images/Concelhos/Monforte3.png",
+    "./images/Concelhos/Monforte4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado numa zona de planície entre Portalegre e Elvas.</li>
+
+      <li><strong>Villa Romana de Torre de Palma:</strong> Torre de Palma foi uma importante propriedade rural romana. O complexo inclui uma villa monumental, uma basílica paleocristã e um baptistério, constituindo um dos principais sítios arqueológicos romanos do Alentejo.</li>
+
+      <li><strong>Castelo:</strong> O Castelo de Monforte domina a vila e testemunha a importância estratégica que o território teve durante a Idade Média.</li>
+
+      <li><strong>Agricultura e Pecuária:</strong> A paisagem do concelho é marcada pelo montado, olival, cereais e criação de gado.</li>
+    </ul>
+  `
+}, //a
+
+"Nisa": {
+    imagens: [
+    "./images/Concelhos/Nisa1.png",
+    "./images/Concelhos/Nisa2.png",
+    "./images/Concelhos/Nisa3.png",
+    "./images/Concelhos/Nisa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado junto ao rio Tejo e fazendo fronteira com Espanha através do território de Montalvão.</li>
+
+      <li><strong>Serra de São Miguel:</strong> A vila de Nisa encontra-se numa zona de relevo suave junto às formações da Serra de São Miguel, com paisagens de montado, olival e floresta.</li>
+
+      <li><strong>Olaria:</strong> Nisa possui uma longa tradição de olaria, caracterizada pela utilização de barro vermelho e pela decoração com desenhos brancos. A produção artesanal é uma das marcas culturais do concelho.</li>
+
+      <li><strong>Bordados de Nisa:</strong> Os bordados tradicionais de Nisa são conhecidos pelos motivos florais e pela utilização de cores vivas. Constituem uma das principais manifestações do artesanato local.</li>
+
+      <li><strong>Termas:</strong> As Termas da Fadagosa de Nisa são conhecidas pelas suas águas minerais e fazem parte da tradição termal do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Ponte de Sor": {
+    imagens: [
+    "./images/Concelhos/PonteDeSor1.png",
+    "./images/Concelhos/PonteDeSor2.png",
+    "./images/Concelhos/PonteDeSor3.png",
+    "./images/Concelhos/PonteDeSor4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona ocidental do distrito, atravessado pela Ribeira de Sor.</li>
+
+      <li><strong>Ponte e História:</strong> O nome da cidade está ligado à antiga ponte sobre a Ribeira de Sor, provavelmente de origem romana. A localização junto a esta passagem contribuiu para o desenvolvimento da povoação.</li>
+
+      <li><strong>Barragem de Montargil:</strong> A albufeira de Montargil é um dos principais elementos naturais do concelho, rodeada por montado e utilizada para actividades náuticas e recreativas.</li>
+
+      <li><strong>Indústria da Cortiça:</strong> Ponte de Sor tornou-se um importante centro da indústria corticeira, actividade que continua a ter grande peso na economia local.</li>
+
+      <li><strong>Montargil:</strong> A freguesia de Montargil possui património megalítico e romano, além da extensa albufeira que domina a paisagem local.</li>
+    </ul>
+  `
+}, //a
+
+"Portalegre": {
+    imagens: [
+    "./images/Concelhos/Portalegre1.png",
+    "./images/Concelhos/Portalegre2.png",
+    "./images/Concelhos/Portalegre3.png",
+    "./images/Concelhos/Portalegre4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Capital do distrito de Portalegre e principal cidade do Alto Alentejo, situada nas encostas da Serra de São Mamede, numa zona de relevo mais acentuado e clima relativamente húmido.</li>
+
+      <li><strong>Castelo e Cidade Medieval:</strong> O Castelo de Portalegre domina a parte alta da cidade e conserva parte das antigas muralhas. A cidade medieval desenvolveu-se em torno desta fortificação e de uma segunda linha de defesa.</li>
+
+      <li><strong>Serra de São Mamede:</strong> O concelho integra a principal área montanhosa do Alto Alentejo, com extensas zonas florestais e paisagens diferentes das planícies alentejanas.</li>
+
+      <li><strong>Indústria Têxtil:</strong> Portalegre teve uma importante indústria têxtil, destacando-se a Manufactura de Tapeçarias de Portalegre, conhecida pelos seus tapetes e tapeçarias de autor.</li>
+
+      <li><strong>Património:</strong> A Sé de Portalegre, o antigo Convento de São Bernardo e o conjunto de igrejas e palácios da cidade constituem parte importante do património histórico local.</li>
+    </ul>
+  `
+}, //a
+
+"Sousel": {
+    imagens: [
+    "./images/Concelhos/Sousel1.png",
+    "./images/Concelhos/Sousel2.png",
+    "./images/Concelhos/Sousel3.png",
+    "./images/Concelhos/Sousel4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no extremo sudoeste do distrito, numa paisagem de planície, montado e olival.</li>
+
+      <li><strong>Olival e Azeite:</strong> A olivicultura é uma das principais actividades agrícolas do concelho. A paisagem é marcada por extensos olivais e a produção de azeite constitui uma tradição local.</li>
+
+      <li><strong>Convento de Nossa Senhora da Graça:</strong> O antigo Convento de Nossa Senhora da Graça é um dos principais elementos do património religioso da vila.</li>
+
+      <li><strong>História:</strong> O território possui vestígios de ocupação desde a Antiguidade e desenvolveu-se durante a Idade Média como povoação do interior alentejano.</li>
+
+      <li><strong>Património Rural:</strong> O concelho conserva uma paisagem tradicional de montado, olival, vinhas e pequenas povoações agrícolas.</li>
+    </ul>
+  `
+}, //a
+
+// Fim de Portalegre
+ 
+
 
 };

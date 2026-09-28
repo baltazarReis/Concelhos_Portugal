@@ -1,0 +1,38 @@
+Problemas no mapa atual:
+
+Adicionar accuracy
+
+Faltam descrições para os distritos de:
+
+1 Castelo Branco
+2 Coimbra
+3 Porto
+4 Aveiro
+5 Guarda
+6 Viseu
+7 Braga
+8 Vila Real
+9 Viana do Castelo
+10 Bragança
+11 Açores
+12 Madeira
+
+Faltam imagens para os distritos de:
+
+1 Faro
+2 Évora
+3 Santarém
+4 Portalegre
+5 Leiria
+6 Castelo Branco
+7 Coimbra
+8 Porto
+9 Aveiro
+10 Guarda
+11 Viseu
+12 Braga
+13 Vila Real
+14 Viana do Castelo
+15 Bragança
+16 Açores
+17 Madeira
