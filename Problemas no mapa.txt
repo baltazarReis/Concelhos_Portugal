@@ -4,18 +4,15 @@ Adicionar accuracy
 
 Faltam descrições para os distritos de:
 
-1 Castelo Branco
-2 Coimbra
-3 Porto
-4 Aveiro
-5 Guarda
-6 Viseu
-7 Braga
-8 Vila Real
-9 Viana do Castelo
-10 Bragança
-11 Açores
-12 Madeira
+
+1 Coimbra
+2 Porto
+3 Aveiro
+4 Guarda
+5 Viseu
+6 Braga
+7 Vila Real
+
 
 Faltam imagens para os distritos de:
 

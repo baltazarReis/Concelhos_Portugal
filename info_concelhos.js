@@ -895,7 +895,7 @@ export const dadosConcelhos = {
 
 // Fim Beja
 
-// Início Faro
+// Início de Faro
  
 "Albufeira": {
     imagens: [
@@ -917,7 +917,7 @@ export const dadosConcelhos = {
       <li><strong>Gastronomia:</strong> Destaca-se pela cataplana de marisco, pelas amêijoas e por doces tradicionais à base de amêndoa e figo.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Alcoutim": {
     imagens: [
@@ -939,7 +939,7 @@ export const dadosConcelhos = {
       <li><strong>Produtos Tradicionais:</strong> A Serra do Caldeirão marca a paisagem interior do concelho, associada à produção de mel e de aguardente de medronho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Aljezur": {
     imagens: [
@@ -959,7 +959,7 @@ export const dadosConcelhos = {
       <li><strong>Batata-doce de Aljezur:</strong> As várzeas junto às ribeiras do concelho são propícias ao cultivo da batata-doce de Aljezur, produto que serve de base para diversos pratos e doces tradicionais.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Castro Marim": {
     imagens: [
@@ -979,7 +979,7 @@ export const dadosConcelhos = {
       <li><strong>Sapal e Salinas:</strong> A Reserva Natural do Sapal de Castro Marim e Vila Real de Santo António preserva antigas salinas ainda hoje em produção, das quais se destaca a flor de sal.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Faro": {
     imagens: [
@@ -1001,7 +1001,7 @@ export const dadosConcelhos = {
       <li><strong>Tradições:</strong> Destacam-se festividades como a procissão do Enterro, na Sexta-Feira Santa, e a doçaria de amêndoa e figo típica da época da floração das amendoeiras.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Lagoa (Continente)": {
     imagens: [
@@ -1021,7 +1021,7 @@ export const dadosConcelhos = {
       <li><strong>Costa e Falésias:</strong> O litoral inclui a Praia da Marinha, frequentemente apontada entre as mais belas da Europa, e a Gruta de Benagil, com a sua característica abertura no tecto.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Lagos": {
     imagens: [
@@ -1036,12 +1036,12 @@ export const dadosConcelhos = {
  
       <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1249, integrando-se então definitivamente no território algarvio do Reino de Portugal.</li>
  
-      <li><strong>Descobrimentos:</strong> No século XV, Lagos serviu de base às navegações promovidas pelo Infante D. Henrique, sendo ponto de partida de diversas expedições ao longo da costa africana.</li>
+      <li><strong>Descobrimentos:</strong> No século XV, Lagos serviu de base às navegações promovidas pelo Infante D. Henrique, sendo ponto de partida de diversas expedições ao longo da costa africana. Também daqui partiu Gil Eanes, natural de Lagos, que em 1434 dobrou o Cabo Bojador, ultrapassando o limite que durante décadas travara o avanço português para sul. Lagos continuou a servir de base a várias expedições e ao comércio resultante das viagens pela costa africana.</li>
  
       <li><strong>Ponta da Piedade:</strong> O promontório da Ponta da Piedade, com as suas falésias douradas, arcos e grutas, é um dos ex-líbris naturais do concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Loulé": {
     imagens: [
@@ -1061,7 +1061,7 @@ export const dadosConcelhos = {
       <li><strong>Artesanato:</strong> Mantém tradições de olaria, trabalho do cobre e da palma, herdadas de uma longa história rural e comercial.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Monchique": {
     imagens: [
@@ -1081,7 +1081,7 @@ export const dadosConcelhos = {
       <li><strong>Produtos da Serra:</strong> A economia rural do concelho está ligada à castanha, ao mel e, sobretudo e à produção de aguardente de medronho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Olhão": {
     imagens: [
@@ -1101,7 +1101,7 @@ export const dadosConcelhos = {
       <li><strong>Pesca:</strong> A tradição piscatória mantém-se viva nos mercados junto à ria, onde se vende diariamente peixe e marisco fresco, incluindo polvo e atum.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Portimão": {
     imagens: [
@@ -1121,7 +1121,7 @@ export const dadosConcelhos = {
       <li><strong>Praia da Rocha:</strong> A Praia da Rocha, com as suas falésias de arenito e formações rochosas isoladas, tornou-se desde o início do século XX um dos destinos balneares mais conhecidos do Algarve.</li>
     </ul>
   `
-}, //a
+}, 
  
 "São Brás de Alportel": {
     imagens: [
@@ -1141,7 +1141,7 @@ export const dadosConcelhos = {
       <li><strong>Tradições:</strong> Realiza anualmente a Feira do Enchido e do Presunto, celebrando os produtos tradicionais da matança do porco e da gastronomia serrana.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Silves": {
     imagens: [
@@ -1155,11 +1155,13 @@ export const dadosConcelhos = {
       <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no interior do Algarve central, à margem do rio Arade.</li>
  
       <li><strong>Reconquista Cristã:</strong> Foi reconquistada em 1189 por D. Sancho I, com o apoio de cruzados do norte da Europa, perdida de novo em 1191 e definitivamente reconquistada em 1249.</li>
+
+      <li><strong>Descobrimentos:</strong> Silves está associada a Diogo de Silves, navegador a quem é tradicionalmente atribuída a descoberta de algumas das ilhas dos Açores em 1427, nomeadamente Santa Maria. A identificação de Diogo de Silves com um natural de Silves não é, contudo, totalmente consensual entre os historiadores.</li>
  
       <li><strong>Laranjais:</strong> O concelho é um dos maiores produtores de citrinos do país, sendo a laranja um dos símbolos da região, celebrada anualmente numa feira medieval de grande dimensão.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Tavira": {
     imagens: [
@@ -1173,13 +1175,15 @@ export const dadosConcelhos = {
       <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no litoral leste do Algarve, atravessado pelo rio Gilão.</li>
  
       <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1242 por D. Paio Peres Correia, na sequência da lenda dos Sete Cavaleiros de Tavira, mortos numa emboscada às portas da vila.</li>
+
+      <li><strong>Descobrimentos:</strong> Tavira teve um papel importante na expansão portuguesa para o Norte de África. Em 1415, após a conquista de Ceuta, a armada portuguesa passou por Tavira no regresso ao Algarve, e a cidade manteve um importante porto ligado às expedições e ao abastecimento das praças portuguesas em Marrocos. Foi também em Tavira que os infantes D. Pedro e D. Henrique receberam, no regresso de Ceuta, respectivamente, os títulos de Duque de Coimbra e Duque de Viseu.</li>
  
       <li><strong>Igrejas e Ponte:</strong> A cidade é conhecida pelo elevado número de igrejas históricas e pela antiga ponte Romana sobre o Gilão, que liga as duas margens do centro histórico.</li>
  
       <li><strong>Ilha e Salinas:</strong> A Ilha de Tavira e as salinas vizinhas marcam a paisagem costeira, associada tradicionalmente à pesca do atum através da chamada arte da armação.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Vila do Bispo": {
     imagens: [
@@ -1192,14 +1196,14 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no extremo sudoeste do Algarve e de Portugal continental, incluindo o promontório de Sagres e o Cabo de São Vicente.</li>
  
-      <li><strong>Sagres e os Descobrimentos:</strong> A tradição associa Sagres ao Infante D. Henrique e a uma pretensa "escola de navegação", que teria contribuído para o início dos Descobrimentos portugueses no século XV.</li>
+      <li><strong>Sagres e os Descobrimentos:</strong> Além de ter mandado construir no promontório a Fortaleza de Sagres a tradição associa Sagres ao Infante D. Henrique e a uma escola de navegação, que teria contribuído para o início dos Descobrimentos portugueses no século XV.</li>
  
       <li><strong>Cabo de São Vicente:</strong> Considerado sagrado desde a Antiguidade sob o nome de Promontorium Sacrum, o Cabo de São Vicente é hoje um dos pontos mais emblemáticos da costa portuguesa, assinalado pelo seu farol e marcando o extremo sudoeste da Europa continental.</li>
  
       <li><strong>Surf:</strong> As praias do concelho, como o Beliche e o Tonel, são reconhecidas internacionalmente pela qualidade das suas ondas.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Vila Real de Santo António": {
     imagens: [
@@ -1219,7 +1223,7 @@ export const dadosConcelhos = {
       <li><strong>Ponte Internacional:</strong> A Ponte Internacional do Guadiana liga hoje o concelho a Espanha, reforçando a sua condição de porta de entrada no Algarve.</li>
     </ul>
   `
-}, //a
+}, 
  
 // Fim de Faro
  
@@ -1247,7 +1251,7 @@ export const dadosConcelhos = {
       <li><strong>Gastronomia:</strong> Destacam-se pratos como a açorda alentejana, as migas e o ensopado de borrego, acompanhados por vinhos e queijos da região.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Alandroal": {
     imagens: [
@@ -1267,7 +1271,7 @@ export const dadosConcelhos = {
       <li><strong>Produtos da Terra:</strong> A economia rural assenta na produção de azeite, vinho e mármore, este último extraído na chamada zona dos mármores do Alentejo.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Arraiolos": {
     imagens: [
@@ -1287,7 +1291,7 @@ export const dadosConcelhos = {
       <li><strong>Tapetes de Arraiolos:</strong> A vila é internacionalmente conhecida pelos tapetes de Arraiolos, tapeçarias de lã bordadas sobre linho ou juta, com uma tradição que remonta pelo menos ao século XVII.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Borba": {
     imagens: [
@@ -1307,7 +1311,7 @@ export const dadosConcelhos = {
       <li><strong>Reconquista Cristã:</strong> Tal como o restante território a norte de Évora, foi reintegrado no domínio cristão na sequência da reconquista da cidade em 1165.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Estremoz": {
     imagens: [
@@ -1325,7 +1329,7 @@ export const dadosConcelhos = {
       <li><strong>Bonecos de Estremoz:</strong> As tradicionais figuras de barro pintado, conhecidas como bonecos de Estremoz, foram reconhecidas pela UNESCO como Património Cultural Imaterial da Humanidade em 2017.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Montemor-o-Novo": {
     imagens: [
@@ -1345,7 +1349,7 @@ export const dadosConcelhos = {
       <li><strong>São João de Deus:</strong> A vila é terra natal de São João de Deus, fundador da Ordem Hospitaleira dedicada ao cuidado dos doentes, nascido em Montemor-o-Novo em 1495.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Mora": {
     imagens: [
@@ -1365,7 +1369,7 @@ export const dadosConcelhos = {
       <li><strong>Economia Rural:</strong> A cortiça, o azeite e a criação de gado continuam a marcar a economia e a paisagem do concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Mourão": {
     imagens: [
@@ -1385,7 +1389,7 @@ export const dadosConcelhos = {
       <li><strong>Vinho e Azeite:</strong> A produção de vinho e de azeite mantém-se como uma das actividades tradicionais mais importantes da região.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Portel": {
     imagens: [
@@ -1405,7 +1409,7 @@ export const dadosConcelhos = {
       <li><strong>Azeite:</strong> A olivicultura e a produção de azeite têm também grande importância na economia rural do concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Redondo": {
     imagens: [
@@ -1425,7 +1429,7 @@ export const dadosConcelhos = {
       <li><strong>Vinho:</strong> Redondo dá nome a uma das Denominações de Origem vinícolas mais conhecidas do Alentejo, sendo a viticultura uma actividade central na economia local.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Reguengos de Monsaraz": {
     imagens: [
@@ -1445,7 +1449,7 @@ export const dadosConcelhos = {
       <li><strong>Vinho:</strong> Reguengos de Monsaraz dá nome a uma das regiões vinícolas mais conhecidas do Alentejo, com forte tradição na produção de vinho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Vendas Novas": {
     imagens: [
@@ -1465,7 +1469,7 @@ export const dadosConcelhos = {
       <li><strong>Cortiça e Agricultura:</strong> A exploração da cortiça e a agricultura de sequeiro mantêm-se como actividades económicas relevantes no concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Viana do Alentejo": {
     imagens: [
@@ -1485,7 +1489,7 @@ export const dadosConcelhos = {
       <li><strong>Azeite e Vinho:</strong> A produção de azeite e de vinho, associada à olaria tradicional, mantém-se como uma das bases da economia local.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Vila Viçosa": {
     imagens: [
@@ -1505,7 +1509,7 @@ export const dadosConcelhos = {
       <li><strong>Mármore:</strong> Tal como outros concelhos vizinhos, Vila Viçosa é um importante centro de extracção de mármore, presente em grande parte da arquitectura local.</li>
     </ul>
   `
-}, //a
+}, 
  
 // Fim de Évora
  
@@ -1529,7 +1533,7 @@ export const dadosConcelhos = {
       <li><strong>Gastronomia:</strong> Destaca-se a doçaria conventual e os queijos produzidos na região, associados a uma forte tradição agrícola.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Alvaiázere": {
     imagens: [
@@ -1549,7 +1553,7 @@ export const dadosConcelhos = {
       <li><strong>Produtos Tradicionais:</strong> A economia rural assenta no azeite, na castanha e na apicultura, produtos característicos da paisagem serrana do concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Ansião": {
     imagens: [
@@ -1569,7 +1573,7 @@ export const dadosConcelhos = {
       <li><strong>Floresta e Agricultura:</strong> A economia local está ligada à exploração florestal, sobretudo de pinhal e eucalipto, e à agricultura de sequeiro.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Batalha": {
     imagens: [
@@ -1589,7 +1593,7 @@ export const dadosConcelhos = {
       <li><strong>Origem da Vila:</strong> A própria vila da Batalha desenvolveu-se em torno do mosteiro, cuja construção atraiu população e actividade ao longo dos séculos.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Bombarral": {
     imagens: [
@@ -1607,7 +1611,7 @@ export const dadosConcelhos = {
       <li><strong>Tradições Rurais:</strong> As festas do vinho e da vindima, realizadas anualmente, celebram a forte ligação do concelho à agricultura e à produção vinícola.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Caldas da Rainha": {
     imagens: [
@@ -1627,7 +1631,7 @@ export const dadosConcelhos = {
       <li><strong>Mercado:</strong> O mercado diário de fruta, legumes e flores, na Praça da República, é um dos símbolos mais vivos da identidade da cidade.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Castanheira de Pera": {
     imagens: [
@@ -1647,7 +1651,7 @@ export const dadosConcelhos = {
       <li><strong>Produtos Tradicionais:</strong> A castanha e o mel figuram entre os produtos mais associados à identidade rural do concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Figueiró dos Vinhos": {
     imagens: [
@@ -1667,7 +1671,7 @@ export const dadosConcelhos = {
       <li><strong>Produtos da Serra:</strong> A castanha e o mel são produtos tradicionais da região, associados à paisagem serrana e florestal do concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Marinha Grande": {
     imagens: [
@@ -1687,7 +1691,7 @@ export const dadosConcelhos = {
       <li><strong>Pinhal e Praia:</strong> Parte do Pinhal de Leiria estende-se pelo território do concelho, ligando-o à Praia da Vieira, no litoral atlântico.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Nazaré": {
     imagens: [
@@ -1707,7 +1711,7 @@ export const dadosConcelhos = {
       <li><strong>Canhão da Nazaré:</strong> Ao largo da Praia do Norte encontra-se o Canhão da Nazaré, um desfiladeiro submarino que se estende desde grandes profundidades até muito perto da costa. A sua configuração influencia a propagação das ondas e está na origem das ondas de grande dimensão que tornaram a Praia do Norte conhecida internacionalmente pelo surf.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Óbidos": {
     imagens: [
@@ -1729,7 +1733,7 @@ export const dadosConcelhos = {
       <li><strong>Ginjinha de Óbidos:</strong> É tradicional servir a ginjinha, licor de ginja, em pequenos copos de chocolate, um costume que se tornou uma das imagens de marca da vila.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Pedrógão Grande": {
     imagens: [
@@ -1749,7 +1753,7 @@ export const dadosConcelhos = {
       <li><strong>Floresta:</strong> A economia local está historicamente ligada à exploração florestal e, mais recentemente, ao turismo de natureza.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Peniche": {
     imagens: [
@@ -1777,7 +1781,7 @@ export const dadosConcelhos = {
       <li><strong>Surf:</strong> A costa de Peniche é conhecida pelas condições favoráveis à prática de surf, destacando-se a Praia de Supertubos pelas suas ondas. A cidade tornou-se uma das principais referências portuguesas desta modalidade e recebe competições internacionais.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Pombal": {
     imagens: [
@@ -1797,7 +1801,7 @@ export const dadosConcelhos = {
       <li><strong>Economia:</strong> A agricultura, a exploração florestal e uma indústria diversificada continuam a marcar a economia do concelho.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Porto de Mós": {
     imagens: [
@@ -1823,7 +1827,7 @@ export const dadosConcelhos = {
       <li><strong>Património Industrial:</strong> A indústria têxtil teve grande importância económica em várias localidades do concelho, sobretudo durante os séculos XIX e XX. As fábricas e os antigos bairros operários fazem parte da história industrial de Porto de Mós.</li>
     </ul>
   `
-}, //a
+}, 
  
 "Alcobaça": {
     imagens: [
@@ -1845,7 +1849,7 @@ export const dadosConcelhos = {
       <li><strong>Gastronomia e Fruticultura:</strong> A região é conhecida pela doçaria conventual e pela produção de maçã e de vinho, cultivados nos férteis vales em torno da vila.</li>
     </ul>
   `
-}, //a
+}, 
  
 // Fim de Leiria
 
@@ -1869,7 +1873,7 @@ export const dadosConcelhos = {
       <li><strong>História Militar:</strong> Abrantes teve importância estratégica pela sua posição sobre o Tejo e pelas ligações entre Lisboa, o interior e a fronteira. A cidade esteve também envolvida nas campanhas da Guerra Peninsular.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Alcanena": {
     imagens: [
@@ -1889,7 +1893,7 @@ export const dadosConcelhos = {
       <li><strong>Minde e o Têxtil:</strong> A vila de Minde desenvolveu uma importante actividade têxtil, ligada sobretudo à produção de mantas e tecidos de lã. A localidade conserva esta tradição através do património e da memória industrial.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Almeirim": {
     imagens: [
@@ -1909,7 +1913,7 @@ export const dadosConcelhos = {
       <li><strong>Vinho:</strong> A viticultura tem grande importância no concelho, integrado na região vitivinícola do Tejo. A paisagem agrícola é marcada por extensas áreas de vinha e outras culturas de regadio.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Alpiarça": {
     imagens: [
@@ -1927,7 +1931,7 @@ export const dadosConcelhos = {
       <li><strong>Património Rural:</strong> A paisagem de Alpiarça conserva quintas e antigas propriedades agrícolas associadas à grande exploração agrícola ribatejana.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Benavente": {
     imagens: [
@@ -1947,7 +1951,7 @@ export const dadosConcelhos = {
       <li><strong>Tauromaquia:</strong> As tradições tauromáquicas e equestres fazem parte da cultura ribatejana do concelho, estando associadas às festas, ao gado bravo e às actividades da lezíria.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Cartaxo": {
     imagens: [
@@ -1967,7 +1971,7 @@ export const dadosConcelhos = {
       <li><strong>Vale de Santarém:</strong> A freguesia de Vale de Santarém conserva um importante património rural e religioso e integra a paisagem agrícola tradicional do concelho.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Chamusca": {
     imagens: [
@@ -1987,7 +1991,7 @@ export const dadosConcelhos = {
       <li><strong>Gastronomia:</strong> A cozinha local está ligada aos produtos da lezíria e às tradições gastronómicas ribatejanas, incluindo pratos de carne, caça e peixe do rio.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Constância": {
     imagens: [
@@ -2009,7 +2013,7 @@ export const dadosConcelhos = {
       <li><strong>Património:</strong> A vila conserva um núcleo histórico com casas tradicionais, igrejas e o conjunto paisagístico formado pelos rios Tejo e Zêzere.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Coruche": {
     imagens: [
@@ -2029,7 +2033,7 @@ export const dadosConcelhos = {
       <li><strong>Campinos e Tauromaquia:</strong> A cultura ribatejana está fortemente presente em Coruche, com tradições ligadas aos campinos, ao cavalo e à criação de gado bravo.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Entroncamento": {
     imagens: [
@@ -2049,7 +2053,7 @@ export const dadosConcelhos = {
       <li><strong>Origem da Cidade:</strong> O desenvolvimento do Entroncamento ocorreu sobretudo a partir do século XIX, com a construção das linhas ferroviárias e a instalação de oficinas e serviços ligados à exploração ferroviária.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Ferreira do Zêzere": {
     imagens: [
@@ -2071,7 +2075,7 @@ export const dadosConcelhos = {
       <li><strong>Património Religioso:</strong> O concelho conserva várias igrejas e capelas rurais, destacando-se a Igreja Matriz de Ferreira do Zêzere e o património religioso de Dornes.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Golegã": {
     imagens: [
@@ -2091,7 +2095,7 @@ export const dadosConcelhos = {
       <li><strong>Lezíria:</strong> A agricultura e a criação de cavalos desenvolveram-se numa paisagem de terrenos férteis junto ao Tejo, marcada por campos abertos e antigas quintas agrícolas.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Mação": {
     imagens: [
@@ -2111,7 +2115,7 @@ export const dadosConcelhos = {
       <li><strong>Floresta:</strong> A paisagem é dominada por extensas áreas florestais, sobretudo pinheiro e eucalipto, que tiveram grande importância económica no concelho.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Ourém": {
     imagens: [
@@ -2129,7 +2133,7 @@ export const dadosConcelhos = {
       <li><strong>Castelo e Vila Medieval:</strong> O Castelo de Ourém domina a antiga vila a partir de uma posição elevada. O conjunto medieval inclui o castelo, o Paço dos Condes e uma povoação fortificada adaptada ao relevo.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Rio Maior": {
     imagens: [
@@ -2149,7 +2153,7 @@ export const dadosConcelhos = {
       <li><strong>Villa Romana:</strong> O concelho possui vestígios de ocupação romana, incluindo uma villa romana associada à exploração agrícola do território.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Salvaterra de Magos": {
     imagens: [
@@ -2167,7 +2171,7 @@ export const dadosConcelhos = {
       <li><strong>Falcoaria Real:</strong> A Falcoaria Real de Salvaterra de Magos está ligada à tradição da falcoaria da Casa Real Portuguesa. O edifício actual conserva a memória desta actividade e é um dos elementos mais característicos do património local.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Santarém": {
     imagens: [
@@ -2187,7 +2191,7 @@ export const dadosConcelhos = {
       <li><strong>História:</strong> Santarém possui uma história muito antiga, tendo sido um importante centro romano e visigótico.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Sardoal": {
     imagens: [
@@ -2205,7 +2209,7 @@ export const dadosConcelhos = {
       <li><strong>Floresta:</strong> A paisagem do concelho é dominada por áreas florestais e por pequenas zonas agrícolas, características do interior do Médio Tejo.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Tomar": {
     imagens: [
@@ -2227,7 +2231,7 @@ export const dadosConcelhos = {
       <li><strong>Festa dos Tabuleiros:</strong> A Festa dos Tabuleiros é uma das manifestações tradicionais mais conhecidas de Tomar. Realiza-se periodicamente e caracteriza-se pelos grandes tabuleiros de flores e pão transportados pelas ruas da cidade.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Torres Novas": {
     imagens: [
@@ -2247,7 +2251,7 @@ export const dadosConcelhos = {
       <li><strong>Paul do Boquilobo:</strong> A Reserva Natural do Paul do Boquilobo, na zona sul do concelho, é uma importante zona húmida e integra a Rede Mundial de Reservas da Biosfera da UNESCO.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Vila Nova da Barquinha": {
     imagens: [
@@ -2267,7 +2271,7 @@ export const dadosConcelhos = {
       <li><strong>Tejo:</strong> O rio foi durante séculos uma via de transporte fundamental para o concelho, ligando as povoações ribeirinhas ao interior e a Lisboa.</li>
     </ul>
   `
-}, //a
+}, 
 
 // Fim de Santarém
 
@@ -2293,7 +2297,7 @@ export const dadosConcelhos = {
       <li><strong>Património Equestre:</strong> A criação de cavalos, as actividades tauromáquicas e a tradição rural do Alto Alentejo fazem parte da identidade cultural do concelho.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Arronches": {
     imagens: [
@@ -2313,7 +2317,7 @@ export const dadosConcelhos = {
       <li><strong>Rio Caia:</strong> O rio Caia atravessa o território e está associado à paisagem rural e agrícola do concelho.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Avis": {
     imagens: [
@@ -2335,7 +2339,7 @@ export const dadosConcelhos = {
       <li><strong>Agricultura:</strong> O montado, a criação de gado e as culturas agrícolas tradicionais continuam a marcar a paisagem rural de Avis.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Campo Maior": {
     imagens: [
@@ -2357,7 +2361,7 @@ export const dadosConcelhos = {
       <li><strong>História Militar:</strong> Campo Maior esteve envolvido em vários episódios das guerras da Restauração e dos conflitos fronteiriços entre Portugal e Espanha.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Castelo de Vide": {
     imagens: [
@@ -2377,7 +2381,7 @@ export const dadosConcelhos = {
       <li><strong>Serra de São Mamede:</strong> O relevo e a vegetação da serra distinguem Castelo de Vide das paisagens mais abertas do restante Alto Alentejo.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Crato": {
     imagens: [
@@ -2397,7 +2401,7 @@ export const dadosConcelhos = {
       <li><strong>Património Rural:</strong> O concelho conserva uma paisagem de montado, olival e pastagens, característica do Alto Alentejo.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Elvas": {
     imagens: [
@@ -2419,7 +2423,7 @@ export const dadosConcelhos = {
       <li><strong>História Militar:</strong> A posição de Elvas foi decisiva durante a Guerra da Restauração, quando a cidade funcionou como principal praça militar portuguesa da fronteira do Alentejo.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Fronteira": {
     imagens: [
@@ -2441,7 +2445,7 @@ export const dadosConcelhos = {
       <li><strong>Agricultura:</strong> A paisagem é dominada pelo montado, olivais, vinhas e áreas de pastagem, características do Alto Alentejo.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Gavião": {
     imagens: [
@@ -2463,7 +2467,7 @@ export const dadosConcelhos = {
       <li><strong>Belver:</strong> A antiga vila de Belver conserva o castelo e um núcleo histórico associado à presença da Ordem do Hospital.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Marvão": {
     imagens: [
@@ -2485,7 +2489,7 @@ export const dadosConcelhos = {
       <li><strong>Património:</strong> A vila e o castelo constituem o principal conjunto patrimonial do concelho, complementado por igrejas, fontes e vestígios arqueológicos espalhados pelo território.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Monforte": {
     imagens: [
@@ -2505,7 +2509,7 @@ export const dadosConcelhos = {
       <li><strong>Agricultura e Pecuária:</strong> A paisagem do concelho é marcada pelo montado, olival, cereais e criação de gado.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Nisa": {
     imagens: [
@@ -2527,7 +2531,7 @@ export const dadosConcelhos = {
       <li><strong>Termas:</strong> As Termas da Fadagosa de Nisa são conhecidas pelas suas águas minerais e fazem parte da tradição termal do concelho.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Ponte de Sor": {
     imagens: [
@@ -2549,7 +2553,7 @@ export const dadosConcelhos = {
       <li><strong>Montargil:</strong> A freguesia de Montargil possui património megalítico e romano, além da extensa albufeira que domina a paisagem local.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Portalegre": {
     imagens: [
@@ -2571,7 +2575,7 @@ export const dadosConcelhos = {
       <li><strong>Património:</strong> A Sé de Portalegre, o antigo Convento de São Bernardo e o conjunto de igrejas e palácios da cidade constituem parte importante do património histórico local.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Sousel": {
     imagens: [
@@ -2593,10 +2597,1396 @@ export const dadosConcelhos = {
       <li><strong>Património Rural:</strong> O concelho conserva uma paisagem tradicional de montado, olival, vinhas e pequenas povoações agrícolas.</li>
     </ul>
   `
-}, //a
+}, 
 
 // Fim de Portalegre
- 
 
+// Início Castelo Branco
+
+"Belmonte": {
+    imagens: [
+    "./images/Concelhos/Belmonte1.png",
+    "./images/Concelhos/Belmonte2.png",
+    "./images/Concelhos/Belmonte3.png",
+    "./images/Concelhos/Belmonte4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito de Castelo Branco. O território combina áreas de montanha, vales agrícolas e pequenas povoações históricas.</li>
+
+      <li><strong>Pedro Álvares Cabral:</strong> Belmonte é tradicionalmente associado a Pedro Álvares Cabral, comandante da armada portuguesa que chegou ao Brasil em 1500. A família dos Cabrais esteve profundamente ligada à vila, cujo castelo foi transformado em residência senhorial.</li>
+
+      <li><strong>Castelo e História Medieval:</strong> O Castelo de Belmonte foi construído no século XIII e integrou a linha defensiva do vale do Côa. A posição fronteiriça da região conferiu-lhe importância militar durante os conflitos com Leão e Castela.</li>
+
+      <li><strong>Património Romano:</strong> Nas proximidades da vila encontra-se a Torre de Centum Cellas, uma construção romana de função ainda discutida, integrada num importante conjunto arqueológico da Cova da Beira.</li>
+    </ul>
+  `
+}, //a
+
+"Castelo Branco": {
+    imagens: [
+    "./images/Concelhos/Castelo Branco1.png",
+    "./images/Concelhos/Castelo Branco2.png",
+    "./images/Concelhos/Castelo Branco3.png",
+    "./images/Concelhos/Castelo Branco4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa e capital distrital, situado no centro-sul da região. O território estende-se entre as zonas de planície e o relevo das serras da Gardunha e das Talhadas, aproximando-se a leste da fronteira espanhola através do concelho vizinho de Idanha-a-Nova.</li>
+
+      <li><strong>Jardim do Paço Episcopal:</strong> O Jardim do Paço Episcopal, criado no século XVIII, é um dos mais importantes conjuntos barrocos de Portugal. Destacam-se as escadarias, lagos, jogos de água e numerosas estátuas de figuras religiosas e históricas.</li>
+
+      <li><strong>Bordado de Castelo Branco:</strong> O bordado tradicional, sobretudo nas colchas de seda e linho, constitui uma das manifestações culturais mais características da cidade. Os motivos florais e a utilização de seda colorida tornaram-no particularmente reconhecível.</li>
+
+      <li><strong>Castelo e História:</strong> O Castelo de Castelo Branco conserva parte das antigas muralhas medievais e está associado à organização defensiva da região durante a Idade Média. A cidade desenvolveu-se no interior desse antigo núcleo fortificado.</li>
+    </ul>
+  `
+}, //a
+
+"Covilhã": {
+    imagens: [
+    "./images/Concelhos/Covilhã1.png",
+    "./images/Concelhos/Covilhã2.png",
+    "./images/Concelhos/Covilhã3.png",
+    "./images/Concelhos/Covilhã4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito de Castelo Branco e situado na encosta sudeste da Serra da Estrela. O território sobe desde o vale da Cova da Beira até às áreas montanhosas da serra.</li>
+
+      li><strong>Serra da Estrela:</strong> O concelho ocupa uma parte importante da vertente ocidental da Serra da Estrela, estendendo-se até ao planalto da Torre, o ponto mais elevado de Portugal continental. O concelho inclui áreas do Parque Natural da Serra da Estrela e paisagens de montanha marcadas pela altitude.</li>
+
+      <li><strong>Lanifícios:</strong> A Covilhã desenvolveu desde a Idade Média uma forte tradição na produção de lã e tecidos. No século XVIII, o Marquês de Pombal criou a Real Fábrica de Panos, reforçando a importância da cidade como principal centro português de lanifícios.</li>
+
+      <li><strong>Indústria e Ribeiras:</strong> As ribeiras da Carpinteira e da Goldra foram fundamentais para o funcionamento das antigas fábricas, aproveitando a força da água para a actividade industrial. A paisagem urbana conserva numerosas fábricas e estruturas ligadas à indústria têxtil.</li>
+    </ul>
+  `
+}, //a
+
+"Fundão": {
+    imagens: [
+    "./images/Concelhos/Fundão1.png",
+    "./images/Concelhos/Fundão2.png",
+    "./images/Concelhos/Fundão3.png",
+    "./images/Concelhos/Fundão4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito de Castelo Branco e situado entre a Serra da Gardunha e a planície da Cova da Beira. A paisagem combina montanha, pomares, campos agrícolas e pequenas aldeias históricas.</li>
+
+      <li><strong>Cereja do Fundão:</strong> A produção de cereja é uma das marcas mais características do concelho, sobretudo nas encostas da Serra da Gardunha. Os pomares de cerejeiras alteram significativamente a paisagem durante a época de floração e de colheita.</li>
+
+      <li><strong>Castelo Novo:</strong> A aldeia histórica de Castelo Novo conserva o antigo castelo medieval, ruas de granito, fontes e edifícios tradicionais. A povoação está situada nas encostas da Serra da Gardunha e constitui um dos principais núcleos históricos do concelho.</li>
+
+      <li><strong>Agricultura:</strong> A Cova da Beira possui uma forte tradição agrícola, destacando-se a cereja, pêssego, maçã, azeite e vinho. A agricultura ocupa grande parte dos vales e encostas mais baixas do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Idanha-a-Nova": {
+    imagens: [
+    "./images/Concelhos/Idanha-a-Nova1.png",
+    "./images/Concelhos/Idanha-a-Nova2.png",
+    "./images/Concelhos/Idanha-a-Nova3.png",
+    "./images/Concelhos/Idanha-a-Nova4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa, pertencente ao distrito de Castelo Branco e situado no extremo sudeste do distrito, fazendo fronteira com Espanha. O território estende-se por extensas áreas de planície e inclui zonas montanhosas como Penha Garcia.</li>
+
+      <li><strong>Monsanto:</strong> O concelho inclui Monsanto, aldeia histórica construída sobre uma encosta granítica e dominada pelo castelo. As casas encontram-se frequentemente integradas entre grandes blocos de granito, formando uma das paisagens mais características da Beira Baixa.</li>
+
+      <li><strong>Reconquista:</strong> Em 1165, D. Afonso Henriques doou aos Templários o território de Idanha-a-Velha e Monsanto, reforçando o povoamento e a defesa desta zona de fronteira após a Reconquista.</li>
+
+      <li><strong>Idanha-a-Velha:</strong> A antiga Civitas Igaeditanorum romana conserva vestígios de diferentes épocas, incluindo muralhas, a antiga catedral, ponte romana e elementos arquitectónicos romanos, visigóticos e medievais.</li>
+
+      <li><strong>Penha Garcia:</strong> A freguesia de Penha Garcia é conhecida pelo vale do rio Ponsul e pelos icnofósseis de trilobites.</li>
+
+      <li><strong>Adufe:</strong> O adufe é uma das manifestações musicais mais características do concelho, estando particularmente associado às adufeiras de Monsanto e de outras localidades. O instrumento acompanha tradicionalmente cantos religiosos e populares.</li>
+
+      <li><strong>Fronteira e Termas:</strong> A proximidade de Espanha marcou historicamente o território, enquanto as Termas de Monfortinho constituem um dos principais núcleos termais do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Oleiros": {
+    imagens: [
+    "./images/Concelhos/Oleiros1.png",
+    "./images/Concelhos/Oleiros2.png",
+    "./images/Concelhos/Oleiros3.png",
+    "./images/Concelhos/Oleiros4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa, pertencente ao distrito de Castelo Branco e situado numa zona montanhosa marcada pelas serras do Muradal e do Açor. O território é atravessado por numerosos cursos de água e possui extensas áreas florestais.</li>
+
+      <li><strong>Serra do Muradal:</strong> A Serra do Muradal domina parte do território. A paisagem é marcada por cristas quartzíticas, vales encaixados e áreas florestais.</li>
+
+      <li><strong>Fraga da Água d'Alta:</strong> A Fraga da Água d'Alta é uma das principais quedas de água do concelho, formada pela ribeira de Água d'Alta num vale encaixado e rodeado por vegetação.</li>
+
+      <li><strong>Rio Zêzere e Albufeiras:</strong> O território encontra-se próximo do vale do Zêzere e de várias albufeiras e cursos de água que condicionam a paisagem e as actividades locais.</li>
+
+      <li><strong>Aldeias e Paisagem Rural:</strong> O concelho conserva aldeias de arquitectura tradicional, incluindo Álvaro, situada numa encosta sobre o vale do rio Zêzere, e numerosos exemplos de construções em xisto e granito.</li>
+    </ul>
+  `
+}, //a
+
+"Penamacor": {
+    imagens: [
+    "./images/Concelhos/Penamacor1.png",
+    "./images/Concelhos/Penamacor2.png",
+    "./images/Concelhos/Penamacor3.png",
+    "./images/Concelhos/Penamacor4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa, pertencente ao distrito de Castelo Branco e situado no lado este do distrito, fazendo fronteira com Espanha. O território apresenta um forte contraste entre as áreas montanhosas da Serra da Malcata, a norte, e as zonas de planície e campina a sul.</li>
+
+      <li><strong>Castelo e Fronteira:</strong> O Castelo de Penamacor domina a antiga vila e integrou o sistema defensivo da fronteira portuguesa. A posição raiana tornou o concelho importante nos conflitos históricos entre Portugal e os reinos vizinhos.</li>
+
+      <li><strong>Serra da Malcata:</strong> Grande parte da Reserva Natural da Serra da Malcata encontra-se no concelho. A serra possui extensas áreas florestais e é conhecida pela sua importância para a conservação do lince-ibérico.</li>
+
+      <li><strong>Contrabando:</strong> A proximidade da fronteira espanhola fez do contrabando uma actividade importante para várias comunidades da região durante o século XX. A memória dessa actividade permanece particularmente associada às aldeias da Serra da Malcata.</li>
+
+      <li><strong>Meimão e Albufeira:</strong> A freguesia de Meimão encontra-se junto à Serra da Malcata e à albufeira da barragem da Meimoa, formando uma das paisagens naturais mais características do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Proença-a-Nova": {
+    imagens: [
+    "./images/Concelhos/Proença-a-Nova1.png",
+    "./images/Concelhos/Proença-a-Nova2.png",
+    "./images/Concelhos/Proença-a-Nova3.png",
+    "./images/Concelhos/Proença-a-Nova4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa, pertencente ao distrito de Castelo Branco e situado numa zona de transição entre as serras e os vales do centro da região. O território é marcado por extensas áreas florestais e numerosos cursos de água.</li>
+
+      <li><strong>Praias Fluviais:</strong> A Praia Fluvial da Fróia e a Praia Fluvial de Aldeia Ruiva são dois dos principais espaços naturais do concelho, associados a ribeiras e albufeiras em áreas florestais.</li>
+
+      <li><strong>Trilho Internacional dos Apalaches:</strong> O território de Proença-a-Nova é atravessado pelo Trilho Internacional dos Apalaches, integrado nas serras e paisagens do interior centro.</li>
+
+      <li><strong>Paisagem Florestal:</strong> O concelho possui uma extensa área florestal, tradicionalmente marcada pelo pinheiro e pelo eucalipto, intercalada com pequenas aldeias e áreas agrícolas.</li>
+    </ul>
+  `
+}, //a
+
+"Sertã": {
+    imagens: [
+    "./images/Concelhos/Sertã1.png",
+    "./images/Concelhos/Sertã2.png",
+    "./images/Concelhos/Sertã3.png",
+    "./images/Concelhos/Sertã4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa, pertencente ao distrito de Castelo Branco e situado numa zona de transição entre o Médio Tejo e o interior centro. O território é marcado por vales, ribeiras e extensas áreas florestais.</li>
+
+      <li><strong>Lenda da Sertã:</strong> Segundo a tradição local, durante um ataque romano ao castelo, Celinda, mulher do chefe da fortificação, terá defendido as muralhas lançando azeite a ferver sobre os atacantes a partir de uma sertã. A lenda é tradicionalmente associada à origem do nome da vila.</li>
+
+      <li><strong>Castelo da Sertã:</strong> O castelo ocupa uma elevação no centro da vila. A fortificação esteve também ligada às Ordens do Templo e de São João de Jerusalém durante a Idade Média.</li>
+
+      <li><strong>Ribeiras e Paisagem:</strong> A vila é atravessada pela Ribeira da Sertã e pela Ribeira de Amioso, enquanto o restante território é marcado por vales, serras e áreas florestais.</li>
+
+      <li><strong>Gastronomia:</strong> A gastronomia local inclui os maranhos, preparados tradicionalmente com carne de cabra ou borrego, arroz e hortelã, além de outros pratos associados à cozinha da Beira Baixa.</li>
+    </ul>
+  `
+}, //a
+
+"Vila de Rei": {
+    imagens: [
+    "./images/Concelhos/Vila de Rei1.png",
+    "./images/Concelhos/Vila de Rei2.png",
+    "./images/Concelhos/Vila de Rei3.png",
+    "./images/Concelhos/Vila de Rei4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa, pertencente ao distrito de Castelo Branco e situado numa zona de serras e vales entre o Zêzere e o interior centro. O território possui relevo acidentado e extensas áreas florestais.</li>
+
+      <li><strong>Rio Zêzere:</strong> O rio Zêzere marca parte da paisagem do concelho e está associado à albufeira de Castelo de Bode, formando áreas de água e zonas florestais nas margens.</li>
+
+      <li><strong>Praias Fluviais:</strong> O concelho possui várias zonas balneares fluviais, aproveitando as albufeiras e cursos de água que atravessam o território.</li>
+
+      <li><strong>Centro Geodésico de Portugal:</strong> No Picoto da Melriça encontra-se o Centro Geodésico de Portugal, considerado o ponto central do território continental português. O local possui também o Museu da Geodesia.</li>
+    </ul>
+  `
+}, //a
+
+"Vila Velha de Ródão": {
+    imagens: [
+    "./images/Concelhos/Vila Velha de Ródão1.png",
+    "./images/Concelhos/Vila Velha de Ródão2.png",
+    "./images/Concelhos/Vila Velha de Ródão3.png",
+    "./images/Concelhos/Vila Velha de Ródão4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Beira Baixa, pertencente ao distrito de Castelo Branco e situado junto ao rio Tejo, no extremo sul do distrito. O território estabelece a transição entre a Beira Baixa e o Alto Alentejo.</li>
+
+      <li><strong>Portas de Ródão:</strong> O rio Tejo atravessa a crista quartzítica da Serra do Perdigão através das Portas de Ródão, uma estreita garganta rochosa que constitui o elemento natural mais característico do concelho.</li>
+
+      <li><strong>Castelo do Rei Wamba:</strong> Sobre as Portas de Ródão encontra-se uma antiga torre de vigia, tradicionalmente conhecida como Castelo do Rei Wamba. A fortificação está associada à defesa da linha do Tejo durante a Reconquista.</li>
+
+      <li><strong>Lenda do Rei Wamba:</strong> A tradição local conta a história do rei Wamba e da sua mulher, associando o castelo e as duas margens das Portas de Ródão a uma narrativa de traição, guerra e resgate.</li>
+
+      <li><strong>Arte Rupestre do Vale do Tejo:</strong> O concelho conserva importantes vestígios de arte rupestre pré-histórica junto ao Tejo. O complexo do Vale do Tejo inclui milhares de gravuras, muitas das quais ficaram submersas após a construção da barragem do Fratel.</li>
+
+      <li><strong>Natureza:</strong> As Portas de Ródão constituem também habitat de numerosas aves rupícolas, destacando-se a grande colónia de grifos existente nas escarpas do Tejo.</li>
+    </ul>
+  `
+}, //a
+
+// Fim de Castelo Branco
+
+// Início de Viana do Castelo
+
+"Arcos de Valdevez": {
+    imagens: [
+    "./images/Concelhos/Arcos de Valdevez1.png",
+    "./images/Concelhos/Arcos de Valdevez2.png",
+    "./images/Concelhos/Arcos de Valdevez3.png",
+    "./images/Concelhos/Arcos de Valdevez4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado no vale do rio Vez, entre as serras do Soajo e da Peneda. Grande parte do território integra o Parque Nacional da Peneda-Gerês.</li>
+
+      <li><strong>Recontro de Valdevez:</strong> Em 1141, D. Afonso Henriques e o rei Afonso VII de Leão e Castela confrontaram-se no vale do Vez, num momento de tensão entre os dois monarcas. Em vez de uma batalha campal, o confronto assumiu a forma de um recontro entre cavaleiros, terminando com a vitória das forças Portuguesas. O episódio contribuiu para a afirmação da autonomia de D. Afonso Henriques perante o rei leonês e é considerado um dos acontecimentos marcantes do processo que conduziu à independência de Portugal.</li>
+
+      <li><strong>Soajo:</strong> A freguesia de Soajo, integrada no Parque Nacional da Peneda-Gerês, é conhecida pelo conjunto de espigueiros de granito construídos sobre um afloramento rochoso e pela paisagem de montanha.</li>
+
+      <li><strong>Sistelo:</strong> A aldeia de Sistelo é conhecida pelos socalcos agrícolas construídos nas encostas do vale do Vez, formando uma paisagem rural particularmente característica do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Caminha": {
+    imagens: [
+    "./images/Concelhos/Caminha1.png",
+    "./images/Concelhos/Caminha2.png",
+    "./images/Concelhos/Caminha3.png",
+    "./images/Concelhos/Caminha4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado no extremo noroeste de Portugal, entre o rio Minho, o rio Âncora e o oceano Atlântico. A norte faz fronteira com Espanha através do rio Minho.</li>
+
+      <li><strong>Forte da Ínsua:</strong> Na foz do Minho encontra-se a pequena ilha da Ínsua, onde foi construído um forte que inclui no seu interior um antigo convento franciscano. A fortificação controlava a entrada do rio e a navegação junto à fronteira.</li>
+
+      <li><strong>Caminha Medieval:</strong> A vila conserva parte das antigas muralhas e estruturas defensivas, incluindo a Torre do Relógio. A sua posição junto à foz do Minho tornou-a uma importante praça fronteiriça.</li>
+
+      <li><strong>Vila Praia de Âncora:</strong> A freguesia de Vila Praia de Âncora possui uma forte ligação à pesca e ao mar, com uma extensa praia e um antigo porto de abrigo associado às actividades marítimas locais.</li>
+
+      <li><strong>Litoral:</strong> O concelho inclui praias como Moledo e Caminha, a Mata Nacional do Camarido e a costa junto à foz do Minho, com vistas para o Monte de Santa Tecla, na Galiza.</li>
+    </ul>
+  `
+}, //a
+
+"Melgaço": {
+    imagens: [
+    "./images/Concelhos/Melgaço1.png",
+    "./images/Concelhos/Melgaço2.png",
+    "./images/Concelhos/Melgaço3.png",
+    "./images/Concelhos/Melgaço4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado no extremo norte de Portugal. A norte e a leste faz fronteira com Espanha, sendo limitado pelo rio Minho e pelas serras da Peneda e de Castro Laboreiro.</li>
+
+      <li><strong>Castelo de Melgaço:</strong> O castelo e as muralhas dominam a vila e fazem parte do antigo sistema defensivo da fronteira norte do reino português. A posição junto ao Minho conferiu a Melgaço importância militar durante a Idade Média.</li>
+
+      <li><strong>Castro Laboreiro:</strong> A freguesia de Castro Laboreiro situa-se em plena área montanhosa do Parque Nacional da Peneda-Gerês e conserva um núcleo tradicional associado à pastorícia e às antigas migrações sazonais entre aldeias de altitude e de vale.</li>
+
+      <li><strong>Vinho Alvarinho:</strong> Melgaço é um dos principais centros de produção do vinho Alvarinho, integrado na sub-região de Monção e Melgaço dos Vinhos Verdes. A casta é uma das marcas agrícolas mais características do concelho.</li>
+
+      <li><strong>Rio Minho e Fronteira:</strong> O rio Minho marca a fronteira com a Galiza e está ligado a actividades tradicionais como a pesca de lampreia e sável. As margens e montanhas formam uma paisagem característica do Alto Minho.</li>
+    </ul>
+  `
+}, //a
+
+"Monção": {
+    imagens: [
+    "./images/Concelhos/Monção1.png",
+    "./images/Concelhos/Monção2.png",
+    "./images/Concelhos/Monção3.png",
+    "./images/Concelhos/Monção4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado junto ao rio Minho, fazendo fronteira com Espanha. O território estende-se entre o vale do Minho e áreas montanhosas do interior.</li>
+
+      <li><strong>Fortaleza de Monção:</strong> A vila conserva um importante sistema de muralhas e fortificações construído e reforçado ao longo dos séculos para defender a fronteira do Minho. A fortificação teve particular importância durante as guerras com Espanha.</li>
+
+      <li><strong>Deu-la-Deu Martins:</strong> Segundo a tradição, durante um cerco castelhano à vila, Deu-la-Deu Martins terá enganado os sitiantes ao lançar-lhes pão das muralhas, fazendo-os acreditar que os defensores ainda dispunham de alimentos em abundância. O episódio tornou-se uma das lendas mais conhecidas de Monção.</li>
+
+      <li><strong>Alvarinho:</strong> Monção é, juntamente com Melgaço, o principal centro histórico da produção de Alvarinho. A casta está profundamente associada à paisagem agrícola e à identidade vitivinícola do concelho.</li>
+
+      <li><strong>Palácio da Brejoeira:</strong> Na freguesia de Pinheiro encontra-se o Palácio da Brejoeira, uma grande propriedade senhorial do início do século XIX rodeada por jardins, mata e vinha, actualmente associada à produção de vinho Alvarinho.</li>
+    </ul>
+  `
+}, //a
+
+"Paredes de Coura": {
+    imagens: [
+    "./images/Concelhos/Paredes de Coura1.png",
+    "./images/Concelhos/Paredes de Coura2.png",
+    "./images/Concelhos/Paredes de Coura3.png",
+    "./images/Concelhos/Paredes de Coura4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado no interior do distrito, em torno do vale do rio Coura. O território é predominantemente montanhoso e rural.</li>
+
+      <li><strong>Património Romano:</strong> A freguesia de Rubiães conserva a ponte romana e um importante conjunto arqueológico associado à antiga via que atravessava o Alto Minho em direcção à Galiza.</li>
+
+      <li><strong>Festival Paredes de Coura:</strong> A Praia Fluvial do Taboão é o local tradicional do Festival de Música de Paredes de Coura, realizado desde 1993 e conhecido pela sua ligação à música alternativa e independente.</li>
+
+      <li><strong>Paisagem Rural:</strong> O concelho conserva numerosos espigueiros, moinhos, eiras comunitárias e socalcos agrícolas, elementos característicos da paisagem tradicional minhota.</li>
+    </ul>
+  `
+}, //a
+
+"Ponte da Barca": {
+    imagens: [
+    "./images/Concelhos/Ponte da Barca1.png",
+    "./images/Concelhos/Ponte da Barca2.png",
+    "./images/Concelhos/Ponte da Barca3.png",
+    "./images/Concelhos/Ponte da Barca4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado no vale do rio Lima. A norte e a nascente estende-se para as áreas montanhosas da Serra Amarela e do Parque Nacional da Peneda-Gerês.</li>
+
+      <li><strong>Ponte Medieval:</strong> A ponte sobre o Lima é um dos elementos mais característicos da vila e esteve ligada durante séculos à circulação de pessoas e mercadorias pelo vale do Lima.</li>
+
+      <li><strong>Lindoso:</strong> A freguesia de Lindoso é conhecida pelo castelo medieval e pelo conjunto de dezenas de espigueiros de granito concentrados junto à fortificação e à eira comunitária.</li>
+
+      <li><strong>Mosteiro de Bravães:</strong> O antigo Mosteiro de São Salvador de Bravães possui uma das igrejas românicas mais importantes do Alto Minho, destacando-se pela sua decoração escultórica.</li>
+
+      <li><strong>Fernão de Magalhães:</strong> O concelho está tradicionalmente associado à família de Fernão de Magalhães, navegador responsável pela primeira viagem de circum-navegação do globo. A origem exacta do navegador continua a ser objecto de debate historiográfico.</li>
+    </ul>
+  `
+}, //a
+
+"Ponte de Lima": {
+    imagens: [
+    "./images/Concelhos/Ponte de Lima1.png",
+    "./images/Concelhos/Ponte de Lima2.png",
+    "./images/Concelhos/Ponte de Lima3.png",
+    "./images/Concelhos/Ponte de Lima4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado no vale do rio Lima. O território combina áreas agrícolas, zonas montanhosas e numerosas casas senhoriais e solares.</li>
+
+      <li><strong>Vila e Foral:</strong> Ponte de Lima recebeu foral de D. Teresa em 1125, antes da fundação do reino de Portugal. O documento é também a mais antiga referência documental conhecida a uma feira em território português.</li>
+
+      <li><strong>Ponte Romana e Medieval:</strong> A ponte sobre o Lima está na origem do nome da vila. O conjunto actual combina estruturas de origem romana com a ponte medieval construída no século XIV.</li>
+
+      <li><strong>Vinho Verde:</strong> A produção de Vinho Verde tem grande importância no concelho, integrado na região do Lima. A agricultura tradicional inclui também milho, gado e outros produtos do vale.</li>
+
+      <li><strong>Feiras e Tradições:</strong> As Feiras Novas, realizadas em Setembro, são as principais festas do concelho e incluem cortejos, rusgas, música popular e manifestações equestres. A Vaca das Cordas é outra tradição característica da vila.</li>
+    </ul>
+  `
+}, //a
+
+"Valença": {
+    imagens: [
+    "./images/Concelhos/Valença1.png",
+    "./images/Concelhos/Valença2.png",
+    "./images/Concelhos/Valença3.png",
+    "./images/Concelhos/Valença4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado na margem esquerda do rio Minho, fazendo fronteira com Espanha. A cidade espanhola de Tui encontra-se directamente do outro lado do rio.</li>
+
+      <li><strong>Fortaleza de Valença:</strong> A cidade conserva uma grande praça-forte construída e reforçada sobretudo durante os séculos XVII e XVIII. As muralhas, baluartes, fossos e portas formam um dos conjuntos fortificados mais característicos da fronteira portuguesa.</li>
+
+      <li><strong>Guerra da Restauração:</strong> A posição de Valença foi particularmente importante durante a Guerra da Restauração, quando a antiga fortificação medieval foi transformada numa poderosa praça-forte abaluartada para defender a fronteira do Minho.</li>
+
+      <li><strong>Rio Minho:</strong> O rio marca a fronteira com a Galiza e foi historicamente uma importante via de circulação e de defesa. A antiga travessia entre Valença e Tui reforçou a importância estratégica da cidade.</li>
+
+      <li><strong>Comércio e Fronteira:</strong> A localização raiana fez de Valença um importante centro de comércio transfronteiriço. O núcleo fortificado conserva ruas, praças e edifícios ligados à antiga função militar e comercial da cidade.</li>
+    </ul>
+  `
+}, //a
+
+"Viana do Castelo": {
+    imagens: [
+    "./images/Concelhos/Viana do Castelo1.png",
+    "./images/Concelhos/Viana do Castelo2.png",
+    "./images/Concelhos/Viana do Castelo3.png",
+    "./images/Concelhos/Viana do Castelo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho e capital distrital, situado na foz do rio Lima, entre o oceano Atlântico e as serras do interior. O território inclui uma extensa faixa litoral, praias, áreas agrícolas e núcleos urbanos junto ao rio.</li>
+
+      <li><strong>Santa Luzia:</strong> O Santuário de Santa Luzia domina a cidade a partir do monte com o mesmo nome. A elevação possui também vestígios da Citânia de Santa Luzia, um povoado fortificado da Idade do Ferro e época romana.</li>
+
+      <li><strong>Romaria da Senhora da Agonia:</strong> A Romaria de Nossa Senhora da Agonia é uma das principais festas tradicionais do Alto Minho, destacando-se os cortejos, os trajes tradicionais, a procissão ao mar e a participação das comunidades piscatórias.</li>
+
+      <li><strong>Construção Naval:</strong> A ligação de Viana ao mar inclui uma longa tradição de construção naval. Os Estaleiros Navais de Viana do Castelo tiveram um papel importante na construção de navios Portugueses durante o século XX.</li>
+
+      <li><strong>Traje e Filigrana:</strong> Viana do Castelo é particularmente conhecida pelos trajes tradicionais femininos e pela utilização de peças de ouro, sobretudo colares e brincos de filigrana, associados às festas e romarias minhotas.</li>
+    </ul>
+  `
+}, //a
+
+"Vila Nova de Cerveira": {
+    imagens: [
+    "./images/Concelhos/Vila Nova de Cerveira1.png",
+    "./images/Concelhos/Vila Nova de Cerveira2.png",
+    "./images/Concelhos/Vila Nova de Cerveira3.png",
+    "./images/Concelhos/Vila Nova de Cerveira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Minho, pertencente ao distrito de Viana do Castelo e situado junto ao rio Minho, fazendo fronteira com Espanha. O território combina o vale do rio com áreas de serra e paisagens rurais.</li>
+
+      <li><strong>Castelo de Cerveira:</strong> O castelo medieval ocupa uma elevação sobre a vila e fazia parte da linha defensiva portuguesa do Alto Minho. A sua posição permitia controlar a passagem junto ao rio e a fronteira com a Galiza.</li>
+
+      <li><strong>Rio Minho e Fronteira:</strong> O rio Minho constitui o principal elemento geográfico do concelho e marca a fronteira com a Galiza. As margens são caracterizadas por zonas agrícolas, áreas ribeirinhas e pequenos núcleos urbanos.</li>
+
+      <li><strong>Serra de Arga:</strong> A parte sul do concelho aproxima-se da Serra de Arga, onde se encontram áreas florestais, cursos de água e vestígios de antigas actividades mineiras e rurais.</li>
+    </ul>
+  `
+}, //a
+
+// Fim de Viana do Castelo
+
+// Início Açores
+
+"Vila do Porto": {
+    imagens: [
+    "./images/Concelhos/Vila do Porto1.png",
+    "./images/Concelhos/Vila do Porto2.png",
+    "./images/Concelhos/Vila do Porto3.png",
+    "./images/Concelhos/Vila do Porto4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na ilha de Santa Maria, a mais oriental do arquipélago. O território combina zonas costeiras, áreas agrícolas e relevo relativamente mais seco e baixo do que o das restantes ilhas açorianas.</li>
+
+      <li><strong>Primeiro Povoamento:</strong> Vila do Porto foi o primeiro núcleo de povoamento permanente de Santa Maria e uma das primeiras vilas criadas nos Açores. A posição da ilha nas rotas atlânticas deu-lhe importância desde os primeiros tempos do povoamento.</li>
+
+      <li><strong>Descobrimentos:</strong> Em 1493, Cristóvão Colombo fez escala em Santa Maria no regresso da sua primeira viagem à América. Desembarcou nos Anjos, onde a tripulação assistiu a uma missa na ermida de Nossa Senhora dos Anjos.</li>
+
+      <li><strong>Barreiro da Faneca:</strong> No norte da ilha encontra-se o Barreiro da Faneca, uma paisagem de solos argilosos avermelhados pouco comum nos Açores, associada à origem vulcânica e à erosão do território.</li>
+
+      <li><strong>Património:</strong> O Forte de São Brás domina a vila e a costa, enquanto a Igreja de Nossa Senhora da Assunção e outros edifícios históricos testemunham a antiguidade do núcleo urbano.</li>
+    </ul>
+  `
+}, //a
+
+"Ponta Delgada": {
+    imagens: [
+    "./images/Concelhos/Ponta Delgada1.png",
+    "./images/Concelhos/Ponta Delgada2.png",
+    "./images/Concelhos/Ponta Delgada3.png",
+    "./images/Concelhos/Ponta Delgada4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa sul e ocidental da ilha de São Miguel. É o concelho mais populoso do arquipélago e inclui uma extensa faixa costeira e áreas montanhosas no interior da ilha.</li>
+
+      <li><strong>Capital dos Açores:</strong> Ponta Delgada é a principal cidade e centro administrativo, económico e portuário do arquipélago. O crescimento da cidade acentuou-se depois do terramoto que destruiu grande parte de Vila Franca do Campo em 1522.</li>
+
+      <li><strong>Sete Cidades:</strong> No extremo oeste do concelho encontra-se a caldeira vulcânica das Sete Cidades, com as lagoas Azul e Verde, uma das paisagens mais conhecidas de São Miguel.</li>
+
+      <li><strong>Portas da Cidade:</strong> As Portas da Cidade, construídas no século XVIII, são um dos principais símbolos de Ponta Delgada. A cidade conserva também o Forte de São Brás, a Igreja Matriz de São Sebastião e o Convento da Esperança.</li>
+
+      <li><strong>Religião e Tradições:</strong> O Santuário do Senhor Santo Cristo dos Milagres e as festas associadas à imagem do Ecce Homo constituem uma das manifestações religiosas mais importantes dos Açores.</li>
+
+      <li><strong>Agricultura:</strong> A área rural do concelho inclui plantações de ananás, uma produção agrícola particularmente associada à ilha de São Miguel e desenvolvida em estufas tradicionais.</li>
+    </ul>
+  `
+}, //a
+
+"Lagoa (Ilhas)": {
+    imagens: [
+    "./images/Concelhos/Lagoa1.png",
+    "./images/Concelhos/Lagoa2.png",
+    "./images/Concelhos/Lagoa3.png",
+    "./images/Concelhos/Lagoa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa sul da ilha de São Miguel, entre Ponta Delgada e Vila Franca do Campo. O território combina uma faixa litoral vulcânica com áreas agrícolas no interior.</li>
+
+      <li><strong>Vila da Lagoa:</strong> A povoação desenvolveu-se junto ao mar e recebeu foral no século XVI. A Igreja de Santa Cruz e o antigo Convento de Santo António constituem alguns dos principais elementos do património histórico local.</li>
+
+      <li><strong>Cerâmica:</strong> A Lagoa possui uma importante tradição de produção cerâmica, destacando-se a Fábrica de Cerâmica Vieira, fundada no século XIX e conhecida pela continuidade das técnicas e motivos tradicionais açorianos.</li>
+
+      <li><strong>Caloura:</strong> A zona da Caloura caracteriza-se pela costa vulcânica recortada, pequenas enseadas e piscinas naturais, além de uma paisagem agrícola marcada por vinhas protegidas por muros de pedra.</li>
+
+      <li><strong>Pesca e Mar:</strong> A actividade piscatória e a relação com o litoral tiveram importância histórica na economia do concelho, particularmente nas localidades costeiras de Água de Pau e Lagoa.</li>
+    </ul>
+  `
+}, //a
+
+"Ribeira Grande": {
+    imagens: [
+    "./images/Concelhos/Ribeira Grande1.png",
+    "./images/Concelhos/Ribeira Grande2.png",
+    "./images/Concelhos/Ribeira Grande3.png",
+    "./images/Concelhos/Ribeira Grande4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa norte de São Miguel e atravessado por vários cursos de água que descem das zonas montanhosas do interior.</li>
+
+      <li><strong>Lagoa do Fogo:</strong> O território do concelho estende-se até à Lagoa do Fogo, uma das maiores caldeiras vulcânicas de São Miguel e uma das paisagens naturais mais características da ilha.</li>
+
+      <li><strong>Caldeira Velha:</strong> Nas encostas da serra encontra-se a Caldeira Velha, uma zona de águas termais associada à actividade vulcânica da ilha.</li>
+
+      <li><strong>Chá:</strong> A freguesia da Maia alberga plantações de chá e unidades de produção tradicional, numa cultura agrícola introduzida em São Miguel no século XIX e actualmente muito associada à paisagem da costa norte.</li>
+
+      <li><strong>Centro Histórico:</strong> Ribeira Grande possui um conjunto significativo de arquitectura religiosa e civil, incluindo a Igreja Matriz de Nossa Senhora da Estrela, o edifício dos Paços do Concelho e várias pontes sobre as ribeiras.</li>
+    </ul>
+  `
+}, //a
+
+"Vila Franca do Campo": {
+    imagens: [
+    "./images/Concelhos/Vila Franca do Campo1.png",
+    "./images/Concelhos/Vila Franca do Campo2.png",
+    "./images/Concelhos/Vila Franca do Campo3.png",
+    "./images/Concelhos/Vila Franca do Campo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa sul da ilha de São Miguel, entre Lagoa e Povoação. A paisagem combina litoral vulcânico, áreas agrícolas e encostas montanhosas.</li>
+
+      <li><strong>Primeira Capital:</strong> Vila Franca do Campo foi durante o primeiro século de povoamento o principal núcleo de São Miguel e sede da capitania da ilha. O seu estatuto terminou após o grande terramoto de 1522, que destruiu grande parte da povoação.</li>
+
+      <li><strong>Ilhéu de Vila Franca:</strong> Ao largo da vila encontra-se um antigo cone vulcânico parcialmente submerso, cuja cratera forma uma piscina natural circular aberta ao mar. O ilhéu é actualmente uma reserva natural.</li>
+
+      <li><strong>Senhora da Paz:</strong> A Ermida de Nossa Senhora da Paz situa-se numa elevação sobre a vila e destaca-se pela escadaria decorada com azulejos, sendo um dos principais elementos visuais do concelho.</li>
+
+      <li><strong>Queijadas:</strong> As queijadas de Vila Franca do Campo são uma das especialidades de doçaria mais conhecidas de São Miguel, produzidas tradicionalmente na vila.</li>
+    </ul>
+  `
+}, //a
+
+"Povoação": {
+    imagens: [
+    "./images/Concelhos/Povoação1.png",
+    "./images/Concelhos/Povoação2.png",
+    "./images/Concelhos/Povoação3.png",
+    "./images/Concelhos/Povoação4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado no extremo sudeste da ilha de São Miguel. O território é marcado por vales profundos, encostas verdes e uma costa recortada.</li>
+
+      <li><strong>Primeiro Povoamento:</strong> A Povoação está associada aos primeiros núcleos de povoamento de São Miguel, tendo-se desenvolvido num vale onde os primeiros colonos se estabeleceram durante o século XV.</li>
+
+      <li><strong>Furnas:</strong> A freguesia das Furnas é conhecida pela grande actividade geotérmica, com fumarolas, águas termais e caldeiras. A Lagoa das Furnas e o Parque Terra Nostra são dois dos principais elementos desta paisagem vulcânica.</li>
+
+      <li><strong>Cozido das Furnas:</strong> O cozido das Furnas é preparado utilizando o calor geotérmico do solo, sendo colocado em panelas enterradas nas proximidades das caldeiras durante várias horas.</li>
+
+      <li><strong>Águas Termais:</strong> As Furnas possuem numerosas nascentes e nascentes termais, que contribuíram para o desenvolvimento da povoação como centro termal.</li>
+    </ul>
+  `
+}, //a
+
+"Nordeste": {
+    imagens: [
+    "./images/Concelhos/Nordeste1.png",
+    "./images/Concelhos/Nordeste2.png",
+    "./images/Concelhos/Nordeste3.png",
+    "./images/Concelhos/Nordeste4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado no extremo nordeste da ilha de São Miguel. É marcado por encostas íngremes, vales profundos, cursos de água e uma costa de altas falésias.</li>
+
+      <li><strong>Serra da Tronqueira:</strong> A Serra da Tronqueira ocupa grande parte do interior do concelho e constitui um dos principais habitats do priolo, uma ave endémica de São Miguel e uma das espécies mais emblemáticas da natureza açoriana.</li>
+
+      <li><strong>Farol do Arnel:</strong> O Farol do Arnel, inaugurado em 1876, encontra-se sobre uma escarpa na Ponta do Arnel e é um dos marcos costeiros mais conhecidos do concelho.</li>
+
+      <li><strong>Ribeira dos Caldeirões:</strong> O parque da Ribeira dos Caldeirões conserva cascatas, moinhos de água e estruturas ligadas ao aproveitamento tradicional das ribeiras.</li>
+
+      <li><strong>Paisagem Rural:</strong> O concelho conserva uma paisagem agrícola marcada por pequenas parcelas, pastagens, hortênsias e vegetação abundante, sendo uma das zonas mais verdes e acidentadas de São Miguel.</li>
+    </ul>
+  `
+}, //a
+
+"Angra do Heroísmo": {
+    imagens: [
+    "./images/Concelhos/Angra do Heroísmo1.png",
+    "./images/Concelhos/Angra do Heroísmo2.png",
+    "./images/Concelhos/Angra do Heroísmo3.png",
+    "./images/Concelhos/Angra do Heroísmo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa sul da ilha Terceira. A cidade desenvolveu-se em torno de uma baía protegida, com o Monte Brasil a dominar a entrada do porto.</li>
+
+      <li><strong>Porto Atlântico:</strong> Desde o século XV, Angra foi um dos principais portos de escala das armadas portuguesas que navegavam entre a Europa, África, Índia e América. A sua localização fez da cidade um ponto fundamental das rotas atlânticas.</li>
+
+      <li><strong>Património Mundial:</strong> O centro histórico de Angra do Heroísmo é Património Mundial da UNESCO desde 1983. A cidade conserva um conjunto urbano desenvolvido em torno do porto, com igrejas, conventos, palácios e fortificações.</li>
+
+      <li><strong>Fortaleza de São João Baptista:</strong> A enorme fortificação construída no Monte Brasil a partir do final do século XVI destinava-se a proteger o porto e as frotas que por Angra passavam. É um dos maiores conjuntos fortificados portugueses.</li>
+
+      <li><strong>Terremoto de 1980:</strong> Em 1980, um forte sismo causou graves danos na cidade e em várias localidades da Terceira, levando a um extenso processo de reconstrução do património histórico.</li>
+    </ul>
+  `
+}, //a
+
+"Praia da Vitória": {
+    imagens: [
+    "./images/Concelhos/Praia da Vitória1.png",
+    "./images/Concelhos/Praia da Vitória2.png",
+    "./images/Concelhos/Praia da Vitória3.png",
+    "./images/Concelhos/Praia da Vitória4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa oriental da ilha Terceira. A cidade desenvolveu-se junto a uma das maiores baías naturais dos Açores.</li>
+
+      <li><strong>Batalha da Praia da Vitória:</strong> Em 11 de agosto de 1829, a baía da então Vila da Praia foi palco de um combate entre forças liberais e uma esquadra miguelista que tentou desembarcar tropas na Terceira. A derrota miguelista foi um momento importante das Guerras Liberais e esteve na origem do título de Praia da Vitória.</li>
+
+      <li><strong>Forte de Santa Catarina:</strong> A fortificação domina a baía e fazia parte do sistema defensivo construído para proteger a povoação e o seu porto.</li>
+
+      <li><strong>Praia:</strong> A cidade possui uma das maiores praias de areia da Terceira, protegida pela baía, característica pouco comum nas ilhas açorianas.</li>
+
+      <li><strong>Base das Lajes:</strong> A freguesia das Lajes alberga a Base das Lajes, importante instalação militar e aeroporto internacional que desempenhou um papel estratégico nas ligações aéreas do Atlântico.</li>
+    </ul>
+  `
+}, //a
+
+"Santa Cruz da Graciosa": {
+    imagens: [
+    "./images/Concelhos/Santa Cruz da Graciosa1.png",
+    "./images/Concelhos/Santa Cruz da Graciosa2.png",
+    "./images/Concelhos/Santa Cruz da Graciosa3.png",
+    "./images/Concelhos/Santa Cruz da Graciosa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, único concelho da ilha Graciosa. A ilha apresenta relevo relativamente suave quando comparada com outras ilhas açorianas e uma paisagem agrícola dominada por pastagens e vinha.</li>
+
+      <li><strong>Santa Cruz:</strong> A vila conserva um centro histórico marcado por igrejas, casas tradicionais e ruas de pedra. A Igreja Matriz de Santa Cruz é um dos principais edifícios religiosos da ilha.</li>
+
+      <li><strong>Furna do Enxofre:</strong> No interior da Caldeira da Graciosa encontra-se a Furna do Enxofre, uma grande cavidade vulcânica com uma lagoa subterrânea e fenómenos de libertação de gases.</li>
+
+      <li><strong>Termas do Carapacho:</strong> Na costa sul encontram-se as Termas do Carapacho, associadas a nascentes de águas termais junto ao mar.</li>
+
+      <li><strong>Moinhos:</strong> Os moinhos de vento de velas vermelhas são um dos elementos mais característicos da paisagem da Graciosa e estão ligados à antiga produção de cereais.</li>
+    </ul>
+  `
+}, //a
+
+"Velas": {
+    imagens: [
+    "./images/Concelhos/Velas1.png",
+    "./images/Concelhos/Velas2.png",
+    "./images/Concelhos/Velas3.png",
+    "./images/Concelhos/Velas4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na metade ocidental da ilha de São Jorge. O território é marcado por encostas abruptas, falésias e numerosas fajãs junto ao mar.</li>
+
+      <li><strong>Fajãs:</strong> A paisagem de Velas inclui várias fajãs formadas na base das escarpas costeiras, pequenas áreas planas onde se instalaram culturas e povoações. A Fajã do Ouvidor é uma das mais conhecidas.</li>
+
+      <li><strong>Erupção da Urzelina:</strong> Em 1808 ocorreu uma erupção vulcânica junto à Urzelina, no concelho de Velas, formando um cone vulcânico e alterando a paisagem da zona.</li>
+
+      <li><strong>Queijo de São Jorge:</strong> A produção do Queijo de São Jorge está profundamente ligada à economia agrícola da ilha, baseada em pastagens e criação de gado leiteiro.</li>
+
+      <li><strong>Vila de Velas:</strong> O centro da vila conserva igrejas, solares e outros edifícios tradicionais, com destaque para a Igreja Matriz de São Jorge e para as Portas do Mar.</li>
+    </ul>
+  `
+}, //a
+
+"Calheta (Açores)": {
+    imagens: [
+    "./images/Concelhos/Calheta1.png",
+    "./images/Concelhos/Calheta2.png",
+    "./images/Concelhos/Calheta3.png",
+    "./images/Concelhos/Calheta4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na metade oriental da ilha de São Jorge. O território caracteriza-se pelas encostas montanhosas que descem até ao mar e por numerosas fajãs.</li>
+
+      <li><strong>Fajã da Caldeira de Santo Cristo:</strong> Esta fajã é uma das paisagens mais características de São Jorge, conhecida pela lagoa costeira, pelas culturas agrícolas e pela prática tradicional de apanha de amêijoas na lagoa.</li>
+
+      <li><strong>Fajã dos Cubres:</strong> A fajã conserva uma lagoa costeira e uma paisagem de grande importância para as aves e para os habitats húmidos.</li>
+    </ul>
+  `
+}, //a
+
+"Lajes do Pico": {
+    imagens: [
+    "./images/Concelhos/Lajes do Pico1.png",
+    "./images/Concelhos/Lajes do Pico2.png",
+    "./images/Concelhos/Lajes do Pico3.png",
+    "./images/Concelhos/Lajes do Pico4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa sul da ilha do Pico. O território estende-se desde o litoral até às encostas da Montanha do Pico.</li>
+
+      <li><strong>Baleação:</strong> Lajes do Pico foi um dos principais centros da caça à baleia nos Açores. A actividade marcou profundamente a economia e a cultura local até à sua proibição no final do século XX.</li>
+
+      <li><strong>Museu dos Baleeiros:</strong> Na vila encontra-se o Museu dos Baleeiros, instalado num conjunto de antigas estruturas ligadas à actividade baleeira e dedicado à memória das tripulações, embarcações e técnicas utilizadas na caça à baleia.</li>
+
+      <li><strong>Montanha do Pico:</strong> A parte norte do concelho aproxima-se da Montanha do Pico, o ponto mais alto de Portugal, com 2351 metros de altitude.</li>
+
+      <li><strong>Paisagem Vulcânica:</strong> O território conserva extensas áreas de lava, vinhas protegidas por muros de pedra e pequenos núcleos rurais adaptados ao relevo vulcânico.</li>
+    </ul>
+  `
+}, //a
+
+"Madalena": {
+    imagens: [
+    "./images/Concelhos/Madalena1.png",
+    "./images/Concelhos/Madalena2.png",
+    "./images/Concelhos/Madalena3.png",
+    "./images/Concelhos/Madalena4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado no extremo ocidental da ilha do Pico, directamente em frente à ilha do Faial. A Montanha do Pico domina a paisagem do território.</li>
+
+      <li><strong>Paisagem da Cultura da Vinha:</strong> A paisagem vitivinícola da ilha do Pico, sobretudo na zona da Madalena, é formada por pequenas parcelas delimitadas por muros de pedra vulcânica. Está classificada como Património Mundial pela UNESCO desde 2004.</li>
+
+      <li><strong>Vinho do Pico:</strong> A produção de vinho desenvolveu-se em condições difíceis, aproveitando o calor acumulado nas pedras negras. A casta Verdelho tornou-se particularmente associada à viticultura da ilha.</li>
+
+      <li><strong>Montanha do Pico:</strong> A Montanha do Pico ergue-se junto ao concelho e constitui o ponto mais alto de Portugal, dominando visualmente a ilha e sendo um dos principais símbolos dos Açores.</li>
+
+      <li><strong>Museu do Vinho:</strong> Na vila da Madalena encontra-se o Museu do Vinho, instalado num antigo convento carmelita e dedicado à história da produção vitivinícola do Pico.</li>
+    </ul>
+  `
+}, //a
+
+"São Roque do Pico": {
+    imagens: [
+    "./images/Concelhos/São Roque do Pico1.png",
+    "./images/Concelhos/São Roque do Pico2.png",
+    "./images/Concelhos/São Roque do Pico3.png",
+    "./images/Concelhos/São Roque do Pico4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa norte e nordeste da ilha do Pico. O território estende-se desde a costa até às encostas da Montanha do Pico.</li>
+
+      <li><strong>Baleação:</strong> São Roque foi um dos principais centros industriais da baleação açoriana. A actividade deixou um importante património ligado às fábricas, às vigias e às embarcações utilizadas na caça à baleia.</li>
+
+      <li><strong>Museu da Indústria Baleeira:</strong> Na vila encontra-se o antigo complexo da Companhia das Armações Baleeiras, actualmente transformado em museu dedicado à transformação dos produtos da baleia.</li>
+
+      <li><strong>Montanha e Lagoas:</strong> O interior do concelho sobe em direcção à Montanha do Pico e inclui paisagens de altitude, pastagens e lagoas vulcânicas, entre as quais a Lagoa do Capitão.</li>
+
+      <li><strong>Património Rural:</strong> A paisagem conserva casas tradicionais, currais de vinha, muros de pedra vulcânica e estruturas associadas à antiga agricultura e produção de vinho.</li>
+    </ul>
+  `
+},  //a
+
+"Horta": {
+    imagens: [
+    "./images/Concelhos/Horta1.png",
+    "./images/Concelhos/Horta2.png",
+    "./images/Concelhos/Horta3.png",
+    "./images/Concelhos/Horta4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na ilha do Faial. A cidade desenvolve-se junto a uma baía protegida, com vista para a ilha do Pico.</li>
+
+      <li><strong>Marina da Horta:</strong> O porto da Horta é um ponto tradicional de passagem para veleiros que atravessam o Atlântico. As paredes e cais da marina estão cobertos por pinturas e inscrições deixadas por tripulações de todo o mundo.</li>
+
+      <li><strong>Vulcão dos Capelinhos:</strong> Entre 1957 e 1958 ocorreu uma erupção vulcânica no extremo oeste do Faial, criando uma nova paisagem de cinzas e rocha junto ao mar. O local é hoje um dos principais elementos geológicos da ilha.</li>
+
+      <li><strong>Caldeira:</strong> No centro da ilha encontra-se uma grande caldeira vulcânica rodeada por vegetação, constituindo uma das principais paisagens naturais do Faial.</li>
+
+      <li><strong>Peter Café Sport:</strong> O histórico café junto ao porto tornou-se conhecido entre os navegadores que atravessam o Atlântico e está ligado à tradição marítima internacional da Horta.</li>
+
+      <li><strong>Monte da Guia:</strong> O Monte da Guia domina a baía da Horta e conserva a Ermida de Nossa Senhora da Guia, além de estruturas vulcânicas e uma vista privilegiada sobre a cidade e o Pico.</li>
+    </ul>
+  `
+}, //a
+
+"Santa Cruz das Flores": {
+    imagens: [
+    "./images/Concelhos/Santa Cruz das Flores1.png",
+    "./images/Concelhos/Santa Cruz das Flores2.png",
+    "./images/Concelhos/Santa Cruz das Flores3.png",
+    "./images/Concelhos/Santa Cruz das Flores4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado no nordeste da ilha das Flores. O território inclui uma costa recortada, zonas montanhosas e várias lagoas no interior da ilha.</li>
+
+      <li><strong>Santa Cruz:</strong> A vila desenvolveu-se como principal núcleo urbano do nordeste da ilha e conserva igrejas, casas tradicionais e outros edifícios ligados à história do povoamento das Flores.</li>
+
+      <li><strong>Gruta do Galo:</strong> A costa do concelho possui numerosas formações vulcânicas, grutas e enseadas resultantes da erosão das antigas escoadas de lava.</li>
+
+      <li><strong>Ilha das Flores:</strong> O concelho integra uma das paisagens mais húmidas dos Açores, com abundantes cursos de água, lagoas e quedas de água alimentadas pelas chuvas frequentes.</li>
+
+      <li><strong>Património Natural:</strong> A proximidade do concelho ao extremo ocidental da Europa e à ilha do Corvo confere-lhe uma posição geográfica singular dentro do arquipélago.</li>
+    </ul>
+  `
+}, //a
+
+"Lajes das Flores": {
+    imagens: [
+    "./images/Concelhos/Lajes das Flores1.png",
+    "./images/Concelhos/Lajes das Flores2.png",
+    "./images/Concelhos/Lajes das Flores3.png",
+    "./images/Concelhos/Lajes das Flores4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado no sul e sudoeste da ilha das Flores. O território é marcado por vales profundos, falésias, lagoas e uma costa de pequenas fajãs.</li>
+
+      <li><strong>Rocha dos Bordões:</strong> Um dos elementos geológicos mais conhecidos da ilha encontra-se no concelho, formado por enormes colunas verticais de basalto resultantes da solidificação de uma antiga corrente de lava.</li>
+
+      <li><strong>Fajã Grande:</strong> A freguesia da Fajã Grande é conhecida pelas cascatas, pelas fajãs costeiras e pela paisagem de falésias verdes junto ao oceano. É uma das zonas mais características da ilha das Flores.</li>
+
+      <li><strong>Cascata do Poço do Bacalhau:</strong> Na Fajã Grande encontra-se uma das quedas de água mais conhecidas das Flores, com dezenas de metros de altura.</li>
+
+      <li><strong>Lagoas:</strong> O interior do concelho inclui várias lagoas vulcânicas e áreas de turfeira, integradas na paisagem húmida característica das Flores.</li>
+    </ul>
+  `
+}, //a
+
+"Corvo": {
+    imagens: [
+    "./images/Concelhos/Corvo1.png",
+    "./images/Concelhos/Corvo2.png",
+    "./images/Concelhos/Corvo3.png",
+    "./images/Concelhos/Corvo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na ilha do Corvo, a mais pequena e setentrional das ilhas açorianas. O município corresponde a uma única ilha e a uma única freguesia.</li>
+
+      <li><strong>Caldeirão:</strong> O centro da ilha é ocupado por uma grande caldeira vulcânica, conhecida como Caldeirão, com uma lagoa no seu interior e pequenas elevações que formam uma paisagem muito característica.</li>
+
+      <li><strong>Vila do Corvo:</strong> A povoação concentra praticamente toda a população da ilha e conserva um núcleo compacto de casas tradicionais, ruas estreitas e pequenos terrenos agrícolas.</li>
+
+      <li><strong>Moinhos de Vento:</strong> Os antigos moinhos de vento do Corvo são um dos elementos mais reconhecíveis da paisagem local, construídos em pedra e adaptados aos ventos fortes da ilha.</li>
+
+      <li><strong>Isolamento e História:</strong> A pequena dimensão e o isolamento geográfico condicionaram durante séculos a vida da comunidade, que desenvolveu uma forte economia de subsistência baseada na agricultura e na criação de gado.</li>
+    </ul>
+  `
+}, //a
+
+// Fim Açores
+
+// Início Madeira
+
+"Calheta (Madeira)": {
+    imagens: [
+    "./images/Concelhos/Calheta1.png",
+    "./images/Concelhos/Calheta2.png",
+    "./images/Concelhos/Calheta3.png",
+    "./images/Concelhos/Calheta4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado no sudoeste da ilha da Madeira. É o maior concelho da ilha em área e estende-se desde o litoral até ao planalto do Paul da Serra.</li>
+
+      <li><strong>Engenhos e Cana-de-Açúcar:</strong> A produção de cana-de-açúcar e o fabrico de aguardente e mel de cana têm uma longa tradição no concelho. A actividade agrícola marcou profundamente as encostas da Calheta.</li>
+
+      <li><strong>Rabaçal:</strong> O território inclui a zona montanhosa do Rabaçal, de onde partem percursos junto às levadas e às cascatas das 25 Fontes e do Risco.</li>
+
+      <li><strong>Ponta do Pargo:</strong> No extremo ocidental do concelho encontra-se o Farol da Ponta do Pargo, construído numa das zonas mais altas das falésias da costa oeste da Madeira.</li>
+
+      <li><strong>Património:</strong> A Igreja Matriz da Calheta, construída no século XVI, e várias casas senhoriais e engenhos testemunham a antiga importância agrícola e económica do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Câmara de Lobos": {
+    imagens: [
+    "./images/Concelhos/Câmara de Lobos1.png",
+    "./images/Concelhos/Câmara de Lobos2.png",
+    "./images/Concelhos/Câmara de Lobos3.png",
+    "./images/Concelhos/Câmara de Lobos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado na costa sul da ilha, imediatamente a oeste do Funchal. O território combina uma frente costeira muito recortada com vales profundos e zonas montanhosas.</li>
+
+      <li><strong>João Gonçalves Zarco:</strong> Câmara de Lobos foi uma das primeiras localidades onde João Gonçalves Zarco se estabeleceu após a chegada dos portugueses à Madeira, tendo a povoação crescido em torno da baía e das actividades marítimas.</li>
+
+      <li><strong>Nome e Heráldica:</strong> O nome Câmara de Lobos está associado à enseada onde João Gonçalves Zarco encontrou uma grande concentração de lobos-marinhos. O brasão do concelho representa esta origem através de dois lobos-marinhos e de uma âncora.</li>
+
+      <li><strong>Pesca:</strong> A baía de Câmara de Lobos está historicamente ligada à pesca, sobretudo do peixe-espada-preto. Os barcos tradicionais, conhecidos como xavelhas, constituem um dos elementos mais característicos da paisagem local.</li>
+
+      <li><strong>Cabo Girão:</strong> O concelho possui o Cabo Girão, uma das falésias mais altas da Europa, com uma plataforma suspensa sobre a arriba e uma vista sobre a costa sul da Madeira.</li>
+    </ul>
+  `
+}, //a
+
+"Funchal": {
+    imagens: [
+    "./images/Concelhos/Funchal1.png",
+    "./images/Concelhos/Funchal2.png",
+    "./images/Concelhos/Funchal3.png",
+    "./images/Concelhos/Funchal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira e capital regional, situado na costa sul da ilha.</li>
+
+      <li><strong>Capital da Madeira:</strong> O Funchal foi elevado a cidade em 1508, durante o reinado de D. Manuel I, e tornou-se o principal centro político, económico e comercial do arquipélago.</li>
+
+      <li><strong>Açúcar e Vinho:</strong> Durante os primeiros séculos de povoamento, a produção de açúcar transformou a economia do Funchal. Mais tarde, o vinho da Madeira tornou-se um dos principais produtos de exportação da ilha e um elemento central da actividade comercial da cidade.</li>
+
+      <li><strong>Catedral:</strong> A Sé do Funchal, construída entre os finais do século XV e o início do século XVI, é um dos principais monumentos manuelinos da Madeira e testemunha a importância adquirida pela cidade durante a expansão marítima portuguesa.</li>
+
+      <li><strong>Mercado dos Lavradores:</strong> O mercado, inaugurado em 1940, reúne produtos agrícolas, flores, peixe e outros produtos tradicionais da Madeira, ocupando um edifício marcante da arquitectura da época.</li>
+
+      <li><strong>Monte:</strong> A freguesia do Monte encontra-se nas encostas superiores da cidade e é conhecida pelo Santuário de Nossa Senhora do Monte, pelos jardins e pelos tradicionais carros de cesto.</li>
+    </ul>
+  `
+}, //a
+
+"Machico": {
+    imagens: [
+    "./images/Concelhos/Machico1.png",
+    "./images/Concelhos/Machico2.png",
+    "./images/Concelhos/Machico3.png",
+    "./images/Concelhos/Machico4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado no extremo oriental da ilha. O território inclui a baía de Machico, o vale central e a península do Caniçal, prolongando-se até à Ponta de São Lourenço.</li>
+
+      <li><strong>Primeiro Desembarque:</strong> Machico está tradicionalmente associado ao primeiro desembarque de João Gonçalves Zarco e Tristão Vaz Teixeira na Madeira, no início do povoamento português da ilha.</li>
+
+      <li><strong>Tristão Vaz Teixeira:</strong> O navegador recebeu a capitania de Machico e foi responsável pela organização inicial do povoamento desta parte da ilha. A vila tornou-se um dos primeiros centros administrativos da Madeira.</li>
+
+      <li><strong>Baía de Machico:</strong> A baía possui uma das poucas praias de areia da costa da Madeira, parcialmente protegida por estruturas portuárias e pelo relevo envolvente.</li>
+
+      <li><strong>Ponta de São Lourenço:</strong> A península oriental constitui uma das paisagens geológicas mais distintas da Madeira, com falésias, formações vulcânicas e vegetação adaptada à exposição ao vento e ao mar.</li>
+    </ul>
+  `
+}, //a
+
+"Ponta do Sol": {
+    imagens: [
+    "./images/Concelhos/Ponta do Sol1.png",
+    "./images/Concelhos/Ponta do Sol2.png",
+    "./images/Concelhos/Ponta do Sol3.png",
+    "./images/Concelhos/Ponta do Sol4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado na costa sudoeste da ilha. O território é marcado por encostas muito inclinadas, vales profundos e uma faixa litoral relativamente estreita.</li>
+
+      <li><strong>Sol e Microclima:</strong> A localização abrigada e a exposição solar fazem da Ponta do Sol uma das zonas de clima mais quente e seco da Madeira.</li>
+
+      <li><strong>Agricultura:</strong> As encostas são ocupadas por bananais, cana-de-açúcar, vinha e outras culturas adaptadas ao clima ameno. A agricultura em socalcos é uma das características da paisagem local.</li>
+
+      <li><strong>Centro Histórico:</strong> A vila conserva a Igreja de Nossa Senhora da Luz, casas tradicionais e uma pequena frente marítima encaixada entre as encostas.</li>
+    </ul>
+  `
+}, //a
+
+"Porto Moniz": {
+    imagens: [
+    "./images/Concelhos/Porto Moniz1.png",
+    "./images/Concelhos/Porto Moniz2.png",
+    "./images/Concelhos/Porto Moniz3.png",
+    "./images/Concelhos/Porto Moniz4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado no extremo noroeste da ilha. O território é marcado por encostas montanhosas, vales profundos e uma costa de origem vulcânica.</li>
+
+      <li><strong>Piscinas Naturais:</strong> As piscinas naturais de Porto Moniz formam-se entre rochas de lava negra, onde a água do mar entra naturalmente. São uma das formações costeiras mais características da Madeira.</li>
+
+      <li><strong>Fanal:</strong> A zona do Fanal, integrada no concelho, conserva uma das áreas mais notáveis da Laurissilva, com antigos loureiros e nevoeiros frequentes nas zonas altas.</li>
+
+      <li><strong>Porto e Pesca:</strong> A povoação desenvolveu-se em torno de um pequeno porto e das actividades piscatórias, que durante séculos constituíram uma das principais bases económicas locais.</li>
+    </ul>
+  `
+}, //a
+
+"Porto Santo": {
+    imagens: [
+    "./images/Concelhos/Porto Santo1.png",
+    "./images/Concelhos/Porto Santo2.png",
+    "./images/Concelhos/Porto Santo3.png",
+    "./images/Concelhos/Porto Santo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, correspondente à ilha do Porto Santo, situada a nordeste da ilha da Madeira. É uma ilha de origem vulcânica, com relevo mais baixo e seco e uma extensa praia de areia.</li>
+
+      <li><strong>Praia do Porto Santo:</strong> A ilha possui uma praia arenosa com cerca de nove quilómetros de extensão, uma das características naturais que mais a distingue da ilha da Madeira.</li>
+
+      <li><strong>Descobrimentos:</strong> O povoamento do Porto Santo esteve ligado a Bartolomeu Perestrelo, primeiro capitão-donatário da ilha. A tradição associa também a ilha a Cristóvão Colombo, que terá vivido aqui após o casamento com Filipa Moniz Perestrelo.</li>
+
+      <li><strong>Casa de Colombo:</strong> Na Vila Baleira existe a Casa de Colombo, espaço museológico dedicado à presença e à memória de Cristóvão Colombo na ilha.</li>
+
+      <li><strong>Pico do Castelo:</strong> O Pico do Castelo domina a parte norte da ilha e está ligado ao antigo sistema defensivo utilizado para vigiar e proteger a população contra ataques de corsários e piratas.</li>
+    </ul>
+  `
+}, //a
+
+"Ribeira Brava": {
+    imagens: [
+    "./images/Concelhos/Ribeira Brava1.png",
+    "./images/Concelhos/Ribeira Brava2.png",
+    "./images/Concelhos/Ribeira Brava3.png",
+    "./images/Concelhos/Ribeira Brava4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado na costa sudoeste da ilha. O território organiza-se em torno do vale profundo da Ribeira Brava e estende-se pelas encostas até às zonas montanhosas do interior.</li>
+
+      <li><strong>Ribeira Brava:</strong> A ribeira que atravessa a vila foi determinante para a formação do povoado e para a utilização agrícola do vale. O nome do concelho deriva precisamente do curso de água.</li>
+
+      <li><strong>Serra e Encumeada:</strong> O território estende-se até à zona montanhosa da Encumeada, uma das principais passagens entre o sul e o norte da Madeira.</li>
+
+      <li><strong>Agricultura:</strong> As encostas são aproveitadas através de socalcos para a produção de banana, batata-doce, vinha e outras culturas. O vinho e a agricultura continuam associados à identidade económica do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Santa Cruz": {
+    imagens: [
+    "./images/Concelhos/Santa Cruz1.png",
+    "./images/Concelhos/Santa Cruz2.png",
+    "./images/Concelhos/Santa Cruz3.png",
+    "./images/Concelhos/Santa Cruz4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado na costa sudeste da ilha. O território inclui a cidade de Santa Cruz, o Caniço e áreas montanhosas no interior.</li>
+
+      <li><strong>Santa Cruz:</strong> A vila foi uma das primeiras povoações da Madeira e conserva um núcleo histórico com a Igreja Matriz de Santa Cruz, o edifício dos Paços do Concelho e a antiga frente marítima.</li>
+
+      <li><strong>Aeroporto da Madeira:</strong> O principal aeroporto da região encontra-se no território do concelho, junto a Santa Catarina. A proximidade do aeroporto tornou Santa Cruz uma das principais portas de entrada na ilha.</li>
+
+      <li><strong>Caniço:</strong> A freguesia do Caniço desenvolveu-se entre o litoral e as encostas do interior e inclui a zona costeira da Ponta da Oliveira e da Reserva Natural do Garajau.</li>
+
+      <li><strong>Garajau:</strong> A Reserva Natural Parcial do Garajau protege uma área marinha junto à costa sudeste da Madeira, criada para conservar os ecossistemas marinhos da região.</li>
+    </ul>
+  `
+}, //a
+
+"Santana": {
+    imagens: [
+    "./images/Concelhos/Santana1.png",
+    "./images/Concelhos/Santana2.png",
+    "./images/Concelhos/Santana3.png",
+    "./images/Concelhos/Santana4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado na costa norte da ilha. O território é marcado por montanhas, vales profundos, falésias e uma paisagem muito húmida.</li>
+
+      <li><strong>Casas Tradicionais:</strong> Santana é conhecida pelas casas tradicionais de cobertura de colmo, construídas com estrutura de madeira e adaptadas às condições climáticas da costa norte.</li>
+
+      <li><strong>Reserva da Biosfera:</strong> O concelho integra uma área reconhecida pela UNESCO como Reserva Mundial da Biosfera, devido à riqueza dos seus ecossistemas terrestres e marinhos.</li>
+
+      <li><strong>Laurissilva:</strong> Grande parte das zonas montanhosas do concelho está coberta pela floresta Laurissilva, com destaque para áreas como o Pico Ruivo, Queimadas e o Caldeirão Verde.</li>
+
+      <li><strong>Pico Ruivo:</strong> O ponto mais alto da Madeira, com 1862 metros de altitude, encontra-se no limite do concelho de Santana, constituindo o ponto culminante do arquipélago.</li>
+    </ul>
+  `
+}, //a
+
+"São Vicente": {
+    imagens: [
+    "./images/Concelhos/São Vicente1.png",
+    "./images/Concelhos/São Vicente2.png",
+    "./images/Concelhos/São Vicente3.png",
+    "./images/Concelhos/São Vicente4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado na costa norte da ilha. O território desenvolve-se em torno de um vale profundo rodeado por montanhas e inclui uma extensa área de floresta Laurissilva.</li>
+
+      <li><strong>Vale de São Vicente:</strong> O vale constitui uma das paisagens mais características do norte da Madeira, com encostas muito verdes, cursos de água e campos agrícolas construídos em socalcos.</li>
+
+      <li><strong>Grutas de São Vicente:</strong> As grutas e o centro vulcanológico de São Vicente resultam de antigos tubos de lava formados durante erupções vulcânicas. O conjunto permite observar diferentes estruturas da actividade vulcânica da ilha.</li>
+
+      <li><strong>Laurissilva:</strong> As montanhas do concelho incluem extensas áreas da floresta Laurissilva, uma das principais formações naturais da Madeira e Património Mundial da UNESCO.</li>
+
+      <li><strong>Património:</strong> A Capela de Nossa Senhora de Fátima e a Igreja Matriz de São Vicente constituem alguns dos principais elementos patrimoniais do concelho, complementados por antigos engenhos e estruturas agrícolas.</li>
+    </ul>
+  `
+}, //a
+
+// Fim Madeira
+
+// Início de Bragança
+
+"Bragança": {
+    imagens: [
+    "./images/Concelhos/Bragança1.png",
+    "./images/Concelhos/Bragança2.png",
+    "./images/Concelhos/Bragança3.png",
+    "./images/Concelhos/Bragança4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, capital do distrito de Bragança está situado no extremo nordeste de Portugal e faz fronteira com Espanha. O território inclui parte significativa do Parque Natural de Montesinho e apresenta paisagens de montanha, planaltos e vales.</li>
+
+      <li><strong>Cidadela e Castelo:</strong> A cidade conserva uma das mais importantes cidadelas medievais do Nordeste Transmontano, rodeada por muralhas e dominada pela Torre de Menagem do castelo. No interior encontra-se também a Domus Municipalis, um edifício medieval de características invulgares.</li>
+
+      <li><strong>Domus Municipalis:</strong> A Domus Municipalis é um dos monumentos mais característicos de Bragança. O edifício, de planta aproximadamente pentagonal, é considerado um raro exemplo de arquitectura civil românica em Portugal e encontra-se junto à Igreja de Santa Maria, dentro da cidadela.</li>
+
+      <li><strong>Parque Natural de Montesinho:</strong> O norte do concelho integra o Parque Natural de Montesinho, uma das principais áreas protegidas do Nordeste Transmontano. A paisagem inclui aldeias tradicionais, bosques, lameiros e habitats de espécies como o lobo-ibérico.</li>
+
+      <li><strong>Porca da Vila:</strong> Junto à cidadela encontra-se a chamada Porca da Vila, uma escultura zoomórfica pré-romana em granito, semelhante a outros berrões encontrados no território transmontano.</li>
+    </ul>
+  `
+}, //a
+
+"Alfândega da Fé": {
+    imagens: [
+    "./images/Concelhos/Alfândega da Fé1.png",
+    "./images/Concelhos/Alfândega da Fé2.png",
+    "./images/Concelhos/Alfândega da Fé3.png",
+    "./images/Concelhos/Alfândega da Fé4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado na zona sul do distrito, entre o vale do Sabor e a Serra de Bornes. A paisagem combina montanha, olivais, amendoais e áreas de cultivo.</li>
+
+      <li><strong>Serra de Bornes:</strong> A Serra de Bornes domina a paisagem do concelho e atinge cerca de 1200 metros de altitude. As encostas da serra contrastam com as zonas mais baixas e quentes do território, onde predominam a oliveira, a amendoeira e outras culturas mediterrânicas.</li>
+
+      <li><strong>Cereja:</strong> A produção de cereja é uma das actividades agrícolas mais associadas a Alfândega da Fé, sobretudo nas zonas de altitude. A cereja tornou-se um dos produtos característicos do concelho.</li>
+
+      <li><strong>Azeite e Olival:</strong> O concelho integra a região de produção do Azeite de Trás-os-Montes DOP. Os olivais ocupam uma parte significativa das zonas agrícolas e fazem parte da paisagem tradicional da chamada Terra Quente transmontana.</li>
+    </ul>
+  `
+}, //a
+
+"Carrazeda de Ansiães": {
+    imagens: [
+    "./images/Concelhos/Carrazeda de Ansiães1.png",
+    "./images/Concelhos/Carrazeda de Ansiães2.png",
+    "./images/Concelhos/Carrazeda de Ansiães3.png",
+    "./images/Concelhos/Carrazeda de Ansiães4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Bragança e situado entre os vales dos rios Douro e Tua. O território combina planaltos, encostas de vinha e olival e vales profundamente encaixados.</li>
+
+      <li><strong>Castelo de Ansiães:</strong> O Castelo e Vila Amuralhada de Ansiães constituem o principal conjunto histórico do concelho. A antiga vila fortificada ocupava uma posição estratégica sobre o território e foi um importante centro medieval da região.</li>
+
+      <li><strong>Vale do Tua e Douro:</strong> O sul do concelho é marcado pelos vales do Tua e do Douro, com encostas onde se encontram vinhas e olivais. A paisagem integra-se na área do Alto Douro Vinhateiro, classificada como Património Mundial.</li>
+
+      <li><strong>Maçã, Vinho e Azeite:</strong> A agricultura tem grande importância no concelho, destacando-se a produção de maçã, vinho e azeite. Estes três produtos estão particularmente associados à identidade agrícola de Carrazeda de Ansiães.</li>
+
+      <li><strong>Cachão da Rapa:</strong> No território do concelho encontram-se as pinturas rupestres do Cachão da Rapa, um dos testemunhos mais conhecidos da ocupação pré-histórica da região.</li>
+    </ul>
+  `
+}, //a
+
+"Freixo de Espada à Cinta": {
+    imagens: [
+    "./images/Concelhos/Freixo de Espada à Cinta1.png",
+    "./images/Concelhos/Freixo de Espada à Cinta2.png",
+    "./images/Concelhos/Freixo de Espada à Cinta3.png",
+    "./images/Concelhos/Freixo de Espada à Cinta4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Douro, pertencente ao distrito de Bragança e situado no extremo sul do distrito, junto ao rio Douro e fazendo fronteira com Espanha. O território é marcado por encostas escarpadas e vales profundos.</li>
+
+      <li><strong>Rio Douro:</strong> O Douro atravessa a parte sul do concelho, formando uma paisagem de vales encaixados e encostas onde predominam a vinha, o olival e outras culturas mediterrânicas.</li>
+
+      <li><strong>Freixo de Espada à Cinta e a Lenda:</strong> A origem do nome da vila é incerta e está associada a várias explicações e lendas. Uma das mais conhecidas conta que D. Dinis terá prendido a sua espada a um freixo enquanto descansava junto à árvore, dando origem ao nome da povoação.</li>
+
+      <li><strong>Igreja Matriz:</strong> A Igreja Matriz de Freixo de Espada à Cinta, dedicada a São Miguel, é um importante exemplo da arquitectura manuelina na região. A sua construção foi iniciada no século XVI por iniciativa de D. Manuel I.</li>
+
+      <li><strong>Seda:</strong> Freixo de Espada à Cinta conserva uma tradição artesanal de produção de seda, considerada uma das características culturais mais particulares do concelho. O Museu da Seda e do Território está ligado à preservação desta actividade.</li>
+    </ul>
+  `
+},
+
+"Macedo de Cavaleiros": {
+    imagens: [
+    "./images/Concelhos/Macedo de Cavaleiros1.png",
+    "./images/Concelhos/Macedo de Cavaleiros2.png",
+    "./images/Concelhos/Macedo de Cavaleiros3.png",
+    "./images/Concelhos/Macedo de Cavaleiros4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado entre a Serra de Bornes e o vale do Sabor. O território inclui áreas da Terra Quente transmontana e do Geopark Terras de Cavaleiros.</li>
+
+      <li><strong>Podence e os Caretos:</strong> A aldeia de Podence é conhecida pelos Caretos, personagens tradicionais associadas às festas de Carnaval. Os Caretos de Podence fazem parte da tradição carnavalesca local e estão classificados como Património Cultural Imaterial da Humanidade pela UNESCO.</li>
+
+      <li><strong>Albufeira do Azibo:</strong> A Albufeira do Azibo ocupa uma parte importante do concelho e está rodeada por uma paisagem de montanha, floresta e áreas agrícolas. A zona inclui praias fluviais e uma importante área de conservação da natureza.</li>
+
+      <li><strong>Geopark Terras de Cavaleiros:</strong> O concelho integra o Geopark Terras de Cavaleiros, reconhecido pela diversidade geológica do território, que inclui formações rochosas associadas à evolução geológica do Nordeste Transmontano.</li>
+
+      <li><strong>Serra de Bornes:</strong> A Serra de Bornes domina a paisagem a oeste do concelho e constitui uma das principais referências naturais de Macedo de Cavaleiros.</li>
+    </ul>
+  `
+},
+
+"Miranda do Douro": {
+    imagens: [
+    "./images/Concelhos/Miranda do Douro1.png",
+    "./images/Concelhos/Miranda do Douro2.png",
+    "./images/Concelhos/Miranda do Douro3.png",
+    "./images/Concelhos/Miranda do Douro4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no extremo nordeste de Portugal, fazendo fronteira com Espanha. O rio Douro marca grande parte da fronteira oriental e o território integra o Parque Natural do Douro Internacional.</li>
+
+      <li><strong>Língua Mirandesa:</strong> Miranda do Douro é o principal centro histórico e cultural da língua mirandesa, uma língua românica própria do Nordeste Transmontano. O mirandês possui reconhecimento oficial em Portugal desde 1999.</li>
+
+      <li><strong>Pauliteiros de Miranda:</strong> Os Pauliteiros de Miranda são grupos de dança tradicional associados às Terras de Miranda. As danças, acompanhadas por gaita-de-foles, caixa e bombo, são uma das manifestações culturais mais características do concelho.</li>
+
+      <li><strong>Castelo e Sé de Miranda:</strong> A antiga vila medieval foi fortificada devido à sua posição fronteiriça. A Sé de Miranda do Douro, construída a partir do século XVI, destaca-se pelas grandes dimensões e pelo conjunto monumental da antiga cidade episcopal.</li>
+
+      <li><strong>Douro Internacional:</strong> O vale do Douro forma profundas arribas no limite oriental do concelho. Esta paisagem integra o Parque Natural do Douro Internacional e constitui um dos principais elementos naturais de Miranda do Douro.</li>
+    </ul>
+  `
+},
+
+"Mirandela": {
+    imagens: [
+    "./images/Concelhos/Mirandela1.png",
+    "./images/Concelhos/Mirandela2.png",
+    "./images/Concelhos/Mirandela3.png",
+    "./images/Concelhos/Mirandela4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no centro da Terra Quente transmontana. O território é atravessado pelo rio Tua e apresenta uma paisagem marcada por olivais, montanhas e vales agrícolas.</li>
+
+      <li><strong>Rio Tua e Ponte Velha:</strong> O rio Tua atravessa a cidade de Mirandela e é um dos principais elementos da paisagem urbana. A Ponte Velha, de origem medieval, tornou-se um dos símbolos da cidade.</li>
+
+      <li><strong>Alheira de Mirandela:</strong> A alheira é um dos produtos mais associados ao concelho. O enchido, originalmente ligado às comunidades judaicas e cristãs-novas, tornou-se uma das especialidades mais conhecidas da gastronomia transmontana.</li>
+
+      <li><strong>Azeite:</strong> Mirandela encontra-se numa das principais zonas de produção de azeite de Trás-os-Montes. Os extensos olivais da Terra Quente fazem parte da paisagem agrícola do concelho.</li>
+
+      <li><strong>Castelo e Centro Histórico:</strong> O centro histórico conserva vestígios das antigas muralhas e do castelo medieval, incluindo a Torre de Menagem, que domina a zona antiga da cidade.</li>
+    </ul>
+  `
+},
+
+"Mogadouro": {
+    imagens: [
+    "./images/Concelhos/Mogadouro1.png",
+    "./images/Concelhos/Mogadouro2.png",
+    "./images/Concelhos/Mogadouro3.png",
+    "./images/Concelhos/Mogadouro4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no lado sul e oriental do distrito, fazendo fronteira com Espanha através do rio Douro. Grande parte do território integra a paisagem do Parque Natural do Douro Internacional.</li>
+
+      <li><strong>Castelo de Mogadouro:</strong> O castelo domina a vila e conserva estruturas medievais associadas à importância fronteiriça do território. A fortificação esteve ligada à Ordem dos Templários e posteriormente à Ordem de Cristo.</li>
+
+      <li><strong>Douro Internacional:</strong> O rio Douro forma profundas arribas no limite oriental do concelho. A paisagem é marcada por encostas rochosas, vales encaixados e habitats de numerosas aves rupícolas.</li>
+
+      <li><strong>Terra Quente:</strong> As zonas mais baixas do concelho apresentam características mediterrânicas e uma agricultura marcada pelo olival, amendoal e outras culturas adaptadas ao clima quente e seco.</li>
+
+      <li><strong>Património Arqueológico:</strong> O território conserva numerosos vestígios de ocupação humana desde a Pré-História, incluindo gravuras rupestres, castros e outros sítios arqueológicos espalhados pelas várias freguesias.</li>
+    </ul>
+  `
+},
+
+"Torre de Moncorvo": {
+    imagens: [
+    "./images/Concelhos/Torre de Moncorvo1.png",
+    "./images/Concelhos/Torre de Moncorvo2.png",
+    "./images/Concelhos/Torre de Moncorvo3.png",
+    "./images/Concelhos/Torre de Moncorvo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Douro, pertencente ao distrito de Bragança e situado no extremo sul do distrito, junto ao rio Douro. O território combina planaltos transmontanos com encostas de vinha, olival e amendoal.</li>
+
+      <li><strong>Minas de Ferro:</strong> Torre de Moncorvo possui importantes jazidas de ferro na Serra do Reboredo. A exploração mineira teve grande importância económica, sobretudo durante o século XX, e deixou marcas na paisagem e na história industrial do concelho.</li>
+
+      <li><strong>Igreja Matriz:</strong> A Igreja Matriz de Torre de Moncorvo, dedicada a Nossa Senhora da Assunção, é um dos maiores templos do Nordeste Transmontano. A construção iniciou-se no século XVI e apresenta características da arquitectura renascentista e maneirista.</li>
+
+      <li><strong>Douro:</strong> O rio Douro atravessa o sul do concelho, formando um vale profundo onde se desenvolvem vinhas e olivais. Parte desta paisagem integra a região classificada do Alto Douro Vinhateiro.</li>
+
+      <li><strong>Amendoeiras em Flor:</strong> As encostas do concelho são conhecidas pelas extensas plantações de amendoeiras, cuja floração no final do inverno constitui uma das imagens mais características de Torre de Moncorvo.</li>
+    </ul>
+  `
+},
+
+"Vila Flor": {
+    imagens: [
+    "./images/Concelhos/Vila Flor1.png",
+    "./images/Concelhos/Vila Flor2.png",
+    "./images/Concelhos/Vila Flor3.png",
+    "./images/Concelhos/Vila Flor4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado na zona sul da Terra Quente transmontana. O território apresenta uma paisagem de vales e planaltos, marcada por olivais, amendoais e vinhas.</li>
+
+      <li><strong>Origem do Nome:</strong> A povoação era conhecida como Póvoa de Além-Sabor até ao reinado de D. Dinis. Segundo a tradição, o rei terá alterado o nome para Vila Flor, associando-o às características da povoação e da sua paisagem.</li>
+
+      <li><strong>Vila Flor e D. Dinis:</strong> D. Dinis concedeu foral à povoação e esteve ligado à sua reorganização medieval. A tradição atribui também ao reinado deste monarca a alteração do nome de Póvoa de Além-Sabor para Vila Flor.</li>
+
+      <li><strong>Palácio dos Condes de Sampaio:</strong> O antigo Solar dos Condes de Sampaio é um dos edifícios históricos mais importantes da vila, integrando o conjunto patrimonial do centro histórico.</li>
+
+      <li><strong>Azeite e Vinho:</strong> A agricultura tem grande importância no concelho, com destaque para a produção de azeite, vinho, amêndoa e outros produtos da Terra Quente transmontana.</li>
+    </ul>
+  `
+},
+
+"Vimioso": {
+    imagens: [
+    "./images/Concelhos/Vimioso1.png",
+    "./images/Concelhos/Vimioso2.png",
+    "./images/Concelhos/Vimioso3.png",
+    "./images/Concelhos/Vimioso4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no nordeste transmontano, fazendo fronteira com Espanha. O território estende-se entre os concelhos de Bragança, Miranda do Douro e Mogadouro.</li>
+
+      <li><strong>Castelo de Algoso:</strong> O Castelo de Algoso é um dos principais monumentos do concelho. Construído no final do século XII, ocupava uma posição estratégica sobre as Terras de Miranda e fazia parte da defesa da fronteira oriental do reino.</li>
+
+      <li><strong>Algoso e a Fronteira:</strong> A antiga vila de Algoso foi durante séculos um importante ponto militar e administrativo da região. A sua posição permitia controlar as vias de passagem entre o interior transmontano e a fronteira.</li>
+
+      <li><strong>Agricultura e Azeite:</strong> As zonas mais baixas do concelho apresentam características da Terra Quente, com extensos olivais, amendoais e áreas de cultivo. O azeite é um dos produtos agrícolas tradicionais da região.</li>
+
+      <li><strong>Património Rural:</strong> O concelho conserva várias aldeias tradicionais e elementos de arquitectura vernacular transmontana, além de vestígios arqueológicos espalhados pelo território.</li>
+    </ul>
+  `
+},
+
+"Vinhais": {
+    imagens: [
+    "./images/Concelhos/Vinhais1.png",
+    "./images/Concelhos/Vinhais2.png",
+    "./images/Concelhos/Vinhais3.png",
+    "./images/Concelhos/Vinhais4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no extremo norte do distrito, fazendo fronteira com Espanha. Grande parte do território integra o Parque Natural de Montesinho.</li>
+
+      <li><strong>Parque Natural de Montesinho:</strong> O concelho possui uma extensa área integrada no Parque Natural de Montesinho, com montanhas, bosques, lameiros e aldeias tradicionais. A paisagem é uma das características mais marcantes do território.</li>
+
+      <li><strong>Castanha:</strong> Vinhais é um dos principais centros de produção de castanha em Portugal. Os soutos ocupam extensas áreas do concelho e a castanha tornou-se um dos produtos agrícolas mais associados à região.</li>
+
+      <li><strong>Fumeiro:</strong> O Fumeiro de Vinhais é uma das especialidades gastronómicas mais conhecidas do concelho, com destaque para enchidos tradicionais como o salpicão, a linguiça e o presunto.</li>
+
+      <li><strong>Porco Bísaro:</strong> A criação do porco Bísaro está ligada às tradições agropecuárias do concelho e constitui uma das bases da produção tradicional de fumeiro de Vinhais.</li>
+    </ul>
+  `
+},
+
+// Fim de Bragança
 
 };
