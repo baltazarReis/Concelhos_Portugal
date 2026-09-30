@@ -426,6 +426,8 @@ export const dadosConcelhos = {
 
       <li><strong>Tejo e Actividades Ribeirinhas:</strong> Durante séculos, o Montijo funcionou como ponto de ligação entre a margem sul e Lisboa. A pesca, o transporte fluvial, o comércio de produtos agrícolas e a exploração de salinas tiveram importância na economia local. O Museu do Pescador conserva objectos e memórias relacionadas com estas actividades.</li>
 
+      <li><strong>Território descontínuo:</strong> O concelho do Montijo é formado por duas parcelas territorialmente separadas. A parte oriental, onde se encontram Canha e Pegões, corresponde em grande medida ao antigo concelho de Canha, extinto definitivamente em 1838 e integrado no então concelho de Aldeia Galega do Ribatejo, actual Montijo.</li>
+
       <li><strong>Moinhos de Maré:</strong> A utilização das marés para a moagem de cereais deixou vários vestígios no concelho. O Moinho de Maré da Lançada, junto ao estuário do Tejo, tem registos documentais desde 1386 e continuou a funcionar até à segunda metade do século XX.</li>
     </ul>
   `
@@ -1219,6 +1221,8 @@ export const dadosConcelhos = {
       <li><strong>Fundação Pombalina:</strong> A cidade foi fundada por ordem do Marquês de Pombal e construída em apenas cinco meses, em 1774, segundo um plano urbanístico regular semelhante ao da Baixa de Lisboa.</li>
  
       <li><strong>Indústria Conserveira:</strong> Ao longo dos séculos XIX e XX, a cidade foi um dos principais centros da indústria conserveira de atum e sardinha do Algarve.</li>
+
+      <li><strong>Território descontínuo:</strong> Vila Real de Santo António é formado por duas parcelas de território. A freguesia de Vila Nova de Cacela, a oeste, está separada de Vila Real de Santo António e Monte Gordo por uma faixa do concelho de Castro Marim, correspondente à freguesia de Altura. Esta configuração resulta da reorganização administrativa associada à criação do concelho de Vila Real de Santo António em 1774.</li>
  
       <li><strong>Ponte Internacional:</strong> A Ponte Internacional do Guadiana liga hoje o concelho a Espanha, reforçando a sua condição de porta de entrada no Algarve.</li>
     </ul>
@@ -3734,7 +3738,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, capital do distrito de Bragança está situado no extremo nordeste de Portugal e faz fronteira com Espanha. O território inclui parte significativa do Parque Natural de Montesinho e apresenta paisagens de montanha, planaltos e vales.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, capital do distrito de Bragança está situado no extremo nordeste de Portugal e faz fronteira com Espanha. O território inclui parte significativa do Parque Natural de Montesinho e apresenta paisagens de montanha, planaltos e vales.</li>
 
       <li><strong>Cidadela e Castelo:</strong> A cidade conserva uma das mais importantes cidadelas medievais do Nordeste Transmontano, rodeada por muralhas e dominada pela Torre de Menagem do castelo. No interior encontra-se também a Domus Municipalis, um edifício medieval de características invulgares.</li>
 
@@ -3756,7 +3760,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado na zona sul do distrito, entre o vale do Sabor e a Serra de Bornes. A paisagem combina montanha, olivais, amendoais e áreas de cultivo.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado na zona sul do distrito, entre o vale do Sabor e a Serra de Bornes. A paisagem combina montanha, olivais, amendoais e áreas de cultivo.</li>
 
       <li><strong>Serra de Bornes:</strong> A Serra de Bornes domina a paisagem do concelho e atinge cerca de 1200 metros de altitude. As encostas da serra contrastam com as zonas mais baixas e quentes do território, onde predominam a oliveira, a amendoeira e outras culturas mediterrânicas.</li>
 
@@ -3776,13 +3780,13 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Bragança e situado entre os vales dos rios Douro e Tua. O território combina planaltos, encostas de vinha e olival e vales profundamente encaixados.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Bragança e situado entre os vales dos rios Douro e Tua. O território combina planaltos, encostas de vinha e olival e vales profundos.</li>
 
       <li><strong>Castelo de Ansiães:</strong> O Castelo e Vila Amuralhada de Ansiães constituem o principal conjunto histórico do concelho. A antiga vila fortificada ocupava uma posição estratégica sobre o território e foi um importante centro medieval da região.</li>
 
       <li><strong>Vale do Tua e Douro:</strong> O sul do concelho é marcado pelos vales do Tua e do Douro, com encostas onde se encontram vinhas e olivais. A paisagem integra-se na área do Alto Douro Vinhateiro, classificada como Património Mundial.</li>
 
-      <li><strong>Maçã, Vinho e Azeite:</strong> A agricultura tem grande importância no concelho, destacando-se a produção de maçã, vinho e azeite. Estes três produtos estão particularmente associados à identidade agrícola de Carrazeda de Ansiães.</li>
+      <li><strong>Maçã, Vinho e Azeite:</strong> A agricultura tem grande importância no concelho, destacando-se a produção de maçã, vinho e azeite.</li>
 
       <li><strong>Cachão da Rapa:</strong> No território do concelho encontram-se as pinturas rupestres do Cachão da Rapa, um dos testemunhos mais conhecidos da ocupação pré-histórica da região.</li>
     </ul>
@@ -3798,18 +3802,18 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Douro, pertencente ao distrito de Bragança e situado no extremo sul do distrito, junto ao rio Douro e fazendo fronteira com Espanha. O território é marcado por encostas escarpadas e vales profundos.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Bragança e situado no extremo sul do distrito, junto ao rio Douro e fazendo fronteira com Espanha. O território é marcado por encostas escarpadas e vales profundos.</li>
 
-      <li><strong>Rio Douro:</strong> O Douro atravessa a parte sul do concelho, formando uma paisagem de vales encaixados e encostas onde predominam a vinha, o olival e outras culturas mediterrânicas.</li>
+      <li><strong>Rio Douro:</strong> O Douro atravessa a parte sul do concelho, formando uma paisagem de vales e encostas onde predominam a vinha, o olival e outras culturas mediterrânicas.</li>
 
       <li><strong>Freixo de Espada à Cinta e a Lenda:</strong> A origem do nome da vila é incerta e está associada a várias explicações e lendas. Uma das mais conhecidas conta que D. Dinis terá prendido a sua espada a um freixo enquanto descansava junto à árvore, dando origem ao nome da povoação.</li>
 
-      <li><strong>Igreja Matriz:</strong> A Igreja Matriz de Freixo de Espada à Cinta, dedicada a São Miguel, é um importante exemplo da arquitectura manuelina na região. A sua construção foi iniciada no século XVI por iniciativa de D. Manuel I.</li>
+      <li><strong>Igreja Matriz:</strong> A Igreja Matriz de Freixo de Espada à Cinta, dedicada a São Miguel, é um importante exemplo da arquitectura manuelina na região.</li>
 
       <li><strong>Seda:</strong> Freixo de Espada à Cinta conserva uma tradição artesanal de produção de seda, considerada uma das características culturais mais particulares do concelho. O Museu da Seda e do Território está ligado à preservação desta actividade.</li>
     </ul>
   `
-},
+}, //a
 
 "Macedo de Cavaleiros": {
     imagens: [
@@ -3820,18 +3824,16 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado entre a Serra de Bornes e o vale do Sabor. O território inclui áreas da Terra Quente transmontana e do Geopark Terras de Cavaleiros.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado entre a Serra de Bornes e o vale do Sabor. O território inclui áreas da Terra Quente transmontana e de Terras de Cavaleiros.</li>
 
       <li><strong>Podence e os Caretos:</strong> A aldeia de Podence é conhecida pelos Caretos, personagens tradicionais associadas às festas de Carnaval. Os Caretos de Podence fazem parte da tradição carnavalesca local e estão classificados como Património Cultural Imaterial da Humanidade pela UNESCO.</li>
 
       <li><strong>Albufeira do Azibo:</strong> A Albufeira do Azibo ocupa uma parte importante do concelho e está rodeada por uma paisagem de montanha, floresta e áreas agrícolas. A zona inclui praias fluviais e uma importante área de conservação da natureza.</li>
 
-      <li><strong>Geopark Terras de Cavaleiros:</strong> O concelho integra o Geopark Terras de Cavaleiros, reconhecido pela diversidade geológica do território, que inclui formações rochosas associadas à evolução geológica do Nordeste Transmontano.</li>
-
       <li><strong>Serra de Bornes:</strong> A Serra de Bornes domina a paisagem a oeste do concelho e constitui uma das principais referências naturais de Macedo de Cavaleiros.</li>
     </ul>
   `
-},
+}, //a
 
 "Miranda do Douro": {
     imagens: [
@@ -3842,7 +3844,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no extremo nordeste de Portugal, fazendo fronteira com Espanha. O rio Douro marca grande parte da fronteira oriental e o território integra o Parque Natural do Douro Internacional.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no extremo nordeste de Portugal, fazendo fronteira com Espanha. O rio Douro marca grande parte da fronteira oriental e o território integra o Parque Natural do Douro Internacional.</li>
 
       <li><strong>Língua Mirandesa:</strong> Miranda do Douro é o principal centro histórico e cultural da língua mirandesa, uma língua românica própria do Nordeste Transmontano. O mirandês possui reconhecimento oficial em Portugal desde 1999.</li>
 
@@ -3853,7 +3855,7 @@ export const dadosConcelhos = {
       <li><strong>Douro Internacional:</strong> O vale do Douro forma profundas arribas no limite oriental do concelho. Esta paisagem integra o Parque Natural do Douro Internacional e constitui um dos principais elementos naturais de Miranda do Douro.</li>
     </ul>
   `
-},
+}, //a
 
 "Mirandela": {
     imagens: [
@@ -3864,7 +3866,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no centro da Terra Quente transmontana. O território é atravessado pelo rio Tua e apresenta uma paisagem marcada por olivais, montanhas e vales agrícolas.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no centro da Terra Quente transmontana. O território é atravessado pelo rio Tua e apresenta uma paisagem marcada por olivais, montanhas e vales agrícolas.</li>
 
       <li><strong>Rio Tua e Ponte Velha:</strong> O rio Tua atravessa a cidade de Mirandela e é um dos principais elementos da paisagem urbana. A Ponte Velha, de origem medieval, tornou-se um dos símbolos da cidade.</li>
 
@@ -3875,7 +3877,7 @@ export const dadosConcelhos = {
       <li><strong>Castelo e Centro Histórico:</strong> O centro histórico conserva vestígios das antigas muralhas e do castelo medieval, incluindo a Torre de Menagem, que domina a zona antiga da cidade.</li>
     </ul>
   `
-},
+}, //a
 
 "Mogadouro": {
     imagens: [
@@ -3886,7 +3888,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no lado sul e oriental do distrito, fazendo fronteira com Espanha através do rio Douro. Grande parte do território integra a paisagem do Parque Natural do Douro Internacional.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no lado sul e oriental do distrito, fazendo fronteira com Espanha através do rio Douro. Grande parte do território integra a paisagem do Parque Natural do Douro Internacional.</li>
 
       <li><strong>Castelo de Mogadouro:</strong> O castelo domina a vila e conserva estruturas medievais associadas à importância fronteiriça do território. A fortificação esteve ligada à Ordem dos Templários e posteriormente à Ordem de Cristo.</li>
 
@@ -3897,7 +3899,7 @@ export const dadosConcelhos = {
       <li><strong>Património Arqueológico:</strong> O território conserva numerosos vestígios de ocupação humana desde a Pré-História, incluindo gravuras rupestres, castros e outros sítios arqueológicos espalhados pelas várias freguesias.</li>
     </ul>
   `
-},
+}, //a
 
 "Torre de Moncorvo": {
     imagens: [
@@ -3908,7 +3910,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Douro, pertencente ao distrito de Bragança e situado no extremo sul do distrito, junto ao rio Douro. O território combina planaltos transmontanos com encostas de vinha, olival e amendoal.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Bragança e situado no extremo sul do distrito, junto ao rio Douro. O território combina planaltos transmontanos com encostas de vinha, olival e amendoal.</li>
 
       <li><strong>Minas de Ferro:</strong> Torre de Moncorvo possui importantes jazidas de ferro na Serra do Reboredo. A exploração mineira teve grande importância económica, sobretudo durante o século XX, e deixou marcas na paisagem e na história industrial do concelho.</li>
 
@@ -3919,7 +3921,7 @@ export const dadosConcelhos = {
       <li><strong>Amendoeiras em Flor:</strong> As encostas do concelho são conhecidas pelas extensas plantações de amendoeiras, cuja floração no final do inverno constitui uma das imagens mais características de Torre de Moncorvo.</li>
     </ul>
   `
-},
+}, //a
 
 "Vila Flor": {
     imagens: [
@@ -3930,7 +3932,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado na zona sul da Terra Quente transmontana. O território apresenta uma paisagem de vales e planaltos, marcada por olivais, amendoais e vinhas.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado na zona sul da Terra Quente transmontana. O território apresenta uma paisagem de vales e planaltos, marcada por olivais, amendoais e vinhas.</li>
 
       <li><strong>Origem do Nome:</strong> A povoação era conhecida como Póvoa de Além-Sabor até ao reinado de D. Dinis. Segundo a tradição, o rei terá alterado o nome para Vila Flor, associando-o às características da povoação e da sua paisagem.</li>
 
@@ -3941,7 +3943,7 @@ export const dadosConcelhos = {
       <li><strong>Azeite e Vinho:</strong> A agricultura tem grande importância no concelho, com destaque para a produção de azeite, vinho, amêndoa e outros produtos da Terra Quente transmontana.</li>
     </ul>
   `
-},
+}, //a
 
 "Vimioso": {
     imagens: [
@@ -3952,7 +3954,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no nordeste transmontano, fazendo fronteira com Espanha. O território estende-se entre os concelhos de Bragança, Miranda do Douro e Mogadouro.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no nordeste transmontano, fazendo fronteira com Espanha. O território estende-se entre os concelhos de Bragança e Miranda do Douro.</li>
 
       <li><strong>Castelo de Algoso:</strong> O Castelo de Algoso é um dos principais monumentos do concelho. Construído no final do século XII, ocupava uma posição estratégica sobre as Terras de Miranda e fazia parte da defesa da fronteira oriental do reino.</li>
 
@@ -3963,7 +3965,7 @@ export const dadosConcelhos = {
       <li><strong>Património Rural:</strong> O concelho conserva várias aldeias tradicionais e elementos de arquitectura vernacular transmontana, além de vestígios arqueológicos espalhados pelo território.</li>
     </ul>
   `
-},
+}, //a
 
 "Vinhais": {
     imagens: [
@@ -3974,7 +3976,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no extremo norte do distrito, fazendo fronteira com Espanha. Grande parte do território integra o Parque Natural de Montesinho.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no extremo norte do distrito, fazendo fronteira com Espanha. Grande parte do território integra o Parque Natural de Montesinho.</li>
 
       <li><strong>Parque Natural de Montesinho:</strong> O concelho possui uma extensa área integrada no Parque Natural de Montesinho, com montanhas, bosques, lameiros e aldeias tradicionais. A paisagem é uma das características mais marcantes do território.</li>
 
@@ -3985,8 +3987,924 @@ export const dadosConcelhos = {
       <li><strong>Porco Bísaro:</strong> A criação do porco Bísaro está ligada às tradições agropecuárias do concelho e constitui uma das bases da produção tradicional de fumeiro de Vinhais.</li>
     </ul>
   `
-},
+}, //a
 
 // Fim de Bragança
+
+// Início de Viseu
+
+"Armamar": {
+    imagens: [
+    "./images/Concelhos/Armamar1.png",
+    "./images/Concelhos/Armamar2.png",
+    "./images/Concelhos/Armamar3.png",
+    "./images/Concelhos/Armamar4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Viseu e situado na margem sul do rio Douro. O território combina as encostas vinhateiras do Douro com as zonas mais elevadas do planalto beirão.</li>
+
+      <li><strong>Vinho e Douro:</strong> As encostas do norte do concelho estão integradas na região demarcada do Douro e são ocupadas por vinhas em socalcos. A produção de vinho, incluindo vinho do Porto, tem grande importância na paisagem e na economia local.</li>
+
+      <li><strong>Maçã:</strong> Armamar é um dos principais concelhos produtores de maçã da região. Os pomares ocupam sobretudo as zonas mais elevadas do território e constituem uma das imagens agrícolas características do concelho.</li>
+
+      <li><strong>Igreja Matriz:</strong> A Igreja Matriz de São Miguel de Armamar é um importante monumento românico do século XII e conserva elementos arquitectónicos medievais.</li>
+
+      <li><strong>Lenda de D. João II:</strong> Segundo uma lenda local, D. João II e D. Leonor visitaram o Monte de São Domingos em 1475. A tradição atribui à chamada Pedra da Fertilidade a intercessão que teria permitido ao casal real ter o seu filho, o príncipe D. Afonso.</li>
+    </ul>
+  `
+}, //a
+
+"Carregal do Sal": {
+    imagens: [
+    "./images/Concelhos/Carregal do Sal1.png",
+    "./images/Concelhos/Carregal do Sal2.png",
+    "./images/Concelhos/Carregal do Sal3.png",
+    "./images/Concelhos/Carregal do Sal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado entre os rios Dão e Mondego. O território apresenta uma paisagem de planalto, florestas, vinhas e áreas agrícolas.</li>
+
+      <li><strong>Arqueologia:</strong> O concelho possui numerosos vestígios pré-históricos, incluindo antas e outros monumentos megalíticos. A Anta da Lapa da Orca é um dos exemplos mais conhecidos.</li>
+
+      <li><strong>Oliveira do Conde:</strong> A freguesia de Oliveira do Conde conserva a Igreja Matriz e o túmulo de Fernão Gomes de Góis, cavaleiro e senhor local do século XV.</li>
+
+      <li><strong>Origem do Nome:</strong> O topónimo Carregal está associado à planta chamada cárrega. Sal vem do antigo lugar das Salinas, onde era armazenado o sal transportado desde o Mondego para abastecer o interior.</li>
+    </ul>
+  `
+}, //a
+
+"Castro Daire": {
+    imagens: [
+    "./images/Concelhos/Castro Daire1.png",
+    "./images/Concelhos/Castro Daire2.png",
+    "./images/Concelhos/Castro Daire3.png",
+    "./images/Concelhos/Castro Daire4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado na zona norte do distrito. O território é dominado pela Serra de Montemuro e pelos vales dos rios Paiva e Vouga.</li>
+
+      <li><strong>Serra de Montemuro:</strong> A serra ocupa grande parte do concelho e apresenta extensas áreas de montanha, aldeias serranas, lameiros e pastagens. O Montemuro constitui uma das principais referências naturais de Castro Daire.</li>
+
+      <li><strong>Rio Paiva:</strong> O rio Paiva atravessa o concelho e forma vales encaixados e zonas de grande importância natural. A paisagem fluvial contrasta com as áreas montanhosas do Montemuro.</li>
+
+      <li><strong>Termas do Carvalhal:</strong> As Termas do Carvalhal estão associadas à utilização das águas minerais naturais do concelho e constituem um dos principais elementos da tradição termal local.</li>
+
+      <li><strong>Património Rural:</strong> O concelho conserva aldeias serranas e construções tradicionais de granito, ligadas historicamente à pastorícia, à agricultura de montanha e ao aproveitamento dos recursos florestais.</li>
+    </ul>
+  `
+}, //a
+
+"Cinfães": {
+    imagens: [
+    "./images/Concelhos/Cinfães1.png",
+    "./images/Concelhos/Cinfães2.png",
+    "./images/Concelhos/Cinfães3.png",
+    "./images/Concelhos/Cinfães4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, pertencente ao distrito de Viseu e situado na margem esquerda do rio Douro. O território estende-se desde o vale do Douro até às zonas montanhosas da Serra de Montemuro.</li>
+
+      <li><strong>Rio Douro:</strong> O Douro marca o limite norte do concelho e forma uma paisagem de encostas íngremes e vales profundos. A agricultura ocupa sobretudo os terrenos mais favoráveis junto às linhas de água.</li>
+
+      <li><strong>Egas Moniz:</strong> A tradição local associa Cinfães à figura de Egas Moniz, aio de D. Afonso Henriques. O concelho conserva referências à sua presença e à antiga linhagem dos Ribadouro.</li>
+
+      <li><strong>Serra de Montemuro:</strong> A parte sul do concelho integra a Serra de Montemuro, com aldeias serranas, pastagens e áreas de montanha. A paisagem é marcada pela criação de gado e pelas actividades agro-pastoris.</li>
+
+      <li><strong>Vinho e Azeite:</strong> A agricultura tradicional inclui a produção de vinho e azeite, associada às encostas do Douro e aos terrenos agrícolas do interior do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Lamego": {
+    imagens: [
+    "./images/Concelhos/Lamego1.png",
+    "./images/Concelhos/Lamego2.png",
+    "./images/Concelhos/Lamego3.png",
+    "./images/Concelhos/Lamego4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Viseu e situado na margem sul do rio Douro. O território combina encostas vinhateiras do Douro com áreas de montanha e planalto no interior.</li>
+
+      <li><strong>Reconquista:</strong> Lamego foi reconquistado definitivamente aos mouros por Fernando Magno em 1057, depois de ter sido uma importante praça fronteiriça disputada entre cristãos e muçulmanos.</li>
+
+      <li><strong>Cortes de Lamego:</strong> Segundo uma tradição antiga, as primeiras Cortes do Reino de Portugal ter-se-ão reunido na Igreja de Santa Maria de Almacave, em Lamego, no século XII. A realização dessas Cortes não tem confirmação histórica e é hoje considerada uma tradição lendária.</li>
+
+      <li><strong>Santuário de Nossa Senhora dos Remédios:</strong> O santuário domina a cidade a partir da escadaria monumental construída na encosta. A actual igreja foi construída entre os séculos XVIII e XIX e tornou-se um dos principais símbolos de Lamego.</li>
+
+      <li><strong>Vinho do Douro:</strong> A parte norte do concelho integra a região demarcada do Douro. As encostas junto ao rio são ocupadas por vinhas em socalcos, ligadas à produção de vinho do Porto e de vinhos do Douro.</li>
+    </ul>
+  `
+}, //a
+
+"Mangualde": {
+    imagens: [
+    "./images/Concelhos/Mangualde1.png",
+    "./images/Concelhos/Mangualde2.png",
+    "./images/Concelhos/Mangualde3.png",
+    "./images/Concelhos/Mangualde4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado no planalto entre Viseu e a Serra da Estrela. O rio Dão atravessa a parte sul do território.</li>
+
+      <li><strong>Senhora do Castelo:</strong> O Monte da Senhora do Castelo domina Mangualde e conserva vestígios de ocupação desde a Idade do Ferro. O local esteve também associado à antiga fortificação medieval das Terras de Zurara.</li>
+
+      <li><strong>Citânia da Raposeira:</strong> No sopé da Senhora do Castelo encontra-se a Citânia da Raposeira, um importante sítio arqueológico de época romana. O local corresponde a uma grande estalagem destinada aos viajantes das estradas romanas.</li>
+
+      <li><strong>Queijo e Vinho:</strong> A agricultura tradicional inclui a produção de vinho do Dão e de produtos ligados à pastorícia, destacando-se a proximidade à área de produção do Queijo Serra da Estrela.</li>
+    </ul>
+  `
+}, //a
+
+"Moimenta da Beira": {
+    imagens: [
+    "./images/Concelhos/Moimenta da Beira1.png",
+    "./images/Concelhos/Moimenta da Beira2.png",
+    "./images/Concelhos/Moimenta da Beira3.png",
+    "./images/Concelhos/Moimenta da Beira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Viseu e situado numa zona de transição entre o planalto da Beira Alta e o vale do Douro. O território combina áreas agrícolas, vinhas, pomares e zonas de floresta.</li>
+
+      <li><strong>Leomil:</strong> A freguesia de Leomil possui uma longa história medieval e esteve no centro do antigo Couto de Leomil, que abrangia territórios muito mais extensos do que a actual freguesia.</li>
+
+      <li><strong>Vinho e Maçã:</strong> A agricultura ocupa uma parte importante do território, destacando-se a produção de vinho e de maçã, incluindo a variedade Bravo de Esmolfe.</li>
+    </ul>
+  `
+}, //a
+
+"Mortágua": {
+    imagens: [
+    "./images/Concelhos/Mortágua1.png",
+    "./images/Concelhos/Mortágua2.png",
+    "./images/Concelhos/Mortágua3.png",
+    "./images/Concelhos/Mortágua4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Viseu e situado na transição entre a Beira Alta e a região do Baixo Mondego. O território é marcado por serras, vales e extensas áreas florestais.</li>
+
+      <li><strong>Batalha do Buçaco:</strong> Em 1810, durante a Terceira Invasão Francesa, o território de Mortágua ficou directamente ligado à Batalha do Buçaco. A serra e os acessos pelo concelho foram atravessados pelas forças francesas e luso-britânicas antes do confronto de 27 de Setembro.</li>
+
+      <li><strong>Combate de Mortágua:</strong> Em 25 de Setembro de 1810, dois dias antes da Batalha do Buçaco, ocorreu o combate da Serra do Meiral. As forças portuguesas comandadas pelo major Luís Rego atacaram a vanguarda francesa e retiraram posteriormente para o Buçaco.</li>
+
+      <li><strong>Albufeira da Aguieira:</strong> A barragem da Aguieira criou uma extensa albufeira no rio Mondego, abrangendo parte do concelho e transformando profundamente a paisagem dos vales fluviais.</li>
+
+      <li><strong>Floresta:</strong> A exploração florestal e a produção de madeira tiveram grande importância na economia local, numa paisagem dominada por pinhais e eucaliptais.</li>
+    </ul>
+  `
+}, //a
+
+"Nelas": {
+    imagens: [
+    "./images/Concelhos/Nelas1.png",
+    "./images/Concelhos/Nelas2.png",
+    "./images/Concelhos/Nelas3.png",
+    "./images/Concelhos/Nelas4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado entre Viseu, Mangualde e a Serra da Estrela. O território é marcado por planaltos, vinhas, áreas florestais e vales dos rios Dão e Mondego.</li>
+
+      <li><strong>Vinhos do Dão:</strong> A viticultura é uma das principais características do concelho. Nelas integra a região demarcada do Dão e possui numerosas quintas produtoras de vinho, sobretudo nas zonas de Santar e Vilar Seco.</li>
+
+      <li><strong>Santar:</strong> A freguesia de Santar conserva um importante conjunto de quintas históricas e jardins, ligados à antiga aristocracia rural e à produção de vinho do Dão.</li>
+
+      <li><strong>Caldas da Felgueira:</strong> A localidade de Caldas da Felgueira é conhecida pelas suas águas termais, utilizadas desde o século XIX e associadas à tradição termal do concelho.</li>
+
+      <li><strong>Origem do Concelho:</strong> O actual município foi criado em 1852 através da união dos antigos concelhos de Senhorim e Canas de Senhorim. A chegada do caminho-de-ferro da Beira Alta contribuiu posteriormente para o desenvolvimento económico e industrial de Nelas.</li>
+    </ul>
+  `
+}, //a
+
+"Oliveira de Frades": {
+    imagens: [
+    "./images/Concelhos/Oliveira de Frades1.png",
+    "./images/Concelhos/Oliveira de Frades2.png",
+    "./images/Concelhos/Oliveira de Frades3.png",
+    "./images/Concelhos/Oliveira de Frades4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado na zona norte da região. O território é atravessado pelo rio Vouga e inclui áreas de serra, vales e floresta.</li>
+
+      <li><strong>Rio Vouga:</strong> O Vouga é um dos principais elementos naturais do concelho. O rio atravessa vales encaixados e recebe várias linhas de água provenientes das serras envolventes.</li>
+
+      <li><strong>Albufeira de Ribeiradio:</strong> A barragem de Ribeiradio criou uma grande albufeira no rio Vouga, alterando a paisagem do vale e criando uma extensa área fluvial.</li>
+
+      <li><strong>Território descontínuo:</strong> Oliveira de Frades é um dos poucos municípios portugueses com território descontínuo. A União das Freguesias de Arca e Varzielas forma uma pequena parcela do concelho separada do território principal pelo município de Vouzela, situação resultante das reformas administrativas do século XIX.</li>
+
+      <li><strong>Património Rural:</strong> O concelho conserva antigas aldeias, moinhos, espigueiros, casas de granito e outros elementos ligados à agricultura tradicional das terras de Lafões.</li>
+    </ul>
+  `
+}, //a
+
+"Penalva do Castelo": {
+    imagens: [
+    "./images/Concelhos/Penalva do Castelo1.png",
+    "./images/Concelhos/Penalva do Castelo2.png",
+    "./images/Concelhos/Penalva do Castelo3.png",
+    "./images/Concelhos/Penalva do Castelo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado a leste da cidade de Viseu. O território é atravessado pelos rios Dão, Coja, Carapito e Ludares e apresenta uma paisagem de vinhas, pomares e pastagens.</li>
+
+      <li><strong>Reconquista:</strong> As Terras de Penalva foram reconquistadas aos invasores mouros por Fernando Magno no século XI. A posição entre o Mondego e o Dão tornou a região importante para a defesa do território cristão.</li>
+
+      <li><strong>Castelo de Penalva:</strong> A povoação de Castelo de Penalva ocupava uma posição estratégica sobre as terras entre o Dão e o Mondego e desempenhou uma função defensiva durante a Reconquista.</li>
+
+      <li><strong>Casa da Ínsua:</strong> A Casa da Ínsua é um dos principais solares do concelho. O conjunto inclui o palácio, jardins históricos e elementos ligados à antiga propriedade agrícola.</li>
+
+      <li><strong>Vinho e Queijo:</strong> O concelho integra a região dos vinhos do Dão e possui uma forte ligação à produção de queijo e à pastorícia, beneficiando da proximidade da Serra da Estrela.</li>
+    </ul>
+  `
+}, //a
+
+"Penedono": {
+    imagens: [
+    "./images/Concelhos/Penedono1.png",
+    "./images/Concelhos/Penedono2.png",
+    "./images/Concelhos/Penedono3.png",
+    "./images/Concelhos/Penedono4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Douro, pertencente ao distrito de Viseu e situado no nordeste do distrito. O território é marcado por planaltos, afloramentos graníticos e vales que fazem a transição entre a Beira Alta e o Douro.</li>
+
+      <li><strong>Castelo de Penedono:</strong> O castelo domina a vila a partir de uma posição elevada e é uma das fortificações medievais mais características da região. A sua origem é anterior à formação do reino português.</li>
+
+      <li><strong>Álvaro Gonçalves Coutinho, o Magriço:</strong> Penedono é tradicionalmente identificado como terra natal de Álvaro Gonçalves Coutinho, o Magriço, um dos Doze de Inglaterra celebrados por Luís de Camões n’<em>Os Lusíadas</em>.</li>
+
+      <li><strong>Doze de Inglaterra:</strong> A tradição dos Doze de Inglaterra conta a viagem de doze cavaleiros portugueses à corte inglesa para defender a honra de doze damas. O episódio é lendário, mas o Magriço tornou-se uma das figuras históricas e literárias mais associadas a Penedono.</li>
+
+      <li><strong>Património Medieval:</strong> A vila conserva o castelo, o pelourinho e um núcleo antigo de casas de granito, testemunhos da importância medieval e da autonomia municipal de Penedono.</li>
+    </ul>
+  `
+}, //a
+
+"Resende": {
+    imagens: [
+    "./images/Concelhos/Resende1.png",
+    "./images/Concelhos/Resende2.png",
+    "./images/Concelhos/Resende3.png",
+    "./images/Concelhos/Resende4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, pertencente ao distrito de Viseu e situado na margem esquerda do rio Douro. A sul estende-se até à Serra de Montemuro, criando um território de fortes contrastes entre o vale e a montanha.</li>
+
+      <li><strong>Reconquista:</strong> Durante a Reconquista, as terras de Resende e São Martinho de Mouros foram reintegradas no território cristão. A posição junto ao Douro fez desta zona uma área de defesa e reorganização do território após a expulsão dos mouros.</li>
+
+      <li><strong>Egas Moniz:</strong> A região está fortemente ligada a Egas Moniz, aio de D. Afonso Henriques. A Quinta de Resende esteve associada à sua linhagem e D. Afonso Henriques terá doado o Couto de Resende a Egas Moniz.</li>
+
+      <li><strong>Lenda de Cárquere:</strong> Segundo a tradição, Nossa Senhora de Cárquere apareceu em sonhos a Egas Moniz e prometeu a cura de D. Afonso Henriques, que sofreria de uma deficiência nas pernas, caso o aio fosse ao santuário. A lenda tornou-se uma das histórias mais conhecidas do concelho.</li>
+
+      <li><strong>Cereja:</strong> A produção de cereja é uma das principais actividades agrícolas de Resende. Os pomares ocupam as encostas do Douro e da serra e a floração das cerejeiras tornou-se uma das imagens características do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Santa Comba Dão": {
+    imagens: [
+    "./images/Concelhos/Santa Comba Dão1.png",
+    "./images/Concelhos/Santa Comba Dão2.png",
+    "./images/Concelhos/Santa Comba Dão3.png",
+    "./images/Concelhos/Santa Comba Dão4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado entre os rios Dão, Mondego e Criz. A paisagem combina vales fluviais, áreas agrícolas e zonas de floresta.</li>
+
+      <li><strong>Reconquista:</strong> A região foi fortemente afectada pelos conflitos da Reconquista. Documentos dos séculos X e XI mostram a existência de povoamentos e mosteiros locais, enquanto uma carta de foro de 1102 procurou repovoar uma área que tinha sido muito devastada durante as guerras.</li>
+
+      <li><strong>António de Oliveira Salazar:</strong> O chefe do Governo Português durante o Estado Novo, António de Oliveira Salazar, nasceu em 1889 em Vimieiro, no concelho de Santa Comba Dão. Foi professor de Economia Política na Universidade de Coimbra e tornou-se Ministro das Finanças em 1928, antes de assumir a chefia do Governo em 1932, cargo que exerceu até 1968.</li>
+
+      <li><strong>Origem do Nome:</strong> Segundo a tradição, o nome Santa Comba deriva de Santa Columba, uma abadessa que teria sido martirizada durante as incursões muçulmanas. A ligação ao rio Dão deu origem à actual designação Santa Comba Dão.</li>
+
+      <li><strong>Rio Dão e Aguieira:</strong> O rio Dão atravessa o concelho e desagua posteriormente no Mondego. A construção da Barragem da Aguieira criou uma grande albufeira que alterou a paisagem dos vales do sul do concelho.</li>
+
+      <li><strong>História Municipal:</strong> Santa Comba Dão recebeu foral em 1102 e novo foral de D. Manuel I em 1514. O actual concelho resultou da reorganização administrativa do século XIX, que reuniu vários antigos concelhos da região.</li>
+    </ul>
+  `
+}, //a
+
+"São João da Pesqueira": {
+    imagens: [
+    "./images/Concelhos/São João da Pesqueira1.png",
+    "./images/Concelhos/São João da Pesqueira2.png",
+    "./images/Concelhos/São João da Pesqueira3.png",
+    "./images/Concelhos/São João da Pesqueira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da reigão do Douro, situado no extremo nordeste do distrito de Viseu e na margem sul do rio Douro. O território é marcado por encostas muito acentuadas, vinhas em socalcos e vales profundos.</li>
+
+      <li><strong>Primeiro Foral:</strong> São João da Pesqueira recebeu um foral de Fernando Magno entre 1055 e 1065, durante a segunda fase da Reconquista. É considerado o mais antigo foral concedido a uma comunidade no território Português.</li>
+
+      <li><strong>Douro Vinhateiro:</strong> Grande parte do concelho integra a região do Alto Douro Vinhateiro, classificada como Património Mundial pela UNESCO. As encostas são ocupadas por vinhas destinadas à produção de vinho do Porto e de vinhos do Douro.</li>
+
+      <li><strong>Origem do Nome:</strong> A designação Pesqueira está associada à antiga actividade piscatória no Douro. A abundância de peixe terá estado na origem do núcleo que posteriormente recebeu o nome de São João da Pesqueira.</li>
+
+      <li><strong>Miradouros do Douro:</strong> O concelho possui várias zonas elevadas sobre o rio, de onde se observam as encostas vinhateiras e os vales profundamente encaixados característicos do Douro.</li>
+    </ul>
+  `
+}, //a
+
+"São Pedro do Sul": {
+    imagens: [
+    "./images/Concelhos/São Pedro do Sul1.png",
+    "./images/Concelhos/São Pedro do Sul2.png",
+    "./images/Concelhos/São Pedro do Sul3.png",
+    "./images/Concelhos/São Pedro do Sul4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado no vale do Vouga, entre as serras da Arada e de São Macário e a zona de Lafões.</li>
+
+      <li><strong>Termas:</strong> As Termas de São Pedro do Sul são utilizadas desde a época romana, existindo vestígios de um antigo balneário. Ao longo dos séculos foram frequentadas por vários monarcas portugueses e, no final do século XIX, passaram a chamar-se Termas da Rainha D. Amélia.</li>
+
+      <li><strong>D. Afonso Henriques:</strong> A tradição termal local associa D. Afonso Henriques às águas de São Pedro do Sul, que o monarca terá frequentado para recuperar de ferimentos sofridos em combate.</li>
+
+      <li><strong>Serra da Arada e São Macário:</strong> A parte norte do concelho é marcada por áreas montanhosas, aldeias serranas e paisagens de altitude, destacando-se a Serra da Arada e o monte de São Macário.</li>
+
+      <li><strong>Lafões:</strong> São Pedro do Sul foi uma das duas áreas resultantes da divisão do antigo território de Lafões no século XIX, juntamente com Vouzela. O rio Vouga marcou a divisão entre os dois concelhos.</li>
+    </ul>
+  `
+}, //a
+
+"Sátão": {
+    imagens: [
+    "./images/Concelhos/Sátão1.png",
+    "./images/Concelhos/Sátão2.png",
+    "./images/Concelhos/Sátão3.png",
+    "./images/Concelhos/Sátão4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado a nordeste da cidade de Viseu. O território apresenta uma paisagem de planaltos, vales agrícolas e áreas florestais.</li>
+
+      <li><strong>Castelos e Povoamento Medieval:</strong> O território possui vestígios de antigas estruturas defensivas e povoamentos medievais, relacionados com a organização das terras entre Viseu, o Vouga e o Douro.</li>
+
+      <li><strong>Agricultura:</strong> A paisagem agrícola inclui vinha, olival, castanheiros e pequenas explorações familiares. A produção florestal também tem importância no território.</li>
+
+      <li><strong>Património Rural:</strong> O concelho conserva aldeias tradicionais, casas de granito, capelas e antigos elementos ligados à agricultura e ao povoamento da Beira Alta.</li>
+    </ul>
+  `
+}, //a
+
+"Sernancelhe": {
+    imagens: [
+    "./images/Concelhos/Sernancelhe1.png",
+    "./images/Concelhos/Sernancelhe2.png",
+    "./images/Concelhos/Sernancelhe3.png",
+    "./images/Concelhos/Sernancelhe4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Viseu e situado no nordeste do distrito, entre o rio Távora e a Serra da Lapa. O território apresenta planaltos, vales e áreas florestais.</li>
+
+      <li><strong>História Medieval:</strong> Sernancelhe possui referências documentais desde o século X e ocupou uma posição estratégica junto às antigas vias entre a Guarda e Lamego. O território foi disputado durante o período da Reconquista.</li>
+
+      <li><strong>Santuário da Lapa:</strong> Na freguesia da Quintela encontra-se o Santuário de Nossa Senhora da Lapa, cuja origem está associada à descoberta de uma imagem de Nossa Senhora em 1493. O santuário desenvolveu-se junto a uma gruta e tornou-se um importante centro de peregrinação.</li>
+    </ul>
+  `
+}, //a
+
+"Tabuaço": {
+    imagens: [
+    "./images/Concelhos/Tabuaço1.png",
+    "./images/Concelhos/Tabuaço2.png",
+    "./images/Concelhos/Tabuaço3.png",
+    "./images/Concelhos/Tabuaço4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Viseu e situado na margem sul do rio Douro. O território combina encostas vinhateiras junto ao rio com zonas mais elevadas e montanhosas no interior.</li>
+
+      <li><strong>Vale do Távora:</strong> O rio Távora atravessa o território e estrutura parte da paisagem do concelho. Os seus vales e encostas são ocupados por vinhas, olivais e áreas agrícolas.</li>
+
+      <li><strong>Vinho do Douro:</strong> A parte norte do concelho integra a região demarcada do Douro. As encostas junto ao rio são ocupadas por vinhas em socalcos destinadas à produção de vinho do Porto e de vinhos do Douro.</li>
+
+      <li><strong>Arqueologia:</strong> O concelho possui vestígios de ocupação humana desde a Pré-História, incluindo monumentos megalíticos e sítios arqueológicos distribuídos pelas várias freguesias.</li>
+    </ul>
+  `
+}, //a
+
+"Tarouca": {
+    imagens: [
+    "./images/Concelhos/Tarouca1.png",
+    "./images/Concelhos/Tarouca2.png",
+    "./images/Concelhos/Tarouca3.png",
+    "./images/Concelhos/Tarouca4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito de Viseu e situado no vale do Varosa, entre o Douro e o planalto beirão. O território combina vales agrícolas, vinhas e áreas de serra.</li>
+
+      <li><strong>Reconquista:</strong> O castelo de Tarouca foi definitivamente conquistado aos mouros por Fernando Magno em 1057. A posição de Tarouca contribuiu para a defesa e reorganização das terras do interior duriense durante a Reconquista.</li>
+
+      <li><strong>Mosteiro de São João de Tarouca:</strong> Fundado em 1140, foi o primeiro mosteiro da Ordem de Cister construído em Portugal.</li>
+
+      <li><strong>Mosteiro de Salzedas:</strong> O Mosteiro de Santa Maria de Salzedas foi fundado no século XII e está ligado a Teresa Afonso, esposa de Egas Moniz. O conjunto tornou-se um dos principais centros monásticos do Vale do Varosa.</li>
+
+      <li><strong>Ponte de Ucanha:</strong> A ponte medieval de Ucanha conserva uma torre fortificada construída sobre o rio Varosa, formando um dos conjuntos medievais mais característicos do concelho.</li>
+    </ul>
+  `
+}, //a
+
+"Tondela": {
+    imagens: [
+    "./images/Concelhos/Tondela1.png",
+    "./images/Concelhos/Tondela2.png",
+    "./images/Concelhos/Tondela3.png",
+    "./images/Concelhos/Tondela4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado entre o rio Dão e a Serra do Caramulo. O território combina planaltos, vales agrícolas e áreas montanhosas.</li>
+
+      <li><strong>Serra do Caramulo:</strong> A parte ocidental do concelho sobe pela vertente oriental da Serra do Caramulo, onde se encontram aldeias de montanha, áreas florestais e paisagens de altitude.</li>
+
+      <li><strong>Vinhos do Dão:</strong> Tondela é um dos concelhos históricos da produção de vinho do Dão. A viticultura ocupa extensas áreas do território, sobretudo nas zonas de menor altitude e nos vales do Dão e seus afluentes.</li>
+
+      <li><strong>Barro Preto de Molelos:</strong> A freguesia de Molelos conserva a tradição de produção de louça de barro preto, uma das formas de artesanato mais características do concelho.</li>
+
+      <li><strong>Terra de Besteiros:</strong> Tondela está historicamente ligada à antiga Terra de Besteiros, uma divisão territorial medieval que abrangia parte da região entre o Dão e o Vouga. O nome ficou associado à importância dos besteiros nas forças militares medievais.</li>
+    </ul>
+  `
+}, //a
+
+"Vila Nova de Paiva": {
+    imagens: [
+    "./images/Concelhos/Vila Nova de Paiva1.png",
+    "./images/Concelhos/Vila Nova de Paiva2.png",
+    "./images/Concelhos/Vila Nova de Paiva3.png",
+    "./images/Concelhos/Vila Nova de Paiva4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado no nordeste do distrito, entre Viseu e a região do Douro. O território é marcado por planaltos, serras, vales e cursos de água.</li>
+
+      <li><strong>Rio Paiva:</strong> O rio Paiva atravessa o concelho e constitui um dos principais elementos naturais do território. Os seus vales e afluentes estruturam grande parte da paisagem rural.</li>
+
+      <li><strong>Arqueologia:</strong> O concelho possui numerosos vestígios arqueológicos, incluindo monumentos megalíticos, povoados fortificados e vestígios de ocupação romana, que testemunham a antiguidade do povoamento.</li>
+
+      <li><strong>Queijo e Agricultura:</strong> A actividade agrícola tradicional inclui a criação de gado e a produção de queijo, juntamente com castanha, mel e outros produtos das zonas rurais do interior.</li>
+
+      <li><strong>Património Rural:</strong> As aldeias do concelho conservam casas de granito, espigueiros, moinhos e outros elementos da arquitectura tradicional da Beira Alta.</li>
+    </ul>
+  `
+}, //a
+
+"Viseu": {
+    imagens: [
+    "./images/Concelhos/Viseu1.png",
+    "./images/Concelhos/Viseu2.png",
+    "./images/Concelhos/Viseu3.png",
+    "./images/Concelhos/Viseu4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado no centro da região. A cidade de Viseu é a capital distrital e um dos principais centros urbanos do interior Centro.</li>
+
+      <li><strong>Reconquista:</strong> Viseu foi uma importante praça disputada durante a Reconquista. Em 1028, o rei Afonso V de Leão e Galiza morreu durante o cerco da cidade, atingido por uma flecha disparada a partir das muralhas. A reconquista definitiva ocorreu em 1058, por Fernando Magno.</li>
+
+      <li><strong>Viriato e a Cava:</strong> Viseu é tradicionalmente associada a Viriato, embora não exista consenso histórico que permita afirmar que o chefe lusitano tenha nascido na cidade. A Cava de Viriato é uma grande estrutura fortificada de planta octogonal cuja origem e função continuam a ser discutidas.</li>
+
+      <li><strong>Sé e Centro Histórico:</strong> A Sé de Viseu domina o centro histórico e conserva um importante conjunto artístico, incluindo o claustro e os azulejos da capela-mor. A cidade possui ainda numerosas casas antigas, igrejas e vestígios das antigas muralhas.</li>
+
+      <li><strong>Feira de São Mateus:</strong> A Feira de São Mateus recebeu carta de feira de D. João I em 1392 e tornou-se uma das feiras mais importantes do reino. A sua longa continuidade transformou-a numa das principais tradições da cidade.</li>
+    </ul>
+  `
+}, //a
+
+"Vouzela": {
+    imagens: [
+    "./images/Concelhos/Vouzela1.png",
+    "./images/Concelhos/Vouzela2.png",
+    "./images/Concelhos/Vouzela3.png",
+    "./images/Concelhos/Vouzela4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado no vale de Lafões, entre as serras do Caramulo e da Arada. O rio Vouga e os seus afluentes atravessam o território.</li>
+
+      <li><strong>Reconquista:</strong> Vouzela esteve ligada à reorganização cristã da região após a reconquista de Viseu por Fernando Magno em 1058. A Igreja Matriz conserva vestígios de um antigo mosteiro fundado na segunda metade do século XI.</li>
+
+      <li><strong>Lafões:</strong> Vouzela foi sede do antigo concelho de Lafões, uma extensa divisão territorial que existiu durante séculos. Em 1834, o território de Lafões foi dividido entre Vouzela e São Pedro do Sul, tendo o rio Vouga como referência.</li>
+
+      <li><strong>Património Romano:</strong> A localização de Vouzela junto ao cruzamento de antigas vias romanas contribuiu para a importância da povoação. Essas vias continuaram a ser utilizadas durante a Idade Média e ligavam o interior às regiões do litoral.</li>
+
+      <li><strong>Megálitos:</strong> O concelho possui vários monumentos megalíticos, incluindo a Anta da Lapa da Meruje, testemunho de uma ocupação humana com cerca de seis mil anos.</li>
+    </ul>
+  `
+}, //a
+
+// Fim Viseu
+
+// Início de Aveiro
+
+  "Águeda": {
+    imagens: [
+      "./images/Concelhos/Águeda1.png",
+      "./images/Concelhos/Águeda2.png",
+      "./images/Concelhos/Águeda3.png",
+      "./images/Concelhos/Águeda4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado no interior do distrito, entre o rio Vouga e a Bairrada. O território estende-se desde as zonas baixas do vale do Águeda até às serras do Caramulo, sendo atravessado pelos rios Águeda, Cértima e Vouga.</li>
+
+      <li><strong>Pateira de Fermentelos:</strong> No sudoeste do concelho encontra-se a Pateira de Fermentelos, uma das maiores lagoas naturais da Península Ibérica. A lagoa está ligada ao rio Cértima e integra uma importante zona húmida associada aos vales do Águeda e do Cértima.</li>
+
+      <li><strong>História e Arqueologia:</strong> A região possui vestígios de ocupação desde a Pré-História. Na zona de Lamas do Vouga encontram-se vestígios associados ao antigo povoado do Cabeço do Vouga e a uma importante passagem sobre o rio, incluindo a Ponte Velha do Marnel.</li>
+
+      <li><strong>Indústria:</strong> Águeda desenvolveu, sobretudo durante os séculos XIX e XX, uma forte actividade industrial ligada à metalomecânica, ferragens, bicicletas e componentes metálicos. A actividade industrial continua a ter um peso importante na economia do concelho.</li>
+
+      <li><strong>Bairrada e Gastronomia:</strong> A parte sul do concelho integra a região da Bairrada, com tradição vitivinícola e produção de espumantes. A gastronomia local inclui também o leitão assado à Bairrada.</li>
+    </ul>
+  `
+}, //a
+
+  "Albergaria-a-Velha": {
+    imagens: [
+      "./images/Concelhos/Albergaria-a-Velha1.png",
+      "./images/Concelhos/Albergaria-a-Velha2.png",
+      "./images/Concelhos/Albergaria-a-Velha3.png",
+      "./images/Concelhos/Albergaria-a-Velha4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado no centro do distrito, entre Aveiro e o interior montanhoso. O território é atravessado pelo rio Vouga e por importantes vias de comunicação que ligam o litoral ao Norte e ao interior.</li>
+
+      <li><strong>Rainha D. Teresa e a Albergaria:</strong> Em 1117, D. Teresa doou o Couto de Osseloa a Gonçalo Eriz, com a obrigação de aí ser criada uma albergaria para apoio aos viajantes. A origem desta instituição está na própria formação de Albergaria-a-Velha.</li>
+
+      <li><strong>História Administrativa:</strong> O concelho foi criado em 1835, durante o início do Liberalismo, a partir de territórios anteriormente pertencentes a vários concelhos. Foi extinto durante alguns anos e restaurado em 1846, no contexto da revolta da Maria da Fonte.</li>
+
+      <li><strong>Rio Vouga e Natureza:</strong> O Vouga atravessa o território e marca particularmente a paisagem de Ribeira de Fráguas, São João de Loure e Alquerubim. As margens do rio conservam áreas agrícolas, galerias ripícolas e antigos aproveitamentos hidráulicos.</li>
+    </ul>
+  `
+}, //a
+
+  "Anadia": {
+    imagens: [
+      "./images/Concelhos/Anadia1.png",
+      "./images/Concelhos/Anadia2.png",
+      "./images/Concelhos/Anadia3.png",
+      "./images/Concelhos/Anadia4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado no sul do distrito, entre Águeda e Mealhada. O território integra a região da Bairrada e combina áreas de vinha, floresta e pequenas elevações.</li>
+
+      <li><strong>Bairrada e Vinho:</strong> A viticultura é uma das principais características do concelho. Anadia está no centro da região vitivinícola da Bairrada, conhecida pelos vinhos tintos e brancos e, sobretudo, pela produção de espumantes.</li>
+
+      <li><strong>Curia:</strong> A Curia desenvolveu-se como estância termal a partir do final do século XIX, aproveitando as águas minerais locais. O complexo conserva edifícios, jardins e equipamentos ligados à antiga actividade termal.</li>
+
+      <li><strong>Gastronomia:</strong> Anadia integra a zona tradicional do leitão da Bairrada, associado sobretudo às localidades de Sangalhos e arredores. A gastronomia concelhia está também ligada aos vinhos e espumantes produzidos na região.</li>
+    </ul>
+  `
+}, //a
+
+  "Arouca": {
+    imagens: [
+      "./images/Concelhos/Arouca1.png",
+      "./images/Concelhos/Arouca2.png",
+      "./images/Concelhos/Arouca3.png",
+      "./images/Concelhos/Arouca4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no nordeste do distrito de Aveiro e marcado pelas serras da Freita, Arada e Montemuro. O território é profundamente recortado por vales e rios, destacando-se os rios Paiva e Paivó.</li>
+
+      <li><strong>Mosteiro de Arouca:</strong> O Mosteiro de Arouca foi fundado no século X e tornou-se o principal centro histórico do concelho. A sua importância aumentou no século XIII com a entrada da infanta D. Mafalda, filha de D. Sancho I, que ficou para sempre ligada à história e identidade de Arouca.</li>
+
+      <li><strong>Rainha Santa Mafalda:</strong> D. Mafalda recolheu-se no Mosteiro de Arouca entre 1217 e 1220 e morreu em 1256. A sua memória e culto marcaram profundamente o mosteiro e a própria vila, sendo actualmente a padroeira de Arouca.</li>
+
+      <li><strong>Geoparque Arouca:</strong> Grande parte do território integra o parque geológico de Arouca, reconhecido pela UNESCO. Destacam-se formações geológicas como as Pedras Parideiras, os Passadiços do Paiva e a Frecha da Mizarela.</li>
+
+      <li><strong>Reconquista:</strong> Arouca fazia parte da antiga Terra de Santa Maria, região de importância militar durante a formação do território Português. D. Afonso Henriques concedeu foral a Arouca em 1151.</li>
+    </ul>
+  `
+}, //a
+
+  "Aveiro": {
+    imagens: [
+      "./images/Concelhos/Aveiro1.png",
+      "./images/Concelhos/Aveiro2.png",
+      "./images/Concelhos/Aveiro3.png",
+      "./images/Concelhos/Aveiro4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Capital do distrito de Aveiro e concelho da Região de Aveiro, situado junto à Ria de Aveiro e ao oceano Atlântico. O território inclui a cidade de Aveiro, a zona lagunar e a freguesia de São Jacinto, localizada entre a ria e o Atlântico.</li>
+
+      <li><strong>Ria e Sal:</strong> A Ria de Aveiro marcou profundamente a história económica da cidade. A produção de sal, a pesca, a apanha do moliço e a navegação lagunar contribuíram durante séculos para o desenvolvimento de Aveiro, sendo os moliceiros uma das embarcações tradicionais mais características.</li>
+
+      <li><strong>Princesa Santa Joana:</strong> A infanta D. Joana, filha de D. Afonso V, recolheu-se no Convento de Jesus de Aveiro em 1472 e aí viveu até à sua morte, em 1490. O antigo convento é actualmente o Museu de Aveiro e conserva o seu túmulo.</li>
+
+      <li><strong>Barra de Aveiro:</strong> A actual barra foi aberta artificialmente em 1808 por Reinaldo Oudinot e Luís Gomes de Carvalho. A abertura estabilizou a ligação da laguna ao oceano e teve consequências profundas para a navegação e para a economia de Aveiro.</li>
+    </ul>
+  `
+}, //a
+
+  "Castelo de Paiva": {
+    imagens: [
+      "./images/Concelhos/Castelo de Paiva1.png",
+      "./images/Concelhos/Castelo de Paiva2.png",
+      "./images/Concelhos/Castelo de Paiva3.png",
+      "./images/Concelhos/Castelo de Paiva4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, situado no extremo nordeste do distrito de Aveiro, entre os rios Douro e Paiva. O território é marcado por vales profundos, encostas e zonas de montanha.</li>
+
+      <li><strong>Douro e Paiva:</strong> A confluência dos rios Paiva e Douro é um dos elementos geográficos mais característicos do concelho. A paisagem combina zonas ribeirinhas com áreas agrícolas e encostas cobertas por floresta e vinha.</li>
+
+      <li><strong>Minas do Pejão:</strong> O Couto Mineiro do Pejão foi um dos principais centros de exploração de carvão em Portugal. A actividade mineira marcou profundamente a economia e a vida social de Castelo de Paiva durante grande parte do século XX.</li>
+
+      <li><strong>Tragédia da Ponte Hintze Ribeiro:</strong> Em 4 de Março de 2001, a Ponte Hintze Ribeiro, em Entre-os-Rios, colapsou durante a travessia do Douro. A tragédia provocou 59 mortos e marcou profundamente o concelho.</li>
+
+      <li><strong>Vinho Verde:</strong> A produção de vinho tem tradição no concelho, que integra a sub-região de Paiva da Região dos Vinhos Verdes. As encostas junto aos vales dos rios são tradicionalmente ocupadas por vinha.</li>
+    </ul>
+  `
+}, //a
+
+  "Espinho": {
+    imagens: [
+      "./images/Concelhos/Espinho1.png",
+      "./images/Concelhos/Espinho2.png",
+      "./images/Concelhos/Espinho3.png",
+      "./images/Concelhos/Espinho4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no litoral atlântico, a sul de Vila Nova de Gaia e a norte de Ovar. É um território pequeno e densamente povoado, marcado pela proximidade do mar e por uma extensa frente de praia.</li>
+
+      <li><strong>Pesca:</strong> Espinho desenvolveu-se a partir de uma comunidade piscatória, cuja actividade esteve ligada à pesca costeira e à arte xávega. As tradições marítimas continuam presentes na identidade local.</li>
+
+      <li><strong>Caminho-de-Ferro:</strong> A chegada do caminho de ferro no século XIX foi decisiva para o crescimento de Espinho. A ligação ferroviária ao Porto e a Aveiro contribuiu para transformar a povoação num importante centro balnear e urbano.</li>
+    </ul>
+  `
+}, //a
+
+  "Estarreja": {
+    imagens: [
+      "./images/Concelhos/Estarreja1.png",
+      "./images/Concelhos/Estarreja2.png",
+      "./images/Concelhos/Estarreja3.png",
+      "./images/Concelhos/Estarreja4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro e limitado a oeste pela Ria de Aveiro. O território é atravessado por esteiros, canais e linhas de água do Baixo Vouga Lagunar.</li>
+
+      <li><strong>Antuã:</strong> O território de Estarreja fazia parte da antiga Terra de Santa Maria e aparece documentado desde a Idade Média. O antigo Couto de Antuã e Avanca foi doado por D. Afonso III ao Mosteiro de Arouca em 1257.</li>
+
+      <li><strong>Ria e Construção Naval:</strong> A ligação à Ria desenvolveu em Pardilhó uma importante tradição de construção naval em madeira. Dos estaleiros locais saíram moliceiros e embarcações como o mercantel utilizados na navegação e no transporte de produtos pela laguna.</li>
+
+      <li><strong>Industrialização:</strong> A partir do século XX, Estarreja desenvolveu um importante sector industrial, incluindo a indústria química. A industrialização transformou profundamente a economia e a paisagem do concelho.</li>
+    </ul>
+  `
+}, //a
+
+  "Ílhavo": {
+    imagens: [
+      "./images/Concelhos/Ílhavo1.png",
+      "./images/Concelhos/Ílhavo2.png",
+      "./images/Concelhos/Ílhavo3.png",
+      "./images/Concelhos/Ílhavo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado entre a Ria de Aveiro e o oceano Atlântico. O território inclui a cidade de Ílhavo, a Gafanha da Nazaré e a faixa litoral da Costa Nova e da Barra.</li>
+
+      <li><strong>Bacalhau e Pesca:</strong> Ílhavo desenvolveu uma forte tradição marítima e ficou particularmente ligado à pesca do bacalhau nos mares do Atlântico Norte. O Museu Marítimo de Ílhavo e o Navio-Museu Santo André preservam a memória dessa actividade.</li>
+
+      <li><strong>Palheiros da Costa Nova:</strong> A Costa Nova conserva os conhecidos palheiros de madeira, originalmente associados à comunidade piscatória e posteriormente transformados em casas de veraneio. As fachadas pintadas com listas coloridas tornaram-se uma das imagens mais características do concelho.</li>
+
+      <li><strong>Ria e Gafanhas:</strong> As Gafanhas desenvolveram-se sobre terrenos arenosos junto à Ria e ao litoral, através da agricultura, pesca e actividades marítimas. A Gafanha da Nazaré cresceu posteriormente em ligação ao porto de Aveiro e às actividades industriais.</li>
+    </ul>
+  `
+}, //a
+
+  "Mealhada": {
+    imagens: [
+      "./images/Concelhos/Mealhada1.png",
+      "./images/Concelhos/Mealhada2.png",
+      "./images/Concelhos/Mealhada3.png",
+      "./images/Concelhos/Mealhada4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, situado no extremo sul do distrito de Aveiro, entre a Bairrada e a Serra do Buçaco. O território combina zonas de vinha, floresta e áreas agrícolas.</li>
+
+      <li><strong>Batalha do Buçaco:</strong> Em 27 de Setembro de 1810, as forças Portuguesas e Inglesas comandadas por Wellington enfrentaram o exército francês do marechal Masséna na Serra do Buçaco. A batalha ocorreu durante a Terceira Invasão Francesa e travou o avanço francês em direcção a Lisboa.</li>
+
+      <li><strong>Mata Nacional do Buçaco:</strong> A Mata do Buçaco conserva uma extensa área florestal com espécies introduzidas ao longo de vários séculos pelos religiosos do Convento de Santa Cruz do Buçaco. No seu interior encontra-se o antigo convento e o Palace Hotel do Buçaco.</li>
+
+      <li><strong>Luso e Termas:</strong> A vila do Luso desenvolveu-se em torno das suas águas minerais, que deram origem a uma importante estância termal. A proximidade da Mata do Buçaco contribuiu também para o crescimento turístico da localidade.</li>
+
+      <li><strong>Bairrada e Leitão:</strong> Mealhada é um dos principais centros da gastronomia da Bairrada, destacando-se o leitão assado e os vinhos e espumantes produzidos na região.</li>
+    </ul>
+  `
+}, //a
+
+  "Murtosa": {
+    imagens: [
+      "./images/Concelhos/Murtosa1.png",
+      "./images/Concelhos/Murtosa2.png",
+      "./images/Concelhos/Murtosa3.png",
+      "./images/Concelhos/Murtosa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado entre a Ria de Aveiro e o oceano Atlântico. O território inclui a Murtosa, o Bunheiro, o Monte e a Torreira, sendo fortemente marcado pela paisagem lagunar.</li>
+
+      <li><strong>Ria de Aveiro:</strong> A Ria condicionou durante séculos a economia e a ocupação do território. A pesca, a agricultura, a extracção de sal e a apanha do moliço foram actividades fundamentais para as populações locais.</li>
+
+      <li><strong>Moliceiros:</strong> A Murtosa está particularmente ligada aos barcos moliceiros e à apanha do moliço na Ria. Estas embarcações eram utilizadas para recolher vegetação aquática, posteriormente usada como fertilizante agrícola.</li>
+
+      <li><strong>Criação do Concelho:</strong> As freguesias que formam actualmente a Murtosa estiveram durante muito tempo ligadas ao concelho de Estarreja. A Murtosa tornou-se município autónomo em 1926, após a desanexação do território de Estarreja.</li>
+
+      <li><strong>Torreira e Litoral:</strong> A Torreira ocupa a faixa costeira entre a Ria de Aveiro e o Atlântico e conserva uma forte tradição piscatória. A zona é também marcada pela arte xávega e pelas embarcações tradicionais.</li>
+    </ul>
+  `
+}, //a
+
+  "Oliveira de Azeméis": {
+    imagens: [
+      "./images/Concelhos/Oliveira de Azeméis1.png",
+      "./images/Concelhos/Oliveira de Azeméis2.png",
+      "./images/Concelhos/Oliveira de Azeméis3.png",
+      "./images/Concelhos/Oliveira de Azeméis4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no centro norte do distrito de Aveiro, entre o litoral e as serras do interior. O território é atravessado pelos rios Ul e Antuã e apresenta uma paisagem de colinas e vales.</li>
+
+      <li><strong>História:</strong> A região fazia parte da antiga Terra de Santa Maria, uma importante unidade territorial medieval ligada à defesa e à organização do território durante a Reconquista. O actual concelho resultou de várias reorganizações administrativas ocorridas sobretudo nos séculos XIX e XX.</li>
+
+      <li><strong>Indústria:</strong> Oliveira de Azeméis desenvolveu uma forte tradição industrial, com destaque para os sectores da metalomecânica, moldes, plásticos, calçado e transformação de madeira e cortiça. A actividade industrial teve grande influência no crescimento urbano do concelho.</li>
+
+      <li><strong>Ul e Património Molinológico:</strong> O rio Ul atravessa o concelho e alimentou numerosos moinhos de água. O Parque Temático Molinológico de Ul conserva parte desse património ligado à moagem tradicional de cereais.</li>
+
+      <li><strong>Património Religioso:</strong> O concelho conserva diversos edifícios religiosos e antigos núcleos de povoamento, incluindo o Mosteiro de Cucujães, cuja origem remonta à Idade Média.</li>
+    </ul>
+  `
+}, //a
+
+  "Oliveira do Bairro": {
+    imagens: [
+      "./images/Concelhos/Oliveira do Bairro1.png",
+      "./images/Concelhos/Oliveira do Bairro2.png",
+      "./images/Concelhos/Oliveira do Bairro3.png",
+      "./images/Concelhos/Oliveira do Bairro4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado no sul do distrito, entre Águeda, Anadia e Vagos. O território integra a Bairrada e apresenta uma paisagem marcada por vinhas, campos agrícolas e zonas florestais.</li>
+
+      <li><strong>Bairrada:</strong> A viticultura é uma das actividades tradicionais do concelho. A produção de vinho e espumante está ligada à região da Bairrada e teve um papel importante na economia local desde o século XIX.</li>
+
+      <li><strong>Vinho Espumante:</strong> A introdução e expansão dos vinhos espumantes na Bairrada contribuíram para um novo ciclo de desenvolvimento económico na região. Oliveira do Bairro integrou este processo através das suas adegas e actividade vitivinícola.</li>
+
+      <li><strong>Cerâmica:</strong> O concelho possui uma tradição industrial ligada à cerâmica, vidro e outras pequenas manufacturas. Esta actividade desenvolveu-se a partir de uma tradição artesanal mais antiga existente na região do Baixo Vouga.</li>
+    </ul>
+  `
+}, //a
+
+  "Ovar": {
+    imagens: [
+      "./images/Concelhos/Ovar1.png",
+      "./images/Concelhos/Ovar2.png",
+      "./images/Concelhos/Ovar3.png",
+      "./images/Concelhos/Ovar4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado no litoral norte da Ria de Aveiro, entre Espinho e Estarreja. O território combina a ria, zonas agrícolas, pinhais e uma extensa frente atlântica.</li>
+
+      <li><strong>Azulejo:</strong> Ovar possui um dos conjuntos mais conhecidos de fachadas revestidas a azulejo em Portugal. A utilização do azulejo em edifícios urbanos generalizou-se sobretudo entre os séculos XIX e XX, dando uma característica muito própria ao centro da cidade.</li>
+
+      <li><strong>Ria e Pesca:</strong> A Ria de Aveiro condicionou a actividade económica das populações de Ovar, através da pesca, agricultura, sal e navegação. Na zona costeira desenvolveu-se também a pesca marítima e a arte xávega.</li>
+
+      <li><strong>Pão-de-Ló de Ovar:</strong> O pão-de-ló de Ovar é uma das especialidades gastronómicas mais conhecidas do concelho. Caracteriza-se pela textura húmida do interior e pela preparação tradicional em formas de barro revestidas.</li>
+    </ul>
+  `
+}, //a
+
+  "Santa Maria da Feira": {
+    imagens: [
+      "./images/Concelhos/Santa Maria da Feira1.png",
+      "./images/Concelhos/Santa Maria da Feira2.png",
+      "./images/Concelhos/Santa Maria da Feira3.png",
+      "./images/Concelhos/Santa Maria da Feira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no norte do distrito de Aveiro. O território estende-se desde zonas urbanas e industriais até áreas rurais e florestais do interior.</li>
+
+      <li><strong>Terra de Santa Maria e Reconquista:</strong> Durante a Reconquista, o território integrou a Terra de Santa Maria, região organizada militarmente em torno do Castelo de Santa Maria. Esta unidade estendia-se entre os rios Douro e Vouga e desempenhou um papel importante na defesa e povoamento do território.</li>
+
+      <li><strong>Castelo da Feira:</strong> O Castelo de Santa Maria da Feira foi um importante ponto militar da região medieval. A povoação desenvolveu-se junto às suas muralhas e a feira realizada nas proximidades acabou por dar origem ao nome da vila.</li>
+
+      <li><strong>Fogaça da Feira:</strong> A Fogaça é o doce tradicional mais associado ao concelho. A Festa das Fogaceiras realiza-se anualmente em Janeiro e está ligada a uma antiga tradição de agradecimento e promessa a São Sebastião.</li>
+    </ul>
+  `
+}, //a
+
+  "São João da Madeira": {
+    imagens: [
+      "./images/Concelhos/São João da Madeira1.png",
+      "./images/Concelhos/São João da Madeira2.png",
+      "./images/Concelhos/São João da Madeira3.png",
+      "./images/Concelhos/São João da Madeira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no norte do distrito de Aveiro. É um dos mais pequenos municípios Portugueses em área e encontra-se totalmente urbanizado, inserido num território fortemente industrializado.</li>
+
+      <li><strong>História:</strong> A primeira referência documental conhecida a São João da Madeira data de 1088. Durante séculos foi uma povoação rural, mas o crescimento comercial e industrial dos séculos XIX e XX transformou profundamente o território.</li>
+
+      <li><strong>Indústria Chapeleira:</strong> A indústria dos chapéus foi uma das actividades fundamentais para o desenvolvimento de São João da Madeira. A mecanização introduzida no início do século XX transformou a cidade num dos principais centros produtores de chapéus do país.</li>
+
+      <li><strong>Calçado:</strong> A indústria do calçado tornou-se posteriormente uma das principais actividades económicas do concelho. A tradição industrial permanece representada no Museu do Calçado e em diversas empresas da cidade.</li>
+
+      <li><strong>Linha do Vouga:</strong> A inauguração da Linha do Vouga em 1908, com a presença do rei D. Manuel II, contribuiu para reforçar as ligações de São João da Madeira e impulsionar o seu desenvolvimento industrial.</li>
+    </ul>
+  `
+}, //a
+
+  "Sever do Vouga": {
+    imagens: [
+      "./images/Concelhos/Sever do Vouga1.png",
+      "./images/Concelhos/Sever do Vouga2.png",
+      "./images/Concelhos/Sever do Vouga3.png",
+      "./images/Concelhos/Sever do Vouga4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado no interior do distrito, entre o vale do Vouga e as serras do interior. O território é marcado por vales encaixados, rios e relevo acidentado.</li>
+
+      <li><strong>Rio Vouga:</strong> O rio Vouga atravessa o concelho e está profundamente ligado à sua paisagem. A Ponte do Poço de Santiago, construída para a antiga Linha do Vouga, é um dos elementos mais conhecidos do património ferroviário local.</li>
+
+      <li><strong>Minas do Braçal:</strong> As Minas do Braçal constituíram um importante complexo mineiro de exploração de chumbo. A concessão mineira foi registada em 1836 e a exploração prolongou-se, com interrupções, até 1958.</li>
+
+      <li><strong>Ferrovia:</strong> A antiga Linha do Vouga teve um papel importante na ligação de Sever do Vouga às restantes localidades da região.</li>
+
+      <li><strong>Natureza:</strong> O relevo e a rede hidrográfica originam numerosas quedas de água, vales e zonas florestais. A paisagem do Vouga e das serras envolventes distingue-se claramente das zonas lagunares do litoral do distrito.</li>
+    </ul>
+  `
+}, //a
+
+  "Vagos": {
+    imagens: [
+      "./images/Concelhos/Vagos1.png",
+      "./images/Concelhos/Vagos2.png",
+      "./images/Concelhos/Vagos3.png",
+      "./images/Concelhos/Vagos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Aveiro, situado no litoral sul do distrito, entre a Ria de Aveiro e o oceano Atlântico. O território combina zonas lagunares, áreas agrícolas, pinhais e uma faixa costeira.</li>
+
+      <li><strong>Ria de Aveiro:</strong> A zona norte e oeste do concelho é marcada pela influência da Ria de Aveiro. A pesca, a agricultura e a exploração dos recursos lagunares tiveram um papel importante na ocupação histórica do território.</li>
+
+      <li><strong>Litoral:</strong> A Vagueira e o Areão são algumas das principais zonas costeiras do concelho. A tradição piscatória está associada à pesca marítima e à arte xávega, ainda presente na memória e nas actividades locais.</li>
+    </ul>
+  `
+}, //a
+
+  "Vale de Cambra": {
+    imagens: [
+      "./images/Concelhos/Vale de Cambra1.png",
+      "./images/Concelhos/Vale de Cambra2.png",
+      "./images/Concelhos/Vale de Cambra3.png",
+      "./images/Concelhos/Vale de Cambra4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no leste do distrito de Aveiro, junto às serras da Arada e da Freita. O território é marcado por vales encaixados, montanha e cursos de água, destacando-se o rio Caima.</li>
+
+      <li><strong>Serra e Aldeias:</strong> A parte oriental do concelho apresenta uma paisagem serrana, com aldeias dispersas, socalcos, moinhos e antigos caminhos. A proximidade das serras da Freita e da Arada distingue esta zona do litoral mais urbanizado do distrito.</li>
+
+      <li><strong>Laticínios:</strong> Vale de Cambra desenvolveu uma importante indústria de lacticínios, que marcou profundamente a economia local durante o século XX.</li>
+
+      <li><strong>Indústria:</strong> Para além dos lacticínios, o concelho desenvolveu uma forte actividade metalomecânica e metalúrgica. A industrialização acompanhou a transformação de uma economia inicialmente baseada na agricultura e pecuária.</li>
+
+      <li><strong>Rio Caima:</strong> O Caima atravessa o concelho e foi historicamente utilizado para actividades agrícolas e aproveitamentos hidráulicos. Os seus vales conservam pontes, moinhos e outros vestígios da antiga utilização da água.</li>
+    </ul>
+  `
+}, //a
+
+// Fim Aveiro
 
 };
