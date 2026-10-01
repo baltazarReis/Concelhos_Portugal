@@ -4907,4 +4907,750 @@ export const dadosConcelhos = {
 
 // Fim Aveiro
 
+// Início do Porto
+
+  "Amarante": {
+    imagens: [
+      "./images/Concelhos/Amarante1.png",
+      "./images/Concelhos/Amarante2.png",
+      "./images/Concelhos/Amarante3.png",
+      "./images/Concelhos/Amarante4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, situado no lado este do distrito do Porto, entre o Marão e o vale do Tâmega. O território é marcado pelo rio Tâmega e por zonas montanhosas a nascente e a norte.</li>
+
+      <li><strong>Amarante Medieval:</strong> A povoação desenvolveu-se junto ao rio Tâmega e à antiga ponte que permitia a passagem entre o litoral e Trás-os-Montes. O Mosteiro de São Martinho de Mancelos e outros edifícios românicos testemunham a importância medieval do território.</li>
+
+      <li><strong>Defesa da Ponte d’Amarante:</strong> Em 1809, durante a Segunda Invasão Francesa, as forças anglo-lusas e a população local resistiram durante cerca de duas semanas às tropas francesas comandadas pelo general Loison. A defesa da ponte de Amarante tornou-se um dos episódios militares mais marcantes da história do concelho.</li>
+
+      <li><strong>Solar dos Magalhães:</strong> O Solar dos Magalhães, construído no século XVI, foi incendiado pelas tropas francesas durante os combates de 1809. As ruínas do edifício ficaram associadas à resistência de Amarante às tropas napoleónicas.</li>
+
+      <li><strong>São Gonçalo:</strong> A figura de São Gonçalo está profundamente ligada à cidade. Segundo a tradição, terá vivido em Amarante no século XIII e é venerado como padroeiro da cidade, sendo a ponte e a igreja a ele dedicadas alguns dos elementos mais reconhecíveis do centro histórico.</li>
+    </ul>
+  `
+}, //a
+
+  "Baião": {
+    imagens: [
+      "./images/Concelhos/Baião1.png",
+      "./images/Concelhos/Baião2.png",
+      "./images/Concelhos/Baião3.png",
+      "./images/Concelhos/Baião4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, situado no extremo sudeste do distrito do Porto, entre os rios Douro e Tâmega. O território é marcado pelas serras da Aboboreira, do Marão e de Montemuro.</li>
+
+      <li><strong>Reconquista:</strong> O território de Baião foi reorganizado durante a Reconquista. A região ficou ligada a importantes famílias da nobreza medieval, entre elas os Ribadouro, que participaram na defesa e organização das terras reconquistadas.</li>
+
+      <li><strong>Foral:</strong> D. Manuel I concedeu novo foral a Baião em 1513, num período de reorganização administrativa e de reforma dos antigos forais medievais.</li>
+    </ul>
+  `
+}, //a
+
+  "Felgueiras": {
+    imagens: [
+      "./images/Concelhos/Felgueiras1.png",
+      "./images/Concelhos/Felgueiras2.png",
+      "./images/Concelhos/Felgueiras3.png",
+      "./images/Concelhos/Felgueiras4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, situado no lado nordeste do distrito do Porto. O território ocupa parte dos vales do Sousa e do Tâmega.</li>
+
+      <li><strong>Mosteiro de Pombeiro:</strong> O Mosteiro de Santa Maria de Pombeiro foi fundado na segunda metade do século XI e tornou-se um dos principais mosteiros beneditinos do Entre-Douro-e-Minho. Recebeu carta de couto de D. Teresa em 1112 e teve uma forte ligação à família dos Sousões.</li>
+
+      <li><strong>Família dos Sousões:</strong> Durante a formação do reino português, a região esteve ligada à poderosa família dos Sousa, cujos membros ocuparam cargos importantes na corte e estiveram relacionados com a fundação e protecção do Mosteiro de Pombeiro.</li>
+
+      <li><strong>Igrejas Românicas:</strong> O concelho conserva vários exemplares de arquitectura românica ligados à organização medieval do território, destacando-se as igrejas de Pombeiro, Airães, Sousa e Unhão.</li>
+
+      <li><strong>Foral de D. Manuel I:</strong> Felgueiras recebeu foral de D. Manuel I em 1514, num período de reorganização administrativa e de reforma dos antigos forais medievais.</li>
+    </ul>
+  `
+}, //a
+
+  "Gondomar": {
+    imagens: [
+      "./images/Concelhos/Gondomar1.png",
+      "./images/Concelhos/Gondomar2.png",
+      "./images/Concelhos/Gondomar3.png",
+      "./images/Concelhos/Gondomar4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado a sudeste da cidade do Porto e estendendo-se ao longo das margens dos rios Douro, Sousa e Ferreira. O território inclui áreas urbanas, vales fluviais e as serras de Santa Justa e Pias.</li>
+
+      <li><strong>Carta de Couto de 1193:</strong> D. Sancho I concedeu Carta de Couto a Gondomar em 1193, num acordo relacionado com o Bispo do Porto. A carta foi posteriormente confirmada nas Inquirições de D. Afonso II.</li>
+
+      <li><strong>Gondomar Medieval:</strong> A posição junto ao Douro e a proximidade do Porto contribuíram para a importância do território durante a Idade Média. O concelho conservou durante séculos uma forte ligação ao rio e às terras agrícolas envolventes.</li>
+
+      <li><strong>Ourivesaria:</strong> Gondomar desenvolveu uma importante tradição de ourivesaria e trabalho do ouro, actividade que se tornou uma das características económicas e culturais mais reconhecidas do concelho.</li>
+
+      <li><strong>Rio Douro:</strong> O Douro atravessa a parte sul do concelho e marcou historicamente as actividades de pesca, transporte fluvial e comércio. A frente ribeirinha inclui localidades como Foz do Sousa, Melres e Lomba.</li>
+    </ul>
+  `
+}, //a
+
+  "Lousada": {
+    imagens: [
+      "./images/Concelhos/Lousada1.png",
+      "./images/Concelhos/Lousada2.png",
+      "./images/Concelhos/Lousada3.png",
+      "./images/Concelhos/Lousada4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, situado no centro do distrito do Porto, no vale do Sousa. O território é marcado pelos rios Sousa e Mezio e por uma paisagem de colinas e vales agrícolas.</li>
+
+      <li><strong>Meinedo:</strong> A actual freguesia de Meinedo possui uma importância histórica excepcional, tendo sido sede de um bispado no período suevo, antes da consolidação medieval da diocese do Porto. A antiga cidade de Magneto é também associada ao local.</li>
+
+      <li><strong>Romanização:</strong> Lousada era atravessada por uma importante via romana que ligava Bracara Augusta a Tongobriga, passando por Magneto. O território conserva vários vestígios arqueológicos desse período.</li>
+
+      <li><strong>Castro de São Domingos:</strong> O Castro de São Domingos, em Cristelos, é o maior povoado fortificado proto-histórico conhecido no concelho. O local apresenta várias linhas de muralhas e vestígios de habitações.</li>
+
+      <li><strong>Foral de D. Manuel I:</strong> Lousada recebeu foral de D. Manuel I em 1514, estabelecendo uma nova organização administrativa da vila e do território envolvente.</li>
+    </ul>
+  `
+}, //a
+
+  "Maia": {
+    imagens: [
+      "./images/Concelhos/Maia1.png",
+      "./images/Concelhos/Maia2.png",
+      "./images/Concelhos/Maia3.png",
+      "./images/Concelhos/Maia4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado imediatamente a norte do Porto e estendendo-se para norte até à zona da Trofa. O território inclui áreas urbanas densas e zonas rurais na parte norte e oriental.</li>
+
+      <li><strong>Terra da Maia:</strong> Durante a Idade Média, a Terra da Maia abrangia um território muito mais extenso do que o actual concelho, entre o Porto e o rio Ave. A região teve importância política e militar na formação do território Portucalense.</li>
+
+      <li><strong>Gonçalo Trastemires:</strong> Gonçalo Trastemires, senhor da Maia, participou na conquista de Montemor aos mouros em 1034. Morreu em Avioso, no actual concelho da Maia, em 1038, num episódio registado nas crónicas medievais.</li>
+
+      <li><strong>Mendes da Maia:</strong> A família dos Mendes da Maia teve grande importância na nobreza portucalense e ficou ligada ao processo político que conduziu à formação de Portugal. A família tinha propriedades e influência na região desde o século X.</li>
+
+      <li><strong>Foral:</strong> D. Manuel I concedeu foral à Maia em 1519. O antigo concelho era então bastante mais extenso e abrangia territórios que posteriormente passaram para municípios vizinhos.</li>
+    </ul>
+  `
+}, //a
+
+  "Marco de Canaveses": {
+    imagens: [
+      "./images/Concelhos/Marco de Canaveses1.png",
+      "./images/Concelhos/Marco de Canaveses2.png",
+      "./images/Concelhos/Marco de Canaveses3.png",
+      "./images/Concelhos/Marco de Canaveses4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, situado no lado sudeste do distrito do Porto, entre os rios Tâmega e Douro. O território é marcado por vales profundos e áreas montanhosas que descem até aos dois rios.</li>
+
+      <li><strong>Tongobriga:</strong> No Freixo encontra-se Tongobriga, uma importante cidade galaico-romana desenvolvida entre o final do século I e o início do século II. O complexo conserva áreas habitacionais, fórum, termas, teatro, necrópoles e outros vestígios de uma antiga civitas.</li>
+
+      <li><strong>Idade Média:</strong> O território do actual concelho esteve ligado a várias famílias nobres e instituições religiosas durante a formação do reino português. O Mosteiro de Santa Maria de Vila Boa do Bispo é um dos principais testemunhos desse período.</li>
+
+      <li><strong>Rio Tâmega:</strong> O Tâmega atravessa o concelho de norte a sul e desagua no Douro junto à fronteira com Baião e Cinfães. A sua presença marcou a ocupação humana, agricultura e circulação na região.</li>
+    </ul>
+  `
+}, //a
+
+  "Matosinhos": {
+    imagens: [
+      "./images/Concelhos/Matosinhos1.png",
+      "./images/Concelhos/Matosinhos2.png",
+      "./images/Concelhos/Matosinhos3.png",
+      "./images/Concelhos/Matosinhos4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do litoral pertencente à Área Metropolitana do Porto, situado a Norte da cidade do Porto. O território inclui a costa de Leça da Palmeira, Matosinhos e Perafita e o porto de Leixões.</li>
+
+      <li><strong>Mosteiro de Leça do Balio:</strong> O Mosteiro de Leça do Balio teve origem medieval e tornou-se, no século XII, uma das principais casas dos Hospitalários em Portugal. A actual igreja fortificada conserva características românicas e góticas.</li>
+
+      <li><strong>Restauração da Independência:</strong> Após 1640, a defesa da costa do Porto foi reforçada com novas fortificações. Em Leça da Palmeira foi construída, a partir de 1651, a Fortaleza de Nossa Senhora das Neves, integrada no sistema defensivo da entrada do Douro.</li>
+
+      <li><strong>Mar e Navegação:</strong> A costa de Matosinhos esteve historicamente ligada à pesca, construção naval e navegação. O desenvolvimento do porto de Leixões transformou posteriormente a relação do concelho com o Atlântico.</li>
+    </ul>
+  `
+}, //a
+
+  "Paços de Ferreira": {
+    imagens: [
+      "./images/Concelhos/Paços de Ferreira1.png",
+      "./images/Concelhos/Paços de Ferreira2.png",
+      "./images/Concelhos/Paços de Ferreira3.png",
+      "./images/Concelhos/Paços de Ferreira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do Tâmega e Sousa, situado no noroeste do centro do distrito do Porto. O território integra o vale do rio Ferreira e áreas de relevo suave.</li>
+
+      <li><strong>Reconquista e Mosteiros:</strong> Após a Reconquista, o território de Ferreira foi reorganizado entre os bispados de Braga e do Porto. A existência de vários coutos e mosteiros demonstra a importância religiosa e administrativa da região medieval.</li>
+
+      <li><strong>Mosteiro de Ferreira:</strong> A Igreja de São Pedro de Ferreira é um dos principais monumentos românicos do concelho e conserva elementos arquitectónicos dos séculos XII e XIII.</li>
+
+      <li><strong>Castros:</strong> O território possui vários vestígios de ocupação pré-romana e romana, testemunhando uma ocupação antiga dos vales do Ferreira e do Sousa.</li>
+
+      <li><strong>Capão de Freamunde:</strong> Freamunde mantém uma tradição gastronómica associada à criação e preparação do capão, cuja produção e comercialização possuem uma longa presença histórica na localidade.</li>
+    </ul>
+  `
+}, //a
+
+  "Paredes": {
+    imagens: [
+      "./images/Concelhos/Paredes1.png",
+      "./images/Concelhos/Paredes2.png",
+      "./images/Concelhos/Paredes3.png",
+      "./images/Concelhos/Paredes4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no sudoeste do centro do distrito. O território integra sobretudo o vale do Sousa e áreas de serra a sul.</li>
+
+      <li><strong>Julgado de Aguiar de Sousa:</strong> O actual concelho assenta em grande parte no antigo Julgado de Aguiar de Sousa, uma importante unidade administrativa e judicial medieval cuja origem remonta aos primeiros tempos da nacionalidade.</li>
+
+      <li><strong>Castelo de Aguiar de Sousa:</strong> O castelo funcionou como cabeça de terra e centro de administração de um vasto território durante a Idade Média. A sua posição estratégica permitia controlar o vale do Sousa.</li>
+
+      <li><strong>Mosteiros Medievais:</strong> O território conserva importantes mosteiros e igrejas românicas, destacando-se Cête, Vandoma e Vilela, ligados à organização religiosa e senhorial medieval da região.</li>
+
+      <li><strong>Ouro Romano:</strong> Nas serras de Paredes, sobretudo em Castromil e nas Banjas, existem vestígios de antigas explorações auríferas romanas, com poços, galerias e cortas escavadas na rocha.</li>
+    </ul>
+  `
+}, //a
+
+  "Penafiel": {
+    imagens: [
+      "./images/Concelhos/Penafiel1.png",
+      "./images/Concelhos/Penafiel2.png",
+      "./images/Concelhos/Penafiel3.png",
+      "./images/Concelhos/Penafiel4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Tâmega e Sousa, situado na parte sudeste do centro do distrito do Porto, entre os rios Sousa e Tâmega. O território estende-se para sul até ao Douro.</li>
+
+      <li><strong>Castelo de Penafiel:</strong> A tradição associa o nome Penafiel à resistência de uma fortificação medieval aos ataques dos mouros. O antigo castelo teria recebido o nome de <em>Pennafidelis</em>, dando origem ao actual topónimo.</li>
+
+      <li><strong>Paço de Sousa e Egas Moniz:</strong> O Mosteiro de Paço de Sousa conserva o túmulo de Egas Moniz, aio de D. Afonso Henriques.</li>
+
+      <li><strong>Mosteiro de Bustelo:</strong> O Mosteiro de São Miguel de Bustelo foi fundado na Idade Média e tornou-se um importante centro religioso da região. O actual conjunto resulta de várias campanhas de construção e remodelação.</li>
+
+      <li><strong>Foral e mudança de nome:</strong> A povoação de Arrifana de Sousa recebeu foral de D. Manuel I em 1519. Em 1770, D. José I alterou oficialmente o nome para Penafiel e elevou a localidade à categoria de cidade.</li>
+    </ul>
+  `
+}, //a
+
+  "Porto": {
+    imagens: [
+      "./images/Concelhos/Porto1.png",
+      "./images/Concelhos/Porto2.png",
+      "./images/Concelhos/Porto3.png",
+      "./images/Concelhos/Porto4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do litoral, capital distrital e centro da Área Metropolitana do Porto, situado na margem norte do rio Douro, junto à sua foz. A cidade desenvolve-se entre o Douro e uma faixa litoral atlântica.</li>
+
+      <li><strong>Formação de Portugal:</strong> O Porto e a região envolvente tiveram um papel importante na formação do Condado Portucalense. Em 868, Vímara Peres reconquistou o território do Porto aos mouros, estabelecendo uma base importante para a reconquista cristã do Noroeste Peninsular.</li>
+
+      <li><strong>Infante D. Henrique:</strong> O Infante D. Henrique nasceu no Porto em 1394. A cidade ficou ligada à expansão marítima portuguesa através da sua actividade comercial e portuária e da participação das suas populações nas viagens e empresas dos Descobrimentos.</li>
+
+      <li><strong>Restauração e Liberalismo:</strong> O Porto teve um papel central nas lutas políticas dos séculos XVII e XIX. Durante a Guerra Civil de 1832-1834, a cidade resistiu ao cerco das forças miguelistas durante o Cerco do Porto, tornando-se um dos principais símbolos da causa liberal.</li>
+
+      <li><strong>Património:</strong> O centro histórico do Porto, a Ponte Luís I, a Sé, a Torre dos Clérigos, a Ribeira e a Igreja de São Francisco formam alguns dos principais elementos patrimoniais da cidade. O Centro Histórico é Património Mundial da UNESCO desde 1996.</li>
+    </ul>
+  `
+}, //a
+
+  "Póvoa de Varzim": {
+    imagens: [
+      "./images/Concelhos/Póvoa de Varzim1.png",
+      "./images/Concelhos/Póvoa de Varzim2.png",
+      "./images/Concelhos/Póvoa de Varzim3.png",
+      "./images/Concelhos/Póvoa de Varzim4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no litoral norte do distrito. O território combina uma frente atlântica com áreas agrícolas no interior.</li>
+
+      <li><strong>Pesca:</strong> A Póvoa de Varzim desenvolveu-se historicamente como comunidade piscatória. As tradições marítimas, as embarcações e a antiga comunidade de pescadores marcaram profundamente a identidade da cidade.</li>
+
+      <li><strong>Cego do Maio:</strong> José Rodrigues Maio, conhecido como Cego do Maio, destacou-se no século XIX pelos numerosos salvamentos de náufragos. Tornou-se uma das figuras mais conhecidas da história marítima poveira.</li>
+    </ul>
+  `
+}, //a
+
+  "Santo Tirso": {
+    imagens: [
+      "./images/Concelhos/Santo Tirso1.png",
+      "./images/Concelhos/Santo Tirso2.png",
+      "./images/Concelhos/Santo Tirso3.png",
+      "./images/Concelhos/Santo Tirso4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no interior norte do distrito, entre o rio Ave e as serras de Santa Justa e Agrela.</li>
+
+      <li><strong>Reconquista:</strong> O território de Santo Tirso foi reorganizado durante o avanço da Reconquista para sul a partir do século IX. As fortificações de Monte Córdova e Refojos de Riba d’Ave integravam a rede de defesa e organização do território medieval.</li>
+
+      <li><strong>Mosteiro de Santo Tirso:</strong> O Mosteiro de São Bento de Santo Tirso tornou-se o principal centro religioso da região. A tradição monástica no local remonta à Idade Média e o actual conjunto conserva uma igreja classificada como Monumento Nacional.</li>
+
+      <li><strong>Mosteiro de Roriz:</strong> O Mosteiro de São Pedro de Roriz, de origem medieval, conserva uma importante igreja românica ligada à organização religiosa do vale do Ave.</li>
+    </ul>
+  `
+}, //a
+
+  "Trofa": {
+    imagens: [
+      "./images/Concelhos/Trofa1.png",
+      "./images/Concelhos/Trofa2.png",
+      "./images/Concelhos/Trofa3.png",
+      "./images/Concelhos/Trofa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no interior noroeste do distrito. O rio Ave atravessa a parte norte do território.</li>
+
+      <li><strong>Resistência aos Franceses:</strong> A companhia de ordenanças de Santiago de Bougado, apoiada por forças regulares e dispondo apenas de dois canhões, obrigou os franceses a procurar uma passagem mais a montante, na Ponte da Lagoncinha.</li>
+
+      <li><strong>Trofa e a Maia:</strong> Antes da criação do município, em 1998, o actual território da Trofa fazia parte sobretudo do concelho da Maia.</li>
+
+      <li><strong>Rio Ave:</strong> O Ave constitui um dos principais elementos geográficos do concelho e marcou historicamente as comunicações entre o Porto, Braga e o litoral norte.</li>
+    </ul>
+  `
+}, //a
+
+  "Valongo": {
+    imagens: [
+      "./images/Concelhos/Valongo1.png",
+      "./images/Concelhos/Valongo2.png",
+      "./images/Concelhos/Valongo3.png",
+      "./images/Concelhos/Valongo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no interior oeste do distrito do Porto. O território é marcado pelas serras de Santa Justa e Pias e pelos vales dos rios Ferreira e Simão.</li>
+
+      <li><strong>Minas de Ouro Romanas:</strong> As serras de Santa Justa e Pias conservam vestígios de exploração mineira romana, incluindo galerias e poços associados à extracção de ouro.</li>
+
+      <li><strong>Criação do Concelho:</strong> O município de Valongo foi criado em 1836, no contexto das reformas administrativas liberais, reunindo territórios anteriormente pertencentes a Maia e Aguiar de Sousa.</li>
+    </ul>
+  `
+}, //a
+
+  "Vila do Conde": {
+    imagens: [
+      "./images/Concelhos/Vila do Conde1.png",
+      "./images/Concelhos/Vila do Conde2.png",
+      "./images/Concelhos/Vila do Conde3.png",
+      "./images/Concelhos/Vila do Conde4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Área Metropolitana do Porto, situado no litoral norte do distrito. O território estende-se ao longo do oceano Atlântico e inclui a foz do rio Ave.</li>
+
+      <li><strong>Alfândega Régia:</strong> Vila do Conde teve uma importante alfândega régia criada no reinado de D. João II. A sua posição junto ao mar e ao rio Ave favoreceu o comércio marítimo e a construção naval.</li>
+
+      <li><strong>Descobrimentos:</strong> Durante os séculos XV e XVI, Vila do Conde esteve ligada à expansão marítima Portuguesa através da construção de navios, do comércio e da participação dos seus habitantes nas viagens ultramarinas.</li>
+
+      <li><strong>Construção Naval:</strong> A construção de embarcações de madeira tornou-se uma actividade fundamental da vila, especialmente durante a época dos Descobrimentos. A tradição naval está hoje representada no Museu da Construção Naval e na réplica de uma nau quinhentista.</li>
+
+      <li><strong>Mosteiro de Santa Clara:</strong> O Mosteiro de Santa Clara foi fundado no século XIV e tornou-se uma das instituições religiosas mais importantes da vila. O seu aqueduto e o edifício conventual são elementos marcantes da paisagem de Vila do Conde.</li>
+    </ul>
+  `
+}, //a
+
+  "Vila Nova de Gaia": {
+    imagens: [
+      "./images/Concelhos/Vila Nova de Gaia1.png",
+      "./images/Concelhos/Vila Nova de Gaia2.png",
+      "./images/Concelhos/Vila Nova de Gaia3.png",
+      "./images/Concelhos/Vila Nova de Gaia4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do litoral da Área Metropolitana do Porto, situado na margem sul do rio Douro, em frente à cidade do Porto. O território estende-se desde a foz do Douro para sul ao longo da costa atlântica.</li>
+
+      <li><strong>Restauração e Defesa:</strong> Durante as lutas liberais do século XIX, a Serra do Pilar teve um papel estratégico na defesa das forças liberais durante o Cerco do Porto. O mosteiro fortificado permitia controlar o Douro e apoiar a defesa da cidade.</li>
+
+      <li><strong>Vinho do Porto:</strong> Desde a Época Moderna, as margens de Gaia junto ao Douro tornaram-se o principal local de armazenamento e envelhecimento dos vinhos transportados pelo rio desde o Douro vinhateiro. As caves históricas marcaram profundamente a paisagem ribeirinha.</li>
+
+      <li><strong>Serra do Pilar:</strong> O Mosteiro da Serra do Pilar, construído a partir do século XVI, possui uma igreja e claustro de planta circular. O conjunto está classificado como Património Mundial no âmbito do centro histórico do Porto e da sua envolvente.</li>
+    </ul>
+  `
+}, //a
+
+// Fim do Porto
+
+// Início de Coimbra
+
+  "Arganil": {
+    imagens: [
+      "./images/Concelhos/Arganil1.png",
+      "./images/Concelhos/Arganil2.png",
+      "./images/Concelhos/Arganil3.png",
+      "./images/Concelhos/Arganil4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, situado no lado este do distrito de Coimbra. O território estende-se entre os vales dos rios Ceira e Alva e as serras do Açor e da Lousã.</li>
+
+      <li><strong>Piódão:</strong> A aldeia do Piódão, integrada no concelho de Arganil, é uma das Aldeias Históricas de Portugal. As casas de xisto dispostas pelas encostas e a Igreja de Nossa Senhora da Conceição formam um dos conjuntos urbanos tradicionais mais conhecidos do interior do distrito.</li>
+
+      <li><strong>Serra do Açor:</strong> A Serra do Açor ocupa grande parte da zona oriental do concelho. A Mata da Margaraça conserva uma importante área de floresta autóctone, enquanto a Fraga da Pena se destaca pelas suas quedas de água.</li>
+
+      <li><strong>Benfeita:</strong> Benfeita é uma das aldeias serranas mais conhecidas do concelho e integra a Rede das Aldeias do Xisto. O território conserva casas de xisto, antigas estruturas agrícolas e uma paisagem marcada pelas encostas da Serra do Açor.</li>
+
+      <li><strong>Património Rural:</strong> As zonas serranas de Arganil conservam aldeias, moinhos, levadas e antigos caminhos ligados à agricultura, à pastorícia e à exploração dos recursos florestais.</li>
+    </ul>
+    `
+  }, //a
+
+    "Cantanhede": {
+    imagens: [
+      "./images/Concelhos/Cantanhede1.png",
+      "./images/Concelhos/Cantanhede2.png",
+      "./images/Concelhos/Cantanhede3.png",
+      "./images/Concelhos/Cantanhede4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do litoral da Região de Coimbra, pertencente ao distrito de Coimbra, entre Coimbra e a costa atlântica. O território combina a zona interior de Cantanhede com as áreas de Gândara e do litoral.</li>
+
+      <li><strong>Restauração:</strong> O concelho está particularmente ligado à Restauração de 1640 através da família dos Meneses. O Marquês de Marialva nascido em Cantanhede destacou-se na Guerra da Restauração, sendo uma das principais figuras militares, comandando as tropas Portuguesas nas batalhas das Linhas de Elvas e de Montes Claros. Morreu em 1675, estando sepultado em Cantanhede.</li>
+
+      <li><strong>Pedra de Ançã:</strong> A freguesia de Ançã é conhecida pela exploração e trabalho da pedra calcária local, utilizada durante séculos na construção e na escultura. A chamada Pedra de Ançã foi utilizada em numerosos monumentos e obras escultóricas portuguesas.</li>
+
+      <li><strong>Jaime Cortesão:</strong> O médico, escritor e historiador Jaime Cortesão nasceu em Ançã, no concelho de Cantanhede, em 1884. Foi uma das figuras do movimento da Renascença Portuguesa e destacou-se também pelos seus estudos sobre a história dos Descobrimentos.</li>
+    </ul>
+    `
+  }, //a
+
+    "Coimbra": {
+    imagens: [
+      "./images/Concelhos/Coimbra1.png",
+      "./images/Concelhos/Coimbra2.png",
+      "./images/Concelhos/Coimbra3.png",
+      "./images/Concelhos/Coimbra4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra e capital do distrito, situado no centro do território distrital. A cidade desenvolve-se sobretudo nas margens do rio Mondego, entre as zonas mais baixas do vale e as colinas que dominam a cidade.</li>
+
+      <li><strong>Reconquista:</strong> Coimbra foi definitivamente reconquistada aos mouros por Fernando Magno em 1064.</li>
+
+      <li><strong>D. Afonso Henriques:</strong> D. Afonso Henriques estabeleceu a sua corte em Coimbra, que se tornou o principal centro político do Condado Portucalense e dos primeiros tempos do Reino de Portugal. A partir da cidade foram organizadas várias campanhas militares para sul.</li>
+
+      <li><strong>Universidade:</strong> A Universidade de Coimbra foi fundada por D. Dinis em 1290 e transferida definitivamente para Coimbra em 1537. A Universidade, a Alta e a Rua da Sofia foram classificadas como Património Mundial pela UNESCO em 2013.</li>
+
+      <li><strong>Mosteiros:</strong> O concelho conserva importantes edifícios religiosos ligados à história da monarquia Portuguesa, incluindo o Mosteiro de Santa Cruz, onde estão sepultados D. Afonso Henriques e D. Sancho I, e o Mosteiro de Santa Clara-a-Nova, ligado ao culto da Rainha Santa Isabel.</li>
+
+      <li><strong>Pedro e Inês:</strong> Coimbra está profundamente ligada à história de D. Pedro e Inês de Castro. A Quinta das Lágrimas e a Fonte dos Amores estão associadas à tradição dos seus encontros, enquanto os túmulos de ambos se encontram no Mosteiro de Alcobaça.</li>
+    </ul>
+    `
+  }, //a
+
+    "Condeixa-a-Nova": {
+    imagens: [
+      "./images/Concelhos/Condeixa-a-Nova1.png",
+      "./images/Concelhos/Condeixa-a-Nova2.png",
+      "./images/Concelhos/Condeixa-a-Nova3.png",
+      "./images/Concelhos/Condeixa-a-Nova4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado a sul da cidade de Coimbra, entre o Mondego e a zona calcária do Sicó.</li>
+
+      <li><strong>Conímbriga:</strong> As ruínas de Conímbriga constituem o principal elemento histórico do concelho. A antiga cidade luso-romana desenvolveu-se a partir do século II a.C. e tornou-se um dos mais importantes centros urbanos romanos do território atualmente português.</li>
+
+      <li><strong>Mosaicos Romanos:</strong> Conímbriga conserva numerosos mosaicos, casas, termas, muralhas e estruturas urbanas romanas. Entre os elementos mais conhecidos encontram-se os mosaicos das grandes casas senhoriais, alguns dos quais representam cenas mitológicas.</li>
+
+      <li><strong>Abandono de Conímbriga:</strong> Durante a Alta Idade Média, Conímbriga foi progressivamente abandonada. Após a reorganização cristã do território de Coimbra, a população remanescente deslocou-se para a zona onde viria a desenvolver-se Condeixa.</li>
+    </ul>
+    `
+  }, //a
+
+  "Figueira da Foz": {
+    imagens: [
+      "./images/Concelhos/Figueira da Foz1.png",
+      "./images/Concelhos/Figueira da Foz2.png",
+      "./images/Concelhos/Figueira da Foz3.png",
+      "./images/Concelhos/Figueira da Foz4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no litoral sul do mesmo, na foz do rio Mondego. O território estende-se ao longo do estuário e da costa atlântica, incluindo a serra da Boa Viagem.</li>
+
+      <li><strong>Foz do Mondego:</strong> A posição junto à foz do Mondego deu à Figueira da Foz importância como porto marítimo e ponto de ligação entre o interior da região e o Atlântico. O estuário marcou profundamente a história económica e a ocupação do território.</li>
+
+      <li><strong>Buarcos:</strong> Buarcos foi durante séculos uma importante povoação marítima e centro piscatório. O seu castelo e fortificações defendiam a costa e o acesso ao porto, enquanto a população estava fortemente ligada à pesca e ao comércio marítimo.</li>
+
+      <li><strong>Sal:</strong> A produção de sal nas salinas do Mondego teve grande importância na economia local. A proximidade do estuário proporcionou condições favoráveis à exploração salineira, que se manteve durante séculos.</li>
+
+      <li><strong>Praia e Serra da Boa Viagem:</strong> A costa da Figueira da Foz combina extensos areais com a Serra da Boa Viagem, que se eleva junto ao Atlântico e constitui um dos principais elementos naturais do concelho.</li>
+    </ul>
+    `
+  }, //a
+
+    "Góis": {
+    imagens: [
+      "./images/Concelhos/Góis1.png",
+      "./images/Concelhos/Góis2.png",
+      "./images/Concelhos/Góis3.png",
+      "./images/Concelhos/Góis4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no interior sudeste do distrito. O território desenvolve-se sobretudo no vale do rio Ceira, entre a Serra da Lousã e as serras do Açor.</li>
+
+      <li><strong>Rio Ceira:</strong> O rio Ceira atravessa o concelho de Góis e estrutura grande parte da sua paisagem. O vale do rio concentra a principal ocupação humana e várias das antigas vias de comunicação da região.</li>
+
+      <li><strong>Aldeias do Xisto:</strong> O concelho possui várias aldeias serranas integradas na Rede das Aldeias do Xisto, entre as quais Aigra Nova, Aigra Velha, Comareira e Pena. As aldeias conservam casas de xisto e elementos ligados à antiga vida agrícola e pastoril.</li>
+
+      <li><strong>Ponte Real:</strong> A Ponte Real sobre o Ceira é um dos elementos patrimoniais mais conhecidos de Góis e está ligada às antigas comunicações através do vale do rio.</li>
+
+      <li><strong>Património Serrano:</strong> A paisagem do concelho conserva antigos caminhos, moinhos, levadas e aldeias de montanha, testemunhando uma ocupação tradicional baseada sobretudo na agricultura, pastorícia e exploração florestal.</li>
+    </ul>
+    `
+  }, //a
+
+    "Lousã": {
+    imagens: [
+      "./images/Concelhos/Lousã1.png",
+      "./images/Concelhos/Lousã2.png",
+      "./images/Concelhos/Lousã3.png",
+      "./images/Concelhos/Lousã4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no centro-leste do mesmo, nas encostas da Serra da Lousã. O território combina o vale do Arouce com as áreas montanhosas da serra.</li>
+
+      <li><strong>Reconquista:</strong> O Castelo de Arouce integrou a linha defensiva criada para proteger Coimbra durante a Reconquista. A reorganização do território após a conquista definitiva de Coimbra em 1064 esteve ligada à reconstrução e reforço das fortificações da região.</li>
+
+      <li><strong>Castelo da Lousã:</strong> O Castelo de Arouce é uma fortificação medieval construída em posição elevada sobre o vale. É um dos principais testemunhos da antiga linha defensiva do Mondego.</li>
+
+      <li><strong>Aldeias do Xisto:</strong> A Serra da Lousã conserva cinco aldeias integradas na Rede das Aldeias do Xisto: Candal, Casal Novo, Cerdeira, Chiqueiro e Talasnal. As aldeias desenvolveram-se em encostas serranas e mantêm uma arquitetura tradicional marcada pelo xisto.</li>
+
+      <li><strong>Serra da Lousã:</strong> A serra ocupa uma parte importante do concelho e conserva extensas áreas florestais, vales encaixados e habitats de espécies como o veado e o corço.</li>
+    </ul>
+    `
+  }, //a
+
+    "Mira": {
+    imagens: [
+      "./images/Concelhos/Mira1.png",
+      "./images/Concelhos/Mira2.png",
+      "./images/Concelhos/Mira3.png",
+      "./images/Concelhos/Mira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no litoral noroeste do distrito. O território é marcado por dunas, pinhais, lagoas e terrenos agrícolas da Gândara.</li>
+
+      <li><strong>Arte Xávega:</strong> A pesca tradicional da arte xávega continua associada à Praia de Mira. Os pescadores utilizam barcos próprios e grandes redes lançadas ao mar, que são posteriormente puxadas para o areal.</li>
+
+      <li><strong>Barrinha e Lagoa:</strong> A Barrinha e a Lagoa da Praia de Mira são dois dos principais elementos naturais do concelho. Estas lagoas estão integradas numa área de elevada importância ecológica associada às dunas e pinhais do litoral.</li>
+
+      <li><strong>Gândara:</strong> O território de Mira integra a paisagem tradicional da Gândara, marcada por solos arenosos, pinhais, campos agrícolas e casas tradicionais. A agricultura e a pesca moldaram durante séculos a ocupação da região.</li>
+    </ul>
+    `
+  }, //a
+
+    "Miranda do Corvo": {
+    imagens: [
+      "./images/Concelhos/Miranda do Corvo1.png",
+      "./images/Concelhos/Miranda do Corvo2.png",
+      "./images/Concelhos/Miranda do Corvo3.png",
+      "./images/Concelhos/Miranda do Corvo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado a sudeste da cidade de Coimbra, entre os vales do Ceira e do Dueça e as serras da Lousã e de Sicó.</li>
+
+      <li><strong>Reconquista:</strong> Miranda do Corvo desenvolveu-se em torno de uma fortificação medieval que controlava importantes vias de comunicação entre Coimbra e o interior. A primeira referência documental conhecida ao território remonta a 998.</li>
+
+      <li><strong>Castelo:</strong> O castelo de Miranda do Corvo ocupava uma posição estratégica sobre as vias que ligavam Coimbra ao sul e ao interior. A fortificação fazia parte da rede defensiva do Mondego durante a Reconquista.</li>
+
+      <li><strong>Mosteiro de Semide:</strong> O Mosteiro de Santa Maria de Semide teve origem medieval e tornou-se uma importante comunidade religiosa feminina. A construção atual resulta sobretudo de alterações realizadas entre os séculos XVI e XVIII.</li>
+
+      <li><strong>Chanfana:</strong> Miranda do Corvo é particularmente associada à chanfana, prato tradicional preparado com carne de cabra e vinho. A tradição gastronómica do concelho inclui ainda os negalhos e a sopa de casamento.</li>
+    </ul>
+    `
+  }, //a
+
+    "Montemor-o-Velho": {
+    imagens: [
+      "./images/Concelhos/Montemor-o-Velho1.png",
+      "./images/Concelhos/Montemor-o-Velho2.png",
+      "./images/Concelhos/Montemor-o-Velho3.png",
+      "./images/Concelhos/Montemor-o-Velho4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado a oeste da cidade de Coimbra, no vale inferior do Mondego. O território estende-se por uma extensa área de campos agrícolas junto ao rio.</li>
+
+      <li><strong>Reconquista:</strong> Montemor-o-Velho foi sucessivamente conquistada por forças cristãs e muçulmanas durante os séculos IX a XI. Em 1034, Gonçalo Trastamires recuperou definitivamente a fortaleza para os cristãos, num dos episódios marcantes da Reconquista do vale do Mondego.</li>
+
+      <li><strong>Castelo de Montemor-o-Velho:</strong> O castelo domina o vale do Mondego a partir de uma posição elevada e foi uma das principais fortificações da região. A sua importância militar esteve ligada à defesa de Coimbra e ao controlo das vias fluviais e terrestres.</li>
+
+      <li><strong>Campos do Mondego:</strong> A planície aluvial do Mondego ocupa uma parte significativa do concelho e possui uma longa tradição agrícola. O cultivo do arroz tornou-se particularmente importante nas zonas baixas junto ao rio.</li>
+
+      <li><strong>Património Medieval:</strong> A vila conserva, além do castelo, a Igreja de Santa Maria da Alcáçova e outros elementos do antigo núcleo medieval, testemunhando a importância que Montemor teve na região durante a Idade Média.</li>
+    </ul>
+    `
+  }, //a
+
+    "Oliveira do Hospital": {
+    imagens: [
+      "./images/Concelhos/Oliveira do Hospital1.png",
+      "./images/Concelhos/Oliveira do Hospital2.png",
+      "./images/Concelhos/Oliveira do Hospital3.png",
+      "./images/Concelhos/Oliveira do Hospital4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no extremo oriental do distrito, na transição entre a Beira Interior e a Serra da Estrela. O território é marcado pelos vales dos rios Alva e Seia e pelas serras envolventes.</li>
+
+      <li><strong>Ordem dos Hospitalários:</strong> O nome “Oliveira do Hospital” está ligado à presença da Ordem dos Hospitalários. Em 1120, D. Teresa doou a povoação aos cavaleiros da Ordem de São João de Jerusalém, que estabeleceram aqui uma das suas principais comendas.</li>
+
+      <li><strong>Bobadela Romana:</strong> Bobadela conserva um dos mais importantes conjuntos arqueológicos romanos do interior de Portugal. O complexo inclui um arco monumental, vestígios do fórum, inscrições e um anfiteatro.</li>
+
+      <li><strong>Arco Romano:</strong> O arco monumental de Bobadela fazia parte do acesso ao fórum da antiga cidade romana. A cidade possuía edifícios públicos de grande dimensão e desempenhava funções administrativas no território envolvente.</li>
+
+      <li><strong>Capela dos Ferreiros:</strong> A Capela dos Ferreiros, em Oliveira do Hospital, é um importante monumento medieval associado à presença dos Hospitalários. O conjunto conserva elementos artísticos e funerários de diferentes épocas.</li>
+    </ul>
+    `
+  }, //a
+
+    "Pampilhosa da Serra": {
+    imagens: [
+      "./images/Concelhos/Pampilhosa da Serra1.png",
+      "./images/Concelhos/Pampilhosa da Serra2.png",
+      "./images/Concelhos/Pampilhosa da Serra3.png",
+      "./images/Concelhos/Pampilhosa da Serra4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no extremo sudeste do distrito. O território é predominantemente montanhoso e estende-se pelas serras do Açor e da Lousã, sendo atravessado pelos rios Unhais e Ceira.</li>
+
+      <li><strong>Fajão:</strong> Fajão é uma das aldeias serranas mais conhecidas do concelho e integra a Rede das Aldeias do Xisto. A povoação conserva casas tradicionais de xisto e uma localização elevada sobre o vale do Ceira.</li>
+
+      <li><strong>Janeiro de Baixo:</strong> Janeiro de Baixo é outra das aldeias do concelho integrada na Rede das Aldeias do Xisto. A aldeia desenvolveu-se junto ao rio Zêzere e conserva um núcleo tradicional construído em xisto.</li>
+
+      <li><strong>Albufeira de Santa Luzia:</strong> A barragem de Santa Luzia criou uma extensa albufeira no rio Unhais. O lago ocupa os vales montanhosos do centro do concelho e constitui um dos principais elementos da paisagem local.</li>
+
+      <li><strong>Serra e Recursos Florestais:</strong> A exploração da floresta, a produção de mel, castanha e aguardente de medronho e a criação de gado fizeram parte das atividades tradicionais das comunidades serranas do concelho.</li>
+    </ul>
+    `
+  }, //a
+
+    "Penacova": {
+    imagens: [
+      "./images/Concelhos/Penacova1.png",
+      "./images/Concelhos/Penacova2.png",
+      "./images/Concelhos/Penacova3.png",
+      "./images/Concelhos/Penacova4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado a nordeste da cidade de Coimbra. O território desenvolve-se principalmente ao longo do vale do Mondego e das serras que o rodeiam.</li>
+
+      <li><strong>Mosteiro de Lorvão:</strong> O Mosteiro de Lorvão é um dos principais monumentos históricos do concelho. A sua origem remonta à Alta Idade Média e o mosteiro teve grande importância religiosa e cultural, tendo albergado posteriormente uma comunidade feminina da Ordem de Cister.</li>
+
+      <li><strong>Apocalipse de Lorvão:</strong> O scriptorium do Mosteiro de Lorvão produziu importantes manuscritos medievais. Entre eles destaca-se o Apocalipse de Lorvão, manuscrito do século XII reconhecido pela UNESCO no programa Memória do Mundo.</li>
+
+      <li><strong>Moinhos:</strong> Penacova possui um dos maiores conjuntos de moinhos de vento e de água de Portugal. Os moinhos da Atalhada, Gavinhos, Portela de Oliveira e outras zonas testemunham a antiga importância da moagem de cereais.</li>
+
+      <li><strong>Rio Mondego:</strong> O Mondego atravessa o concelho e teve importância histórica na circulação de pessoas e mercadorias. A antiga navegação fluvial incluía a utilização da barca serrana, ligada às trocas comerciais entre o interior e Coimbra.</li>
+    </ul>
+    `
+  }, //a
+
+    "Penela": {
+    imagens: [
+      "./images/Concelhos/Penela1.png",
+      "./images/Concelhos/Penela2.png",
+      "./images/Concelhos/Penela3.png",
+      "./images/Concelhos/Penela4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, situado no centro do sul do distrito de Coimbra, junto à serra de Sicó e ao vale do Rabaçal. O território prolonga-se até à fronteira com o distrito de Leiria.</li>
+
+      <li><strong>Reconquista:</strong> O Castelo de Penela foi reconquistado aos mouros no século XI por D. Sesnando, governador de Coimbra. A fortificação passou a integrar a linha defensiva que protegia a cidade e controlava os caminhos para sul.</li>
+
+      <li><strong>Castelo de Penela:</strong> O castelo domina a vila a partir de uma posição elevada e é uma das principais fortificações medievais da linha do Mondego. A sua construção aproveitou o relevo escarpado do monte.</li>
+
+      <li><strong>Castelo do Germanelo:</strong> O Castelo do Germanelo foi mandado construir por D. Afonso Henriques entre 1142 e 1144, durante o avanço da fronteira para sul. A fortificação controlava o vale do Rabaçal e as vias entre Coimbra e o território conquistado.</li>
+
+      <li><strong>Rede Defensiva do Mondego:</strong> Penela fazia parte da rede de castelos que defendia Coimbra durante a Reconquista, juntamente com fortificações como Lousã, Miranda do Corvo, Montemor-o-Velho e Soure.</li>
+    </ul>
+    `
+  }, //a
+
+    "Soure": {
+    imagens: [
+      "./images/Concelhos/Soure1.png",
+      "./images/Concelhos/Soure2.png",
+      "./images/Concelhos/Soure3.png",
+      "./images/Concelhos/Soure4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no interior sudoeste do distrito. O território é atravessado pelos rios Arunca e Anços e prolonga-se até às zonas calcárias do Sicó.</li>
+
+      <li><strong>Reconquista:</strong> Após a reconquista definitiva de Coimbra em 1064, Soure tornou-se uma posição avançada da defesa da cidade. O castelo fazia parte da linha de fortificações que protegiam o Mondego e controlavam os caminhos para sul.</li>
+
+      <li><strong>Templários:</strong> Em 1128, D. Teresa doou o Castelo de Soure aos Templários, doação confirmada por D. Afonso Henriques em 1129. Soure tornou-se a primeira sede fixa da Ordem do Templo em território português.</li>
+
+      <li><strong>Foral de 1111:</strong> Soure recebeu foral do Conde D. Henrique e de D. Teresa em 1111, antes da fundação do Reino de Portugal. O documento procurava fixar população num território que ainda tinha importância estratégica.</li>
+
+      <li><strong>Ordem de Cristo:</strong> Depois da extinção da Ordem do Templo, em 1312, os seus bens em Portugal passaram para a Ordem de Cristo. Soure tornou-se uma importante comenda desta ordem.</li>
+    </ul>
+    `
+  }, //a
+
+    "Tábua": {
+    imagens: [
+      "./images/Concelhos/Tábua1.png",
+      "./images/Concelhos/Tábua2.png",
+      "./images/Concelhos/Tábua3.png",
+      "./images/Concelhos/Tábua4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado no noroeste do distrito, entre os rios Mondego e Alva. O território é marcado por planaltos, vales e áreas florestais.</li>
+
+      <li><strong>Terra dos Cunhas:</strong> Durante a Idade Média, Tábua foi uma honra e julgado associado à família dos Cunhas, que recebeu o território por doação da Infanta D. Teresa. A influência desta família manteve-se durante vários séculos.</li>
+
+      <li><strong>Midões:</strong> Midões foi sede de um antigo concelho até à reforma administrativa de 1853. A sua extinção e integração em Tábua contribuíram para a configuração atual do município.</li>
+    </ul>
+    `
+  }, //a
+
+    "Vila Nova de Poiares": {
+    imagens: [
+      "./images/Concelhos/Vila Nova de Poiares1.png",
+      "./images/Concelhos/Vila Nova de Poiares2.png",
+      "./images/Concelhos/Vila Nova de Poiares3.png",
+      "./images/Concelhos/Vila Nova de Poiares4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da Região de Coimbra, pertencente ao distrito de Coimbra e situado a leste de Coimbra. O território desenvolve-se entre os vales dos rios Mondego e Ceira, numa zona de transição entre o litoral e as serras do interior.</li>
+
+      <li><strong>Poiares:</strong> O território de Vila Nova de Poiares desenvolveu-se historicamente em torno de pequenas povoações rurais e dos caminhos que ligavam Coimbra às regiões montanhosas do interior.</li>
+
+      <li><strong>Artesanato:</strong> O concelho conserva tradições artesanais ligadas ao trabalho da madeira, da cestaria e de outros materiais utilizados pelas comunidades rurais. Estas atividades estão associadas à antiga economia doméstica da região.</li>
+
+      <li><strong>Chanfana:</strong> A chanfana é uma das especialidades gastronómicas mais associadas a Vila Nova de Poiares e à região serrana de Coimbra. O prato é preparado tradicionalmente com carne de cabra e vinho tinto.</li>
+
+      <li><strong>Serra e Vale do Ceira:</strong> A proximidade da Serra da Lousã e do vale do Ceira confere ao concelho uma paisagem marcada por áreas florestais, linhas de água e zonas agrícolas de pequena dimensão.</li>
+    </ul>
+    `
+  }, //a
+
 };

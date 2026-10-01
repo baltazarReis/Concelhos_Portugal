@@ -4,11 +4,9 @@ Adicionar accuracy
 
 Faltam descrições para os distritos de:
 
-1 Coimbra
-2 Porto
-3 Guarda
-4 Braga
-5 Vila Real
+1 Guarda
+2 Braga
+3 Vila Real
 
 
 Faltam imagens para os distritos de:
