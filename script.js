@@ -139,7 +139,7 @@ function proximoConcelho() {
 
   // DEBUG CONCELHO 'Lisboa';//_
 
-  concelhoAtual = 'Póvoa de Lanhoso';//_concelhosRestantes.splice(indiceAleatorio, 1)[0];
+  concelhoAtual = concelhosRestantes.splice(indiceAleatorio, 1)[0];
   
   elNomeConcelho.textContent = concelhoAtual;
   elPontuacao.textContent = `${pontuacao}/308`;

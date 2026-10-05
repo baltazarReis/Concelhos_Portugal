@@ -1,6 +1,6 @@
 export const dadosConcelhos = {
 
-// Início Lisboa
+// Início de Lisboa
 
   "Sintra": {
     imagens: [
@@ -302,9 +302,9 @@ export const dadosConcelhos = {
 },
 
 
-// Fim Lisboa
+// Fim de Lisboa
 
-// Início Setúbal
+// Início de Setúbal
 
 "Almada": {
     imagens: [
@@ -591,9 +591,9 @@ export const dadosConcelhos = {
   `
 },
 
-// Fim Setúbal
+// Fim de Setúbal
 
-// Início Beja
+// Início de Beja
 
 "Beja": {
     imagens: [
@@ -895,7 +895,7 @@ export const dadosConcelhos = {
   `
 },
 
-// Fim Beja
+// Fim de Beja
 
 // Início de Faro
  
@@ -985,7 +985,7 @@ export const dadosConcelhos = {
  
 "Faro": {
     imagens: [
-    "./images/Concelhos/Faro1.png",
+    "./images/Concelhos/Faro1.jpeg",
     "./images/Concelhos/Faro2.png",
     "./images/Concelhos/Faro3.png",
     "./images/Concelhos/Faro4.png",
@@ -997,6 +997,8 @@ export const dadosConcelhos = {
       <li><strong>Reconquista Cristã:</strong> Foi definitivamente reconquistada aos mouros em 1249 por D. Afonso III, completando a integração de todo o Algarve no Reino de Portugal.</li>
  
       <li><strong>História e Património:</strong> De origem romana (Ossonoba), a cidade foi saqueada pelas tropas do Conde de Essex em 1596 e reconstruída após o terramoto de 1755, conservando ainda a Cidade Velha, com as suas muralhas e o Arco da Vila.</li>
+
+      <li><strong>Presença Romana:</strong> Faro corresponde à antiga Ossonoba, uma importante cidade romana do Algarve. A ocupação romana deixou vários vestígios na actual cidade, incluindo estruturas urbanas, cetárias, inscrições e mosaicos. Entre os achados mais importantes destaca-se o Mosaico do Oceano (Oceanus), um grande mosaico dos séculos II-III, actualmente exposto no Museu Municipal de Faro, que representa a figura mitológica de Oceano rodeada por motivos marinhos.</li>
  
       <li><strong>Ria Formosa:</strong> O sistema de ilhas-barreira, sapais e canais da Ria Formosa, classificado como reserva natural, condiciona a paisagem e a economia piscatória do concelho.</li>
  
@@ -1007,10 +1009,10 @@ export const dadosConcelhos = {
  
 "Lagoa (Continente)": {
     imagens: [
-    "./images/Concelhos/Lagoa1.png",
-    "./images/Concelhos/Lagoa2.png",
-    "./images/Concelhos/Lagoa3.png",
-    "./images/Concelhos/Lagoa4.png",
+    "./images/Concelhos/Lagoa (Continente)1.png",
+    "./images/Concelhos/Lagoa (Continente)2.png",
+    "./images/Concelhos/Lagoa (Continente)3.png",
+    "./images/Concelhos/Lagoa (Continente)4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1029,7 +1031,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Lagos1.png",
     "./images/Concelhos/Lagos2.png",
-    "./images/Concelhos/Lagos3.png",
+    "./images/Concelhos/Lagos3.webp",
     "./images/Concelhos/Lagos4.png",
     ],
     pistas:`
@@ -1110,7 +1112,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Portimão1.png",
     "./images/Concelhos/Portimão2.png",
     "./images/Concelhos/Portimão3.png",
-    "./images/Concelhos/Portimão4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1130,7 +1131,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/São Brás de Alportel1.png",
     "./images/Concelhos/São Brás de Alportel2.png",
     "./images/Concelhos/São Brás de Alportel3.png",
-    "./images/Concelhos/São Brás de Alportel4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1210,7 +1210,7 @@ export const dadosConcelhos = {
 "Vila Real de Santo António": {
     imagens: [
     "./images/Concelhos/Vila Real de Santo António1.png",
-    "./images/Concelhos/Vila Real de Santo António2.png",
+    "./images/Concelhos/Vila Real de Santo António2.jpeg",
     "./images/Concelhos/Vila Real de Santo António3.png",
     "./images/Concelhos/Vila Real de Santo António4.png",
     ],
@@ -1517,7 +1517,7 @@ export const dadosConcelhos = {
  
 // Fim de Évora
  
-// Início Leiria
+// Início de Leiria
  
 "Leiria": {
     imagens: [
@@ -2605,7 +2605,7 @@ export const dadosConcelhos = {
 
 // Fim de Portalegre
 
-// Início Castelo Branco
+// Início de Castelo Branco
 
 "Belmonte": {
     imagens: [
@@ -3063,7 +3063,7 @@ export const dadosConcelhos = {
 
 // Fim de Viana do Castelo
 
-// Início Açores
+// Início dos Açores
 
 "Vila do Porto": {
     imagens: [
@@ -3483,9 +3483,9 @@ export const dadosConcelhos = {
   `
 }, 
 
-// Fim Açores
+// Fim dos Açores
 
-// Início Madeira
+// Início da Madeira
 
 "Calheta (Madeira)": {
     imagens: [
@@ -3725,7 +3725,7 @@ export const dadosConcelhos = {
   `
 }, 
 
-// Fim Madeira
+// Fim da Madeira
 
 // Início de Bragança
 
@@ -4507,7 +4507,7 @@ export const dadosConcelhos = {
   `
 }, 
 
-// Fim Viseu
+// Fim de Viseu
 
 // Início de Aveiro
 
@@ -4905,7 +4905,7 @@ export const dadosConcelhos = {
   `
 }, 
 
-// Fim Aveiro
+// Fim de Aveiro
 
 // Início do Porto
 
@@ -5990,7 +5990,7 @@ export const dadosConcelhos = {
       <li><strong>Património Rural:</strong> O concelho conserva numerosos solares, casas rurais, espigueiros, igrejas e antigas estruturas agrícolas, distribuídos pelas zonas de vale e de montanha.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Barcelos": {
     imagens: [
@@ -6012,7 +6012,7 @@ export const dadosConcelhos = {
       <li><strong>Caminho de Santiago:</strong> O concelho é atravessado pelo Caminho Português de Santiago, cuja importância aumentou com a construção da ponte medieval e a consolidação das rotas de peregrinação através do Minho.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Braga": {
     imagens: [
@@ -6032,7 +6032,7 @@ export const dadosConcelhos = {
       <li><strong>Sé de Braga:</strong> A Sé é um dos principais monumentos medievais da cidade e conserva os túmulos dos condes D. Henrique e D. Teresa. O edifício foi sendo transformado ao longo dos séculos por sucessivos arcebispos.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Cabeceiras de Basto": {
     imagens: [
@@ -6054,7 +6054,7 @@ export const dadosConcelhos = {
       <li><strong>Terras de Basto:</strong> Cabeceiras integra a histórica região das Terras de Basto, uma área de transição entre o Minho e Trás-os-Montes, marcada pelos vales do Tâmega e pelas serras envolventes.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Celorico de Basto": {
     imagens: [
@@ -6076,7 +6076,7 @@ export const dadosConcelhos = {
       <li><strong>Românico:</strong> O concelho conserva vários elementos de arquitectura românica, nomeadamente nas igrejas de Arnóia, Veade, Ribas e Fervença.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Esposende": {
     imagens: [
@@ -6098,7 +6098,7 @@ export const dadosConcelhos = {
       <li><strong>Património Religioso:</strong> O concelho conserva várias igrejas e santuários ligados às comunidades rurais e piscatórias, destacando-se o Santuário da Senhora da Guia e o conjunto religioso de Apúlia.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Fafe": {
     imagens: [
@@ -6120,7 +6120,7 @@ export const dadosConcelhos = {
       <li><strong>Indústria Têxtil:</strong> A industrialização do Vale do Ave também marcou Fafe, sobretudo através das actividades têxteis e de transformação ligadas aos cursos de água e ao desenvolvimento das fábricas nos séculos XIX e XX.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Guimarães": {
     imagens: [
@@ -6142,7 +6142,7 @@ export const dadosConcelhos = {
       <li><strong>Centro Histórico:</strong> O centro histórico de Guimarães conserva o antigo núcleo medieval formado em torno do castelo e da colegiada, incluindo a Praça de Santiago, o Largo da Oliveira e a Rua de Santa Maria. O conjunto está classificado como Património Mundial pela UNESCO.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Póvoa de Lanhoso": {
     imagens: [
@@ -6164,7 +6164,7 @@ export const dadosConcelhos = {
       <li><strong>Ourivesaria:</strong> A ourivesaria tradicional tem uma presença histórica importante no concelho, mantendo-se ligada à produção de peças de ouro e prata e às tradições do traje minhoto.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Terras de Bouro": {
     imagens: [
@@ -6186,7 +6186,7 @@ export const dadosConcelhos = {
       <li><strong>São Bento da Porta Aberta:</strong> O santuário de São Bento da Porta Aberta, em Rio Caldo, tem origem numa pequena ermida construída em 1614. O culto tornou-se posteriormente um dos principais centros de peregrinação do Minho.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Vieira do Minho": {
     imagens: [
@@ -6208,7 +6208,7 @@ export const dadosConcelhos = {
       <li><strong>Ponte da Misarela:</strong> A ponte sobre o rio Rabagão está ligada a vários episódios militares e a lendas populares, sendo tradicionalmente conhecida como “Ponte do Diabo”. A sua posição tornou-a uma passagem estratégica entre o Minho e Trás-os-Montes.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Vila Nova de Famalicão": {
     imagens: [
@@ -6226,7 +6226,7 @@ export const dadosConcelhos = {
       <li><strong>Industrialização:</strong> A partir do século XIX, a construção das estradas para Braga, Porto, Guimarães e Viana do Castelo e a chegada do caminho-de-ferro em 1875 contribuíram para a transformação de Famalicão num importante centro industrial e de circulação do Vale do Ave.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Vila Verde": {
     imagens: [
@@ -6248,7 +6248,7 @@ export const dadosConcelhos = {
       <li><strong>Lenda da Ponte de Prado:</strong> A Ponte de Prado está associada a uma tradição sobre os amores de D. Branca Guterres com um rei leonês. A história explica, segundo a lenda, a preocupação do monarca com a conservação da ponte para poder atravessar o rio Cávado.</li>
     </ul>
   `
-}, //a
+}, 
 
 "Vizela": {
     imagens: [
@@ -6268,8 +6268,314 @@ export const dadosConcelhos = {
       <li><strong>Termas de Vizela:</strong> As termas voltaram a desenvolver-se a partir do século XVIII e ganharam grande importância no século XIX, com a criação da Companhia dos Banhos de Vizela em 1873 e a construção das instalações termais.</li>
     </ul>
   `
-}, //a
+}, 
 
 // Fim de Braga
+
+// Início da Guarda
+
+"Aguiar da Beira": {
+    imagens: [
+    "./images/Concelhos/Aguiar da Beira1.png",
+    "./images/Concelhos/Aguiar da Beira2.png",
+    "./images/Concelhos/Aguiar da Beira3.png",
+    "./images/Concelhos/Aguiar da Beira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito da Guarda e situado no extremo oeste do centro do distrito. O território encontra-se numa zona de transição entre as terras do Dão e as áreas montanhosas da Beira Alta.</li>
+
+      <li><strong>Foral Medieval:</strong> Aguiar da Beira recebeu foral de D. Teresa em 1120, posteriormente confirmado e renovado por vários monarcas. D. Manuel I concedeu novo foral em 1512, mantendo a importância administrativa da vila.</li>
+
+      <li><strong>Castelo e Largo dos Monumentos:</strong> O núcleo histórico conserva as ruínas do antigo castelo, a Torre do Relógio, a Fonte Ameada e o Pelourinho Manuelino. Este conjunto concentra alguns dos principais testemunhos medievais da vila.</li>
+
+      <li><strong>Feira Medieval:</strong> D. Dinis concedeu a Aguiar da Beira uma Carta de Feira em 1308, demonstrando a importância que a povoação já assumia na circulação e comércio regional durante a Idade Média.</li>
+
+      <li><strong>Pena Verde:</strong> A actual freguesia de Pena Verde foi antigamente um concelho autónomo. Recebeu foral de D. Sancho II em 1240 e novo foral de D. Manuel I em 1514, conservando ainda o antigo pelourinho.</li>
+    </ul>
+  `
+}, 
+
+"Almeida": {
+    imagens: [
+    "./images/Concelhos/Almeida1.png",
+    "./images/Concelhos/Almeida2.png",
+    "./images/Concelhos/Almeida3.png",
+    "./images/Concelhos/Almeida4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado no leste do distrito, fazendo fronteira com Espanha. O território integra a região histórica de Ribacôa e é atravessado pelo rio Côa.</li>
+
+      <li><strong>Tratado de Alcanizes:</strong> O rio Côa constituiu durante séculos a fronteira entre o território português e o Reino de Leão. Em 1297, o Tratado de Alcanizes, celebrado entre D. Dinis e D. Fernando IV de Castela, integrou definitivamente Ribacôa no Reino de Portugal.</li>
+
+      <li><strong>Fortaleza de Almeida:</strong> A Praça-Forte de Almeida foi transformada numa poderosa fortificação abaluartada a partir do século XVII. A sua planta em estrela e a posição junto à fronteira fizeram dela uma das principais praças militares portuguesas.</li>
+
+      <li><strong>Guerra da Restauração:</strong> Almeida desempenhou um papel central na defesa da fronteira durante a Guerra da Restauração. A fortaleza foi cercada e atacada em vários momentos dos conflitos entre Portugal e Espanha.</li>
+    </ul>
+  `
+}, 
+
+"Celorico da Beira": {
+    imagens: [
+    "./images/Concelhos/Celorico da Beira1.png",
+    "./images/Concelhos/Celorico da Beira2.png",
+    "./images/Concelhos/Celorico da Beira3.png",
+    "./images/Concelhos/Celorico da Beira4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado a oeste da cidade da Guarda. O território estende-se pelo vale do Mondego e pelas encostas da Serra da Estrela.</li>
+
+      <li><strong>Castelo de Celorico:</strong> O Castelo de Celorico da Beira ocupa uma posição elevada sobre a vila e integrou a linha defensiva medieval do vale do Mondego. A fortificação foi sucessivamente reforçada durante a formação e consolidação do território português.</li>
+
+      <li><strong>Reconquista:</strong> A posição de Celorico junto ao Mondego tornou a região importante durante a Reconquista. A fortificação controlava uma das vias de passagem entre a Beira Interior e o vale do Mondego.</li>
+
+      <li><strong>Queijo Serra da Estrela:</strong> O concelho integra a área tradicional de produção do Queijo Serra da Estrela, associado à criação de ovelhas da raça Bordaleira Serra da Estrela e à pastorícia das encostas da serra.</li>
+
+      <li><strong>Castelo de Linhares da Beira:</strong> A freguesia de Linhares conserva um castelo medieval construído sobre um afloramento granítico. A aldeia histórica mantém ainda o traçado medieval e várias casas e edifícios de arquitectura tradicional.</li>
+    </ul>
+  `
+}, 
+
+"Figueira de Castelo Rodrigo": {
+    imagens: [
+    "./images/Concelhos/Figueira de Castelo Rodrigo1.png",
+    "./images/Concelhos/Figueira de Castelo Rodrigo2.png",
+    "./images/Concelhos/Figueira de Castelo Rodrigo3.png",
+    "./images/Concelhos/Figueira de Castelo Rodrigo4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda está situado no nordeste do distrito e faz fronteira com Espanha. O território integra a região de Ribacôa e é marcado pelos vales do Côa e do Águeda.</li>
+
+      <li><strong>Castelo Rodrigo:</strong> A aldeia histórica de Castelo Rodrigo conserva parte das muralhas, o castelo, a Igreja de Nossa Senhora de Rocamadour e outros elementos do antigo núcleo medieval. Foi uma das principais povoações fortificadas de Ribacôa.</li>
+
+      <li><strong>Batalha de Castelo Rodrigo:</strong> Em 1664, durante a Guerra da Restauração, as forças Portuguesas derrotaram o exército Espanhol na Batalha de Castelo Rodrigo. O confronto, travado junto à fortaleza, foi uma das principais vitórias Portuguesas do conflito.</li>
+
+      <li><strong>Resistência de Escalhão:</strong> Em 1648, durante a Guerra da Restauração, a população de Escalhão refugiou-se num reduto junto à igreja matriz e resistiu durante meses ao cerco das forças Espanholas, obrigando-as finalmente a retirar.</li>
+
+      <li><strong>Marialva e Cristo de Marofa:</strong> A Serra da Marofa domina parte do concelho e possui no seu ponto mais elevado a estátua do Cristo-Rei. A paisagem permite observar grande parte da região de Ribacôa e da fronteira espanhola.</li>
+    </ul>
+  `
+}, 
+
+"Fornos de Algodres": {
+    imagens: [
+    "./images/Concelhos/Fornos de Algodres1.png",
+    "./images/Concelhos/Fornos de Algodres2.png",
+    "./images/Concelhos/Fornos de Algodres3.png",
+    "./images/Concelhos/Fornos de Algodres4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, situado no oeste do distrito da Guarda junto do distrito de Viseu. O território desenvolve-se entre os vales do Mondego e do Dão, junto às primeiras encostas da Serra da Estrela.</li>
+
+      <li><strong>Necrópole Megalítica:</strong> O concelho possui numerosos monumentos megalíticos, incluindo antas e sepulturas pré-históricas que testemunham a ocupação humana da região desde o Neolítico.</li>
+
+      <li><strong>Castro de Santiago:</strong> O Castro de Santiago conserva vestígios de um povoado fortificado de época pré-romana, situado numa posição elevada com domínio sobre a paisagem envolvente.</li>
+
+      <li><strong>Queijo Serra da Estrela:</strong> Fornos de Algodres integra a área tradicional de produção do Queijo Serra da Estrela. A criação de ovinos e a produção artesanal de queijo estão profundamente ligadas à economia rural do concelho.</li>
+    </ul>
+  `
+}, 
+
+"Gouveia": {
+    imagens: [
+    "./images/Concelhos/Gouveia1.png",
+    "./images/Concelhos/Gouveia2.png",
+    "./images/Concelhos/Gouveia3.png",
+    "./images/Concelhos/Gouveia4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado no lado sudoeste do distrito, nas encostas da Serra da Estrela. O território sobe desde o vale do Mondego até às áreas mais elevadas da serra.</li>
+
+      <li><strong>Serra da Estrela:</strong> Grande parte do concelho integra o Parque Natural da Serra da Estrela, com paisagens de montanha, vales glaciários, cursos de água e áreas de pastagem utilizadas tradicionalmente pelos rebanhos.</li>
+
+      <li><strong>Queijo e Pastorícia:</strong> Gouveia integra a área de produção do Queijo Serra da Estrela. A pastorícia e a criação de ovelhas tiveram durante séculos um papel importante na economia das comunidades serranas.</li>
+
+      <li><strong>Indústria de Lanifícios:</strong> A disponibilidade de lã e de água favoreceu o desenvolvimento de uma importante actividade de transformação de lã e tecidos. O Museu da Indústria Têxtil dos antigos armazéns da fábrica de Bellino conserva a memória desta actividade.</li>
+
+      <li><strong>Casa da Torre:</strong> A Casa da Torre, em Gouveia, é um dos principais solares históricos da cidade. O centro histórico conserva ainda vários edifícios senhoriais, igrejas e fontes ligados ao desenvolvimento da antiga vila.</li>
+    </ul>
+  `
+}, 
+
+"Guarda": {
+    imagens: [
+    "./images/Concelhos/Guarda1.png",
+    "./images/Concelhos/Guarda2.png",
+    "./images/Concelhos/Guarda3.png",
+    "./images/Concelhos/Guarda4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho das Beiras e Serra da Estrela, capital distrital da Guarda e situado no sul do distrito.</li>
+
+      <li><strong>Fundação da Cidade:</strong> Em 1199, D. Sancho I fundou a cidade da Guarda numa posição elevada, transferindo para aqui a sede da Diocese que anteriormente se encontrava em Idanha-a-Velha. A nova cidade desempenhava também uma função defensiva na fronteira oriental do reino.</li>
+
+      <li><strong>Catedral da Guarda:</strong> A Sé da Guarda é um dos principais exemplos do estilo gótico em Portugal. A construção iniciou-se no reinado de D. João I e prolongou-se pelos séculos seguintes, apresentando também elementos manuelinos.</li>
+
+      <li><strong>Muralhas:</strong> A cidade conserva parte das muralhas medievais e algumas das suas antigas portas, que testemunham a importância militar da Guarda como cidade fronteiriça.</li>
+
+      <li><strong>Altitude:</strong> A cidade da Guarda encontra-se a cerca de 1 000 metros de altitude e é tradicionalmente conhecida como a cidade mais alta de Portugal. A sua posição tornou-a um importante ponto estratégico e de passagem entre o litoral, a Beira Interior e Espanha.</li>
+    </ul>
+  `
+}, 
+
+"Manteigas": {
+    imagens: [
+    "./images/Concelhos/Manteigas1.png",
+    "./images/Concelhos/Manteigas2.png",
+    "./images/Concelhos/Manteigas3.png",
+    "./images/Concelhos/Manteigas4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado no sudoeste do mesmo junto à Covilhã, no coração da Serra da Estrela. O território desenvolve-se sobretudo no vale do Zêzere e encontra-se rodeado por algumas das maiores elevações da serra.</li>
+
+      <li><strong>Vale Glaciário do Zêzere:</strong> O Vale Glaciário do Zêzere é uma das formas de relevo mais características da Serra da Estrela. O vale foi escavado por antigos glaciares e estende-se desde as zonas elevadas da serra até à vila de Manteigas.</li>
+
+      <li><strong>Rio Zêzere:</strong> O rio Zêzere nasce na Serra da Estrela, junto ao Covão dos Piornos, e atravessa o concelho. O seu curso acompanha o vale glaciário antes de prosseguir para sul.</li>
+
+      <li><strong>Poço do Inferno:</strong> O Poço do Inferno é uma cascata formada pela Ribeira de Leandres, numa zona de grande relevo e vegetação. A queda de água e as formações rochosas são elementos característicos da paisagem de Manteigas.</li>
+
+      <li><strong>Queijo Serra da Estrela:</strong> A pastorícia e a produção de Queijo Serra da Estrela fazem parte da actividade tradicional das comunidades de montanha. Manteigas integra a área geográfica de produção deste queijo e de outros produtos associados à pastorícia serrana.</li>
+    </ul>
+  `
+}, 
+
+"Mêda": {
+    imagens: [
+    "./images/Concelhos/Mêda1.png",
+    "./images/Concelhos/Mêda2.png",
+    "./images/Concelhos/Mêda3.png",
+    "./images/Concelhos/Mêda4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado no nordeste do distrito. O território faz a transição entre os planaltos da Beira Interior e o vale do Douro.</li>
+
+      <li><strong>Marialva:</strong> A aldeia histórica de Marialva conserva um castelo medieval, muralhas e um núcleo urbano de origem antiga. A povoação teve uma posição estratégica na defesa da fronteira e integrou a linha de fortificações da região.</li>
+
+      <li><strong>Foral de Marialva:</strong> Marialva recebeu foral de D. Afonso Henriques em 1179, sendo posteriormente renovado por D. Manuel I. A antiga vila teve importância administrativa e militar durante a Idade Média.</li>
+
+      <li><strong>Longroiva:</strong> A freguesia de Longroiva conserva vestígios de uma ocupação muito antiga e é conhecida pelas suas águas termais. O castelo e a antiga comenda da Ordem de Malta testemunham a importância medieval da povoação.</li>
+
+      <li><strong>Vinho:</strong> A zona oriental do concelho aproxima-se do vale do Douro e das áreas vitivinícolas durienses. As encostas e planaltos da região apresentam uma paisagem marcada pela vinha e pela oliveira.</li>
+    </ul>
+  `
+}, 
+
+"Pinhel": {
+    imagens: [
+    "./images/Concelhos/Pinhel1.png",
+    "./images/Concelhos/Pinhel2.png",
+    "./images/Concelhos/Pinhel3.png",
+    "./images/Concelhos/Pinhel4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado no centro do distrito. O território integra a região histórica de Ribacôa e é atravessado pelo rio Côa.</li>
+
+      <li><strong>Reconquista e Fronteira:</strong> Pinhel integrou a linha defensiva da fronteira oriental Portuguesa durante a Idade Média. A posição estratégica da vila foi reforçada após o Tratado de Alcanizes, quando D. Dinis consolidou a fronteira Portuguesa para leste do Côa.</li>
+
+      <li><strong>Castelo de Pinhel:</strong> O castelo e as muralhas foram reforçados durante o reinado de D. Dinis, formando uma das principais fortificações de Ribacôa. A vila era conhecida como uma das “cidades da Beira” pela sua importância militar e administrativa.</li>
+
+      <li><strong>Guerra da Restauração:</strong> A posição fronteiriça de Pinhel tornou o concelho directamente envolvido nos conflitos entre Portugal e Espanha após 1640. A fortaleza e as povoações da região foram utilizadas como pontos de apoio à defesa da fronteira.</li>
+
+      <li><strong>Vinho:</strong> As zonas de encosta e planalto do concelho possuem uma longa tradição vitivinícola. Pinhel integra actualmente a região vitivinícola da Beira Interior, destacando-se a produção de vinhos tintos, brancos e espumantes.</li>
+    </ul>
+  `
+}, 
+
+"Sabugal": {
+    imagens: [
+    "./images/Concelhos/Sabugal1.png",
+    "./images/Concelhos/Sabugal2.png",
+    "./images/Concelhos/Sabugal3.png",
+    "./images/Concelhos/Sabugal4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado no extremo sul e sudeste do distrito, fazendo fronteira com Espanha. O território é marcado pelo rio Côa e pelas terras de Ribacôa.</li>
+
+      <li><strong>Castelo do Sabugal:</strong> O Castelo do Sabugal domina a vila a partir de uma posição elevada junto ao rio Côa. A fortificação foi reforçada por D. Dinis depois da integração definitiva de Ribacôa em Portugal.</li>
+
+      <li><strong>Tratado de Alcanizes:</strong> Antes de 1297, o território do Sabugal encontrava-se ligado ao Reino de Leão. O Tratado de Alcanizes, celebrado por D. Dinis, garantiu a integração definitiva de Ribacôa no Reino de Portugal e reforçou a fronteira oriental.</li>
+
+      <li><strong>Castelo de Vilar Maior:</strong> A freguesia de Vilar Maior conserva um castelo medieval que integrou o sistema defensivo de Ribacôa. A fortificação foi também reforçada durante o reinado de D. Dinis.</li>
+
+      <li><strong>Rio Côa:</strong> O rio Côa atravessa grande parte do concelho de norte para sul e foi durante séculos um elemento fundamental da organização do território, da agricultura e da própria fronteira medieval.</li>
+    </ul>
+  `
+}, 
+
+"Seia": {
+    imagens: [
+    "./images/Concelhos/Seia1.png",
+    "./images/Concelhos/Seia2.png",
+    "./images/Concelhos/Seia3.png",
+    "./images/Concelhos/Seia4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado no extremo sudoeste do distrito, no lado ocidental da Serra da Estrela. O território estende-se desde o vale do Mondego até às zonas mais elevadas da serra.</li>
+
+      <li><strong>Serra da Estrela:</strong> Grande parte do concelho integra o Parque Natural da Serra da Estrela. A paisagem inclui vales glaciários, lagoas, cursos de água e áreas de montanha que sobem em direcção ao planalto da Torre.</li>
+
+      <li><strong>Queijo Serra da Estrela:</strong> Seia integra a área tradicional de produção do Queijo Serra da Estrela, cuja produção está ligada à pastorícia e à criação de ovelhas da raça Bordaleira Serra da Estrela.</li>
+
+      <li><strong>Museu do Pão:</strong> O Museu do Pão, em Seia, reúne colecções e representações relacionadas com a história da produção de pão em Portugal, incluindo utensílios, técnicas tradicionais e aspectos culturais ligados à actividade.</li>
+
+      <li><strong>Lagoa Comprida:</strong> A Lagoa Comprida é uma das principais albufeiras da Serra da Estrela e encontra-se numa zona elevada do concelho. A barragem foi construída no século XX e integra o sistema hidroeléctrico da serra.</li>
+    </ul>
+  `
+}, 
+
+"Trancoso": {
+    imagens: [
+    "./images/Concelhos/Trancoso1.png",
+    "./images/Concelhos/Trancoso2.png",
+    "./images/Concelhos/Trancoso3.png",
+    "./images/Concelhos/Trancoso4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito da Guarda e situado na zona oeste-noroeste do distrito. O território ocupa uma zona de planalto entre o vale do Douro e as terras da Beira Interior.</li>
+
+      <li><strong>Castelo de Trancoso:</strong> O castelo e as muralhas de Trancoso dominam a antiga vila medieval. A posição elevada da povoação tornou-a um importante ponto de defesa da fronteira e das vias que ligavam a Beira ao Douro.</li>
+
+      <li><strong>Batalha de Trancoso:</strong> Em 1385, durante a crise de 1383-1385, as forças Portuguesas derrotaram um exército castelhano na Batalha de Trancoso. A vitória contribuiu para a defesa da Beira e antecedeu a decisiva Batalha de Aljubarrota.</li>
+
+      <li><strong>Guerra da Restauração:</strong> A posição de Trancoso no interior da Beira tornou-o um importante ponto de apoio durante a Guerra da Restauração. As fortificações da vila faziam parte do sistema defensivo da região fronteiriça.</li>
+    </ul>
+  `
+}, 
+
+"Vila Nova de Foz Côa": {
+    imagens: [
+    "./images/Concelhos/Vila Nova de Foz Côa1.png",
+    "./images/Concelhos/Vila Nova de Foz Côa2.png",
+    "./images/Concelhos/Vila Nova de Foz Côa3.png",
+    "./images/Concelhos/Vila Nova de Foz Côa4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho da região do Douro, pertencente ao distrito da Guarda mas integrado na Região Norte. Situa-se no extremo norte do distrito, na confluência dos rios Douro e Côa, junto à transição entre a Beira Interior e o Douro Superior.</li>
+
+      <li><strong>Gravuras Rupestres do Côa:</strong> O Vale do Côa conserva um dos mais importantes conjuntos mundiais de arte rupestre paleolítica ao ar livre. As gravuras representam sobretudo animais, como cavalos, auroques e cabras, e têm milhares de anos.</li>
+
+      <li><strong>Património Mundial:</strong> O conjunto de arte rupestre do Vale do Côa foi classificado como Património Mundial pela UNESCO em 1998. O Parque Arqueológico do Vale do Côa permite visitar vários núcleos de gravuras espalhados ao longo do rio.</li>
+
+      <li><strong>Douro Vinhateiro:</strong> A zona sul do concelho integra a paisagem do Alto Douro Vinhateiro, marcada pelas encostas de vinha e pelo rio Douro. A cultura da vinha e a produção de vinho fazem parte da economia tradicional da região.</li>
+
+      <li><strong>Castelo Melhor:</strong> A freguesia de Castelo Melhor conserva vestígios do antigo castelo medieval e encontra-se junto a uma das principais áreas de arte rupestre do Vale do Côa, combinando património medieval e pré-histórico.</li>
+    </ul>
+  `
+}, 
+
+// Fim da Guarda
 
 };
