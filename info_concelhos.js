@@ -1260,7 +1260,7 @@ export const dadosConcelhos = {
 "Alandroal": {
     imagens: [
     "./images/Concelhos/Alandroal1.png",
-    "./images/Concelhos/Alandroal2.png",
+    "./images/Concelhos/Alandroal2.jpeg",
     "./images/Concelhos/Alandroal3.png",
     "./images/Concelhos/Alandroal4.png",
     ],
@@ -1377,10 +1377,9 @@ export const dadosConcelhos = {
  
 "Mourão": {
     imagens: [
-    "./images/Concelhos/Mourão1.png",
+    "./images/Concelhos/Mourão1.jpeg",
     "./images/Concelhos/Mourão2.png",
     "./images/Concelhos/Mourão3.png",
-    "./images/Concelhos/Mourão4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1398,9 +1397,8 @@ export const dadosConcelhos = {
 "Portel": {
     imagens: [
     "./images/Concelhos/Portel1.png",
-    "./images/Concelhos/Portel2.png",
-    "./images/Concelhos/Portel3.png",
-    "./images/Concelhos/Portel4.png",
+    "./images/Concelhos/Portel2.webp",
+    "./images/Concelhos/Portel3.jpeg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1417,10 +1415,9 @@ export const dadosConcelhos = {
  
 "Redondo": {
     imagens: [
-    "./images/Concelhos/Redondo1.png",
-    "./images/Concelhos/Redondo2.png",
+    "./images/Concelhos/Redondo1.jpeg",
+    "./images/Concelhos/Redondo2.jpeg",
     "./images/Concelhos/Redondo3.png",
-    "./images/Concelhos/Redondo4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1460,7 +1457,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Vendas Novas1.png",
     "./images/Concelhos/Vendas Novas2.png",
     "./images/Concelhos/Vendas Novas3.png",
-    "./images/Concelhos/Vendas Novas4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1477,7 +1473,7 @@ export const dadosConcelhos = {
  
 "Viana do Alentejo": {
     imagens: [
-    "./images/Concelhos/Viana do Alentejo1.png",
+    "./images/Concelhos/Viana do Alentejo1.jpeg",
     "./images/Concelhos/Viana do Alentejo2.png",
     "./images/Concelhos/Viana do Alentejo3.png",
     "./images/Concelhos/Viana do Alentejo4.png",
@@ -1498,8 +1494,8 @@ export const dadosConcelhos = {
 "Vila Viçosa": {
     imagens: [
     "./images/Concelhos/Vila Viçosa1.png",
-    "./images/Concelhos/Vila Viçosa2.png",
-    "./images/Concelhos/Vila Viçosa3.png",
+    "./images/Concelhos/Vila Viçosa2.jpeg",
+    "./images/Concelhos/Vila Viçosa3.jpeg",
     "./images/Concelhos/Vila Viçosa4.png",
     ],
     pistas:`
