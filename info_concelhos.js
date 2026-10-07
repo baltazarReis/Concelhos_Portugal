@@ -1528,9 +1528,31 @@ export const dadosConcelhos = {
  
       <li><strong>Castelo:</strong> O castelo de Leiria foi mandado construir por D. Afonso Henriques em 1135, numa zona de fronteira entre cristãos e mouros, tendo sido depois reconstruído por D. Dinis, que aí residiu com a rainha D. Isabel.</li>
  
-      <li><strong>Pinhal de Leiria:</strong> O Pinhal de Leiria terá sido mandado plantar por D. Dinis para fixar as dunas litorais e fornecer madeira à construção naval da época dos Descobrimentos.</li>
+      <li><strong>Pinhal de Leiria:</strong> O Pinhal de Leiria foi mandado plantar por D. Afonso III e D. Dinis para secar os pântanos, fixar as dunas litorais e fornecer madeira e resina à construção naval da época dos Descobrimentos.</li>
  
       <li><strong>Gastronomia:</strong> Destaca-se a doçaria conventual e os queijos produzidos na região, associados a uma forte tradição agrícola.</li>
+    </ul>
+  `
+},
+
+"Alcobaça": {
+    imagens: [
+    "./images/Concelhos/Alcobaça1.png",
+    "./images/Concelhos/Alcobaça2.png",
+    "./images/Concelhos/Alcobaça3.png",
+    "./images/Concelhos/Alcobaça4.png",
+    ],
+    pistas:`
+    <ul class="lista-pistas">
+      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região do Oeste, no vale formado pelos rios Alcoa e Baça.</li>
+ 
+      <li><strong>Mosteiro de Alcobaça:</strong> Fundado em 1153 pelos monges cistercienses, a pedido de D. Afonso Henriques, o Mosteiro de Santa Maria de Alcobaça é a maior igreja medieval de Portugal, classificada Património Mundial pela UNESCO desde 1989.</li>
+ 
+      <li><strong>Castelo de Alcobaça:</strong> O castelo foi construído numa elevação sobranceira à cidade e integrou o sistema defensivo da região durante a Idade Média. Actualmente subsistem principalmente as muralhas e alguns vestígios da fortificação.</li>
+
+      <li><strong>Doçaria Conventual:</strong> A tradição doceira de Alcobaça está ligada à antiga presença dos monges de Cister. Entre as especialidades associadas à região encontram-se as cornucópias, as trouxas de ovos e outras receitas de tradição conventual.</li>
+ 
+      <li><strong>Gastronomia e Fruticultura:</strong> A região é conhecida pela doçaria conventual e pela produção de maçã e de vinho, cultivados nos férteis vales em torno da vila.</li>
     </ul>
   `
 }, 
@@ -1540,7 +1562,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Alvaiázere1.png",
     "./images/Concelhos/Alvaiázere2.png",
     "./images/Concelhos/Alvaiázere3.png",
-    "./images/Concelhos/Alvaiázere4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1565,6 +1586,8 @@ export const dadosConcelhos = {
     pistas:`
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho do interior norte do distrito de Leiria, integrado na sub-região da Região de Leiria, na transição para a Beira Litoral.</li>
+
+      <li><strong>Villa Romana de Santiago da Guarda:</strong> Na freguesia de Santiago da Guarda encontram-se os vestígios de uma villa tardo-romana dos séculos IV e V, actualmente integrados no Complexo Monumental de Santiago da Guarda. Foram descobertos 17 pavimentos de mosaico que se encontram parcialmente conservados e podem ser observados no local. Na mesma área existem ainda vestígios de uma antiga via romana.</li>
  
       <li><strong>Património Rural:</strong> O território conserva vestígios de antigas estruturas defensivas medievais e um conjunto de aldeias e quintas de carácter rural.</li>
  
@@ -1638,7 +1661,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Castanheira de Pêra1.png",
     "./images/Concelhos/Castanheira de Pêra2.png",
     "./images/Concelhos/Castanheira de Pêra3.png",
-    "./images/Concelhos/Castanheira de Pêra4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1787,7 +1809,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Pombal1.png",
     "./images/Concelhos/Pombal2.png",
-    "./images/Concelhos/Pombal3.png",
+    "./images/Concelhos/Pombal3.jpeg",
     "./images/Concelhos/Pombal4.png",
     ],
     pistas:`
@@ -1825,28 +1847,6 @@ export const dadosConcelhos = {
       <li><strong>Grutas:</strong> O subsolo calcário do concelho possui numerosas cavidades naturais. Entre as mais conhecidas encontram-se as Grutas de Mira de Aire, as Grutas de Alvados e as Grutas de Santo António, associadas ao património geológico das serras.</li>
 
       <li><strong>Património Industrial:</strong> A indústria têxtil teve grande importância económica em várias localidades do concelho, sobretudo durante os séculos XIX e XX. As fábricas e os antigos bairros operários fazem parte da história industrial de Porto de Mós.</li>
-    </ul>
-  `
-}, 
- 
-"Alcobaça": {
-    imagens: [
-    "./images/Concelhos/Alcobaça1.png",
-    "./images/Concelhos/Alcobaça2.png",
-    "./images/Concelhos/Alcobaça3.png",
-    "./images/Concelhos/Alcobaça4.png",
-    ],
-    pistas:`
-    <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do distrito de Leiria, integrado na sub-região do Oeste, no vale formado pelos rios Alcoa e Baça.</li>
- 
-      <li><strong>Mosteiro de Alcobaça:</strong> Fundado em 1153 pelos monges cistercienses, a pedido de D. Afonso Henriques, o Mosteiro de Santa Maria de Alcobaça é a maior igreja medieval de Portugal, classificada Património Mundial pela UNESCO desde 1989.</li>
- 
-      <li><strong>Castelo de Alcobaça:</strong> O castelo foi construído numa elevação sobranceira à cidade e integrou o sistema defensivo da região durante a Idade Média. Actualmente subsistem principalmente as muralhas e alguns vestígios da fortificação.</li>
-
-      <li><strong>Doçaria Conventual:</strong> A tradição doceira de Alcobaça está ligada à antiga presença dos monges de Cister. Entre as especialidades associadas à região encontram-se as cornucópias, as trouxas de ovos e outras receitas de tradição conventual.</li>
- 
-      <li><strong>Gastronomia e Fruticultura:</strong> A região é conhecida pela doçaria conventual e pela produção de maçã e de vinho, cultivados nos férteis vales em torno da vila.</li>
     </ul>
   `
 }, 
