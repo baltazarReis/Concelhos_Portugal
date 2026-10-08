@@ -4,6 +4,8 @@ import { dadosConcelhos } from './info_concelhos.js';
 // Lista completa dos 308 concelhos
 const listaConcelhos = Array.from(map_distrito_concelhos.values()).flatMap(lista => lista);
 
+// para debug num distrito e concelhos usar isto: map_distrito_concelhos.get('Santarém') || []; //
+
 let concelhosRestantes = [];
 let concelhoAtual = null;
 let pontuacao = 0;

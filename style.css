@@ -846,21 +846,21 @@ svg path.pular:hover {
   border-radius: 8px !important;
 }
 
-/* Grelha Dinâmica de Imagens no Painel Lateral */
+/* Grelha de Imagens no Painel Lateral */
 .galeria-concelho {
   order: 3 !important;
   display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(2, 1fr) !important; /* Sempre 2 colunas de tamanho igual */
   gap: 10px;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #e2e8f0; /* Separação visual antes da descrição */
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .galeria-miniatura {
   width: 100%;
-  height: 75px;
+  height: 85px;
   object-fit: cover;
   border-radius: 6px;
   cursor: pointer;
@@ -868,9 +868,19 @@ svg path.pular:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Quando houver 3 elementos, o último (o 3.º) estende-se ao longo das 2 colunas */
+.galeria-concelho .galeria-miniatura:nth-child(3):last-child {
+  grid-column: span 2;
+}
+
+/* Se por acaso só houver 1 imagem na galeria, também ocupa a largura total */
+.galeria-concelho .galeria-miniatura:only-child {
+  grid-column: span 2;
+}
+
 .galeria-miniatura:hover {
   cursor: zoom-in;
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
