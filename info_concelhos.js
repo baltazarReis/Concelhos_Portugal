@@ -1933,7 +1933,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Benavente1.png",
     "./images/Concelhos/Benavente3.png",
-    "./images/Concelhos/Benavente2.png",
+    "./images/Concelhos/Benavente4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
