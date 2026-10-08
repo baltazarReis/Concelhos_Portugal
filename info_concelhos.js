@@ -1321,12 +1321,12 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Estremoz1.png",
     "./images/Concelhos/Estremoz2.png",
-    "./images/Concelhos/Estremoz3.png",
+    "./images/Concelhos/Estremoz3.jpeg",
     "./images/Concelhos/Estremoz4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, junto à fronteira com Espanha, na zona dos mármores alentejanos.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no norte-nordeste do distrito, na zona dos mármores alentejanos.</li>
  
       <li><strong>Castelo e Rainha Santa:</strong> O castelo, dominado pela Torre das Três Coroas, foi palco da morte da Rainha Santa Isabel, em 1336, que faleceu no paço real da vila.</li>
  
@@ -1340,11 +1340,10 @@ export const dadosConcelhos = {
     "./images/Concelhos/Montemor-o-Novo1.png",
     "./images/Concelhos/Montemor-o-Novo2.png",
     "./images/Concelhos/Montemor-o-Novo3.png",
-    "./images/Concelhos/Montemor-o-Novo4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, na margem do rio Almansor, entre Évora e Lisboa.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado a oeste da cidade de Évora.</li>
  
       <li><strong>Reconquista Cristã:</strong> Foi integrado no Reino de Portugal pouco depois da reconquista de Évora, em 1165, recebendo mais tarde foral de D. Afonso Henriques.</li>
  
@@ -1364,7 +1363,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, no extremo norte do distrito, numa paisagem de montado e olival.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, no extremo norte-noroeste do distrito, numa paisagem de montado e olival.</li>
  
       <li><strong>História:</strong> É um dos concelhos mais recentes do Alentejo Central, elevado a vila e sede de concelho autónomo no início do século XX.</li>
  
@@ -1383,7 +1382,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no extremo leste do distrito, junto ao rio Guadiana faz fronteira com Espanha.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no extremo sudeste do distrito, junto ao rio Guadiana faz fronteira com Espanha.</li>
  
       <li><strong>Castelo:</strong> O castelo medieval de Mourão ocupa uma posição elevada sobre a paisagem envolvente, reforçando o papel histórico da vila como praça fronteiriça.</li>
  
@@ -1402,7 +1401,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, com parte do seu território banhado pela albufeira do Alqueva.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora situado no sul-sudeste do distrito, com parte do seu território banhado pela albufeira do Alqueva.</li>
  
       <li><strong>Castelo:</strong> O castelo de Portel, historicamente ligado a importantes famílias senhoriais do Alentejo, domina a vila a partir de uma elevação.</li>
  
@@ -1415,13 +1414,14 @@ export const dadosConcelhos = {
  
 "Redondo": {
     imagens: [
-    "./images/Concelhos/Redondo1.jpeg",
+    "./images/Concelhos/Redondo1.png",
     "./images/Concelhos/Redondo2.jpeg",
     "./images/Concelhos/Redondo3.png",
+    "./images/Concelhos/Redondo4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, no sopé da Serra d'Ossa.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no interior nordeste do distrito, no sopé da Serra d'Ossa.</li>
  
       <li><strong>Castelo:</strong> O castelo de Redondo ocupa uma posição dominante sobre a vila e a planície envolvente.</li>
  
@@ -1441,7 +1441,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, junto à albufeira do Alqueva.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora e situado no sudeste do distrito, junto à albufeira do Alqueva.</li>
  
       <li><strong>Monsaraz:</strong> A vila medieval de Monsaraz, amuralhada e situada no cimo de uma colina com vista sobre o Alqueva, é um dos conjuntos históricos mais preservados do Alentejo.</li>
  
@@ -1460,7 +1460,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no cruzamento das antigas estradas entre Lisboa e Évora.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no oeste do distrito no cruzamento das antigas estradas entre Lisboa e Évora.</li>
  
       <li><strong>Paço de Vendas Novas:</strong> O Paço de Vendas Novas, mandado construir no século XVIII por D. José I como pavilhão de caça, é um dos principais marcos históricos da vila.</li>
  
@@ -1480,7 +1480,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, numa paisagem de planície agrícola.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Central, pertencente ao distrito de Évora, situado no sul-sudoeste do distrito numa paisagem de planície agrícola.</li>
  
       <li><strong>Castelo:</strong> O castelo de Viana do Alentejo, de estilo gótico com influências manuelinas, distingue-se pelas ameias em forma de escamas, um caso único em Portugal.</li>
  
@@ -1581,7 +1581,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Ansião1.png",
     "./images/Concelhos/Ansião2.png",
     "./images/Concelhos/Ansião3.png",
-    "./images/Concelhos/Ansião4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1623,7 +1622,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Bombarral1.png",
     "./images/Concelhos/Bombarral2.png",
     "./images/Concelhos/Bombarral3.png",
-    "./images/Concelhos/Bombarral4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -1658,13 +1656,13 @@ export const dadosConcelhos = {
  
 "Castanheira de Pera": {
     imagens: [
-    "./images/Concelhos/Castanheira de Pêra1.png",
-    "./images/Concelhos/Castanheira de Pêra2.png",
-    "./images/Concelhos/Castanheira de Pêra3.png",
+    "./images/Concelhos/Castanheira de Pera1.png",
+    "./images/Concelhos/Castanheira de Pera2.png",
+    "./images/Concelhos/Castanheira de Pera3.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Leiria, integrado na sub-região da Região de Leiria, na zona serrana próxima da Serra da Lousã.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do interior do distrito de Leiria, integrado na sub-região da Região de Leiria, situado no extremo nordeste do distrito na zona serrana próxima da Serra da Lousã.</li>
  
       <li><strong>Floresta:</strong> A economia do concelho esteve historicamente ligada à exploração florestal, nomeadamente ao pinhal e à indústria da madeira e da resina.</li>
  

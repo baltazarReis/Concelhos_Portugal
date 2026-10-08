@@ -270,6 +270,35 @@ svg path.pular:hover {
   transform: scale(1.03);
 }
 
+.instrucoes-controlo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;            /* Espaço entre as duas instruções */
+  margin-top: 30px;      /* Distância em relação ao botão de Iniciar */
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee; /* Linha subtil a separar do botão */
+}
+
+.item-instrucao {
+  display: flex;
+  align-items: center;
+  gap: 10px;            /* Espaço entre o ícone e o texto */
+}
+
+.item-instrucao img {
+  width: 40px;          /* Ajusta a altura/largura dos ícones */
+  height: auto;
+  object-fit: contain;
+}
+
+.item-instrucao span {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 500;
+  text-align: left;
+}
+
 /* ==========================================
    PAINEL DE FIM DE JOGO (Lateral Direito)
    ========================================== */
