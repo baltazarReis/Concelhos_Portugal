@@ -1933,7 +1933,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Benavente1.png",
     "./images/Concelhos/Benavente3.png",
-    "./images/Concelhos/Benavente4.png",
+    "./images/Concelhos/Benavente2.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -2267,14 +2267,14 @@ export const dadosConcelhos = {
 
 "Alter do Chão": {
     imagens: [
-    "./images/Concelhos/AlterDoChao1.png",
-    "./images/Concelhos/AlterDoChao2.png",
-    "./images/Concelhos/AlterDoChao3.png",
-    "./images/Concelhos/AlterDoChao4.png",
+    "./images/Concelhos/Alter do Chão1.png",
+    "./images/Concelhos/Alter do Chão2.png",
+    "./images/Concelhos/Alter do Chão3.png",
+    "./images/Concelhos/Alter do Chão4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona ocidental do distrito, numa paisagem de planície e montado.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no centro do distrito, numa paisagem de planície e montado.</li>
 
       <li><strong>Alter Real:</strong> A Coudelaria de Alter, fundada em 1748 por D. João V, é uma das instituições mais antigas ligadas à criação de cavalos em Portugal. A raça Lusitana e a tradição equestre estão fortemente associadas ao concelho.</li>
 
@@ -2296,9 +2296,11 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertence ao distrito de Portalegre, situado no nordeste do distrito e faz fronteira com Espanha.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertence ao distrito de Portalegre, situado no este-sudeste do distrito e faz fronteira com Espanha.</li>
 
       <li><strong>Castelo e Fronteira:</strong> A posição fronteiriça de Arronches contribuiu para a construção e reforço das suas fortificações. A vila conserva vestígios das antigas muralhas e do castelo.</li>
+
+      <li><strong>Pinturas Rupestres da Lapa dos Gaivões:</strong> A Lapa dos Gaivões é um abrigo rochoso com pinturas rupestres pré-históricas, executadas sobretudo com ocre vermelho. As pinturas representam figuras humanas, animais e outros motivos esquemáticos, testemunhando a presença de comunidades agro-pastoris na região há vários milénios.</li>
 
       <li><strong>Serra de São Mamede:</strong> Parte do território integra a paisagem da Serra de São Mamede, com relevo mais acentuado, montado e áreas florestais.</li>
 
@@ -2310,13 +2312,13 @@ export const dadosConcelhos = {
 "Avis": {
     imagens: [
     "./images/Concelhos/Avis1.png",
-    "./images/Concelhos/Avis2.png",
+    "./images/Concelhos/Avis2.jpeg",
     "./images/Concelhos/Avis3.png",
     "./images/Concelhos/Avis4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona ocidental do distrito, numa paisagem de montado e albufeiras.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona sul-sudoeste do distrito, numa paisagem de montado e albufeiras.</li>
 
       <li><strong>Ordem de Avis:</strong> A vila está intimamente ligada à Ordem de Avis, ordem militar criada no contexto da Reconquista e que viria a dar nome à dinastia iniciada por D. João I.</li>
 
@@ -2331,10 +2333,10 @@ export const dadosConcelhos = {
 
 "Campo Maior": {
     imagens: [
-    "./images/Concelhos/CampoMaior1.png",
-    "./images/Concelhos/CampoMaior2.png",
-    "./images/Concelhos/CampoMaior3.png",
-    "./images/Concelhos/CampoMaior4.png",
+    "./images/Concelhos/Campo Maior1.png",
+    "./images/Concelhos/Campo Maior2.png",
+    "./images/Concelhos/Campo Maior3.png",
+    "./images/Concelhos/Campo Maior4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -2353,14 +2355,14 @@ export const dadosConcelhos = {
 
 "Castelo de Vide": {
     imagens: [
-    "./images/Concelhos/CasteloDeVide1.png",
-    "./images/Concelhos/CasteloDeVide2.png",
-    "./images/Concelhos/CasteloDeVide3.png",
-    "./images/Concelhos/CasteloDeVide4.png",
+    "./images/Concelhos/Castelo de Vide1.png",
+    "./images/Concelhos/Castelo de Vide2.png",
+    "./images/Concelhos/Castelo de Vide3.png",
+    "./images/Concelhos/Castelo de Vide4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na Serra de São Mamede e fazendo fronteira com Espanha.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no norte-nordeste do distrito, na Serra de São Mamede e fazendo fronteira com Espanha.</li>
 
       <li><strong>Castelo e Vila Medieval:</strong> O castelo e as muralhas dominam a parte alta da vila, que conserva um núcleo medieval com ruas estreitas e casas tradicionais.</li>
 
@@ -2380,7 +2382,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado entre a planície alentejana e as primeiras elevações da Serra de São Mamede.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no interior norte do distrito entre a planície alentejana e as primeiras elevações da Serra de São Mamede.</li>
 
       <li><strong>Ordem do Hospital:</strong> O Crato foi durante séculos um dos principais centros da Ordem do Hospital em Portugal. A ordem estabeleceu aqui a sua sede e deixou um importante património religioso e militar.</li>
 
@@ -2395,12 +2397,12 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Elvas1.png",
     "./images/Concelhos/Elvas2.png",
-    "./images/Concelhos/Elvas3.png",
+    "./images/Concelhos/Elvas3.jpg",
     "./images/Concelhos/Elvas4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertence ao distrito de Portalegre e faz fronteira com Espanha, em frente a Badajoz. A posição tornou Elvas uma das principais praças militares de Portugal.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertence ao distrito de Portalegre, situado no extremo sul-sudeste do distrito e faz fronteira com Espanha, em frente a Badajoz. A posição tornou Elvas uma das principais praças militares de Portugal.</li>
 
       <li><strong>Fortificações:</strong> Elvas possui um dos maiores e mais completos sistemas de fortificações abaluartadas do mundo. O conjunto inclui as muralhas, o Forte de Santa Luzia, o Forte da Graça e vários fortins.</li>
 
@@ -2422,7 +2424,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona central do distrito, numa paisagem de planície, montado e olival.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no interior sul do distrito, numa paisagem de planície, montado e olival.</li>
 
       <li><strong>Batalha dos Atoleiros:</strong> Em 1384, D. Nuno Álvares Pereira derrotou uma força castelhana na Batalha dos Atoleiros, travada nas proximidades da vila. A batalha foi uma das primeiras vitórias portuguesas durante a crise de 1383–1385.</li>
 
@@ -2437,14 +2439,14 @@ export const dadosConcelhos = {
 
 "Gavião": {
     imagens: [
-    "./images/Concelhos/Gaviao1.png",
-    "./images/Concelhos/Gaviao2.png",
-    "./images/Concelhos/Gaviao3.png",
-    "./images/Concelhos/Gaviao4.png",
+    "./images/Concelhos/Gavião1.png",
+    "./images/Concelhos/Gavião2.png",
+    "./images/Concelhos/Gavião3.png",
+    "./images/Concelhos/Gavião4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado junto ao rio Tejo e às áreas florestais do norte do Alentejo.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no norte-noroeste junto ao rio Tejo e às áreas florestais do norte do Alentejo.</li>
 
       <li><strong>Castelo de Belver:</strong> O Castelo de Belver foi construído no século XII pela Ordem dos Hospitalários para defender a passagem do Tejo. A fortificação ocupa uma posição elevada sobre o rio.</li>
 
@@ -2459,14 +2461,14 @@ export const dadosConcelhos = {
 
 "Marvão": {
     imagens: [
-    "./images/Concelhos/Marvao1.png",
-    "./images/Concelhos/Marvao2.png",
-    "./images/Concelhos/Marvao3.png",
-    "./images/Concelhos/Marvao4.png",
+    "./images/Concelhos/Marvão1.jpg",
+    "./images/Concelhos/Marvão2.png",
+    "./images/Concelhos/Marvão3.png",
+    "./images/Concelhos/Marvão4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no alto da Serra de São Mamede e fazendo fronteira com Espanha.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no noroeste do distrito no alto da Serra de São Mamede e fazendo fronteira com Espanha.</li>
 
       <li><strong>Castelo de Marvão:</strong> O castelo domina a vila a partir de uma posição muito elevada e foi uma das principais fortificações da fronteira alentejana. As muralhas envolvem grande parte do núcleo histórico.</li>
 
@@ -2483,12 +2485,12 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Monforte1.png",
     "./images/Concelhos/Monforte2.png",
-    "./images/Concelhos/Monforte3.png",
+    "./images/Concelhos/Monforte3.jpeg",
     "./images/Concelhos/Monforte4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado numa zona de planície entre Portalegre e Elvas.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no sul-sudeste do distrito numa zona de planície entre Portalegre e Elvas.</li>
 
       <li><strong>Villa Romana de Torre de Palma:</strong> Torre de Palma foi uma importante propriedade rural romana. O complexo inclui uma villa monumental, uma basílica paleocristã e um baptistério, constituindo um dos principais sítios arqueológicos romanos do Alentejo.</li>
 
@@ -2508,7 +2510,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado junto ao rio Tejo e fazendo fronteira com Espanha através do território de Montalvão.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no extremo norte do distrito junto ao rio Tejo e fazendo fronteira com Espanha através do território de Montalvão.</li>
 
       <li><strong>Serra de São Miguel:</strong> A vila de Nisa encontra-se numa zona de relevo suave junto às formações da Serra de São Miguel, com paisagens de montado, olival e floresta.</li>
 
@@ -2523,14 +2525,14 @@ export const dadosConcelhos = {
 
 "Ponte de Sor": {
     imagens: [
-    "./images/Concelhos/PonteDeSor1.png",
-    "./images/Concelhos/PonteDeSor2.png",
-    "./images/Concelhos/PonteDeSor3.png",
-    "./images/Concelhos/PonteDeSor4.png",
+    "./images/Concelhos/Ponte de Sor1.png",
+    "./images/Concelhos/Ponte de Sor2.png",
+    "./images/Concelhos/Ponte de Sor3.png",
+    "./images/Concelhos/Ponte de Sor4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado na zona ocidental do distrito, atravessado pela Ribeira de Sor.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no oeste do distrito, atravessado pela Ribeira de Sor.</li>
 
       <li><strong>Ponte e História:</strong> O nome da cidade está ligado à antiga ponte sobre a Ribeira de Sor, provavelmente de origem romana. A localização junto a esta passagem contribuiu para o desenvolvimento da povoação.</li>
 
@@ -2552,7 +2554,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Capital do distrito de Portalegre e principal cidade do Alto Alentejo, situada nas encostas da Serra de São Mamede, numa zona de relevo mais acentuado e clima relativamente húmido.</li>
+      <li><strong>Localização e Geografia:</strong> Capital do distrito de Portalegre, situado no leste e interior do distrito nas encostas da Serra de São Mamede, fazendo fronteira com Espanha.</li>
 
       <li><strong>Castelo e Cidade Medieval:</strong> O Castelo de Portalegre domina a parte alta da cidade e conserva parte das antigas muralhas. A cidade medieval desenvolveu-se em torno desta fortificação e de uma segunda linha de defesa.</li>
 
@@ -2570,11 +2572,10 @@ export const dadosConcelhos = {
     "./images/Concelhos/Sousel1.png",
     "./images/Concelhos/Sousel2.png",
     "./images/Concelhos/Sousel3.png",
-    "./images/Concelhos/Sousel4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no extremo sudoeste do distrito, numa paisagem de planície, montado e olival.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no extremo sul do distrito, numa paisagem de planície, montado e olival.</li>
 
       <li><strong>Olival e Azeite:</strong> A olivicultura é uma das principais actividades agrícolas do concelho. A paisagem é marcada por extensos olivais e a produção de azeite constitui uma tradição local.</li>
 
