@@ -2603,7 +2603,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito de Castelo Branco. O território combina áreas de montanha, vales agrícolas e pequenas povoações históricas.</li>
 
-      <li><strong>Pedro Álvares Cabral:</strong> Belmonte é tradicionalmente associado a Pedro Álvares Cabral, comandante da armada portuguesa que chegou ao Brasil em 1500. A família dos Cabrais esteve profundamente ligada à vila, cujo castelo foi transformado em residência senhorial.</li>
+      <li><strong>Pedro Álvares Cabral:</strong> Belmonte é tradicionalmente associado a Pedro Álvares Cabral, comandante da armada Portuguesa que chegou ao Brasil em 1500. A família dos Cabrais esteve profundamente ligada à vila, cujo castelo foi transformado em residência senhorial.</li>
 
       <li><strong>Castelo e História Medieval:</strong> O Castelo de Belmonte foi construído no século XIII e integrou a linha defensiva do vale do Côa. A posição fronteiriça da região conferiu-lhe importância militar durante os conflitos com Leão e Castela.</li>
 
@@ -2634,7 +2634,7 @@ export const dadosConcelhos = {
 
 "Covilhã": {
     imagens: [
-    "./images/Concelhos/Covilhã1.png",
+    "./images/Concelhos/Covilhã1.jpg",
     "./images/Concelhos/Covilhã2.png",
     "./images/Concelhos/Covilhã3.png",
     "./images/Concelhos/Covilhã4.png",
@@ -2643,7 +2643,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da região das Beiras e Serra da Estrela, pertencente ao distrito de Castelo Branco e situado na encosta sudeste da Serra da Estrela. O território sobe desde o vale da Cova da Beira até às áreas montanhosas da serra.</li>
 
-      li><strong>Serra da Estrela:</strong> O concelho ocupa uma parte importante da vertente ocidental da Serra da Estrela, estendendo-se até ao planalto da Torre, o ponto mais elevado de Portugal continental. O concelho inclui áreas do Parque Natural da Serra da Estrela e paisagens de montanha marcadas pela altitude.</li>
+      <li><strong>Serra da Estrela:</strong> O concelho ocupa uma parte importante da vertente ocidental da Serra da Estrela, estendendo-se até ao planalto da Torre, o ponto mais elevado de Portugal continental. O concelho inclui áreas do Parque Natural da Serra da Estrela e paisagens de montanha marcadas pela altitude.</li>
 
       <li><strong>Lanifícios:</strong> A Covilhã desenvolveu desde a Idade Média uma forte tradição na produção de lã e tecidos. No século XVIII, o Marquês de Pombal criou a Real Fábrica de Panos, reforçando a importância da cidade como principal centro português de lanifícios.</li>
 
@@ -2722,10 +2722,10 @@ export const dadosConcelhos = {
 
 "Penamacor": {
     imagens: [
-    "./images/Concelhos/Penamacor1.png",
+    "./images/Concelhos/Penamacor1.jpg",
     "./images/Concelhos/Penamacor2.png",
     "./images/Concelhos/Penamacor3.png",
-    "./images/Concelhos/Penamacor4.png",
+    "./images/Concelhos/Penamacor4.jpeg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -2745,7 +2745,7 @@ export const dadosConcelhos = {
 "Proença-a-Nova": {
     imagens: [
     "./images/Concelhos/Proença-a-Nova1.png",
-    "./images/Concelhos/Proença-a-Nova2.png",
+    "./images/Concelhos/Proença-a-Nova2.webp",
     "./images/Concelhos/Proença-a-Nova3.png",
     "./images/Concelhos/Proença-a-Nova4.png",
     ],
