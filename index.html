@@ -11,23 +11,43 @@
 
   <!-- INÍCIO: MENU INICIAL -->
   <div id="menu-inicial">
-    <div class="caixa-menu">
-      <h1>Concelhos de Portugal</h1>
-      <p>Identifica os 308 concelhos de Portugal no mapa.</p>
-      <button id="btn-iniciar" class="btn-start">Iniciar Jogo</button>
+    <div id="menu-layout">
 
-      <!-- Instruções de Controlo (Lado a Lado) -->
-      <div class="instrucoes-controlo">
-        <div class="item-instrucao">
-          <img src="images/Ícones/mouse.png" alt="Botão direito">
-          <span>Arrastar com botão direito</span>
+      <div class="caixa-menu">
+        <h1>Concelhos de Portugal</h1>
+        <p id="menu-descricao">Identifica os 308 concelhos de Portugal no mapa.</p>
+
+        <div class="botoes-menu">
+          <button id="btn-iniciar" class="btn-start">Iniciar Jogo</button>
+          <button id="btn-distritos" class="btn-distritos" aria-expanded="false" aria-controls="painel-distritos">Escolher distritos</button>
         </div>
-        <div class="item-instrucao">
-          <img src="images/Ícones/scroll.png" alt="Scroll do rato">
-          <span>Zoom com scroll</span>
+
+        <!-- Instruções de Controlo (Lado a Lado) -->
+        <div class="instrucoes-controlo">
+          <div class="item-instrucao">
+            <img src="images/Ícones/mouse.png" alt="Botão direito">
+            <span>Arrastar com botão direito</span>
+          </div>
+          <div class="item-instrucao">
+            <img src="images/Ícones/scroll.png" alt="Scroll do rato">
+            <span>Zoom com scroll</span>
+          </div>
         </div>
       </div>
-      
+
+      <!-- Painel lateral: seleção dos distritos (aberto pelo botão "Escolher distritos") -->
+      <aside id="painel-distritos" class="escondido" aria-label="Seleção de distritos">
+        <h2>Distritos do quiz</h2>
+        <p class="explicacao-distritos">
+          Seleciona os distritos (e regiões autónomas) que vão estar presentes no quiz.
+          Só serão perguntados os concelhos dos que estiverem marcados; os restantes
+          ficam a cinzento no mapa e não contam para as tentativas.
+        </p>
+        <!-- Checkboxes geradas dinamicamente pelo JS a partir do map_distrito_concelhos -->
+        <div id="lista-distritos-selecao" role="group" aria-label="Distritos"></div>
+        <p id="resumo-selecao"></p>
+      </aside>
+
     </div>
   </div>
   <!-- FIM: MENU INICIAL -->
@@ -2570,6 +2590,7 @@
     <p><strong>Pontuação:</strong> <span id="fim-pontuacao">0/308</span></p>
     <p><strong>Tempo:</strong> <span id="fim-tempo">00:00</span></p>
     <p><strong>Tentativas:</strong> <span id="fim-tentativas">0</span></p>
+    <p><strong>Pontaria:</strong> <span id="fim-pontaria">0</span></p>
   </div>
 
   <div class="caixa-distritos-scroll" id="lista-distritos-resumo">

@@ -975,3 +975,203 @@ svg path.pular:hover {
 .seta-direita {
   right: -75px;
 }
+
+/* ==========================================
+   CONCELHOS FORA DO JOGO (distrito não selecionado)
+   ========================================== */
+:root {
+  --cor-fora-jogo: #c9c9c9; /* Cinzento claro: destaca-se do tom quente do mapa e dos estados verde/laranja/vermelho */
+}
+
+svg path.fora-do-jogo,
+svg path.fora-do-jogo:hover {
+  fill: var(--cor-fora-jogo) !important;
+  cursor: default !important;
+}
+
+/* ==========================================
+   MENU INICIAL: botão + painel de distritos
+   ========================================== */
+#menu-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 96vw;
+}
+
+#menu-layout .caixa-menu {
+  width: 540px;
+  max-width: 100%;
+  flex: 0 1 540px;
+}
+
+.botoes-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn-start:disabled {
+  background-color: #b5b5b5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-distritos {
+  padding: 13px 22px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.btn-distritos:hover {
+  background-color: #eef2f5;
+  transform: scale(1.03);
+}
+
+.btn-distritos.ativo {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+#painel-distritos {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  flex: 0 0 330px;
+  max-height: 80vh;
+  background: #ffffff;
+  padding: 26px 22px 18px;
+  border-radius: 15px;
+  box-shadow: 0 13px 30px rgba(0, 0, 0, 0.3);
+  animation: painelDistritosEntrar 0.22s ease-out;
+}
+
+@keyframes painelDistritosEntrar {
+  from { opacity: 0; transform: translateX(-14px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+#painel-distritos h2 {
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-size: 22px;
+  text-align: center;
+}
+
+.explicacao-distritos {
+  margin-bottom: 14px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#lista-distritos-selecao {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+}
+
+.linha-distrito {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  font-size: 16px;
+  color: #2c3e50;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.linha-distrito:last-child {
+  border-bottom: none;
+}
+
+.linha-distrito:hover {
+  background-color: #f4f8f5;
+}
+
+.linha-distrito input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  accent-color: #27ae60;
+  cursor: pointer;
+}
+
+.linha-distrito .nome-distrito {
+  flex: 1 1 auto;
+}
+
+.linha-distrito .n-concelhos {
+  font-size: 13px;
+  color: #999999;
+}
+
+/* "Todos os distritos" fica sempre visível no topo da lista scrollable */
+.linha-todos {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-weight: 700;
+  background-color: #f4f8f5;
+  border-bottom: 2px solid #dfe9e2;
+}
+
+#resumo-selecao {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #27ae60;
+  text-align: center;
+}
+
+#resumo-selecao.vazio {
+  color: var(--cor-pular);
+}
+
+@media (max-width: 768px) {
+  #menu-inicial {
+    overflow-y: auto;
+    align-items: flex-start;
+  }
+
+  #menu-layout {
+    flex-direction: column;
+    width: 92%;
+    margin: auto;
+    padding: 16px 0;
+  }
+
+  #menu-layout .caixa-menu {
+    width: 100%;
+    flex: 0 0 auto;
+    max-height: none;
+  }
+
+  #painel-distritos {
+    width: 100%;
+    flex: 0 0 auto;
+    max-height: none;
+  }
+
+  #lista-distritos-selecao {
+    max-height: 42vh;
+  }
+
+  .btn-distritos {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+}

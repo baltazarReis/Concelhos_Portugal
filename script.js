@@ -1,15 +1,20 @@
 import { map_distrito_concelhos } from './concelhos_map.js';
 import { dadosConcelhos } from './info_concelhos.js';
 
-// Lista completa dos 308 concelhos
-// para debug num distrito usar isto: 
-// map_distrito_concelhos.get('Santarém') || []; //
-const listaConcelhos = Array.from(map_distrito_concelhos.values()).flatMap(lista => lista);
+// Concelhos em jogo: calculados no arranque a partir dos distritos escolhidos
+// no menu inicial. Para debug num só distrito, abre "Escolher distritos",
+// desmarca "Todos os distritos" e marca apenas esse.
+let listaConcelhos = [];
+let totalConcelhos = 0;
+
+// Distritos selecionados no menu inicial (por omissão, todos)
+let distritosSelecionados = new Set(map_distrito_concelhos.keys());
 
 let concelhosRestantes = [];
 let concelhoAtual = null;
 let pontuacao = 0;
 let errosNoConcelhoAtual = 0;
+let tentativasCerteiras = 0;
 let tentativasTotais = 0;
 let tempoSegundos = 0;
 let intervaloTimer = null;
@@ -60,6 +65,13 @@ const elTooltip = document.getElementById("tooltip-concelho");
 
 const menuInicial = document.getElementById("menu-inicial");
 const btnIniciar = document.getElementById("btn-iniciar");
+const elMenuDescricao = document.getElementById("menu-descricao");
+
+// Elementos da seleção de distritos (menu inicial)
+const btnDistritos = document.getElementById("btn-distritos");
+const painelDistritos = document.getElementById("painel-distritos");
+const elListaSelecao = document.getElementById("lista-distritos-selecao");
+const elResumoSelecao = document.getElementById("resumo-selecao");
 
 // Elementos Fim de Jogo
 const painelTopRight = document.querySelector(".painel-top-right");
@@ -67,6 +79,7 @@ const painelFimJogo = document.getElementById("painel-fim-jogo");
 const elFimPontuacao = document.getElementById("fim-pontuacao");
 const elFimTempo = document.getElementById("fim-tempo");
 const elFimTentativas = document.getElementById("fim-tentativas");
+const elFimPontaria = document.getElementById("fim-pontaria");
 const elListaDistritos = document.getElementById("lista-distritos-resumo");
 const btnReiniciar = document.getElementById("btn-reiniciar");
 
@@ -99,7 +112,18 @@ window.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("contextmenu", (e) => e.preventDefault());
   configurarZoomEPan();
 
+  construirListaDistritos();
+  atualizarMenuSelecao();
+
+  // Abre/fecha o painel lateral de distritos (o menu de início mantém-se aberto)
+  btnDistritos.addEventListener("click", () => {
+    const aberto = painelDistritos.classList.toggle("escondido") === false;
+    btnDistritos.setAttribute("aria-expanded", String(aberto));
+    btnDistritos.classList.toggle("ativo", aberto);
+  });
+
   btnIniciar.addEventListener("click", () => {
+    if (distritosSelecionados.size === 0) return;
     menuInicial.classList.add("escondido");
     iniciarJogoDirecto();
   });
@@ -111,10 +135,114 @@ window.addEventListener("DOMContentLoaded", () => {
 // FIM: EVENTO DE REINICIAR (RELOAD DA PÁGINA)
 });
 
+// INÍCIO: SELEÇÃO DE DISTRITOS (MENU INICIAL)
+let checkboxTodos = null;
+const checkboxesDistritos = new Map(); // distrito -> <input>
+
+function contarConcelhosSelecionados() {
+  let total = 0;
+  distritosSelecionados.forEach(distrito => {
+    total += (map_distrito_concelhos.get(distrito) || []).length;
+  });
+  return total;
+}
+
+function criarLinhaDistrito(nome, nConcelhos, classeExtra = "") {
+  const label = document.createElement("label");
+  label.className = `linha-distrito ${classeExtra}`.trim();
+
+  const input = document.createElement("input");
+  input.type = "checkbox";
+  input.checked = true;
+
+  const spanNome = document.createElement("span");
+  spanNome.className = "nome-distrito";
+  spanNome.textContent = nome;
+
+  label.append(input, spanNome);
+
+  if (nConcelhos !== null) {
+    const spanN = document.createElement("span");
+    spanN.className = "n-concelhos";
+    spanN.textContent = nConcelhos;
+    label.appendChild(spanN);
+  }
+
+  return { label, input };
+}
+
+function construirListaDistritos() {
+  elListaSelecao.innerHTML = "";
+  checkboxesDistritos.clear();
+
+  // Checkbox mestre: "Todos os distritos" (selecionada por omissão)
+  const todos = criarLinhaDistrito("Todos os distritos", null, "linha-todos");
+  checkboxTodos = todos.input;
+  checkboxTodos.addEventListener("change", () => {
+    distritosSelecionados = checkboxTodos.checked
+      ? new Set(map_distrito_concelhos.keys())
+      : new Set();
+    checkboxesDistritos.forEach(input => { input.checked = checkboxTodos.checked; });
+    atualizarMenuSelecao();
+  });
+  elListaSelecao.appendChild(todos.label);
+
+  // Uma checkbox por distrito / região autónoma (ordem do map_distrito_concelhos)
+  map_distrito_concelhos.forEach((concelhos, distrito) => {
+    const linha = criarLinhaDistrito(distrito, concelhos.length);
+    linha.input.addEventListener("change", () => {
+      if (linha.input.checked) distritosSelecionados.add(distrito);
+      else distritosSelecionados.delete(distrito);
+
+      // Se alguma for desmarcada, "Todos os distritos" desmarca; se todas voltarem, marca
+      checkboxTodos.checked = distritosSelecionados.size === map_distrito_concelhos.size;
+      atualizarMenuSelecao();
+    });
+    checkboxesDistritos.set(distrito, linha.input);
+    elListaSelecao.appendChild(linha.label);
+  });
+}
+
+function atualizarMenuSelecao() {
+  const nConcelhos = contarConcelhosSelecionados();
+  const todosSelecionados = distritosSelecionados.size === map_distrito_concelhos.size;
+
+  btnIniciar.disabled = nConcelhos === 0;
+
+  if (nConcelhos === 0) {
+    elMenuDescricao.textContent = "Seleciona pelo menos um distrito para poderes jogar.";
+    elResumoSelecao.textContent = "Nenhum distrito selecionado";
+  } else {
+    elMenuDescricao.textContent = todosSelecionados
+      ? `Identifica os ${nConcelhos} concelhos de Portugal no mapa.`
+      : `Identifica os ${nConcelhos} concelhos dos distritos selecionados no mapa.`;
+    elResumoSelecao.textContent =
+      `${distritosSelecionados.size} de ${map_distrito_concelhos.size} selecionados · ${nConcelhos} concelhos`;
+  }
+  elResumoSelecao.classList.toggle("vazio", nConcelhos === 0);
+}
+
+// Pinta a cinzento os concelhos cujo distrito não foi selecionado
+function marcarConcelhosForaDoJogo() {
+  const emJogo = new Set(listaConcelhos);
+  document.querySelectorAll("svg path[data-concelho]").forEach(path => {
+    path.classList.toggle("fora-do-jogo", !emJogo.has(path.getAttribute("data-concelho")));
+  });
+}
+// FIM: SELEÇÃO DE DISTRITOS (MENU INICIAL)
+
 function iniciarJogoDirecto() {
+  // Só os concelhos dos distritos selecionados entram no jogo
+  listaConcelhos = Array.from(map_distrito_concelhos.entries())
+    .filter(([distrito]) => distritosSelecionados.has(distrito))
+    .flatMap(([, lista]) => lista);
+  totalConcelhos = listaConcelhos.length;
+  marcarConcelhosForaDoJogo();
+
   concelhosRestantes = [...listaConcelhos];
   pontuacao = 0;
   tentativasTotais = 0;
+  tentativasCerteiras = 0;
   tempoSegundos = 0;
   
   // Inicializa contador por distrito
@@ -144,7 +272,7 @@ function proximoConcelho() {
   concelhoAtual = concelhosRestantes.splice(indiceAleatorio, 1)[0];
   
   elNomeConcelho.textContent = concelhoAtual;
-  elPontuacao.textContent = `${pontuacao}/308`;
+  elPontuacao.textContent = `${pontuacao}/${totalConcelhos}`;
   elTentativas.textContent = tentativasTotais;
 }
 
@@ -156,12 +284,13 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
     const elClicado = e.target;
 
     // Ignora cliques em concelhos já respondidos (acertados ou passados à
-    // frente): não deve contar como tentativa nem interferir com o som
-    // que estiver a tocar.
+    // frente) e em concelhos fora do jogo (distrito não selecionado): não
+    // deve contar como tentativa nem interferir com o som que estiver a tocar.
     if (
       elClicado.classList.contains("correto") ||
       elClicado.classList.contains("com-erros") ||
-      elClicado.classList.contains("pular")
+      elClicado.classList.contains("pular") ||
+      elClicado.classList.contains("fora-do-jogo")
     ) {
       return;
     }
@@ -173,6 +302,7 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
     if (concelhoClicado === concelhoAtual) {
       fecharPainelAjuda();
       tocarSom(somAcerto, 2000);
+      tentativasCerteiras++;
       
       // Procura o distrito pertencente
       let distritoDoConcelho = null;
@@ -205,7 +335,8 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
     const el = e.target;
     const jaFoiSelecionado = el.classList.contains("correto") || 
                              el.classList.contains("com-erros") || 
-                             el.classList.contains("pular");
+                             el.classList.contains("pular") ||
+                             el.classList.contains("fora-do-jogo");
 
     if (jaFoiSelecionado && elTooltip) {
       elTooltip.textContent = el.getAttribute("data-concelho");
@@ -234,7 +365,7 @@ function processarFimDeJogada() {
 
   // Avalia se a lista esgotou DEPOIS de processar a jogada atual
   if (!concelhoAtual) {
-    elPontuacao.textContent = `${pontuacao}/308`;
+    elPontuacao.textContent = `${pontuacao}/${totalConcelhos}`;
     elNomeConcelho.textContent = "Fim do Jogo!";
     finalizarJogo();
   }
@@ -270,15 +401,18 @@ function finalizarJogo() {
   painelTopRight.classList.add("escondido");
   painelFimJogo.classList.remove("escondido");
 
-  elFimPontuacao.textContent = `${pontuacao}/308 - ${Math.round((pontuacao / 308) * 100)}%`;
+  elFimPontuacao.textContent = `${pontuacao}/${totalConcelhos} - ${Math.round((pontuacao / totalConcelhos) * 100)}%`;
   elFimTempo.textContent = elTimer.textContent;
   elFimTentativas.textContent = tentativasTotais;
+  elFimPontaria.textContent = Math.floor(tentativasCerteiras/tentativasTotais * 100) + "%";
 
   // Limpa a lista
   elListaDistritos.innerHTML = "";
   
   // 1. Mapeia os dados de cada distrito para um array com a percentagem calculada
-  const resumoDistritos = Array.from(map_distrito_concelhos.entries()).map(([distrito, concelhos]) => {
+  const resumoDistritos = Array.from(map_distrito_concelhos.entries())
+    .filter(([distrito]) => distritosSelecionados.has(distrito))
+    .map(([distrito, concelhos]) => {
     const totalConcelhosDistrito = concelhos.length;
     const acertos = acertosPorDistrito[distrito] || 0;
     const percentagem = Math.round((acertos / totalConcelhosDistrito) * 100);

@@ -2900,7 +2900,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Monção1.png",
     "./images/Concelhos/Monção2.png",
-    "./images/Concelhos/Monção3.png",
+    "./images/Concelhos/Monção3.jpg",
     "./images/Concelhos/Monção4.png",
     ],
     pistas:`
@@ -2984,7 +2984,7 @@ export const dadosConcelhos = {
 
 "Valença": {
     imagens: [
-    "./images/Concelhos/Valença1.png",
+    "./images/Concelhos/Valença1.jpg",
     "./images/Concelhos/Valença2.png",
     "./images/Concelhos/Valença3.png",
     "./images/Concelhos/Valença4.png",
