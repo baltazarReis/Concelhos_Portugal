@@ -3077,7 +3077,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Ponta Delgada1.png",
     "./images/Concelhos/Ponta Delgada2.png",
     "./images/Concelhos/Ponta Delgada3.png",
-    "./images/Concelhos/Ponta Delgada4.png",
+    "./images/Concelhos/Ponta Delgada4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -3239,11 +3239,11 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa oriental da ilha Terceira. A cidade desenvolveu-se junto a uma das maiores baías naturais dos Açores.</li>
 
+      <li><strong>Contaminação Ambiental da Base das Lajes:</strong> A utilização militar da Base das Lajes, na ilha Terceira, esteve associada à contaminação de solos e águas subterrâneas no concelho da Praia da Vitória, nomeadamente por metais pesados. O problema é conhecido há décadas e tem suscitado críticas à lentidão da descontaminação, à falta de transparência e à resposta dos governos Portugueses perante a negligência e falta de preocupação dos Estados Unidos. Em 2026, uma investigação revelou concentrações elevadas de metais pesados em esqueletos provenientes do cemitério da Praia da Vitória, levantando novas preocupações sobre a exposição histórica da população. Embora o Governo tenha anunciado financiamento para novas captações e redes de abastecimento de água, continuam a ser exigidos dados ambientais e epidemiológicos independentes e a divulgação integral dos resultados. O caso tornou-se um símbolo da contestação local à insuficiência da resposta política e à alegada falta de escrutínio público sobre os impactos da presença militar norte-americana.</li>
+
       <li><strong>Batalha da Praia da Vitória:</strong> Em 11 de agosto de 1829, a baía da então Vila da Praia foi palco de um combate entre forças liberais e uma esquadra miguelista que tentou desembarcar tropas na Terceira. A derrota miguelista foi um momento importante das Guerras Liberais e esteve na origem do título de Praia da Vitória.</li>
 
       <li><strong>Forte de Santa Catarina:</strong> A fortificação domina a baía e fazia parte do sistema defensivo construído para proteger a povoação e o seu porto.</li>
-
-      <li><strong>Praia:</strong> A cidade possui uma das maiores praias de areia da Terceira, protegida pela baía, característica pouco comum nas ilhas açorianas.</li>
 
       <li><strong>Base das Lajes:</strong> A freguesia das Lajes alberga a Base das Lajes, importante instalação militar e aeroporto internacional que desempenhou um papel estratégico nas ligações aéreas do Atlântico.</li>
     </ul>
@@ -3296,10 +3296,10 @@ export const dadosConcelhos = {
 
 "Calheta (Açores)": {
     imagens: [
-    "./images/Concelhos/Calheta1.png",
-    "./images/Concelhos/Calheta2.png",
-    "./images/Concelhos/Calheta3.png",
-    "./images/Concelhos/Calheta4.png",
+    "./images/Concelhos/Calheta (Açores)1.png",
+    "./images/Concelhos/Calheta (Açores)2.png",
+    "./images/Concelhos/Calheta (Açores)3.png",
+    "./images/Concelhos/Calheta (Açores)4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -3317,7 +3317,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Lajes do Pico1.png",
     "./images/Concelhos/Lajes do Pico2.png",
     "./images/Concelhos/Lajes do Pico3.png",
-    "./images/Concelhos/Lajes do Pico4.png",
+    "./images/Concelhos/Lajes do Pico4.webp",
     ],
     pistas:`
     <ul class="lista-pistas">

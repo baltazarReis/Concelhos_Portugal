@@ -678,6 +678,14 @@ svg path.fora-do-jogo:hover {
   transition: transform 0.2s ease;
 }
 
+/* Estilização da lista de pistas */
+.lista-pistas {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
 .lista-pistas li {
   font-size: 0.95rem;
   line-height: 1.5;
@@ -842,7 +850,7 @@ svg path.fora-do-jogo:hover {
 
   .caixa-hud:has(#nome-concelho) {
     width: auto !important;
-    min-width: unset !important;
+    min-width: 145px !important;
     white-space: nowrap !important;
   }
 

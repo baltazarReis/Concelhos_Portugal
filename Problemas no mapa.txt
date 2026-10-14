@@ -1,30 +1,24 @@
 Problemas no mapa atual:
 
-Adicionar accuracy
+- Tamanho da caixa com o nome do concelho deve ter tamanho mínimo fixo igual às outras caixas do HUD superior direito
 
-Faltam descrições para os distritos de:
+- Adicionar recorde tracking (guardar melhor jogo mas apenas para jogo completo - ou seja 308 concelhos)
+  - guardar tempo, pontuação, tentativas, pontaria e acertos por distrito
+  - este recorde deve ser visível no resumo de jogo através de mostrar diferenças entre estas categorias mencionadas acima do recorde e as atuais
+    sendo a diferença positiva no sentido do atual ser melhor que o recorde mostrada a verde e com a percentagem de melhoria à frente e a diferença
+    negativa no sentido de o recorde ser melhor que o atual a representada a vermelho e com o sinal negativo claro
 
-1 Guarda
+- Adicionar capacidade de carregar nos concelhos já jogados e ver a informação adicional sobre eles, não deve ser com single clique porque isso faria com que misscliques passassem a prejudicar o jogador em termos de tempo, por isso deve ser algo claramente intencional, tipo um duplo clique, mas para isso é preciso dizer ao jogador que pode fazer isto, possivelmente através da utilização da feature que já existe de quando se dá hover sobre os concelhos já jogados o nome deles aparece no canto inferior direito, além disto poderia aparecer uma indicação que duplo clique dava para ver informação adicional sobre esse concelho
 
 Faltam imagens para os distritos de:
 
-1 Faro
-2 Évora
-3 Santarém
-4 Portalegre
-5 Leiria
-6 Castelo Branco
-7 Coimbra
-8 Porto
-9 Aveiro
-10 Guarda
-11 Viseu
-12 Braga
-13 Vila Real
-14 Viana do Castelo
-15 Bragança
-16 Açores
-17 Madeira
-
-
-Ok agora tal como anteriormente queria que para cada distrito pegasses nos concelhos de cada um e recomendasses 4 imagens de coisas notáveis no concelho, podem ser paisagem natural, monumentos/ruínas históricas, prato culinário conhecido e associado ao concelho ou por exemplo festividades relevantes (tipo caretos de podence e coisas desse género), mas no geral as 4 coisas mais importantes, com preferência para paisagem natural e estruturas e edifícios e monumentos históricos. Vamos avançar com o distrito de Santarém e os respetivos concelhos. Se não encontrares 4 coisas notáveis de fotografar dos concelhos então não precisas de alucinar coisas, podes dar menos imagens. E não te esqueças que se na cidade/vila que dá o nome ao concelho não houver nada de particularmente relevante as outras freguesias do concelho podem ter algo interessante.  
+1 Coimbra
+2 Porto
+3 Aveiro
+4 Guarda
+5 Viseu
+6 Braga
+7 Vila Real
+8 Bragança
+9 Açores
+10 Madeira
