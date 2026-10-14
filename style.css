@@ -1,24 +1,20 @@
 /* ==========================================
-   PALETA DE CORES (Edita aqui as tuas cores)
+   PALETA DE CORES
    ========================================== */
 :root {
-  /* Fundo da pagina / Oceano */
   --cor-fundo: #bbdae7;
-
-  /* Cores base dos concelhos */
   --cor-fronteiras: #444444;
-  --cor-hover: #ffc94d; /* Amarelo-dourado: destaque quente e vivo ao passar o rato */
+  --cor-hover: #ffc94d; 
 
-  /* Cores dos estados do jogo */
-  --cor-acertou: #218147;      /* Verde (Acertou a primeira) — contraste frio vs. o tom quente do mapa */
-  --cor-com-erros: #e8892f;    /* Laranja (Acertou com falhas) — intermédio entre sucesso e falha */
-  --cor-pular: #c43030;        /* Vermelho (Passou a frente / Skip) */
+  --cor-acertou: #218147;      
+  --cor-com-erros: #e8892f;    
+  --cor-pular: #c43030;        
 
-  /* Interface (HUD) */
   --cor-hud-bg: #ffffff;
   --cor-hud-texto: #111111;
   --cor-hud-subtexto: #666666;
   --cor-btn-hover: #c0392b;
+  --cor-fora-jogo: #c9c9c9;
 }
 
 * {
@@ -36,7 +32,9 @@ html, body {
   user-select: none;
 }
 
-/* Contentor e Zoom do Mapa */
+/* ==========================================
+   MAPA E ESTRUTURA
+   ========================================== */
 #mapa-wrapper {
   width: 100vw;
   height: 100vh;
@@ -44,13 +42,9 @@ html, body {
   top: 0;
   left: 0;
   z-index: 1;
-  /* Centra o SVG no ecrã */
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* Deixa o JS controlar por completo pinch-zoom/pan; evita que o browser
-     tente fazer o seu próprio zoom/scroll nativo por cima do nosso */
   touch-action: none;
 }
 
@@ -67,17 +61,19 @@ html, body {
   display: block;
   width: 100%;
   height: 100%;
-
   text-rendering: optimizeLegibility;
 }
 
-/* Painéis de Interface (HUD Fixo) */
+/* ==========================================
+   INTERFACE (HUD)
+   ========================================== */
 .painel-hud {
   position: fixed;
   z-index: 9999;
   display: flex;
   flex-direction: column;
   gap: 13px;
+  pointer-events: none !important;
 }
 
 .painel-top-right {
@@ -99,6 +95,7 @@ html, body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
   min-width: 200px;
   text-align: right;
+  pointer-events: auto !important;
 }
 
 .painel-bottom-left .caixa-hud {
@@ -124,8 +121,19 @@ html, body {
   color: var(--cor-hud-texto);
 }
 
+/* Contentor dos Botões com Largura Fixa de 200px */
+.hud-linha-botoes {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 10px !important;
+  width: 200px !important; /* Fixa a largura igual às caixas padrão do HUD */
+  pointer-events: auto !important;
+}
+
 .btn {
-  padding: 13px 20px;
+  width: 100% !important;
+  padding: 13px 12px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -135,68 +143,85 @@ html, body {
   color: #ffffff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: background 0.2s;
+  pointer-events: auto !important;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .btn:hover {
   background-color: var(--cor-btn-hover);
 }
 
-/* ESTILOS SVG E FRONTEIRAS SUAVES */
+.btn-ajuda {
+  width: 100% !important;
+  background-color: #2980b9;
+  margin-top: 0 !important;
+  padding: 13px 12px !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  border-radius: 8px !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-ajuda:hover {
+  background-color: #1f6391;
+}
+
+/* ==========================================
+   ESTILOS SVG E FRONTEIRAS
+   ========================================== */
 svg path[data-concelho] {
   cursor: pointer !important;
   transition: fill 0.15s ease !important;
-  
-  /* Mantém as bordas sempre visíveis e suaves */
   paint-order: stroke fill !important;
   stroke: var(--cor-fronteiras) !important;
-  
-  /* Espessura em unidades do próprio SVG: escala com o zoom (viewBox),
-     tal como as fronteiras distritais, em vez de ficar sempre fixa */
   stroke-width: 2.5;
-  
-  /* Suaviza as pontas e as junções dos ângulos */
   stroke-linecap: round !important;
   stroke-linejoin: round !important;
 }
 
 @media (hover: hover) {
   svg path[data-concelho]:hover {
-    fill: var(--cor-hover) !important; /* Destaque amarelo ao passar o rato */
+    fill: var(--cor-hover) !important;
   }
 }
 
-/* Estado: Acertou à primeira (Verde) */
 svg path.correto, 
 svg path.correto:hover {
   fill: var(--cor-acertou) !important;
 }
 
-/* Estado: Acertou com erros (Laranja) */
 svg path.com-erros, 
 svg path.com-erros:hover {
   fill: var(--cor-com-erros) !important;
 }
 
-/* Estado: Passou à frente / Skip (Vermelho) */
 svg path.pular, 
 svg path.pular:hover {
   fill: var(--cor-pular) !important;
 }
 
+svg path.fora-do-jogo,
+svg path.fora-do-jogo:hover {
+  fill: var(--cor-fora-jogo) !important;
+  cursor: default !important;
+}
+
 /* ==========================================
-   TOOLTIP DO CONCELHO (Canto Inferior Direito)
+   TOOLTIP DO CONCELHO
    ========================================== */
 #tooltip-concelho {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: rgba(40, 40, 40, 0.85); /* Fundo cinzento com fade/transparência */
-  color: #ffffff;                             /* Texto a branco */
+  background-color: rgba(40, 40, 40, 0.85);
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 8px;
   font-size: 23px;
   font-weight: 600;
-  pointer-events: none;                       /* Evita interferir com os cliques */
+  pointer-events: none;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   z-index: 10000;
@@ -216,8 +241,8 @@ svg path.pular:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
-  backdrop-filter: blur(5px);            /* Efeito de desfocagem no fundo */
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
   z-index: 20000;
   display: flex;
   justify-content: center;
@@ -231,6 +256,14 @@ svg path.pular:hover {
   pointer-events: none;
 }
 
+#menu-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 96vw;
+}
+
 .caixa-menu {
   background: #ffffff;
   padding: 38px 50px;
@@ -239,6 +272,12 @@ svg path.pular:hover {
   box-shadow: 0 13px 30px rgba(0, 0, 0, 0.3);
   max-width: 500px;
   width: 90%;
+}
+
+#menu-layout .caixa-menu {
+  width: 540px;
+  max-width: 100%;
+  flex: 0 1 540px;
 }
 
 .caixa-menu h1 {
@@ -251,6 +290,14 @@ svg path.pular:hover {
   margin-bottom: 30px;
   color: #666666;
   font-size: 18px;
+}
+
+.botoes-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .btn-start {
@@ -268,750 +315,6 @@ svg path.pular:hover {
 .btn-start:hover {
   background-color: #219150;
   transform: scale(1.03);
-}
-
-.instrucoes-controlo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;            /* Espaço entre as duas instruções */
-  margin-top: 30px;      /* Distância em relação ao botão de Iniciar */
-  padding-top: 20px;
-  border-top: 1px solid #eeeeee; /* Linha subtil a separar do botão */
-}
-
-.item-instrucao {
-  display: flex;
-  align-items: center;
-  gap: 10px;            /* Espaço entre o ícone e o texto */
-}
-
-.item-instrucao img {
-  width: 40px;          /* Ajusta a altura/largura dos ícones */
-  height: auto;
-  object-fit: contain;
-}
-
-.item-instrucao span {
-  font-size: 14px;
-  color: #555555;
-  font-weight: 500;
-  text-align: left;
-}
-
-/* ==========================================
-   PAINEL DE FIM DE JOGO (Lateral Direito)
-   ========================================== */
-#painel-fim-jogo {
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  width: 350px;
-  max-height: calc(100vh - 50px);
-  background-color: var(--cor-hud-bg);
-  color: var(--cor-hud-texto);
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
-  z-index: 9999;
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-#painel-fim-jogo.escondido,
-.painel-top-right.escondido,
-.painel-bottom-left.escondido {
-  display: none !important;
-}
-
-#painel-fim-jogo h2 {
-  font-size: 25px;
-  margin-bottom: 6px;
-  text-align: center;
-}
-
-.estatisticas-gerais p {
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: var(--cor-hud-texto);
-}
-
-.caixa-distritos-scroll {
-  background-color: #e2e8f0;
-  border-radius: 10px;
-  padding: 15px;
-  max-height: 275px;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.item-distrito {
-  font-size: 16px;
-  font-weight: 600;
-  color: #2d3748;
-}
-
-.btn-reiniciar {
-  padding: 15px;
-  font-size: 19px;
-  font-weight: bold;
-  background-color: #27ae60; /* Verde coerente com o botão Iniciar Jogo */
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-  width: 100%;
-}
-
-.btn-reiniciar:hover {
-  background-color: #219150;
-  transform: scale(1.02);
-}
-
-/* ==========================================
-   BOTÃO DE AJUDA / DICAS
-   ========================================== */
-.btn-ajuda {
-  background-color: #2980b9; /* Azul informativo */
-  margin-top: 6px;
-  border-radius: 8px;
-}
-
-.btn-ajuda:hover {
-  background-color: #1f6391;
-}
-
-/* ==========================================
-   MODAL DE INFORMAÇÕES DO CONCELHO
-   ========================================== */
-#modal-info-concelho {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(4px);
-  z-index: 25000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#modal-info-concelho.escondido {
-  display: none !important;
-}
-
-.conteudo-modal {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 500px;
-  width: 90%;
-  max-height: 80vh;
-  overflow-y: auto;
-  position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-#fechar-modal {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
-  font-weight: bold;
-  color: #7f8c8d;
-  cursor: pointer;
-}
-
-#fechar-modal:hover {
-  color: #2c3e50;
-}
-
-.corpo-modal {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#modal-imagem {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-/* ==========================================================
-   ADAPTAÇÃO MÓVEL (ecrãs < 768px)
-   Estrutura: barra fixa no topo + área do mapa + barra fixa
-   no fundo. O mapa fica genuinamente confinado entre as duas
-   barras (não é uma sobreposição): nunca há paths do SVG por
-   baixo delas, logo nunca há cliques "roubados" pela barra.
-   ========================================================== */
-@media (max-width: 768px) {
-
-  :root {
-    --altura-hud-superior: 0px;
-    --altura-hud-inferior: 0px;
-  }
-
-  /* ---------- Barra Superior (Concelho / Pontuação / Tentativas / Tempo) ---------- */
-  #hud-superior.painel-hud {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: var(--altura-hud-superior);
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 6px;
-    padding: 6px 8px;
-    background: var(--cor-hud-bg);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
-
-  #hud-superior .caixa-hud {
-    flex: 1 1 0;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2px 4px;
-    border-radius: 0;
-    box-shadow: none;
-    background: transparent;
-  }
-
-  #hud-superior .label {
-    font-size: 10px;
-    margin-bottom: 0;
-  }
-
-  #hud-superior .valor,
-  #hud-superior .valor-concelho {
-    font-size: 15px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-  }
-
-  /* ---------- Barra Inferior (Ações) ---------- */
-  #hud-inferior.painel-hud {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: var(--altura-hud-inferior);
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 8px 12px;
-    background: var(--cor-hud-bg);
-    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-  }
-
-  #hud-inferior .btn {
-    flex: 1 1 0;
-    min-width: 0;
-    height: 100%;
-    padding: 0 10px;
-    font-size: 15px;
-    /* Alvo de toque confortável (recomendação mínima ~44px) */
-    min-height: 44px;
-  }
-
-  /* ---------- Área do Mapa: confinada entre as duas barras ---------- */
-  #mapa-wrapper {
-    top: var(--altura-hud-superior);
-    left: 0;
-    width: 100vw;
-    height: calc(100vh - var(--altura-hud-superior) - var(--altura-hud-inferior));
-  }
-
-  /* ---------- Tooltip: afasta-se da barra inferior ---------- */
-  #tooltip-concelho {
-    left: 12px;
-    right: 12px;
-    bottom: calc(var(--altura-hud-inferior) + 12px);
-    font-size: 16px;
-    text-align: center;
-  }
-
-  /* ---------- Menu Inicial: caixa mais estreita em ecrãs pequenos ---------- */
-  .caixa-menu {
-    padding: 28px 24px;
-  }
-
-  /* ---------- Painel de Fim de Jogo: Bottom Sheet ---------- */
-  #painel-fim-jogo {
-    top: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    max-width: 100%;
-    max-height: 85vh;
-    border-radius: 18px 18px 0 0;
-    padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 0px));
-  }
-
-  /* ---------- Modal de Informação do Concelho: ecrã inteiro ---------- */
-  .conteudo-modal {
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
-    max-height: 100%;
-    border-radius: 0;
-    padding: 20px;
-    padding-top: calc(20px + env(safe-area-inset-top, 0px));
-  }
-
-  #fechar-modal {
-    font-size: 32px;
-    padding: 8px;
-    /* Alvo de toque maior para dedos */
-    min-width: 44px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* ==========================================================================
-   ADAPTAÇÃO PARA TELEMÓVEL / TABLET (MOBILE RESPONSIVE)
-   ========================================================================== */
-@media (max-width: 768px) {
-  
-  /* Ajuste dos painéis do jogo para não taparem o ecrã inteiro */
-  .painel-hud {
-    padding: 8px 12px;
-    gap: 8px;
-    border-radius: 8px;
-  }
-
-  .painel-top-right {
-    top: 10px;
-    right: 10px;
-  }
-
-  .painel-bottom-left {
-    bottom: 10px;
-    left: 10px;
-  }
-
-  /* Redução do tamanho do texto e contadores */
-  .caixa-hud {
-    min-width: 50px;
-  }
-
-  .caixa-hud .label {
-    font-size: 0.65rem;
-  }
-
-  .caixa-hud .valor,
-  .caixa-hud .valor-concelho {
-    font-size: 0.95rem;
-  }
-
-  .btn {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-  }
-
-  .btn-ajuda {
-    width: 30px;
-    height: 30px;
-    font-size: 0.8rem;
-  }
-
-  /* Otimização dos Modais e Menus para ecrãs verticais */
-  .caixa-menu,
-  .conteudo-modal {
-    width: 92%;
-    padding: 20px;
-    max-height: 80vh;
-  }
-
-  .caixa-menu h1 {
-    font-size: 1.5rem;
-  }
-
-  #modal-imagem-container {
-    max-height: 160px;
-  }
-
-  /* Esconde o tooltip de ponteiro em ecrãs táteis para não encravar o toque */
-  #tooltip-concelho {
-    display: none !important;
-  }
-}
-
-/* Esconder elementos */
-.escondido {
-  display: none !important;
-}
-
-/* Painel Lateral de Ajuda (Substitui o antigo modal central) */
-#modal-info-concelho {
-  position: fixed !important;
-  top: 0 !important;
-  right: 0 !important;
-  left: auto !important; /* Força o alinhamento à direita */
-  width: 320px;
-  height: 100vh;
-  background-color: #ffffff;
-  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-/* Caixa principal do modal */
-.modal-conteudo {
-  position: relative;          /* Define o ponto de referência para o botão fechar */
-  max-height: 100vh;            /* Limita a altura do modal a 85% do ecrã */
-  display: flex !important;
-  flex-direction: column !important;
-  padding: 24px;
-  box-sizing: border-box;
-}
-
-/* Botão de fechar totalmente fixo no canto superior direito do painel */
-#fechar-modal {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 20;                  /* Fica sempre por cima de todo o conteúdo */
-  color: #333;
-  line-height: 1;
-}
-
-#fechar-modal:hover {
-  color: #e74c3c;              /* Muda de cor ao passar o rato (opcional) */
-}
-
-/* Área interna do modal onde acontece o scroll */
-.modal-corpo-scroll {
-  overflow-y: auto;            /* O scroll acontece exclusivamente aqui dentro */
-  margin-top: 10px;
-  padding-right: 10px;         /* Espaço para a barra de scroll não colar ao texto */
-}
-
-/* Estilização da lista de pistas */
-.lista-pistas {
-  text-align: left;
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 15px;
-}
-
-.lista-pistas li {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-/* 1. Nome do Concelho Centrado */
-#modal-titulo-concelho {
-  order: 1 !important;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  color: #2c3e50;
-  width: 100%;
-}
-
-/* 2. Contentor da Heráldica */
-#modal-imagem-container {
-  order: 2 !important;
-  width: 100%;
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-#modal-imagem {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-/* 3. Descrição */
-#modal-descricao {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #444;
-  text-align: justify;
-  width: 100%;
-  order: 4 !important;
-}
-
-/* Lightbox / Zoom da Heráldica */
-#modal-zoom-heraldica {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px); /* Desfoca o fundo */
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 9999; /* Fica acima de todo o HUD e mapa */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-#modal-zoom-heraldica.escondido {
-  display: none !important;
-}
-
-#imagem-zoom-heraldica {
-  max-width: 85vw;
-  max-height: 85vh;
-  object-fit: contain;
-  cursor: default;
-  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
-}
-
-#fechar-zoom-heraldica {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  background: transparent;
-  border: none;
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  line-height: 1;
-  padding: 5px 10px;
-  transition: transform 0.2s ease;
-}
-
-#fechar-zoom-heraldica:hover {
-  transform: scale(1.2);
-}
-
-/* 1. Remove qualquer bloqueio do contentor pai nos cliques do mapa */
-#hud-direita, .painel-hud {
-  pointer-events: none !important;
-}
-
-/* 2. Garante que APENAS os botões e caixas do HUD capturam cliques */
-.caixa-hud, 
-.btn, 
-.btn-ajuda, 
-.hud-linha-botoes {
-  pointer-events: auto !important;
-}
-
-/* 3. Coloca o botão azul (?) à esquerda do botão de Passar à Frente */
-.hud-linha-botoes {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 10px !important;
-}
-
-/* Ajuste das dimensões do botão de ajuda para ficar em quadrado/círculo limpo ao lado do botão vermelho */
-.btn-ajuda {
-  margin-top: 0 !important; /* Remove margens superiores antigas */
-  padding: 13px 18px !important;
-  font-size: 16px !important;
-  font-weight: bold !important;
-  border-radius: 8px !important;
-}
-
-/* Grelha de Imagens no Painel Lateral */
-.galeria-concelho {
-  order: 3 !important;
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr) !important; /* Sempre 2 colunas de tamanho igual */
-  gap: 10px;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.galeria-miniatura {
-  width: 100%;
-  height: 85px;
-  object-fit: cover;
-  border-radius: 6px;
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Quando houver 3 elementos, o último (o 3.º) estende-se ao longo das 2 colunas */
-.galeria-concelho .galeria-miniatura:nth-child(3):last-child {
-  grid-column: span 2;
-}
-
-/* Se por acaso só houver 1 imagem na galeria, também ocupa a largura total */
-.galeria-concelho .galeria-miniatura:only-child {
-  grid-column: span 2;
-}
-
-.galeria-miniatura:hover {
-  cursor: zoom-in;
-  transform: scale(1.03);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Lightbox e Contentor Relativo */
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 30000;
-}
-
-.lightbox.escondido {
-  display: none !important;
-}
-
-.lightbox-conteudo {
-  position: relative; /* Define a referência para as setas estarem coladas à imagem */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 80vw;
-  max-height: 80vh;
-}
-
-
-
-.lightbox-conteudo img {
-  max-width: 100%;
-  max-height: 80vh;
-  object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-}
-
-/* Setas de Navegação (Sem Círculo e com Brilho no Hover) */
-.lightbox-seta {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent !important;
-  border: none;
-  outline: none;
-  color: #ffffff;
-  font-size: 3rem;
-  padding: 10px;
-  cursor: pointer;
-  user-select: none;
-  z-index: 1010;
-  transition: color 0.2s ease, filter 0.2s ease, transform 0.2s ease;
-  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
-}
-
-#lightbox-fechar {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  background: transparent;
-  border: none;
-  color: #ffffff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  line-height: 1;
-  padding: 5px 10px;
-  transition: transform 0.2s ease;
-}
-
-#lightbox-fechar:hover {
-  transform: scale(1.2);
-}
-
-.lightbox-seta:hover {
-  background: transparent !important;
-  color: #ffffff;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6));
-  transform: translateY(-50%) scale(1.2);
-}
-
-/* Margem exterior em relação à imagem ampliada */
-.seta-esquerda {
-  left: -75px;
-}
-
-.seta-direita {
-  right: -75px;
-}
-
-/* ==========================================
-   CONCELHOS FORA DO JOGO (distrito não selecionado)
-   ========================================== */
-:root {
-  --cor-fora-jogo: #c9c9c9; /* Cinzento claro: destaca-se do tom quente do mapa e dos estados verde/laranja/vermelho */
-}
-
-svg path.fora-do-jogo,
-svg path.fora-do-jogo:hover {
-  fill: var(--cor-fora-jogo) !important;
-  cursor: default !important;
-}
-
-/* ==========================================
-   MENU INICIAL: botão + painel de distritos
-   ========================================== */
-#menu-layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  max-width: 96vw;
-}
-
-#menu-layout .caixa-menu {
-  width: 540px;
-  max-width: 100%;
-  flex: 0 1 540px;
-}
-
-.botoes-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
 }
 
 .btn-start:disabled {
@@ -1042,6 +345,7 @@ svg path.fora-do-jogo:hover {
   color: #ffffff;
 }
 
+/* Painel de Seleção de Distritos */
 #painel-distritos {
   display: flex;
   flex-direction: column;
@@ -1119,7 +423,6 @@ svg path.fora-do-jogo:hover {
   color: #999999;
 }
 
-/* "Todos os distritos" fica sempre visível no topo da lista scrollable */
 .linha-todos {
   position: sticky;
   top: 0;
@@ -1141,7 +444,476 @@ svg path.fora-do-jogo:hover {
   color: var(--cor-pular);
 }
 
+.instrucoes-controlo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+.item-instrucao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-instrucao img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+.item-instrucao span {
+  font-size: 14px;
+  color: #555555;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* ==========================================
+   PAINEL DE FIM DE JOGO
+   ========================================== */
+#painel-fim-jogo {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  width: 350px;
+  max-height: calc(100vh - 50px);
+  background-color: var(--cor-hud-bg);
+  color: var(--cor-hud-texto);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#painel-fim-jogo.escondido,
+.painel-top-right.escondido,
+.painel-bottom-left.escondido {
+  display: none !important;
+}
+
+#painel-fim-jogo h2 {
+  font-size: 25px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.estatisticas-gerais p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--cor-hud-texto);
+}
+
+.caixa-distritos-scroll {
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  padding: 15px;
+  max-height: 275px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-distrito {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.btn-reiniciar {
+  padding: 15px;
+  font-size: 19px;
+  font-weight: bold;
+  background-color: #27ae60;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  width: 100%;
+}
+
+.btn-reiniciar:hover {
+  background-color: #219150;
+  transform: scale(1.02);
+}
+
+/* ==========================================
+   PAINEL LATERAL DE AJUDA / CONCELHO
+   ========================================== */
+#modal-info-concelho {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#modal-info-concelho.escondido {
+  display: none !important;
+}
+
+.modal-conteudo {
+  position: relative;
+  max-height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+#fechar-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 20;
+  color: #333;
+  line-height: 1;
+}
+
+#fechar-modal:hover {
+  color: #e74c3c;
+}
+
+.modal-corpo-scroll {
+  overflow-y: auto;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+#modal-titulo-concelho {
+  order: 1 !important;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  width: 100%;
+}
+
+#modal-imagem-container {
+  order: 2 !important;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#modal-imagem {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+#modal-descricao {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  text-align: justify;
+  width: 100%;
+  order: 4 !important;
+}
+
+/* Lightbox / Zoom da Heráldica */
+#modal-zoom-heraldica {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px); /* Desfoca o fundo */
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999; /* Fica acima de todo o HUD e mapa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#modal-zoom-heraldica.escondido {
+  display: none !important;
+}
+
+#imagem-zoom-heraldica {
+  max-width: 85vw;
+  max-height: 85vh;
+  object-fit: contain;
+  cursor: default;
+  filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+}
+
+#fechar-zoom-heraldica {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px 10px;
+  transition: transform 0.2s ease;
+}
+
+.lista-pistas li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Galeria de Imagens no Painel Lateral */
+.galeria-concelho {
+  order: 3 !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 10px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.galeria-miniatura {
+  width: 100%;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.galeria-concelho .galeria-miniatura:nth-child(3):last-child,
+.galeria-concelho .galeria-miniatura:only-child {
+  grid-column: span 2;
+}
+
+.galeria-miniatura:hover {
+  cursor: zoom-in;
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   LIGHTBOX / ZOOM DE IMAGENS
+   ========================================== */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30000;
+}
+
+.lightbox.escondido {
+  display: none !important;
+}
+
+.lightbox-conteudo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.lightbox-conteudo img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent !important;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 3rem;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1010;
+  transition: color 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.8));
+}
+
+.lightbox-seta:hover {
+  background: transparent !important;
+  color: #ffffff;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.6));
+  transform: translateY(-50%) scale(1.2);
+}
+
+.seta-esquerda {
+  left: -75px;
+}
+
+.seta-direita {
+  right: -75px;
+}
+
+#lightbox-fechar {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px 10px;
+  transition: transform 0.2s ease;
+}
+
+#lightbox-fechar:hover {
+  transform: scale(1.2);
+}
+
+/* ==========================================
+   ADAPTAÇÃO MÓVEL (Ecrãs < 768px)
+   ========================================== */
 @media (max-width: 768px) {
+  :root {
+    --altura-hud-superior: 0px;
+    --altura-hud-inferior: 0px;
+  }
+
+  .painel-hud {
+    padding: 8px 12px;
+    gap: 8px;
+    border-radius: 8px;
+  }
+
+  .painel-top-right {
+    top: 10px;
+    right: 10px;
+    align-items: flex-end;
+  }
+
+  .painel-bottom-left {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  /* A caixa do concelho fica com largura automática (variável) para o texto caber sempre numa linha */
+  .caixa-hud:not(:has(#nome-concelho)) {
+    width: 145px !important;
+    min-width: unset !important;
+  }
+
+  .caixa-hud:has(#nome-concelho) {
+    width: auto !important;
+    min-width: unset !important;
+    white-space: nowrap !important;
+  }
+
+  /* O contentor dos botões também assume a largura fixa de 145px */
+  .hud-linha-botoes {
+    width: 145px !important;
+  }
+
+  .caixa-hud .label {
+    font-size: 0.65rem;
+  }
+
+  .caixa-hud .valor,
+  .caixa-hud .valor-concelho {
+    font-size: 0.95rem;
+    white-space: nowrap !important; /* Garante que o nome do concelho não quebra de linha */
+  }
+
+  /* Botão de Ajuda / Informação Adicional adaptado para telemóvel */
+  #btn-ajuda.btn-ajuda {
+    width: 100% !important;
+    max-width: unset !important;
+    padding: 10px 8px !important;
+    font-size: 0 !important; 
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  #btn-ajuda.btn-ajuda::after {
+    content: "Info";
+    font-size: 14px;
+  }
+
+  /* Botão de Passar à frente adaptado para telemóvel */
+  #btn-skip.btn {
+    width: 100% !important;
+    max-width: unset !important;
+    padding: 10px 8px !important;
+    font-size: 0 !important; 
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  #btn-skip.btn::after {
+    content: "Skip";
+    font-size: 14px;
+  }
+
+  .caixa-menu,
+  .conteudo-modal {
+    width: 92%;
+    padding: 20px;
+    max-height: 80vh;
+  }
+
+  .caixa-menu h1 {
+    font-size: 1.5rem;
+  }
+
+  #modal-imagem-container {
+    max-height: 160px;
+  }
+
+  #tooltip-concelho {
+    display: none !important;
+  }
+
   #menu-inicial {
     overflow-y: auto;
     align-items: flex-start;
@@ -1154,12 +926,7 @@ svg path.fora-do-jogo:hover {
     padding: 16px 0;
   }
 
-  #menu-layout .caixa-menu {
-    width: 100%;
-    flex: 0 0 auto;
-    max-height: none;
-  }
-
+  #menu-layout .caixa-menu,
   #painel-distritos {
     width: 100%;
     flex: 0 0 auto;
@@ -1174,4 +941,26 @@ svg path.fora-do-jogo:hover {
     font-size: 16px;
     padding: 12px 18px;
   }
+
+  #painel-fim-jogo {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: 18px 18px 0 0;
+    padding: 20px 20px calc(20px + env(safe-area-inset-bottom, 0px));
+  }
+
+  #modal-info-concelho {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Utilitário global */
+.escondido {
+  display: none !important;
 }

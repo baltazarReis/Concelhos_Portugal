@@ -7,8 +7,36 @@ import { dadosConcelhos } from './info_concelhos.js';
 let listaConcelhos = [];
 let totalConcelhos = 0;
 
-// Distritos selecionados no menu inicial (por omissão, todos)
-let distritosSelecionados = new Set(map_distrito_concelhos.keys());
+// Distritos selecionados no menu inicial.
+// Por omissão, todos. A escolha do jogador mantém-se durante a sessão do
+// separador (sessionStorage: sobrevive a "Jogar Novamente"/recarregar, mas
+// desaparece quando o separador/navegador é fechado e o site volta a abrir).
+const CHAVE_SESSAO_DISTRITOS = "distritosSelecionados";
+
+function carregarSelecaoGuardada() {
+  const todos = new Set(map_distrito_concelhos.keys());
+  try {
+    const guardado = JSON.parse(sessionStorage.getItem(CHAVE_SESSAO_DISTRITOS));
+    if (Array.isArray(guardado)) {
+      // Ignora distritos que já não existam no mapa
+      const validos = guardado.filter(d => todos.has(d));
+      if (validos.length > 0) return new Set(validos);
+    }
+  } catch (e) {
+    // sessionStorage indisponível ou conteúdo inválido: usa o default
+  }
+  return todos;
+}
+
+function guardarSelecao() {
+  try {
+    sessionStorage.setItem(CHAVE_SESSAO_DISTRITOS, JSON.stringify([...distritosSelecionados]));
+  } catch (e) {
+    // Ignora (ex.: modo privado restrito)
+  }
+}
+
+let distritosSelecionados = carregarSelecaoGuardada();
 
 let concelhosRestantes = [];
 let concelhoAtual = null;
@@ -147,13 +175,13 @@ function contarConcelhosSelecionados() {
   return total;
 }
 
-function criarLinhaDistrito(nome, nConcelhos, classeExtra = "") {
+function criarLinhaDistrito(nome, nConcelhos, selecionado, classeExtra = "") {
   const label = document.createElement("label");
   label.className = `linha-distrito ${classeExtra}`.trim();
 
   const input = document.createElement("input");
   input.type = "checkbox";
-  input.checked = true;
+  input.checked = selecionado;
 
   const spanNome = document.createElement("span");
   spanNome.className = "nome-distrito";
@@ -176,7 +204,8 @@ function construirListaDistritos() {
   checkboxesDistritos.clear();
 
   // Checkbox mestre: "Todos os distritos" (selecionada por omissão)
-  const todos = criarLinhaDistrito("Todos os distritos", null, "linha-todos");
+  const todos = criarLinhaDistrito("Todos os distritos", null,
+    distritosSelecionados.size === map_distrito_concelhos.size, "linha-todos");
   checkboxTodos = todos.input;
   checkboxTodos.addEventListener("change", () => {
     distritosSelecionados = checkboxTodos.checked
@@ -189,7 +218,7 @@ function construirListaDistritos() {
 
   // Uma checkbox por distrito / região autónoma (ordem do map_distrito_concelhos)
   map_distrito_concelhos.forEach((concelhos, distrito) => {
-    const linha = criarLinhaDistrito(distrito, concelhos.length);
+    const linha = criarLinhaDistrito(distrito, concelhos.length, distritosSelecionados.has(distrito));
     linha.input.addEventListener("change", () => {
       if (linha.input.checked) distritosSelecionados.add(distrito);
       else distritosSelecionados.delete(distrito);
@@ -204,6 +233,7 @@ function construirListaDistritos() {
 }
 
 function atualizarMenuSelecao() {
+  guardarSelecao();
   const nConcelhos = contarConcelhosSelecionados();
   const todosSelecionados = distritosSelecionados.size === map_distrito_concelhos.size;
 
@@ -405,6 +435,9 @@ function finalizarJogo() {
   elFimTempo.textContent = elTimer.textContent;
   elFimTentativas.textContent = tentativasTotais;
   elFimPontaria.textContent = Math.floor(tentativasCerteiras/tentativasTotais * 100) + "%";
+  if (!tentativasTotais) {
+    elFimPontaria.textContent = 0 + "%";
+  }
 
   // Limpa a lista
   elListaDistritos.innerHTML = "";
