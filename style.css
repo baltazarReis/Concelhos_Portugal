@@ -968,6 +968,138 @@ svg path.fora-do-jogo:hover {
   }
 }
 
+/* ==========================================
+   RECORDE: nota no painel de distritos
+   ========================================== */
+.nota-recorde {
+  margin-top: 10px;
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: center;
+  color: #666666;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+.nota-recorde.conta {
+  color: #1d6b3c;
+  background-color: #e6f4ea;
+}
+
+/* ==========================================
+   RECORDE: resumo de fim de jogo
+   ========================================== */
+#painel-fim-jogo {
+  overflow-y: auto;
+}
+
+.fim-recorde-estado {
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 8px;
+  color: #555555;
+  background-color: #eeeeee;
+}
+
+.fim-recorde-estado.novo {
+  color: #ffffff;
+  background-color: var(--cor-acertou);
+}
+
+.fim-recorde-estado.aviso {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-recorde {
+  padding: 11px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #2c3e50;
+  background-color: #ffffff;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-recorde:hover {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+.comparacao-recorde {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legenda-recorde {
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--cor-hud-subtexto);
+}
+
+.tabela-recorde {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  color: var(--cor-hud-texto);
+}
+
+.tabela-recorde th {
+  padding: 4px 6px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  text-align: right;
+  color: var(--cor-hud-subtexto);
+}
+
+.tabela-recorde td {
+  padding: 7px 6px;
+  text-align: right;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tabela-recorde th:first-child,
+.tabela-recorde td:first-child {
+  text-align: left;
+  font-weight: 700;
+}
+
+.tabela-recorde td.dif {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* Diferença face ao recorde: verde (+) = melhor, vermelho (−) = pior, cinzento = igual */
+.melhor { color: var(--cor-acertou); }
+.pior   { color: var(--cor-pular); }
+.igual  { color: var(--cor-hud-subtexto); }
+
+/* Na comparação, a lista de distritos usa a mesma caixa cinzenta do resumo */
+.comparacao-recorde .caixa-distritos-scroll {
+  max-height: 230px;
+}
+
+.tabela-distritos-recorde {
+  font-size: 14px;
+}
+
+/* Painel mais largo enquanto mostra a comparação (só em ecrãs grandes) */
+@media (min-width: 769px) {
+  #painel-fim-jogo.modo-comparacao {
+    width: 510px;
+  }
+}
+
 /* Utilitário global */
 .escondido {
   display: none !important;

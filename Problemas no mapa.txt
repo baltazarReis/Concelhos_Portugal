@@ -20,5 +20,4 @@ Faltam imagens para os distritos de:
 6 Braga
 7 Vila Real
 8 Bragança
-9 Açores
-10 Madeira
+9 Madeira

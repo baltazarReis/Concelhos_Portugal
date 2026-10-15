@@ -46,6 +46,7 @@
         <!-- Checkboxes geradas dinamicamente pelo JS a partir do map_distrito_concelhos -->
         <div id="lista-distritos-selecao" role="group" aria-label="Distritos"></div>
         <p id="resumo-selecao"></p>
+        <p id="nota-recorde" class="nota-recorde"></p>
       </aside>
 
     </div>
@@ -2593,6 +2594,11 @@
     <p><strong>Tentativas:</strong> <span id="fim-tentativas">0</span></p>
     <p><strong>Pontaria:</strong> <span id="fim-pontaria">0</span></p>
   </div>
+
+  <!-- Recorde: estado do jogo, comparação com o recorde (gerada pelo JS) e botão para a mostrar -->
+  <p id="fim-recorde-estado" class="fim-recorde-estado escondido"></p>
+  <div id="comparacao-recorde" class="comparacao-recorde escondido"></div>
+  <button id="btn-recorde" class="btn-recorde escondido">Mostrar melhor jogo</button>
 
   <div class="caixa-distritos-scroll" id="lista-distritos-resumo">
     <!-- Lista dos distritos gerada dinamicamente pelo JS -->

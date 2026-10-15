@@ -38,6 +38,10 @@ function guardarSelecao() {
 
 let distritosSelecionados = carregarSelecaoGuardada();
 
+// Total de concelhos quando se joga com todos os distritos (os 308)
+const TOTAL_TODOS_CONCELHOS = Array.from(map_distrito_concelhos.values())
+  .reduce((soma, lista) => soma + lista.length, 0);
+
 let concelhosRestantes = [];
 let concelhoAtual = null;
 let pontuacao = 0;
@@ -100,6 +104,7 @@ const btnDistritos = document.getElementById("btn-distritos");
 const painelDistritos = document.getElementById("painel-distritos");
 const elListaSelecao = document.getElementById("lista-distritos-selecao");
 const elResumoSelecao = document.getElementById("resumo-selecao");
+const elNotaRecorde = document.getElementById("nota-recorde");
 
 // Elementos Fim de Jogo
 const painelTopRight = document.querySelector(".painel-top-right");
@@ -110,6 +115,12 @@ const elFimTentativas = document.getElementById("fim-tentativas");
 const elFimPontaria = document.getElementById("fim-pontaria");
 const elListaDistritos = document.getElementById("lista-distritos-resumo");
 const btnReiniciar = document.getElementById("btn-reiniciar");
+
+// Elementos do recorde (resumo de fim de jogo)
+const elEstatisticasGerais = document.querySelector(".estatisticas-gerais");
+const elRecordeEstado = document.getElementById("fim-recorde-estado");
+const elComparacaoRecorde = document.getElementById("comparacao-recorde");
+const btnRecorde = document.getElementById("btn-recorde");
 
 // Elementos do Painel de Ajuda / Pistas
 const btnAjuda = document.getElementById("btn-ajuda");
@@ -250,6 +261,11 @@ function atualizarMenuSelecao() {
       `${distritosSelecionados.size} de ${map_distrito_concelhos.size} selecionados · ${nConcelhos} concelhos`;
   }
   elResumoSelecao.classList.toggle("vazio", nConcelhos === 0);
+
+  // Explica que o recorde só é guardado com todos os distritos (os 308 concelhos)
+  const regra = `Recorde: só são guardados jogos com todos os distritos (${TOTAL_TODOS_CONCELHOS} concelhos).`;
+  elNotaRecorde.textContent = `${regra} ${todosSelecionados ? "Esta seleção conta." : "Esta seleção não conta."}`;
+  elNotaRecorde.classList.toggle("conta", todosSelecionados);
 }
 
 // Pinta a cinzento os concelhos cujo distrito não foi selecionado
@@ -434,10 +450,8 @@ function finalizarJogo() {
   elFimPontuacao.textContent = `${pontuacao}/${totalConcelhos} - ${Math.round((pontuacao / totalConcelhos) * 100)}%`;
   elFimTempo.textContent = elTimer.textContent;
   elFimTentativas.textContent = tentativasTotais;
-  elFimPontaria.textContent = Math.floor(tentativasCerteiras/tentativasTotais * 100) + "%";
-  if (!tentativasTotais) {
-    elFimPontaria.textContent = 0 + "%";
-  }
+  const pontaria = calcularPontaria(tentativasCerteiras, tentativasTotais);
+  elFimPontaria.textContent = pontaria + "%";
 
   // Limpa a lista
   elListaDistritos.innerHTML = "";
@@ -467,7 +481,245 @@ function finalizarJogo() {
     
     elListaDistritos.appendChild(item);
   });
+
+// Recorde: guarda (se for jogo completo) e prepara a comparação
+  prepararRecorde({
+    pontuacao: pontuacao,
+    tempo: tempoSegundos,
+    tentativas: tentativasTotais,
+    pontaria: pontaria,
+    acertosPorDistrito: { ...acertosPorDistrito },
+  }, resumoDistritos);
 }
+
+// INÍCIO: RECORDE DO JOGADOR
+// O recorde só é guardado em jogos com TODOS os distritos (os 308 concelhos).
+// Guarda: tempo, pontuação, tentativas, pontaria e acertos por distrito.
+// Critério do melhor jogo: mais pontos > melhor pontaria > menor tempo > menos
+// tentativas. Fica no browser (localStorage), por isso sobrevive entre visitas.
+const CHAVE_RECORDE = "recordeJogoConcelhos";
+const MENOS = "\u2212"; // sinal de menos tipográfico, mais visível que "-"
+
+function calcularPontaria(certeiras, totais) {
+  return totais > 0 ? Math.floor((certeiras / totais) * 100) : 0;
+}
+
+function formatarTempo(segundos) {
+  const min = String(Math.floor(segundos / 60)).padStart(2, "0");
+  const seg = String(segundos % 60).padStart(2, "0");
+  return `${min}:${seg}`;
+}
+
+const formatadorPercentagem = new Intl.NumberFormat("pt-PT", {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+});
+
+function lerRecorde() {
+  try {
+    const r = JSON.parse(localStorage.getItem(CHAVE_RECORDE));
+    const numerosOk = ["pontuacao", "tempo", "tentativas", "pontaria"].every(k => Number.isFinite(r?.[k]));
+    if (numerosOk && r.acertosPorDistrito && typeof r.acertosPorDistrito === "object") {
+      return r;
+    }
+  } catch (e) {
+    // sem localStorage ou conteúdo inválido: não há recorde
+  }
+  return null;
+}
+
+function guardarRecorde(registo) {
+  try {
+    localStorage.setItem(CHAVE_RECORDE, JSON.stringify(registo));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+// 1 = a melhor que b, -1 = a pior que b, 0 = iguais
+function compararJogos(a, b) {
+  if (a.pontuacao !== b.pontuacao) return a.pontuacao > b.pontuacao ? 1 : -1;
+  if (a.pontaria !== b.pontaria) return a.pontaria > b.pontaria ? 1 : -1;
+  if (a.tempo !== b.tempo) return a.tempo < b.tempo ? 1 : -1;
+  if (a.tentativas !== b.tentativas) return a.tentativas < b.tentativas ? 1 : -1;
+  return 0;
+}
+
+// Diferença atual vs recorde. "melhor" = o atual é melhor que o recorde
+// (mais pontos/pontaria, ou menos tempo/tentativas). A percentagem é relativa ao recorde.
+function calcularDiferenca(atual, recorde, maiorEMelhor) {
+  const bruta = atual - recorde;
+  if (bruta === 0) return { estado: "igual" };
+  const magnitude = Math.abs(bruta);
+  return {
+    estado: (bruta > 0) === maiorEMelhor ? "melhor" : "pior",
+    magnitude,
+    bruta, // Guarda o valor bruto para sabermos se o resultado é positivo ou negativo
+    percentagem: recorde !== 0 ? (magnitude / Math.abs(recorde)) * 100 : null,
+  };
+}
+
+// Formata o texto da diferença com o sinal correto (+ ou −) baseado na variação real
+function textoDiferenca(dif, formatarMagnitude, chave) {
+  if (dif.estado === "igual") return "=";
+  
+  const sinal = dif.bruta > 0 ? "+" : MENOS;
+
+  // Se for pontaria, mostramos apenas a diferença em percentagem direta (sem cálculo relativo)
+  if (chave === "pontaria") {
+    return `${sinal}${formatarMagnitude(dif.magnitude)}`;
+  }
+
+  if (dif.estado === "melhor") {
+    const pct = dif.percentagem === null ? "" : ` (${sinal}${formatadorPercentagem.format(dif.percentagem)}%)`;
+    return `${sinal}${formatarMagnitude(dif.magnitude)}${pct}`;
+  } else {
+    return `${sinal}${formatarMagnitude(dif.magnitude)}`;
+  }
+}
+
+// Categorias gerais (mesma ordem do resumo)
+const CATEGORIAS_RECORDE = [
+  { chave: "pontuacao",  rotulo: "Pontuação",  maiorEMelhor: true,
+    valor: v => `${v}/${TOTAL_TODOS_CONCELHOS}`, magnitude: m => String(m) },
+  { chave: "tempo",      rotulo: "Tempo",      maiorEMelhor: false,
+    valor: v => formatarTempo(v), magnitude: m => formatarTempo(m) },
+  { chave: "tentativas", rotulo: "Tentativas", maiorEMelhor: false,
+    valor: v => String(v), magnitude: m => String(m) },
+  { chave: "pontaria",   rotulo: "Pontaria",   maiorEMelhor: true,
+    valor: v => `${v}%`, magnitude: m => `${m}%` },
+];
+
+function criarCelula(tag, texto, classe = "") {
+  const el = document.createElement(tag);
+  el.textContent = texto;
+  if (classe) el.className = classe;
+  return el;
+}
+
+function criarCabecalho(rotulos) {
+  const linha = document.createElement("tr");
+  rotulos.forEach(r => linha.appendChild(criarCelula("th", r)));
+  return linha;
+}
+
+function criarCelulaDiferenca(dif, formatarMagnitude) {
+  return criarCelula("td", textoDiferenca(dif, formatarMagnitude), `dif ${dif.estado}`);
+}
+
+// Constrói a comparação: tabela geral + tabela por distrito (acertos sem erros)
+function desenharComparacao(atual, recorde, resumoDistritos, rotuloRecorde) {
+  const legenda = document.createElement("p");
+  legenda.className = "legenda-recorde";
+  const verde = criarCelula("span", "melhor que o recorde ", "melhor");
+  const vermelho = criarCelula("span", ` pior que o recorde `, "pior");
+  legenda.append(verde, " · ", vermelho, " · ", criarCelula("span", " igual", "igual"));
+
+  // Tabela geral
+  const tabelaGeral = document.createElement("table");
+  tabelaGeral.className = "tabela-recorde";
+  tabelaGeral.appendChild(criarCabecalho(["", "Este jogo", rotuloRecorde, "Diferença"]));
+  CATEGORIAS_RECORDE.forEach(cat => {
+    const linha = document.createElement("tr");
+    linha.appendChild(criarCelula("td", cat.rotulo));
+    linha.appendChild(criarCelula("td", cat.valor(atual[cat.chave])));
+    linha.appendChild(criarCelula("td", cat.valor(recorde[cat.chave])));
+    
+    const dif = calcularDiferenca(atual[cat.chave], recorde[cat.chave], cat.maiorEMelhor);
+    linha.appendChild(criarCelula("td", textoDiferenca(dif, cat.magnitude, cat.chave), `dif ${dif.estado}`));
+    
+    tabelaGeral.appendChild(linha);
+  });
+
+  // Tabela por distrito (mesma ordem da lista do resumo)
+  const tabelaDistritos = document.createElement("table");
+  tabelaDistritos.className = "tabela-recorde tabela-distritos-recorde";
+  tabelaDistritos.appendChild(criarCabecalho(["Distrito", "Este jogo", rotuloRecorde, "Diferença"]));
+  resumoDistritos.forEach(({ distrito, acertos, totalConcelhosDistrito }) => {
+    const linha = document.createElement("tr");
+    linha.appendChild(criarCelula("td", distrito));
+    linha.appendChild(criarCelula("td", `${acertos}/${totalConcelhosDistrito}`));
+
+    const acertosRecorde = recorde.acertosPorDistrito[distrito];
+    if (Number.isFinite(acertosRecorde)) {
+      linha.appendChild(criarCelula("td", `${acertosRecorde}/${totalConcelhosDistrito}`));
+      linha.appendChild(criarCelulaDiferenca(calcularDiferenca(acertos, acertosRecorde, true), m => String(m)));
+    } else {
+      linha.appendChild(criarCelula("td", "\u2014"));
+      linha.appendChild(criarCelula("td", "\u2014", "dif igual"));
+    }
+    tabelaDistritos.appendChild(linha);
+  });
+
+  const caixaDistritos = document.createElement("div");
+  caixaDistritos.className = "caixa-distritos-scroll";
+  caixaDistritos.appendChild(tabelaDistritos);
+
+  elComparacaoRecorde.replaceChildren(legenda, tabelaGeral, caixaDistritos);
+}
+
+function definirEstadoRecorde(texto, classe) {
+  elRecordeEstado.textContent = texto;
+  elRecordeEstado.className = `fim-recorde-estado ${classe}`;
+}
+
+function prepararRecorde(atual, resumoDistritos) {
+  const anterior = lerRecorde();
+  const contaParaRecorde = distritosSelecionados.size === map_distrito_concelhos.size;
+
+  // Estado inicial: resumo normal, comparação escondida
+  elEstatisticasGerais.classList.remove("escondido");
+  elListaDistritos.classList.remove("escondido");
+  elComparacaoRecorde.classList.add("escondido");
+  painelFimJogo.classList.remove("modo-comparacao");
+  btnRecorde.classList.add("escondido");
+
+  let rotuloRecorde = "Melhor jogo";
+  let textoMostrar = "Mostrar melhor jogo";
+  let textoEsconder = "Esconder melhor jogo";
+
+  if (!contaParaRecorde) {
+    definirEstadoRecorde(
+      `Este jogo não conta para o recorde: só são guardados jogos com todos os distritos (${TOTAL_TODOS_CONCELHOS} concelhos).`,
+      "aviso"
+    );
+    return;
+  }
+
+  if (!anterior) {
+    const guardado = guardarRecorde({ ...atual, data: Date.now() });
+    definirEstadoRecorde(
+      guardado ? "Primeiro recorde guardado!" : "Primeiro recorde! (não foi possível guardá-lo neste browser)",
+      guardado ? "novo" : "aviso"
+    );
+    return; // ainda não há recorde anterior com que comparar
+  }
+
+  const resultado = compararJogos(atual, anterior);
+  if (resultado > 0) {
+    const guardado = guardarRecorde({ ...atual, data: Date.now() });
+    definirEstadoRecorde(
+      guardado ? "Novo recorde!" : "Novo recorde! (não foi possível guardá-lo neste browser)",
+      guardado ? "novo" : "aviso"
+    );
+    // Compara com o recorde que acabou de ser superado
+    rotuloRecorde = "Recorde anterior";
+    textoMostrar = "Mostrar recorde anterior";
+    textoEsconder = "Esconder recorde anterior";
+  } 
+  desenharComparacao(atual, anterior, resumoDistritos, rotuloRecorde);
+  btnRecorde.textContent = textoMostrar;
+  btnRecorde.classList.remove("escondido");
+  btnRecorde.onclick = () => {
+    const mostrar = elComparacaoRecorde.classList.toggle("escondido") === false;
+    elEstatisticasGerais.classList.toggle("escondido", mostrar);
+    elListaDistritos.classList.toggle("escondido", mostrar);
+    painelFimJogo.classList.toggle("modo-comparacao", mostrar);
+    btnRecorde.textContent = mostrar ? textoEsconder : textoMostrar;
+  };
+}
+// FIM: RECORDE DO JOGADOR
 
 // INÍCIO: GESTÃO DO PAINEL DE AJUDA / PISTAS
 btnAjuda.addEventListener("click", async () => {
