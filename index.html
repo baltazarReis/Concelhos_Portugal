@@ -68,7 +68,7 @@
       <span id="tentativas" class="valor">0</span>
     </div>
     <div class="hud-linha-botoes">
-      <button id="btn-ajuda" class="btn btn-ajuda" title="Revelar pistas sobre o concelho&#10;Atenção: A pontuação deste concelho ficará indisponível.">
+      <button id="btn-ajuda" class="btn btn-ajuda">
         Informação Adicional
       </button>
       <button id="btn-skip" class="btn">Passar à frente</button>
@@ -2607,6 +2607,29 @@
   <button id="btn-reiniciar" class="btn-reiniciar">Jogar Novamente</button>
 </div>
 <!-- FIM: PAINEL DE FIM DE JOGO -->
+
+<!-- CAIXA DE CONFIRMAÇÃO: antes de revelar a informação adicional do concelho em jogo -->
+<div id="modal-confirmar-ajuda" class="escondido" role="dialog" aria-modal="true" aria-labelledby="confirmar-ajuda-principal">
+  <div class="caixa-confirmar">
+    <p id="confirmar-ajuda-principal" class="confirmar-texto-principal">
+      Revelar informação adicional sobre o concelho fará com que não possa ganhar a pontuação relativa a este concelho.
+    </p>
+    <p class="confirmar-texto-secundario">
+      Esta informação sobre o concelho pode ser consultada após a jogada, fazendo um duplo clique
+      no concelho em questão, sem consequências para a pontuação.
+    </p>
+
+    <label class="confirmar-checkbox">
+      <input type="checkbox" id="confirmar-ajuda-nao-mostrar" checked>
+      <span>Não mostrar novamente neste jogo</span>
+    </label>
+
+    <div class="confirmar-botoes">
+      <button id="confirmar-ajuda-fechar" class="btn-confirmar-fechar">Fechar</button>
+      <button id="confirmar-ajuda-continuar" class="btn-confirmar-continuar">Continuar mesmo assim</button>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

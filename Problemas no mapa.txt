@@ -1,14 +1,6 @@
 Problemas no mapa atual:
 
-- Tamanho da caixa com o nome do concelho deve ter tamanho mínimo fixo igual às outras caixas do HUD superior direito
-
-- Adicionar recorde tracking (guardar melhor jogo mas apenas para jogo completo - ou seja 308 concelhos)
-  - guardar tempo, pontuação, tentativas, pontaria e acertos por distrito
-  - este recorde deve ser visível no resumo de jogo através de mostrar diferenças entre estas categorias mencionadas acima do recorde e as atuais
-    sendo a diferença positiva no sentido do atual ser melhor que o recorde mostrada a verde e com a percentagem de melhoria à frente e a diferença
-    negativa no sentido de o recorde ser melhor que o atual a representada a vermelho e com o sinal negativo claro
-
-- Adicionar capacidade de carregar nos concelhos já jogados e ver a informação adicional sobre eles, não deve ser com single clique porque isso faria com que misscliques passassem a prejudicar o jogador em termos de tempo, por isso deve ser algo claramente intencional, tipo um duplo clique, mas para isso é preciso dizer ao jogador que pode fazer isto, possivelmente através da utilização da feature que já existe de quando se dá hover sobre os concelhos já jogados o nome deles aparece no canto inferior direito, além disto poderia aparecer uma indicação que duplo clique dava para ver informação adicional sobre esse concelho
+Corrigir linhas dos Açores no inkscape
 
 Faltam imagens para os distritos de:
 

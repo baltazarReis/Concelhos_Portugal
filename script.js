@@ -50,6 +50,8 @@ let tentativasCerteiras = 0;
 let tentativasTotais = 0;
 let tempoSegundos = 0;
 let intervaloTimer = null;
+let jogoTerminado = false; // true quando o resumo final está a ser mostrado
+let ocultarAvisoAjuda = false; // "Não mostrar novamente": vale só para o jogo em curso
 
 // Efeitos Sonoros
 const somAcerto = new Audio('./sounds/correct.mp3');
@@ -290,6 +292,8 @@ function iniciarJogoDirecto() {
   tentativasTotais = 0;
   tentativasCerteiras = 0;
   tempoSegundos = 0;
+  jogoTerminado = false;
+  ocultarAvisoAjuda = false; // em cada jogo novo o aviso volta a aparecer
   
   // Inicializa contador por distrito
   acertosPorDistrito = {};
@@ -322,24 +326,47 @@ function proximoConcelho() {
   elTentativas.textContent = tentativasTotais;
 }
 
+// Concelho "não jogável": já respondido (acertado ou passado à frente) ou fora do jogo
+function ehConcelhoNaoJogavel(el) {
+  return el.classList.contains("correto") ||
+         el.classList.contains("com-erros") ||
+         el.classList.contains("pular") ||
+         el.classList.contains("fora-do-jogo");
+}
+
+// Duplo clique (ou duplo toque) num concelho não jogável abre o painel de informação.
+// É detetado a partir de dois cliques seguidos no MESMO concelho, o que funciona também
+// em ecrãs táteis. Nunca conta como tentativa e nunca penaliza o concelho em jogo.
+const JANELA_DUPLO_CLIQUE_MS = 450;
+let ultimoCliqueInfo = { el: null, t: 0 };
+
+function registarCliqueInfo(el) {
+  const agora = performance.now();
+  if (ultimoCliqueInfo.el === el && agora - ultimoCliqueInfo.t < JANELA_DUPLO_CLIQUE_MS) {
+    ultimoCliqueInfo = { el: null, t: 0 };
+    abrirPainelInfo(el.getAttribute("data-concelho"));
+  } else {
+    ultimoCliqueInfo = { el, t: agora };
+  }
+}
+
 // INÍCIO: REGISTO DE ACERTOS NO CLIQUE
 document.querySelectorAll("svg path[data-concelho]").forEach(path => {
   path.addEventListener("click", (e) => {
-    if (e.button !== 0 || !concelhoAtual) return;
+    if (e.button !== 0) return;
 
     const elClicado = e.target;
 
-    // Ignora cliques em concelhos já respondidos (acertados ou passados à
-    // frente) e em concelhos fora do jogo (distrito não selecionado): não
-    // deve contar como tentativa nem interferir com o som que estiver a tocar.
-    if (
-      elClicado.classList.contains("correto") ||
-      elClicado.classList.contains("com-erros") ||
-      elClicado.classList.contains("pular") ||
-      elClicado.classList.contains("fora-do-jogo")
-    ) {
+    // Cliques em concelhos já respondidos (acertados ou passados à frente) ou fora
+    // do jogo (distrito não selecionado): não contam como tentativa nem interferem
+    // com o som que estiver a tocar. Dois cliques seguidos abrem a informação.
+    // (Vem antes do "!concelhoAtual" para também funcionar depois do fim do jogo.)
+    if (ehConcelhoNaoJogavel(elClicado)) {
+      registarCliqueInfo(elClicado);
       return;
     }
+
+    if (!concelhoAtual) return;
 
     const concelhoClicado = elClicado.getAttribute("data-concelho");
     tentativasTotais++;
@@ -379,13 +406,16 @@ document.querySelectorAll("svg path[data-concelho]").forEach(path => {
   // Hover Tooltip
   path.addEventListener("mouseenter", (e) => {
     const el = e.target;
-    const jaFoiSelecionado = el.classList.contains("correto") || 
-                             el.classList.contains("com-erros") || 
-                             el.classList.contains("pular") ||
-                             el.classList.contains("fora-do-jogo");
+    if (ehConcelhoNaoJogavel(el) && elTooltip) {
+      const nome = document.createElement("span");
+      nome.className = "tooltip-nome";
+      nome.textContent = el.getAttribute("data-concelho");
 
-    if (jaFoiSelecionado && elTooltip) {
-      elTooltip.textContent = el.getAttribute("data-concelho");
+      const dica = document.createElement("span");
+      dica.className = "tooltip-dica";
+      dica.textContent = "Duplo clique para ver mais informação";
+
+      elTooltip.replaceChildren(nome, dica);
       elTooltip.classList.add("ativo");
     }
   });
@@ -442,6 +472,7 @@ function iniciarTimer() {
 function finalizarJogo() {
   clearInterval(intervaloTimer);
   fecharPainelAjuda();
+  jogoTerminado = true;
   
   // Oculta o HUD da direita e mostra o painel de resumo
   painelTopRight.classList.add("escondido");
@@ -573,7 +604,7 @@ function textoDiferenca(dif, formatarMagnitude, chave) {
 
   if (dif.estado === "melhor") {
     const pct = dif.percentagem === null ? "" : ` (${sinal}${formatadorPercentagem.format(dif.percentagem)}%)`;
-    return `${sinal}${formatarMagnitude(dif.magnitude)}${pct}`;
+    return `${sinal}${formatarMagnitude(dif.magnitude)}`;
   } else {
     return `${sinal}${formatarMagnitude(dif.magnitude)}`;
   }
@@ -612,9 +643,6 @@ function criarCelulaDiferenca(dif, formatarMagnitude) {
 function desenharComparacao(atual, recorde, resumoDistritos, rotuloRecorde) {
   const legenda = document.createElement("p");
   legenda.className = "legenda-recorde";
-  const verde = criarCelula("span", "melhor que o recorde ", "melhor");
-  const vermelho = criarCelula("span", ` pior que o recorde `, "pior");
-  legenda.append(verde, " · ", vermelho, " · ", criarCelula("span", " igual", "igual"));
 
   // Tabela geral
   const tabelaGeral = document.createElement("table");
@@ -719,15 +747,83 @@ function prepararRecorde(atual, resumoDistritos) {
     btnRecorde.textContent = mostrar ? textoEsconder : textoMostrar;
   };
 }
+
 // FIM: RECORDE DO JOGADOR
 
+
+
 // INÍCIO: GESTÃO DO PAINEL DE AJUDA / PISTAS
-btnAjuda.addEventListener("click", async () => {
+// Elementos da caixa de confirmação da informação adicional
+const modalConfirmarAjuda = document.getElementById("modal-confirmar-ajuda");
+const chkNaoMostrarAjuda = document.getElementById("confirmar-ajuda-nao-mostrar");
+const btnConfirmarFechar = document.getElementById("confirmar-ajuda-fechar");
+const btnConfirmarContinuar = document.getElementById("confirmar-ajuda-continuar");
+
+// Revela a informação do concelho em jogo: é aqui que se perde o ponto desse concelho
+function revelarInformacaoConcelhoAtual() {
   if (!concelhoAtual) return;
 
   errosNoConcelhoAtual++;
+  abrirPainelInfo(concelhoAtual);
+}
 
-  modalTitulo.textContent = concelhoAtual;
+function abrirConfirmacaoAjuda() {
+  chkNaoMostrarAjuda.checked = true; // por omissão, selecionada
+  modalConfirmarAjuda.classList.remove("escondido");
+  btnConfirmarFechar.focus(); // foco na opção segura
+}
+
+function fecharConfirmacaoAjuda() {
+  modalConfirmarAjuda.classList.add("escondido");
+}
+
+// O botão "Informação Adicional" pede confirmação antes de revelar. Não pergunta se:
+//  - o jogador já escolheu "Não mostrar novamente" neste jogo; ou
+//  - o concelho já perdeu o ponto (erro anterior ou informação já revelada),
+//    caso em que o aviso já não teria sentido.
+btnAjuda.addEventListener("click", () => {
+  if (!concelhoAtual) return;
+
+  if (ocultarAvisoAjuda || errosNoConcelhoAtual > 0) {
+    revelarInformacaoConcelhoAtual();
+  } else {
+    abrirConfirmacaoAjuda();
+  }
+});
+
+// "Fechar": não revela nada e não penaliza (a opção "Não mostrar novamente" só
+// vale ao continuar, para quem desiste não perder o aviso sem querer)
+btnConfirmarFechar.addEventListener("click", fecharConfirmacaoAjuda);
+
+btnConfirmarContinuar.addEventListener("click", () => {
+  if (chkNaoMostrarAjuda.checked) ocultarAvisoAjuda = true;
+  fecharConfirmacaoAjuda();
+  revelarInformacaoConcelhoAtual();
+});
+
+// Clicar fora da caixa ou carregar em Esc equivale a "Fechar"
+modalConfirmarAjuda.addEventListener("click", (e) => {
+  if (e.target === modalConfirmarAjuda) fecharConfirmacaoAjuda();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modalConfirmarAjuda.classList.contains("escondido")) {
+    fecharConfirmacaoAjuda();
+  }
+});
+
+// Identifica o pedido de abertura mais recente: evita que uma resposta atrasada
+// mostre o concelho errado ou reabra um painel que entretanto foi fechado
+let pedidoInfoId = 0;
+
+// Abre o painel de informação de um concelho. É usado pelo botão de ajuda (concelho em
+// jogo) e pelo duplo clique (concelhos já jogados). Se já houver um painel aberto,
+// é simplesmente substituído pelo novo. Não mexe em pontuação, tentativas nem pontaria.
+async function abrirPainelInfo(nomeConcelho) {
+  const pedido = ++pedidoInfoId;
+
+  modalTitulo.textContent = nomeConcelho;
+  modalDescricao.innerHTML = "";
   modalImagem.classList.add("escondido");
   modalImagem.src = "";
 
@@ -736,7 +832,7 @@ btnAjuda.addEventListener("click", async () => {
 
   // Percorre as extensões e verifica qual existe no servidor/servidor local
   for (const ext of extensoes) {
-    const caminho = `./images/Heráldicas Municipais/${encodeURIComponent(concelhoAtual)}${ext}`;
+    const caminho = `./images/Heráldicas Municipais/${encodeURIComponent(nomeConcelho)}${ext}`;
     try {
       const resposta = await fetch(caminho, { method: "HEAD" });
       if (resposta.ok) {
@@ -748,13 +844,16 @@ btnAjuda.addEventListener("click", async () => {
     }
   }
 
+  // Entretanto o painel foi fechado ou pediu-se outro concelho: abandona
+  if (pedido !== pedidoInfoId) return;
+
   // Se encontrou a extensão correta, exibe-a
   if (imagemEncontrada) {
     modalImagem.src = imagemEncontrada;
     modalImagem.classList.remove("escondido");
   }
 
-  const dados = dadosConcelhos[concelhoAtual];
+  const dados = dadosConcelhos[nomeConcelho];
 
   if (dados) {
     let htmlGaleria = "";
@@ -762,7 +861,7 @@ btnAjuda.addEventListener("click", async () => {
     if (dados.imagens && dados.imagens.length > 0) {
       htmlGaleria = `<div class="galeria-concelho">`;
       dados.imagens.forEach((imgUrl, idx) => {
-        htmlGaleria += `<img src="${imgUrl}" class="galeria-miniatura" data-index="${idx}" alt="Fotografia de ${concelhoAtual}">`;
+        htmlGaleria += `<img src="${imgUrl}" class="galeria-miniatura" data-index="${idx}" alt="Fotografia de ${nomeConcelho}">`;
       });
       htmlGaleria += `</div>`;
     }
@@ -781,22 +880,33 @@ btnAjuda.addEventListener("click", async () => {
       });
     }
   } else {
-    modalDescricao.innerHTML = `<p>Informações e pistas sobre o concelho de <strong>${concelhoAtual}</strong> estarão disponíveis brevemente.</p>`;
+    modalDescricao.innerHTML = `<p>Informações e pistas sobre o concelho de <strong>${nomeConcelho}</strong> estarão disponíveis brevemente.</p>`;
   }
 
   modalInfo.classList.remove("escondido");
-  if (painelTopRight) {
+
+  // O painel ocupa a lateral direita: esconde temporariamente o que lá estiver
+  // (o HUD durante o jogo, o resumo no fim do jogo)
+  if (jogoTerminado) {
+    painelFimJogo.classList.add("escondido");
+  } else if (painelTopRight) {
     painelTopRight.classList.add("escondido");
   }
-});
+}
 
 function fecharPainelAjuda() {
+  pedidoInfoId++; // cancela qualquer abertura ainda pendente
   if (modalInfo) modalInfo.classList.add("escondido");
   if (modalImagem) {
     modalImagem.src = "";
     modalImagem.classList.add("escondido");
   }
-  if (painelTopRight) {
+
+  // Repõe o que o painel tinha escondido: o resumo reaparece automaticamente
+  // no fim do jogo; durante o jogo volta o HUD
+  if (jogoTerminado) {
+    painelFimJogo.classList.remove("escondido");
+  } else if (painelTopRight) {
     painelTopRight.classList.remove("escondido");
   }
 }
