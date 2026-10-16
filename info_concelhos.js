@@ -3564,7 +3564,7 @@ export const dadosConcelhos = {
 
 "Ponta do Sol": {
     imagens: [
-    "./images/Concelhos/Ponta do Sol1.png",
+    "./images/Concelhos/Ponta do Sol1.jpg",
     "./images/Concelhos/Ponta do Sol2.png",
     "./images/Concelhos/Ponta do Sol3.png",
     "./images/Concelhos/Ponta do Sol4.png",
@@ -3626,7 +3626,7 @@ export const dadosConcelhos = {
 
 "Ribeira Brava": {
     imagens: [
-    "./images/Concelhos/Ribeira Brava1.png",
+    "./images/Concelhos/Ribeira Brava1.jpg",
     "./images/Concelhos/Ribeira Brava2.png",
     "./images/Concelhos/Ribeira Brava3.png",
     "./images/Concelhos/Ribeira Brava4.png",
@@ -3649,7 +3649,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Santa Cruz1.png",
     "./images/Concelhos/Santa Cruz2.png",
     "./images/Concelhos/Santa Cruz3.png",
-    "./images/Concelhos/Santa Cruz4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
