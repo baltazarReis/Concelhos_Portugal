@@ -58,7 +58,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Oeiras1.png",
     "./images/Concelhos/Oeiras2.png",
-    "./images/Concelhos/Oeiras3.jpg",
+    "./images/Concelhos/Oeiras3.png",
     "./images/Concelhos/Oeiras4.png",
     ],
     pistas:`
@@ -3715,14 +3715,14 @@ export const dadosConcelhos = {
 
 "Bragança": {
     imagens: [
-    "./images/Concelhos/Bragança1.png",
+    "./images/Concelhos/Bragança1.jpg",
     "./images/Concelhos/Bragança2.png",
     "./images/Concelhos/Bragança3.png",
-    "./images/Concelhos/Bragança4.png",
+    "./images/Concelhos/Bragança4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, capital do distrito de Bragança está situado no extremo nordeste de Portugal e faz fronteira com Espanha. O território inclui parte significativa do Parque Natural de Montesinho e apresenta paisagens de montanha, planaltos e vales.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, capital do distrito de Bragança está situado no norte do distrito e faz fronteira com Espanha. O território inclui parte significativa do Parque Natural de Montesinho e apresenta paisagens de montanha, planaltos e vales.</li>
 
       <li><strong>Cidadela e Castelo:</strong> A cidade conserva uma das mais importantes cidadelas medievais do Nordeste Transmontano, rodeada por muralhas e dominada pela Torre de Menagem do castelo. No interior encontra-se também a Domus Municipalis, um edifício medieval de características invulgares.</li>
 
@@ -3740,11 +3740,10 @@ export const dadosConcelhos = {
     "./images/Concelhos/Alfândega da Fé1.png",
     "./images/Concelhos/Alfândega da Fé2.png",
     "./images/Concelhos/Alfândega da Fé3.png",
-    "./images/Concelhos/Alfândega da Fé4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado na zona sul do distrito, entre o vale do Sabor e a Serra de Bornes. A paisagem combina montanha, olivais, amendoais e áreas de cultivo.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho da região de Terras de Trás-os-Montes, pertencente ao distrito de Bragança e situado no interior sul do distrito, entre o vale do Sabor e a Serra de Bornes. A paisagem combina montanha, olivais, amendoais e áreas de cultivo.</li>
 
       <li><strong>Serra de Bornes:</strong> A Serra de Bornes domina a paisagem do concelho e atinge cerca de 1200 metros de altitude. As encostas da serra contrastam com as zonas mais baixas e quentes do território, onde predominam a oliveira, a amendoeira e outras culturas mediterrânicas.</li>
 
@@ -3779,7 +3778,7 @@ export const dadosConcelhos = {
 
 "Freixo de Espada à Cinta": {
     imagens: [
-    "./images/Concelhos/Freixo de Espada à Cinta1.png",
+    "./images/Concelhos/Freixo de Espada à Cinta1.jpg",
     "./images/Concelhos/Freixo de Espada à Cinta2.png",
     "./images/Concelhos/Freixo de Espada à Cinta3.png",
     "./images/Concelhos/Freixo de Espada à Cinta4.png",
@@ -3804,7 +3803,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Macedo de Cavaleiros1.png",
     "./images/Concelhos/Macedo de Cavaleiros2.png",
     "./images/Concelhos/Macedo de Cavaleiros3.png",
-    "./images/Concelhos/Macedo de Cavaleiros4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -3865,7 +3863,7 @@ export const dadosConcelhos = {
 
 "Mogadouro": {
     imagens: [
-    "./images/Concelhos/Mogadouro1.png",
+    "./images/Concelhos/Mogadouro1.jfif",
     "./images/Concelhos/Mogadouro2.png",
     "./images/Concelhos/Mogadouro3.png",
     "./images/Concelhos/Mogadouro4.png",
@@ -3933,7 +3931,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Vimioso1.png",
     "./images/Concelhos/Vimioso2.png",
-    "./images/Concelhos/Vimioso3.png",
+    "./images/Concelhos/Vimioso3.jpeg",
     "./images/Concelhos/Vimioso4.png",
     ],
     pistas:`
