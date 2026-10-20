@@ -1,6 +1,5 @@
 Problemas no mapa atual:
 
-Corrigir linhas dos Açores no inkscape
 
 Faltam imagens para os distritos de:
 
@@ -9,7 +8,4 @@ Faltam imagens para os distritos de:
 3 Aveiro
 4 Guarda
 5 Viseu
-6 Braga
-7 Vila Real
-8 Bragança
-9 Madeira
+6 Vila Real

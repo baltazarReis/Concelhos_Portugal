@@ -5979,7 +5979,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Barcelos1.png",
     "./images/Concelhos/Barcelos2.png",
     "./images/Concelhos/Barcelos3.png",
-    "./images/Concelhos/Barcelos4.png",
+    "./images/Concelhos/Barcelos4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -6001,7 +6001,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Braga1.png",
     "./images/Concelhos/Braga2.png",
     "./images/Concelhos/Braga3.png",
-    "./images/Concelhos/Braga4.png",
+    "./images/Concelhos/Braga4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -6151,8 +6151,8 @@ export const dadosConcelhos = {
 "Terras de Bouro": {
     imagens: [
     "./images/Concelhos/Terras de Bouro1.png",
-    "./images/Concelhos/Terras de Bouro2.png",
-    "./images/Concelhos/Terras de Bouro3.png",
+    "./images/Concelhos/Terras de Bouro2.jpeg",
+    "./images/Concelhos/Terras de Bouro3.jpeg",
     "./images/Concelhos/Terras de Bouro4.png",
     ],
     pistas:`
@@ -6234,7 +6234,7 @@ export const dadosConcelhos = {
 
 "Vizela": {
     imagens: [
-    "./images/Concelhos/Vizela1.png",
+    "./images/Concelhos/Vizela1.jpg",
     "./images/Concelhos/Vizela2.png",
     "./images/Concelhos/Vizela3.png",
     "./images/Concelhos/Vizela4.png",
