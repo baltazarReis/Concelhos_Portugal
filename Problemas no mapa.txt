@@ -8,4 +8,3 @@ Faltam imagens para os distritos de:
 3 Aveiro
 4 Guarda
 5 Viseu
-6 Vila Real

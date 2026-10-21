@@ -5643,7 +5643,7 @@ export const dadosConcelhos = {
     imagens: [
       "./images/Concelhos/Alijó1.png",
       "./images/Concelhos/Alijó2.png",
-      "./images/Concelhos/Alijó3.png",
+      "./images/Concelhos/Alijó3.jpg",
       "./images/Concelhos/Alijó4.png",
     ],
     pistas:`
@@ -5653,8 +5653,6 @@ export const dadosConcelhos = {
       <li><strong>Vinho do Douro:</strong> Grande parte do concelho integra a Região Demarcada do Douro. As encostas do Douro e do rio Pinhão são marcadas pelos socalcos das vinhas, destacando-se localidades como Pinhão, Favaios e São Mamede de Ribatua.</li>
 
       <li><strong>Favaios:</strong> Favaios conserva uma longa tradição vitivinícola e é especialmente conhecida pelo Moscatel de Favaios. A localidade tem origem antiga, estando associada à antiga povoação romana de Flavias e a uma estrada romana que atravessava o actual concelho.</li>
-
-      <li><strong>Demarcação Pombalina:</strong> O território de Alijó ficou abrangido pela demarcação da Região do Douro ordenada pelo Marquês de Pombal a partir de 1756. Os marcos pombalinos ainda existentes no território assinalam os limites da zona de produção de vinhos de feitoria.</li>
 
       <li><strong>Pinhão:</strong> A vila do Pinhão desenvolveu-se junto à confluência do rio Pinhão com o Douro e tornou-se um importante centro ligado ao transporte e comércio do vinho do Porto. A estação ferroviária conserva um conjunto de azulejos alusivos à produção vinícola e à paisagem duriense.</li>
     </ul>
@@ -5752,7 +5750,7 @@ export const dadosConcelhos = {
     imagens: [
       "./images/Concelhos/Montalegre1.png",
       "./images/Concelhos/Montalegre2.png",
-      "./images/Concelhos/Montalegre3.png",
+      "./images/Concelhos/Montalegre3.jpeg",
       "./images/Concelhos/Montalegre4.png",
     ],
     pistas:`
@@ -5776,7 +5774,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Murça1.png",
       "./images/Concelhos/Murça2.png",
       "./images/Concelhos/Murça3.png",
-      "./images/Concelhos/Murça4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5822,7 +5819,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Ribeira de Pena1.png",
       "./images/Concelhos/Ribeira de Pena2.png",
       "./images/Concelhos/Ribeira de Pena3.png",
-      "./images/Concelhos/Ribeira de Pena4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5847,9 +5843,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da região do Douro e pertencente ao distrito de Vila Real, situado no centro sul do distrito, entre Vila Real e o rio Douro. O território é marcado por encostas vinhateiras, vales e zonas de planalto.</li>
 
-      <li><strong>Fernão de Magalhães:</strong> Sabrosa está associada a Fernão de Magalhães, navegador Português responsável pela primeira viagem de circum-navegação do planeta Terra. A tradição local aponta a Casa da Pereira como o local do seu nascimento, embora esta atribuição não seja considerada totalmente certa pelos historiadores.</li>
-
-      <li><strong>Descobrimentos:</strong> Fernão de Magalhães participou em campanhas portuguesas no Oriente antes de passar ao serviço da Coroa espanhola. A expedição iniciada em 1519, que procurava uma passagem para as ilhas das especiarias, acabou por realizar a primeira circum-navegação da Terra, concluída pela tripulação em 1522.</li>
+      <li><strong>Fernão de Magalhães:</strong> Sabrosa está associada a Fernão de Magalhães, navegador Português responsável pela primeira viagem de circum-navegação do planeta Terra. A tradição local aponta a Casa da Pereira como o local do seu nascimento.</li>
 
       <li><strong>Provesende:</strong> A aldeia de Provesende possui origem anterior à formação do Reino de Portugal e conserva um importante conjunto de casas senhoriais, igrejas e solares construídos ou transformados durante o período de prosperidade do Douro vinhateiro.</li>
 
@@ -5864,7 +5858,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Santa Marta de Penaguião1.png",
       "./images/Concelhos/Santa Marta de Penaguião2.png",
       "./images/Concelhos/Santa Marta de Penaguião3.png",
-      "./images/Concelhos/Santa Marta de Penaguião4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5873,8 +5866,6 @@ export const dadosConcelhos = {
       <li><strong>Terras de Penaguião:</strong> Durante a Idade Média, o território integrou o Julgado de Penaguião, uma unidade administrativa que abrangia também áreas dos actuais concelhos de Peso da Régua e Mesão Frio. O nome Penaguião aparece em documentação desde a Idade Média.</li>
 
       <li><strong>Restauração da Independência:</strong> O título de Conde de Penaguião ficou associado à família dos Sá e Meneses. O 3.º Conde de Penaguião, D. João Rodrigues de Sá e Meneses, foi um dos conjurados que participaram no golpe de 1640 que levou à Restauração da Independência de Portugal.</li>
-
-      <li><strong>Demarcação Pombalina:</strong> Grande parte do actual concelho foi incluída na primeira demarcação do Douro ordenada em 1756. Os marcos pombalinos existentes no território testemunham a criação da região de produção dos vinhos de feitoria.</li>
 
       <li><strong>Vinho:</strong> A produção vitivinícola é uma das características históricas mais fortes do concelho. Durante o século XVIII, Penaguião encontrava-se entre as zonas de maior produção de vinho do Alto Douro.</li>
     </ul>
@@ -5910,7 +5901,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Vila Pouca de Aguiar1.png",
       "./images/Concelhos/Vila Pouca de Aguiar2.png",
       "./images/Concelhos/Vila Pouca de Aguiar3.png",
-      "./images/Concelhos/Vila Pouca de Aguiar4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
