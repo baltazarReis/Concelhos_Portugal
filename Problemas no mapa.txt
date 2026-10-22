@@ -6,5 +6,4 @@ Faltam imagens para os distritos de:
 1 Coimbra
 2 Porto
 3 Aveiro
-4 Guarda
-5 Viseu
+4 Viseu

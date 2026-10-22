@@ -33,7 +33,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Localizada na margem norte do estuário do Tejo, é a capital de Portugal e capital distrital, o principal centro político, económico e cultural do país e a cidade mais populosa.</li>
       <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos Mouros em 1147 por D. Afonso Henriques com o auxílio dos cruzados, destacando-se o célebre episódio de Martim Moniz, que sacrificou a vida ao entalar o próprio corpo nas portas do castelo para impedir que estas se fechassem e permitir a entrada das tropas.</li>
-      <li><strong>História e Património:</strong> Serviu como um importante centro de partida e chegada das armadas durante a Época dos Descobrimentos, estando fortemente associada às viagens portuguesas para o Oriente, incluindo a expedição de Vasco da Gama à Índia. Exibe monumentos emblemáticos dessa época, como a Torre de Belém e o Mosteiro dos Jerónimos, que integram conjuntamente um bem classificado como Património Mundial da UNESCO desde 1983, além do Castelo de São Jorge e da Baixa Pombalina, reconstruída após o terramoto de 1755.</li>
+      <li><strong>História e Património:</strong> Serviu como um importante centro de partida e chegada das armadas durante a Época dos Descobrimentos, estando fortemente associada às viagens Portuguesas para o Oriente, incluindo a expedição de Vasco da Gama à Índia. Exibe monumentos emblemáticos dessa época, como a Torre de Belém e o Mosteiro dos Jerónimos, que integram conjuntamente um bem classificado como Património Mundial da UNESCO desde 1983, além do Castelo de São Jorge e da Baixa Pombalina, reconstruída após o terramoto de 1755.</li>
       <li><strong>Gastronomia:</strong> Destaca-se pela pastelaria de referência mundial com os pastéis de nata, pratos tradicionais de peixe e marisco, e petiscos icónicos como os peixinhos da horta e o bacalhau à brás.</li>
     </ul>
   `
@@ -154,7 +154,7 @@ export const dadosConcelhos = {
 
       <li><strong>História e Formação do Concelho:</strong> A história documentada de Sobral de Monte Agraço remonta a 1186, quando D. Sancho I doou o reguengo de “Soveral” ao Bispo de Évora. D. Manuel I concedeu foral à vila em 1518 e, em 1770, D. José I criou o Senhorio Honorífico da Vila de Sobral, atribuído a Joaquim Inácio da Cruz, que viria a marcar profundamente o desenvolvimento da vila.</li>
 
-      <li><strong>Linhas de Torres e Invasões Francesas:</strong> Sobral de Monte Agraço ocupou uma posição central na primeira linha das Linhas de Torres durante a Terceira Invasão Francesa de 1810. O Forte do Alqueidão funcionou como importante posto de comando das forças aliadas sob o Duque de Wellington, enquanto os combates de Sobral e Seramena marcaram o confronto entre as tropas portuguesas e inglesas contra o exército francês. O concelho conserva oito fortificações das Linhas de Torres, quatro das quais são visitáveis.</li>
+      <li><strong>Linhas de Torres e Invasões Francesas:</strong> Sobral de Monte Agraço ocupou uma posição central na primeira linha das Linhas de Torres durante a Terceira Invasão Francesa de 1810. O Forte do Alqueidão funcionou como importante posto de comando das forças aliadas sob o Duque de Wellington, enquanto os combates de Sobral e Seramena marcaram o confronto entre as tropas Portuguesas e inglesas contra o exército francês. O concelho conserva oito fortificações das Linhas de Torres, quatro das quais são visitáveis.</li>
 
       <li><strong>Tauromaquia e Festas Tradicionais:</strong> A tauromaquia ocupa um lugar importante nas tradições culturais de Sobral de Monte Agraço, estando particularmente associada às Festas e Feira de Verão. O concelho conserva uma longa tradição de corridas de touros, largadas de touros ao uso de Pamplona, touros à corda e esperas, contando ao longo da sua história com três praças de touros. A Tertúlia Tauromáquica Sobralense desempenha também um papel na preservação da memória e do património tauromáquico local.</li>
 
@@ -365,7 +365,7 @@ export const dadosConcelhos = {
 
       <li><strong>Caminho-de-Ferro:</strong> O Barreiro tornou-se um importante ponto ferroviário a partir de 1861, com a abertura do primeiro troço do Caminho de Ferro do Sul entre Barreiro e Vendas Novas. A ligação ferroviária ao Sul do país contribuiu para a transformação económica e urbana da vila.</li>
 
-      <li><strong>CUF e Industrialização:</strong> A Companhia União Fabril instalou o seu grande complexo industrial no Barreiro a partir de 1907. A expansão das fábricas de produtos químicos e de outras indústrias transformou o concelho num dos principais centros industriais portugueses durante o século XX.</li>
+      <li><strong>CUF e Industrialização:</strong> A Companhia União Fabril instalou o seu grande complexo industrial no Barreiro a partir de 1907. A expansão das fábricas de produtos químicos e de outras indústrias transformou o concelho num dos principais centros industriais Portugueses durante o século XX.</li>
 
       <li><strong>Bairros Operários:</strong> O crescimento industrial levou à construção de bairros destinados aos trabalhadores das fábricas e dos caminhos-de-ferro. O Bairro Operário da CUF começou a ser construído em 1908 e foi sendo ampliado nas décadas seguintes.</li>
     </ul>
@@ -512,7 +512,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral e pertencente ao distrito de Setúbal, atravessado pelo rio Sado e com um território que se estende desde a cidade de Alcácer até à Comporta e ao Torrão. É um dos maiores concelhos portugueses em área e inclui seis freguesias.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral e pertencente ao distrito de Setúbal, atravessado pelo rio Sado e com um território que se estende desde a cidade de Alcácer até à Comporta e ao Torrão. É um dos maiores concelhos Portugueses em área e inclui seis freguesias.</li>
 
       <li><strong>História:</strong> A ocupação humana do território remonta à Pré-História. Na Antiguidade, Alcácer foi um importante centro portuário romano, conhecido como Salacia. Passou por períodos de ocupação islâmica, tendo sido integrada definitivamente no domínio português em 1217 e entregue à Ordem de Santiago.</li>
 
@@ -556,7 +556,7 @@ export const dadosConcelhos = {
     ],
     pistas:`
     <ul class="lista-pistas">
-      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral e pertencente ao distrito de Setúbal, entre a Serra de Grândola e o litoral atlântico, com um território que se estende desde o vale do Sado até às lagoas e praias da costa. É um dos maiores concelhos portugueses em área e inclui nove freguesias.</li>
+      <li><strong>Localização e Geografia:</strong> Concelho do Alentejo Litoral e pertencente ao distrito de Setúbal, entre a Serra de Grândola e o litoral atlântico, com um território que se estende desde o vale do Sado até às lagoas e praias da costa. É um dos maiores concelhos Portugueses em área e inclui nove freguesias.</li>
 
       <li><strong>Castelo e Ordem de Santiago:</strong> O Castelo de Santiago do Cacém ocupa uma elevação sobre a cidade e tem origem na ocupação islâmica. O território foi reconquistado pelos cristãos em 1217 e ficou ligado à Ordem de Santiago, que teve um papel importante na organização medieval da vila.</li>
 
@@ -608,7 +608,7 @@ export const dadosConcelhos = {
 
       <li><strong>Pax Julia:</strong> Beja teve grande importância durante o domínio romano, quando a cidade era conhecida como Pax Julia. Tornou-se sede de um conventus iuridicus, funcionando como centro administrativo de uma extensa área do Sul da Lusitânia. O período romano deixou numerosos vestígios arqueológicos no concelho.</li>
 
-      <li><strong>Reconquista:</strong> Beja foi integrada no domínio cristão durante a Reconquista e voltou a ser ocupada pelos portugueses em 1162, no contexto da expansão para sul. A cidade sofreu posteriormente novas incursões e alterações de domínio, até à consolidação do território no reino português. D. Afonso III concedeu-lhe novo foral e promoveu o seu repovoamento no século XIII.</li>
+      <li><strong>Reconquista:</strong> Beja foi integrada no domínio cristão durante a Reconquista e voltou a ser ocupada pelos Portugueses em 1162, no contexto da expansão para sul. A cidade sofreu posteriormente novas incursões e alterações de domínio, até à consolidação do território no reino português. D. Afonso III concedeu-lhe novo foral e promoveu o seu repovoamento no século XIII.</li>
 
       <li><strong>Herança Agrícola:</strong> As planícies do concelho estão historicamente associadas à produção de cereais, à oliveira, à vinha e à criação de gado. A paisagem rural é marcada pelo montado de azinho e pelas extensas áreas agrícolas do Baixo Alentejo.</li>
     </ul>
@@ -1178,7 +1178,7 @@ export const dadosConcelhos = {
  
       <li><strong>Reconquista Cristã:</strong> Foi reconquistada aos mouros em 1242 por D. Paio Peres Correia, na sequência da lenda dos Sete Cavaleiros de Tavira, mortos numa emboscada às portas da vila.</li>
 
-      <li><strong>Descobrimentos:</strong> Tavira teve um papel importante na expansão portuguesa para o Norte de África. Em 1415, após a conquista de Ceuta, a armada portuguesa passou por Tavira no regresso ao Algarve, e a cidade manteve um importante porto ligado às expedições e ao abastecimento das praças portuguesas em Marrocos. Foi também em Tavira que os infantes D. Pedro e D. Henrique receberam, no regresso de Ceuta, respectivamente, os títulos de Duque de Coimbra e Duque de Viseu.</li>
+      <li><strong>Descobrimentos:</strong> Tavira teve um papel importante na expansão portuguesa para o Norte de África. Em 1415, após a conquista de Ceuta, a armada portuguesa passou por Tavira no regresso ao Algarve, e a cidade manteve um importante porto ligado às expedições e ao abastecimento das praças Portuguesas em Marrocos. Foi também em Tavira que os infantes D. Pedro e D. Henrique receberam, no regresso de Ceuta, respectivamente, os títulos de Duque de Coimbra e Duque de Viseu.</li>
  
       <li><strong>Igrejas e Ponte:</strong> A cidade é conhecida pelo elevado número de igrejas históricas e pela antiga ponte Romana sobre o Gilão, que liga as duas margens do centro histórico.</li>
  
@@ -1198,7 +1198,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho do distrito de Faro situado no extremo sudoeste do Algarve e de Portugal continental, incluindo o promontório de Sagres e o Cabo de São Vicente.</li>
  
-      <li><strong>Sagres e os Descobrimentos:</strong> Além de ter mandado construir no promontório a Fortaleza de Sagres a tradição associa Sagres ao Infante D. Henrique e a uma escola de navegação, que teria contribuído para o início dos Descobrimentos portugueses no século XV.</li>
+      <li><strong>Sagres e os Descobrimentos:</strong> Além de ter mandado construir no promontório a Fortaleza de Sagres a tradição associa Sagres ao Infante D. Henrique e a uma escola de navegação, que teria contribuído para o início dos Descobrimentos Portugueses no século XV.</li>
  
       <li><strong>Cabo de São Vicente:</strong> Considerado sagrado desde a Antiguidade sob o nome de Promontorium Sacrum, o Cabo de São Vicente é hoje um dos pontos mais emblemáticos da costa portuguesa, assinalado pelo seu farol e marcando o extremo sudoeste da Europa continental.</li>
  
@@ -1798,7 +1798,7 @@ export const dadosConcelhos = {
 
       <li><strong>Cabo Carvoeiro:</strong> O Cabo Carvoeiro constitui o extremo ocidental da península de Peniche e é marcado por arribas e formações rochosas esculpidas pela erosão marítima. Ao largo encontra-se o arquipélago das Berlengas, visível em dias de boa visibilidade.</li>
     
-      <li><strong>Surf:</strong> A costa de Peniche é conhecida pelas condições favoráveis à prática de surf, destacando-se a Praia de Supertubos pelas suas ondas. A cidade tornou-se uma das principais referências portuguesas desta modalidade e recebe competições internacionais.</li>
+      <li><strong>Surf:</strong> A costa de Peniche é conhecida pelas condições favoráveis à prática de surf, destacando-se a Praia de Supertubos pelas suas ondas. A cidade tornou-se uma das principais referências Portuguesas desta modalidade e recebe competições internacionais.</li>
     </ul>
   `
 }, 
@@ -1838,7 +1838,7 @@ export const dadosConcelhos = {
 
       <li><strong>História e Reconquista:</strong> Porto de Mós foi reconquistada aos mouros no século XII e recebeu foral de D. Afonso Henriques em 1182. A posição da vila tornou-a importante na defesa do território e nas ligações entre o litoral e o interior.</li>
 
-      <li><strong>Batalha de Aljubarrota:</strong> O concelho está directamente ligado à Batalha de Aljubarrota, travada em 1385 entre as forças portuguesas comandadas por D. João I e D. Nuno Álvares Pereira e o exército castelhano. A batalha ocorreu nas proximidades de Porto de Mós e foi decisiva para a consolidação da independência Portuguesa.</li>
+      <li><strong>Batalha de Aljubarrota:</strong> O concelho está directamente ligado à Batalha de Aljubarrota, travada em 1385 entre as forças Portuguesas comandadas por D. João I e D. Nuno Álvares Pereira e o exército castelhano. A batalha ocorreu nas proximidades de Porto de Mós e foi decisiva para a consolidação da independência Portuguesa.</li>
 
       <li><strong>Serras de Aire e Candeeiros:</strong> Grande parte do concelho integra o Parque Natural das Serras de Aire e Candeeiros, caracterizado por uma paisagem calcária com escarpas, dolinas, algares e grutas. As formações rochosas resultam da erosão da água sobre o calcário ao longo de milhões de anos.</li>
 
@@ -2038,7 +2038,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho do Médio Tejo, pertencente ao distrito de Santarém, situado numa zona de ligação entre o norte e o sul do país.</li>
 
-      <li><strong>Caminho-de-Ferro:</strong> O Entroncamento nasceu e cresceu em torno do caminho-de-ferro. A localização no cruzamento das linhas do Norte e do Leste transformou a povoação num dos principais centros ferroviários portugueses.</li>
+      <li><strong>Caminho-de-Ferro:</strong> O Entroncamento nasceu e cresceu em torno do caminho-de-ferro. A localização no cruzamento das linhas do Norte e do Leste transformou a povoação num dos principais centros ferroviários Portugueses.</li>
 
       <li><strong>Museu Nacional Ferroviário:</strong> O Museu Nacional Ferroviário conserva locomotivas, carruagens, equipamentos e outros elementos relacionados com a história dos caminhos-de-ferro em Portugal.</li>
 
@@ -2426,7 +2426,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho do Alto Alentejo, pertencente ao distrito de Portalegre, situado no interior sul do distrito, numa paisagem de planície, montado e olival.</li>
 
-      <li><strong>Batalha dos Atoleiros:</strong> Em 1384, D. Nuno Álvares Pereira derrotou uma força castelhana na Batalha dos Atoleiros, travada nas proximidades da vila. A batalha foi uma das primeiras vitórias portuguesas durante a crise de 1383–1385.</li>
+      <li><strong>Batalha dos Atoleiros:</strong> Em 1384, D. Nuno Álvares Pereira derrotou uma força castelhana na Batalha dos Atoleiros, travada nas proximidades da vila. A batalha foi uma das primeiras vitórias Portuguesas durante a crise de 1383–1385.</li>
 
       <li><strong>Memória de Nuno Álvares Pereira:</strong> A ligação à Batalha dos Atoleiros e ao Condestável é uma das principais referências históricas do concelho.</li>
 
@@ -3217,11 +3217,11 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma dos Açores, situado na costa sul da ilha Terceira. A cidade desenvolveu-se em torno de uma baía protegida, com o Monte Brasil a dominar a entrada do porto.</li>
 
-      <li><strong>Porto Atlântico:</strong> Desde o século XV, Angra foi um dos principais portos de escala das armadas portuguesas que navegavam entre a Europa, África, Índia e América. A sua localização fez da cidade um ponto fundamental das rotas atlânticas.</li>
+      <li><strong>Porto Atlântico:</strong> Desde o século XV, Angra foi um dos principais portos de escala das armadas Portuguesas que navegavam entre a Europa, África, Índia e América. A sua localização fez da cidade um ponto fundamental das rotas atlânticas.</li>
 
       <li><strong>Património Mundial:</strong> O centro histórico de Angra do Heroísmo é Património Mundial da UNESCO desde 1983. A cidade conserva um conjunto urbano desenvolvido em torno do porto, com igrejas, conventos, palácios e fortificações.</li>
 
-      <li><strong>Fortaleza de São João Baptista:</strong> A enorme fortificação construída no Monte Brasil a partir do final do século XVI destinava-se a proteger o porto e as frotas que por Angra passavam. É um dos maiores conjuntos fortificados portugueses.</li>
+      <li><strong>Fortaleza de São João Baptista:</strong> A enorme fortificação construída no Monte Brasil a partir do final do século XVI destinava-se a proteger o porto e as frotas que por Angra passavam. É um dos maiores conjuntos fortificados Portugueses.</li>
 
       <li><strong>Terremoto de 1980:</strong> Em 1980, um forte sismo causou graves danos na cidade e em várias localidades da Terceira, levando a um extenso processo de reconstrução do património histórico.</li>
     </ul>
@@ -3505,7 +3505,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da Região Autónoma da Madeira, situado na costa sul da ilha, imediatamente a oeste do Funchal. O território combina uma frente costeira muito recortada com vales profundos e zonas montanhosas.</li>
 
-      <li><strong>João Gonçalves Zarco:</strong> Câmara de Lobos foi uma das primeiras localidades onde João Gonçalves Zarco se estabeleceu após a chegada dos portugueses à Madeira, tendo a povoação crescido em torno da baía e das actividades marítimas.</li>
+      <li><strong>João Gonçalves Zarco:</strong> Câmara de Lobos foi uma das primeiras localidades onde João Gonçalves Zarco se estabeleceu após a chegada dos Portugueses à Madeira, tendo a povoação crescido em torno da baía e das actividades marítimas.</li>
 
       <li><strong>Nome e Heráldica:</strong> O nome Câmara de Lobos está associado à enseada onde João Gonçalves Zarco encontrou uma grande concentração de lobos-marinhos. O brasão do concelho representa esta origem através de dois lobos-marinhos e de uma âncora.</li>
 
@@ -4134,7 +4134,7 @@ export const dadosConcelhos = {
 
       <li><strong>Batalha do Buçaco:</strong> Em 1810, durante a Terceira Invasão Francesa, o território de Mortágua ficou directamente ligado à Batalha do Buçaco. A serra e os acessos pelo concelho foram atravessados pelas forças francesas e luso-britânicas antes do confronto de 27 de Setembro.</li>
 
-      <li><strong>Combate de Mortágua:</strong> Em 25 de Setembro de 1810, dois dias antes da Batalha do Buçaco, ocorreu o combate da Serra do Meiral. As forças portuguesas comandadas pelo major Luís Rego atacaram a vanguarda francesa e retiraram posteriormente para o Buçaco.</li>
+      <li><strong>Combate de Mortágua:</strong> Em 25 de Setembro de 1810, dois dias antes da Batalha do Buçaco, ocorreu o combate da Serra do Meiral. As forças Portuguesas comandadas pelo major Luís Rego atacaram a vanguarda francesa e retiraram posteriormente para o Buçaco.</li>
 
       <li><strong>Albufeira da Aguieira:</strong> A barragem da Aguieira criou uma extensa albufeira no rio Mondego, abrangendo parte do concelho e transformando profundamente a paisagem dos vales fluviais.</li>
 
@@ -4180,7 +4180,7 @@ export const dadosConcelhos = {
 
       <li><strong>Albufeira de Ribeiradio:</strong> A barragem de Ribeiradio criou uma grande albufeira no rio Vouga, alterando a paisagem do vale e criando uma extensa área fluvial.</li>
 
-      <li><strong>Território descontínuo:</strong> Oliveira de Frades é um dos poucos municípios portugueses com território descontínuo. A União das Freguesias de Arca e Varzielas forma uma pequena parcela do concelho separada do território principal pelo município de Vouzela, situação resultante das reformas administrativas do século XIX.</li>
+      <li><strong>Território descontínuo:</strong> Oliveira de Frades é um dos poucos municípios Portugueses com território descontínuo. A União das Freguesias de Arca e Varzielas forma uma pequena parcela do concelho separada do território principal pelo município de Vouzela, situação resultante das reformas administrativas do século XIX.</li>
 
       <li><strong>Património Rural:</strong> O concelho conserva antigas aldeias, moinhos, espigueiros, casas de granito e outros elementos ligados à agricultura tradicional das terras de Lafões.</li>
     </ul>
@@ -4224,7 +4224,7 @@ export const dadosConcelhos = {
 
       <li><strong>Álvaro Gonçalves Coutinho, o Magriço:</strong> Penedono é tradicionalmente identificado como terra natal de Álvaro Gonçalves Coutinho, o Magriço, um dos Doze de Inglaterra celebrados por Luís de Camões n’<em>Os Lusíadas</em>.</li>
 
-      <li><strong>Doze de Inglaterra:</strong> A tradição dos Doze de Inglaterra conta a viagem de doze cavaleiros portugueses à corte inglesa para defender a honra de doze damas. O episódio é lendário, mas o Magriço tornou-se uma das figuras históricas e literárias mais associadas a Penedono.</li>
+      <li><strong>Doze de Inglaterra:</strong> A tradição dos Doze de Inglaterra conta a viagem de doze cavaleiros Portugueses à corte inglesa para defender a honra de doze damas. O episódio é lendário, mas o Magriço tornou-se uma das figuras históricas e literárias mais associadas a Penedono.</li>
 
       <li><strong>Património Medieval:</strong> A vila conserva o castelo, o pelourinho e um núcleo antigo de casas de granito, testemunhos da importância medieval e da autonomia municipal de Penedono.</li>
     </ul>
@@ -4310,7 +4310,7 @@ export const dadosConcelhos = {
     <ul class="lista-pistas">
       <li><strong>Localização e Geografia:</strong> Concelho da região de Viseu Dão Lafões, pertencente ao distrito de Viseu e situado no vale do Vouga, entre as serras da Arada e de São Macário e a zona de Lafões.</li>
 
-      <li><strong>Termas:</strong> As Termas de São Pedro do Sul são utilizadas desde a época romana, existindo vestígios de um antigo balneário. Ao longo dos séculos foram frequentadas por vários monarcas portugueses e, no final do século XIX, passaram a chamar-se Termas da Rainha D. Amélia.</li>
+      <li><strong>Termas:</strong> As Termas de São Pedro do Sul são utilizadas desde a época romana, existindo vestígios de um antigo balneário. Ao longo dos séculos foram frequentadas por vários monarcas Portugueses e, no final do século XIX, passaram a chamar-se Termas da Rainha D. Amélia.</li>
 
       <li><strong>D. Afonso Henriques:</strong> A tradição termal local associa D. Afonso Henriques às águas de São Pedro do Sul, que o monarca terá frequentado para recuperar de ferimentos sofridos em combate.</li>
 
@@ -5306,7 +5306,7 @@ export const dadosConcelhos = {
 
       <li><strong>Restauração:</strong> O concelho está particularmente ligado à Restauração de 1640 através da família dos Meneses. O Marquês de Marialva nascido em Cantanhede destacou-se na Guerra da Restauração, sendo uma das principais figuras militares, comandando as tropas Portuguesas nas batalhas das Linhas de Elvas e de Montes Claros. Morreu em 1675, estando sepultado em Cantanhede.</li>
 
-      <li><strong>Pedra de Ançã:</strong> A freguesia de Ançã é conhecida pela exploração e trabalho da pedra calcária local, utilizada durante séculos na construção e na escultura. A chamada Pedra de Ançã foi utilizada em numerosos monumentos e obras escultóricas portuguesas.</li>
+      <li><strong>Pedra de Ançã:</strong> A freguesia de Ançã é conhecida pela exploração e trabalho da pedra calcária local, utilizada durante séculos na construção e na escultura. A chamada Pedra de Ançã foi utilizada em numerosos monumentos e obras escultóricas Portuguesas.</li>
 
       <li><strong>Jaime Cortesão:</strong> O médico, escritor e historiador Jaime Cortesão nasceu em Ançã, no concelho de Cantanhede, em 1884. Foi uma das figuras do movimento da Renascença Portuguesa e destacou-se também pelos seus estudos sobre a história dos Descobrimentos.</li>
     </ul>
@@ -6251,7 +6251,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Aguiar da Beira1.png",
     "./images/Concelhos/Aguiar da Beira2.png",
     "./images/Concelhos/Aguiar da Beira3.png",
-    "./images/Concelhos/Aguiar da Beira4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -6272,7 +6271,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Almeida1.png",
     "./images/Concelhos/Almeida2.png",
-    "./images/Concelhos/Almeida3.png",
+    "./images/Concelhos/Almeida3.jpeg",
     "./images/Concelhos/Almeida4.png",
     ],
     pistas:`
@@ -6281,7 +6280,7 @@ export const dadosConcelhos = {
 
       <li><strong>Tratado de Alcanizes:</strong> O rio Côa constituiu durante séculos a fronteira entre o território português e o Reino de Leão. Em 1297, o Tratado de Alcanizes, celebrado entre D. Dinis e D. Fernando IV de Castela, integrou definitivamente Ribacôa no Reino de Portugal.</li>
 
-      <li><strong>Fortaleza de Almeida:</strong> A Praça-Forte de Almeida foi transformada numa poderosa fortificação abaluartada a partir do século XVII. A sua planta em estrela e a posição junto à fronteira fizeram dela uma das principais praças militares portuguesas.</li>
+      <li><strong>Fortaleza de Almeida:</strong> A Praça-Forte de Almeida foi transformada numa poderosa fortificação abaluartada a partir do século XVII. A sua planta em estrela e a posição junto à fronteira fizeram dela uma das principais praças militares Portuguesas.</li>
 
       <li><strong>Guerra da Restauração:</strong> Almeida desempenhou um papel central na defesa da fronteira durante a Guerra da Restauração. A fortaleza foi cercada e atacada em vários momentos dos conflitos entre Portugal e Espanha.</li>
     </ul>
@@ -6293,7 +6292,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Celorico da Beira1.png",
     "./images/Concelhos/Celorico da Beira2.png",
     "./images/Concelhos/Celorico da Beira3.png",
-    "./images/Concelhos/Celorico da Beira4.png",
+    "./images/Concelhos/Celorico da Beira4.jpeg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -6312,7 +6311,7 @@ export const dadosConcelhos = {
 
 "Figueira de Castelo Rodrigo": {
     imagens: [
-    "./images/Concelhos/Figueira de Castelo Rodrigo1.png",
+    "./images/Concelhos/Figueira de Castelo Rodrigo1.jpg",
     "./images/Concelhos/Figueira de Castelo Rodrigo2.png",
     "./images/Concelhos/Figueira de Castelo Rodrigo3.png",
     "./images/Concelhos/Figueira de Castelo Rodrigo4.png",
@@ -6337,7 +6336,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Fornos de Algodres1.png",
     "./images/Concelhos/Fornos de Algodres2.png",
     "./images/Concelhos/Fornos de Algodres3.png",
-    "./images/Concelhos/Fornos de Algodres4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -6355,7 +6353,7 @@ export const dadosConcelhos = {
 "Gouveia": {
     imagens: [
     "./images/Concelhos/Gouveia1.png",
-    "./images/Concelhos/Gouveia2.png",
+    "./images/Concelhos/Gouveia2.jpeg",
     "./images/Concelhos/Gouveia3.png",
     "./images/Concelhos/Gouveia4.png",
     ],
@@ -6399,7 +6397,7 @@ export const dadosConcelhos = {
 "Manteigas": {
     imagens: [
     "./images/Concelhos/Manteigas1.png",
-    "./images/Concelhos/Manteigas2.png",
+    "./images/Concelhos/Manteigas2.jpg",
     "./images/Concelhos/Manteigas3.png",
     "./images/Concelhos/Manteigas4.png",
     ],
@@ -6475,9 +6473,11 @@ export const dadosConcelhos = {
 
       <li><strong>Castelo do Sabugal:</strong> O Castelo do Sabugal domina a vila a partir de uma posição elevada junto ao rio Côa. A fortificação foi reforçada por D. Dinis depois da integração definitiva de Ribacôa em Portugal.</li>
 
-      <li><strong>Tratado de Alcanizes:</strong> Antes de 1297, o território do Sabugal encontrava-se ligado ao Reino de Leão. O Tratado de Alcanizes, celebrado por D. Dinis, garantiu a integração definitiva de Ribacôa no Reino de Portugal e reforçou a fronteira oriental.</li>
-
       <li><strong>Castelo de Vilar Maior:</strong> A freguesia de Vilar Maior conserva um castelo medieval que integrou o sistema defensivo de Ribacôa. A fortificação foi também reforçada durante o reinado de D. Dinis.</li>
+
+      <li><strong>Aldeia e Castelo de Sortelha:</strong>Sortelha é uma das Aldeias Históricas de Portugal, conhecida pelo seu núcleo medieval muito bem preservado, com casas de granito construídas entre enormes afloramentos rochosos e rodeadas por muralhas. O castelo, cuja construção remonta ao século XIII, fazia parte da linha defensiva da fronteira portuguesa. A vila recebeu foral de D. Sancho II e foi posteriormente beneficiada por D. Manuel I, em 1510, período de que subsistem o pelourinho e elementos manuelinos. Foi sede de concelho até 1855, quando foi integrada no concelho do Sabugal.</li>
+
+      <li><strong>Tratado de Alcanizes:</strong> Antes de 1297, o território do Sabugal encontrava-se ligado ao Reino de Leão. O Tratado de Alcanizes, celebrado por D. Dinis, garantiu a integração definitiva de Ribacôa no Reino de Portugal e reforçou a fronteira oriental.</li>
 
       <li><strong>Rio Côa:</strong> O rio Côa atravessa grande parte do concelho de norte para sul e foi durante séculos um elemento fundamental da organização do território, da agricultura e da própria fronteira medieval.</li>
     </ul>
