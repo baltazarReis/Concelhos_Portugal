@@ -5298,7 +5298,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Cantanhede1.png",
       "./images/Concelhos/Cantanhede2.png",
       "./images/Concelhos/Cantanhede3.png",
-      "./images/Concelhos/Cantanhede4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5307,8 +5306,6 @@ export const dadosConcelhos = {
       <li><strong>Restauração:</strong> O concelho está particularmente ligado à Restauração de 1640 através da família dos Meneses. O Marquês de Marialva nascido em Cantanhede destacou-se na Guerra da Restauração, sendo uma das principais figuras militares, comandando as tropas Portuguesas nas batalhas das Linhas de Elvas e de Montes Claros. Morreu em 1675, estando sepultado em Cantanhede.</li>
 
       <li><strong>Pedra de Ançã:</strong> A freguesia de Ançã é conhecida pela exploração e trabalho da pedra calcária local, utilizada durante séculos na construção e na escultura. A chamada Pedra de Ançã foi utilizada em numerosos monumentos e obras escultóricas Portuguesas.</li>
-
-      <li><strong>Jaime Cortesão:</strong> O médico, escritor e historiador Jaime Cortesão nasceu em Ançã, no concelho de Cantanhede, em 1884. Foi uma das figuras do movimento da Renascença Portuguesa e destacou-se também pelos seus estudos sobre a história dos Descobrimentos.</li>
     </ul>
     `
   }, 
@@ -5448,7 +5445,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Miranda do Corvo1.png",
       "./images/Concelhos/Miranda do Corvo2.png",
       "./images/Concelhos/Miranda do Corvo3.png",
-      "./images/Concelhos/Miranda do Corvo4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5536,7 +5532,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Penacova1.png",
       "./images/Concelhos/Penacova2.png",
       "./images/Concelhos/Penacova3.png",
-      "./images/Concelhos/Penacova4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5602,7 +5597,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Tábua1.png",
       "./images/Concelhos/Tábua2.png",
       "./images/Concelhos/Tábua3.png",
-      "./images/Concelhos/Tábua4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5618,9 +5612,8 @@ export const dadosConcelhos = {
     "Vila Nova de Poiares": {
     imagens: [
       "./images/Concelhos/Vila Nova de Poiares1.png",
-      "./images/Concelhos/Vila Nova de Poiares2.png",
+      "./images/Concelhos/Vila Nova de Poiares2.webp",
       "./images/Concelhos/Vila Nova de Poiares3.png",
-      "./images/Concelhos/Vila Nova de Poiares4.png",
     ],
     pistas:`
     <ul class="lista-pistas">

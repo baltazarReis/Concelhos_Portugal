@@ -1,9 +1,10 @@
 Problemas no mapa atual:
 
+- Adicionar feature para selecionar x mais fracos do recorde na seleção de distritos
+  Pode ser uma opção que aparece abaixo de selecionar todos os distritos ou talvez mesmo fora dessa caixa como um botão com nome treinar 'x' distritos mais fracos e esse x é alterável com um counter com mais ou com menos ou editável em texto (obviamente só aceita positivos inteiros no máximo 20)
 
 Faltam imagens para os distritos de:
 
-1 Coimbra
-2 Porto
-3 Aveiro
-4 Viseu
+1 Porto
+2 Aveiro
+3 Viseu
