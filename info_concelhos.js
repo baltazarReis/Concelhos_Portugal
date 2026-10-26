@@ -4893,7 +4893,7 @@ export const dadosConcelhos = {
 
   "Amarante": {
     imagens: [
-      "./images/Concelhos/Amarante1.png",
+      "./images/Concelhos/Amarante1.jpg",
       "./images/Concelhos/Amarante2.png",
       "./images/Concelhos/Amarante3.png",
       "./images/Concelhos/Amarante4.png",
@@ -4957,8 +4957,7 @@ export const dadosConcelhos = {
     imagens: [
       "./images/Concelhos/Gondomar1.png",
       "./images/Concelhos/Gondomar2.png",
-      "./images/Concelhos/Gondomar3.png",
-      "./images/Concelhos/Gondomar4.png",
+      "./images/Concelhos/Gondomar3.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4980,7 +4979,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Lousada1.png",
       "./images/Concelhos/Lousada2.png",
       "./images/Concelhos/Lousada3.png",
-      "./images/Concelhos/Lousada4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5002,7 +5000,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Maia1.png",
       "./images/Concelhos/Maia2.png",
       "./images/Concelhos/Maia3.png",
-      "./images/Concelhos/Maia4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5024,7 +5021,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Marco de Canaveses1.png",
       "./images/Concelhos/Marco de Canaveses2.png",
       "./images/Concelhos/Marco de Canaveses3.png",
-      "./images/Concelhos/Marco de Canaveses4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5063,7 +5059,7 @@ export const dadosConcelhos = {
     imagens: [
       "./images/Concelhos/Paços de Ferreira1.png",
       "./images/Concelhos/Paços de Ferreira2.png",
-      "./images/Concelhos/Paços de Ferreira3.png",
+      "./images/Concelhos/Paços de Ferreira3.jpg",
       "./images/Concelhos/Paços de Ferreira4.png",
     ],
     pistas:`
@@ -5149,7 +5145,7 @@ export const dadosConcelhos = {
 
   "Póvoa de Varzim": {
     imagens: [
-      "./images/Concelhos/Póvoa de Varzim1.png",
+      "./images/Concelhos/Póvoa de Varzim1.jpg",
       "./images/Concelhos/Póvoa de Varzim2.png",
       "./images/Concelhos/Póvoa de Varzim3.png",
       "./images/Concelhos/Póvoa de Varzim4.png",
@@ -5190,7 +5186,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Trofa1.png",
       "./images/Concelhos/Trofa2.png",
       "./images/Concelhos/Trofa3.png",
-      "./images/Concelhos/Trofa4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -5208,7 +5203,7 @@ export const dadosConcelhos = {
   "Valongo": {
     imagens: [
       "./images/Concelhos/Valongo1.png",
-      "./images/Concelhos/Valongo2.png",
+      "./images/Concelhos/Valongo2.jpg",
       "./images/Concelhos/Valongo3.png",
       "./images/Concelhos/Valongo4.png",
     ],
@@ -5226,7 +5221,7 @@ export const dadosConcelhos = {
   "Vila do Conde": {
     imagens: [
       "./images/Concelhos/Vila do Conde1.png",
-      "./images/Concelhos/Vila do Conde2.png",
+      "./images/Concelhos/Vila do Conde2.jpg",
       "./images/Concelhos/Vila do Conde3.png",
       "./images/Concelhos/Vila do Conde4.png",
     ],
