@@ -294,6 +294,7 @@ function iniciarJogoDirecto() {
   tempoSegundos = 0;
   jogoTerminado = false;
   ocultarAvisoAjuda = false; // em cada jogo novo o aviso volta a aparecer
+  btnMenu.classList.remove("escondido"); // o botão "Menu" só existe durante o jogo
   
   // Inicializa contador por distrito
   acertosPorDistrito = {};
@@ -473,6 +474,8 @@ function finalizarJogo() {
   clearInterval(intervaloTimer);
   fecharPainelAjuda();
   jogoTerminado = true;
+  reporBotaoMenu();
+  btnMenu.classList.add("escondido"); // no resumo já há "Jogar Novamente"
   
   // Oculta o HUD da direita e mostra o painel de resumo
   painelTopRight.classList.add("escondido");
@@ -751,6 +754,60 @@ function prepararRecorde(atual, resumoDistritos) {
 // FIM: RECORDE DO JOGADOR
 
 
+
+// INÍCIO: BOTÃO MENU (voltar ao menu / desistir do jogo)
+// Fica no canto superior esquerdo durante o jogo e diz "Voltar ao menu".
+// 1.º clique: fica vermelho e pergunta "Desistir deste jogo?".
+// 2.º clique: o jogo em curso perde-se e volta ao menu.
+// Se o jogador não confirmar, o botão volta ao normal (rato sai, clique noutro sítio,
+// perda de foco ou 5 s sem hover), para um clique posterior não desistir sem querer.
+const btnMenu = document.getElementById("btn-menu");
+const rotuloBtnMenu = btnMenu.querySelector(".btn-menu-texto");
+const TEXTO_BTN_MENU = "Voltar ao menu";
+const TEXTO_BTN_MENU_CONFIRMAR = "Desistir deste jogo?";
+const RECOLHER_BTN_MENU_MS = 5000;
+let timerRecolherMenu = null;
+
+function pedirConfirmacaoMenu() {
+  btnMenu.classList.add("a-confirmar");
+  rotuloBtnMenu.textContent = TEXTO_BTN_MENU_CONFIRMAR;
+  btnMenu.setAttribute("aria-label", "Desistir deste jogo e voltar ao menu");
+
+  clearTimeout(timerRecolherMenu);
+  timerRecolherMenu = setTimeout(() => {
+    // Com o rato em cima do botão (a decidir) não o repõe; em toque/teclado repõe
+    const comHover = window.matchMedia("(hover: hover)").matches && btnMenu.matches(":hover");
+    if (!comHover) reporBotaoMenu();
+  }, RECOLHER_BTN_MENU_MS);
+}
+
+function reporBotaoMenu() {
+  clearTimeout(timerRecolherMenu);
+  btnMenu.classList.remove("a-confirmar");
+  rotuloBtnMenu.textContent = TEXTO_BTN_MENU;
+  btnMenu.setAttribute("aria-label", "Voltar ao menu");
+}
+
+btnMenu.addEventListener("click", () => {
+  // Já a perguntar "Desistir deste jogo?": confirmar = o jogo perde-se e volta ao menu
+  // (a seleção de distritos mantém-se, está guardada na sessão)
+  if (btnMenu.classList.contains("a-confirmar")) {
+    window.location.reload();
+    return;
+  }
+  pedirConfirmacaoMenu();
+});
+
+// Desistir de confirmar repõe o botão. O "leave" só conta para o rato: nos toques o
+// browser simula-o logo a seguir ao toque.
+btnMenu.addEventListener("pointerleave", (e) => {
+  if (e.pointerType === "mouse") reporBotaoMenu();
+});
+btnMenu.addEventListener("blur", reporBotaoMenu);
+document.addEventListener("pointerdown", (e) => {
+  if (!btnMenu.contains(e.target)) reporBotaoMenu();
+});
+// FIM: BOTÃO MENU
 
 // INÍCIO: GESTÃO DO PAINEL DE AJUDA / PISTAS
 // Elementos da caixa de confirmação da informação adicional

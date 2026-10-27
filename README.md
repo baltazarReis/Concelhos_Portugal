@@ -17,4 +17,5 @@ Informação sobre o jogo:
 - O melhor jogo é guardado e é possível compará-lo com o jogo acabado de fazer para ver se e onde houve melhorias.
 
 - É possível consultar a informação adicional para o concelho sem detrimento para a pontuação após a jogada desse
-  concelho, isto é, se o acertar ou se o passar à frente, ou mesmo após acabar o jogo.
+  concelho, isto é, se o acertar ou se o passar à frente, ou mesmo após acabar o jogo. 
+  (Através de fazer duplo clique no concelho que se quer consultar)

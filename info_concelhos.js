@@ -4495,7 +4495,7 @@ export const dadosConcelhos = {
 
   "Águeda": {
     imagens: [
-      "./images/Concelhos/Águeda1.png",
+      "./images/Concelhos/Águeda1.jpg",
       "./images/Concelhos/Águeda2.png",
       "./images/Concelhos/Águeda3.png",
       "./images/Concelhos/Águeda4.png",
@@ -4517,10 +4517,9 @@ export const dadosConcelhos = {
 
   "Albergaria-a-Velha": {
     imagens: [
-      "./images/Concelhos/Albergaria-a-Velha1.png",
+      "./images/Concelhos/Albergaria-a-Velha1.jpg",
       "./images/Concelhos/Albergaria-a-Velha2.png",
       "./images/Concelhos/Albergaria-a-Velha3.png",
-      "./images/Concelhos/Albergaria-a-Velha4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4540,7 +4539,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Anadia1.png",
       "./images/Concelhos/Anadia2.png",
       "./images/Concelhos/Anadia3.png",
-      "./images/Concelhos/Anadia4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4558,7 +4556,7 @@ export const dadosConcelhos = {
   "Arouca": {
     imagens: [
       "./images/Concelhos/Arouca1.png",
-      "./images/Concelhos/Arouca2.png",
+      "./images/Concelhos/Arouca2.jpg",
       "./images/Concelhos/Arouca3.png",
       "./images/Concelhos/Arouca4.png",
     ],
@@ -4579,7 +4577,7 @@ export const dadosConcelhos = {
 
   "Aveiro": {
     imagens: [
-      "./images/Concelhos/Aveiro1.png",
+      "./images/Concelhos/Aveiro1.jpg",
       "./images/Concelhos/Aveiro2.png",
       "./images/Concelhos/Aveiro3.png",
       "./images/Concelhos/Aveiro4.png",
@@ -4642,7 +4640,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Estarreja1.png",
       "./images/Concelhos/Estarreja2.png",
       "./images/Concelhos/Estarreja3.png",
-      "./images/Concelhos/Estarreja4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4659,9 +4656,9 @@ export const dadosConcelhos = {
 
   "Ílhavo": {
     imagens: [
-      "./images/Concelhos/Ílhavo1.png",
+      "./images/Concelhos/Ílhavo1.jpg",
       "./images/Concelhos/Ílhavo2.png",
-      "./images/Concelhos/Ílhavo3.png",
+      "./images/Concelhos/Ílhavo3.jpg",
       "./images/Concelhos/Ílhavo4.png",
     ],
     pistas:`
