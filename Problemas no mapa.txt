@@ -3,9 +3,6 @@ Problemas no mapa atual:
 - Adicionar feature para selecionar x mais fracos do recorde na seleção de distritos
   Pode ser uma opção que aparece abaixo de selecionar todos os distritos ou talvez mesmo fora dessa caixa como um botão com nome treinar 'x' distritos mais fracos e esse x é alterável com um counter com mais ou com menos ou editável em texto (obviamente só aceita positivos inteiros no máximo 20)
 
-- Adicionar botão para desistir do jogo/voltar ao menu principal, este botão deve ser pequeno e ter apenas uma seta para trás e estar situado no canto superior esquerdo, quando o user dá hover nele por mais de 0,5s ele deve expandir-se e perguntar "desistir?" se o user carregar outra vez ele volta para o menu e não guarda os dados do jogo, não é preciso uma caixa de texto isso seria só incomodativo
-
 Faltam imagens para os distritos de:
 
-1 Aveiro
-2 Viseu
+1 Viseu

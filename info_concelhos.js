@@ -4723,7 +4723,7 @@ export const dadosConcelhos = {
       "./images/Concelhos/Oliveira de Azeméis1.png",
       "./images/Concelhos/Oliveira de Azeméis2.png",
       "./images/Concelhos/Oliveira de Azeméis3.png",
-      "./images/Concelhos/Oliveira de Azeméis4.png",
+      "./images/Concelhos/Oliveira de Azeméis4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4745,7 +4745,6 @@ export const dadosConcelhos = {
       "./images/Concelhos/Oliveira do Bairro1.png",
       "./images/Concelhos/Oliveira do Bairro2.png",
       "./images/Concelhos/Oliveira do Bairro3.png",
-      "./images/Concelhos/Oliveira do Bairro4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4763,9 +4762,9 @@ export const dadosConcelhos = {
   "Ovar": {
     imagens: [
       "./images/Concelhos/Ovar1.png",
-      "./images/Concelhos/Ovar2.png",
+      "./images/Concelhos/Ovar2.jpeg",
       "./images/Concelhos/Ovar3.png",
-      "./images/Concelhos/Ovar4.png",
+      "./images/Concelhos/Ovar4.jpeg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4782,7 +4781,7 @@ export const dadosConcelhos = {
 
   "Santa Maria da Feira": {
     imagens: [
-      "./images/Concelhos/Santa Maria da Feira1.png",
+      "./images/Concelhos/Santa Maria da Feira1.jpg",
       "./images/Concelhos/Santa Maria da Feira2.png",
       "./images/Concelhos/Santa Maria da Feira3.png",
       "./images/Concelhos/Santa Maria da Feira4.png",
@@ -4824,10 +4823,9 @@ export const dadosConcelhos = {
 
   "Sever do Vouga": {
     imagens: [
-      "./images/Concelhos/Sever do Vouga1.png",
+      "./images/Concelhos/Sever do Vouga1.jpeg",
       "./images/Concelhos/Sever do Vouga2.png",
       "./images/Concelhos/Sever do Vouga3.png",
-      "./images/Concelhos/Sever do Vouga4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4849,7 +4847,7 @@ export const dadosConcelhos = {
       "./images/Concelhos/Vagos1.png",
       "./images/Concelhos/Vagos2.png",
       "./images/Concelhos/Vagos3.png",
-      "./images/Concelhos/Vagos4.png",
+      "./images/Concelhos/Vagos4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">

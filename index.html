@@ -43,6 +43,20 @@
           Só serão perguntados os concelhos dos que estiverem marcados; os restantes
           ficam a cinzento no mapa e não contam para as tentativas.
         </p>
+        <!-- Treinar os distritos mais fracos: só aparece se houver recorde guardado (gerido pelo JS).
+             Não cria um modo de jogo: limita-se a marcar as checkboxes da lista abaixo. -->
+        <div id="treino-fracos" class="treino-fracos escondido">
+          <p class="treino-titulo">Treinar os mais fracos <span>com base no teu recorde</span></p>
+          <div class="treino-contador">
+            <button type="button" id="treino-menos" class="treino-passo" aria-label="Menos um distrito">−</button>
+            <input type="text" id="treino-n" class="treino-n" inputmode="numeric" autocomplete="off" maxlength="2"
+                   value="1" aria-label="Número de distritos mais fracos a treinar">
+            <button type="button" id="treino-mais" class="treino-passo" aria-label="Mais um distrito">+</button>
+          </div>
+          <button type="button" id="btn-treino" class="btn-treino" aria-pressed="false">Treinar o distrito mais fraco</button>
+          <p id="treino-detalhe" class="treino-detalhe"></p>
+        </div>
+
         <!-- Checkboxes geradas dinamicamente pelo JS a partir do map_distrito_concelhos -->
         <div id="lista-distritos-selecao" role="group" aria-label="Distritos"></div>
         <p id="resumo-selecao"></p>
@@ -53,7 +67,7 @@
   </div>
   <!-- FIM: MENU INICIAL -->
 
-  <!-- BOTÃO MENU: canto superior esquerdo. 1.º clique -> "Desistir deste jogo?" (vermelho); 2.º clique -> menu -->
+  <!-- BOTÃO MENU: canto superior esquerdo. 1.º clique -> "Desistir deste jogo?" (vermelho, expande); 2.º clique -> menu -->
   <button id="btn-menu" class="btn-menu escondido" aria-label="Voltar ao menu">
     <span class="btn-menu-texto">Menu</span>
   </button>
