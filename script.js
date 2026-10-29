@@ -162,6 +162,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const aberto = painelDistritos.classList.toggle("escondido") === false;
     btnDistritos.setAttribute("aria-expanded", String(aberto));
     btnDistritos.classList.toggle("ativo", aberto);
+    if (!aberto) fecharPainelFracos(); // o painel lateral depende do painel de distritos
   });
 
   btnIniciar.addEventListener("click", () => {
@@ -266,9 +267,8 @@ function atualizarMenuSelecao() {
   elResumoSelecao.classList.toggle("vazio", nConcelhos === 0);
 
   // Explica que o recorde só é guardado com todos os distritos (os 308 concelhos)
-  const regra = `Recorde: só são guardados jogos com todos os distritos (${TOTAL_TODOS_CONCELHOS} concelhos).`;
-  elNotaRecorde.textContent = `${regra} ${todosSelecionados ? "Esta seleção conta." : "Esta seleção não conta."}`;
-  elNotaRecorde.classList.toggle("conta", todosSelecionados);
+  elNotaRecorde.textContent = `Apenas jogos completos (${TOTAL_TODOS_CONCELHOS} concelhos) contam para o recorde.`;
+  elNotaRecorde.classList.toggle("conta", todosSelecionados); // verde = a seleção atual conta
 
   atualizarTreinoFracos();
 }
@@ -282,19 +282,23 @@ function marcarConcelhosForaDoJogo() {
 }
 // INÍCIO: TREINAR OS DISTRITOS MAIS FRACOS
 // Com base no recorde guardado (o melhor jogo completo), ordena os distritos pela
-// percentagem de concelhos acertados (do mais fraco para o mais forte). O jogador escolhe
-// quantos quer treinar (1 por omissão, no máximo o número de distritos) e isto limita-se
-// a MARCAR as checkboxes da lista: não existe um modo de jogo à parte. Só aparece se
-// houver recorde guardado no browser.
-const elTreino = document.getElementById("treino-fracos");
+// percentagem de concelhos acertados (do mais fraco para o mais forte). Num painel
+// lateral, o jogador escolhe quantos quer treinar (1 por omissão, no máximo o número de
+// distritos) e isto limita-se a MARCAR as checkboxes da lista de distritos: não existe um
+// modo de jogo à parte. Só aparece se houver recorde guardado no browser.
+const btnAbrirFracos = document.getElementById("btn-abrir-fracos");
+const painelFracos = document.getElementById("painel-fracos");
+const btnFecharFracos = document.getElementById("fechar-fracos");
+const chkTreino = document.getElementById("treino-checkbox");
 const inputTreinoN = document.getElementById("treino-n");
 const btnTreinoMenos = document.getElementById("treino-menos");
 const btnTreinoMais = document.getElementById("treino-mais");
-const btnTreino = document.getElementById("btn-treino");
-const elTreinoDetalhe = document.getElementById("treino-detalhe");
+const elTreinoRanking = document.getElementById("treino-ranking");
 
-let rankingFracos = []; // [{ distrito, acertos, total, pct }], do mais fraco para o mais forte
-let nTreino = 1;        // quantos distritos mais fracos treinar
+let rankingFracos = [];   // [{ distrito, acertos, total, pct }], do mais fraco para o mais forte
+let linhasRanking = [];   // <li> da legenda, pela mesma ordem do ranking
+let nTreino = 1;          // quantos distritos mais fracos treinar
+let selecaoAntesDoTreino = null; // seleção anterior, para repor ao desmarcar "Selecionar os mais fracos"
 
 function calcularRankingFracos() {
   const recorde = lerRecorde();
@@ -320,9 +324,16 @@ function selecoesIguais(a, b) {
   return a.size === b.size && [...a].every(d => b.has(d));
 }
 
-// Seleciona os n distritos mais fracos, refletindo-o nas checkboxes da lista
-function selecionarMaisFracos(n) {
-  distritosSelecionados = distritosMaisFracos(n);
+// "Ativo" = a seleção atual é exatamente a dos nTreino mais fracos (e não é "todos")
+function treinoAtivo() {
+  return rankingFracos.length > 0
+    && distritosSelecionados.size < map_distrito_concelhos.size
+    && selecoesIguais(distritosSelecionados, distritosMaisFracos(nTreino));
+}
+
+// Marca exatamente estes distritos na lista de seleção
+function aplicarSelecao(distritos) {
+  distritosSelecionados = new Set(distritos);
   checkboxesDistritos.forEach((input, distrito) => {
     input.checked = distritosSelecionados.has(distrito);
   });
@@ -330,42 +341,96 @@ function selecionarMaisFracos(n) {
   atualizarMenuSelecao();
 }
 
-function definirNTreino(valor, aplicar) {
-  nTreino = Math.min(rankingFracos.length, Math.max(1, valor));
-  inputTreinoN.value = String(nTreino);
-  if (aplicar) selecionarMaisFracos(nTreino);
-  else atualizarTreinoFracos();
+function selecionarMaisFracos(n) {
+  aplicarSelecao(distritosMaisFracos(n));
 }
 
-// Atualiza o texto do botão, os limites do contador, o estado "ativo" e o detalhe
+// Desmarcar "Selecionar os mais fracos": volta à seleção que havia antes (ou a todos)
+function reporSelecaoAnterior() {
+  const anterior = selecaoAntesDoTreino;
+  const utilizavel = anterior && anterior.size > 0
+    && !selecoesIguais(anterior, distritosMaisFracos(nTreino));
+  aplicarSelecao(utilizavel ? anterior : map_distrito_concelhos.keys());
+  selecaoAntesDoTreino = null;
+}
+
+function definirNTreino(valor, aplicar) {
+  const eraAtivo = treinoAtivo();
+  nTreino = Math.min(rankingFracos.length, Math.max(1, valor));
+  inputTreinoN.value = String(nTreino);
+  if (aplicar) {
+    if (!eraAtivo) selecaoAntesDoTreino = new Set(distritosSelecionados);
+    selecionarMaisFracos(nTreino);
+  } else {
+    atualizarTreinoFracos();
+  }
+}
+
+// Atualiza checkbox, limites do contador, destaque na legenda e o botão do painel principal
 function atualizarTreinoFracos() {
   if (rankingFracos.length === 0) return;
 
-  btnTreino.textContent = nTreino === 1
-    ? "Treinar o distrito mais fraco"
-    : `Treinar os ${nTreino} distritos mais fracos`;
+  const ativo = treinoAtivo();
+  chkTreino.checked = ativo;
   btnTreinoMenos.disabled = nTreino <= 1;
   btnTreinoMais.disabled = nTreino >= rankingFracos.length;
+  linhasRanking.forEach((li, i) => li.classList.toggle("escolhido", i < nTreino));
+  btnAbrirFracos.classList.toggle("com-selecao", ativo);
+}
 
-  // "Ativo" = a seleção atual é exatamente a dos nTreino mais fracos (e não é "todos")
-  const ativo = distritosSelecionados.size < map_distrito_concelhos.size
-    && selecoesIguais(distritosSelecionados, distritosMaisFracos(nTreino));
-  btnTreino.classList.toggle("ativo", ativo);
-  btnTreino.setAttribute("aria-pressed", String(ativo));
+// Legenda: um distrito por linha, do mais fraco ao mais forte, com barra e percentagem
+function construirRankingFracos() {
+  elTreinoRanking.replaceChildren();
+  linhasRanking = rankingFracos.map((r, i) => {
+    const pct = Math.round(r.pct * 100);
 
-  // Quais são, com a % do recorde (mostra os primeiros e conta os restantes)
-  const MAX_VISIVEIS = 4;
-  const itens = rankingFracos.slice(0, nTreino).map(r => `${r.distrito} ${Math.round(r.pct * 100)}%`);
-  const texto = itens.length <= MAX_VISIVEIS
-    ? itens.join(" \u00b7 ")
-    : `${itens.slice(0, MAX_VISIVEIS).join(" \u00b7 ")} \u00b7 +${itens.length - MAX_VISIVEIS}`;
-  elTreinoDetalhe.textContent = `Mais fracos no teu recorde: ${texto}`;
+    const li = document.createElement("li");
+    li.title = `${r.distrito}: ${r.acertos}/${r.total} concelhos acertados no teu recorde`;
+
+    const pos = document.createElement("span");
+    pos.className = "fraco-pos";
+    pos.textContent = String(i + 1);
+
+    const nome = document.createElement("span");
+    nome.className = "fraco-nome";
+    nome.textContent = r.distrito;
+
+    const barra = document.createElement("span");
+    barra.className = "fraco-barra";
+    const preenchimento = document.createElement("i");
+    preenchimento.style.width = `${pct}%`;
+    barra.appendChild(preenchimento);
+
+    const valor = document.createElement("span");
+    valor.className = "fraco-pct";
+    valor.textContent = `${pct}%`;
+
+    li.append(pos, nome, barra, valor);
+    elTreinoRanking.appendChild(li);
+    return li;
+  });
+}
+
+function abrirPainelFracos() {
+  painelFracos.classList.remove("escondido");
+  menuInicial.classList.add("com-fracos");
+  btnAbrirFracos.classList.add("ativo");
+  btnAbrirFracos.setAttribute("aria-expanded", "true");
+}
+
+function fecharPainelFracos() {
+  painelFracos.classList.add("escondido");
+  menuInicial.classList.remove("com-fracos");
+  btnAbrirFracos.classList.remove("ativo");
+  btnAbrirFracos.setAttribute("aria-expanded", "false");
 }
 
 function configurarTreinoFracos() {
   rankingFracos = calcularRankingFracos();
-  elTreino.classList.toggle("escondido", rankingFracos.length === 0);
-  if (rankingFracos.length === 0) return; // sem recorde guardado: o bloco não aparece
+  btnAbrirFracos.classList.toggle("escondido", rankingFracos.length === 0);
+  if (rankingFracos.length === 0) return; // sem recorde guardado: nada disto aparece
+
+  construirRankingFracos();
 
   // Por omissão 1. Mas se a seleção guardada na sessão já for a dos k mais fracos
   // (ex.: depois de "Jogar Novamente"), mostra esse k em vez de 1.
@@ -377,9 +442,23 @@ function configurarTreinoFracos() {
   }
   inputTreinoN.value = String(nTreino);
 
+  btnAbrirFracos.addEventListener("click", () => {
+    if (painelFracos.classList.contains("escondido")) abrirPainelFracos();
+    else fecharPainelFracos();
+  });
+  btnFecharFracos.addEventListener("click", fecharPainelFracos);
+
+  chkTreino.addEventListener("change", () => {
+    if (chkTreino.checked) {
+      selecaoAntesDoTreino = new Set(distritosSelecionados);
+      selecionarMaisFracos(nTreino);
+    } else {
+      reporSelecaoAnterior();
+    }
+  });
+
   btnTreinoMenos.addEventListener("click", () => definirNTreino(nTreino - 1, true));
   btnTreinoMais.addEventListener("click", () => definirNTreino(nTreino + 1, true));
-  btnTreino.addEventListener("click", () => selecionarMaisFracos(nTreino));
 
   // Campo de texto: só inteiros positivos, no máximo o nº de distritos; aplica ao escrever
   inputTreinoN.addEventListener("input", () => {

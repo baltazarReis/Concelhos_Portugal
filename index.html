@@ -39,28 +39,46 @@
       <aside id="painel-distritos" class="escondido" aria-label="Seleção de distritos">
         <h2>Distritos do quiz</h2>
         <p class="explicacao-distritos">
-          Seleciona os distritos (e regiões autónomas) que vão estar presentes no quiz.
-          Só serão perguntados os concelhos dos que estiverem marcados; os restantes
-          ficam a cinzento no mapa e não contam para as tentativas.
+          Seleciona distritos para o quiz, apenas os concelhos destes aparecerão no jogo.
         </p>
-        <!-- Treinar os distritos mais fracos: só aparece se houver recorde guardado (gerido pelo JS).
-             Não cria um modo de jogo: limita-se a marcar as checkboxes da lista abaixo. -->
-        <div id="treino-fracos" class="treino-fracos escondido">
-          <p class="treino-titulo">Treinar os mais fracos <span>com base no teu recorde</span></p>
+
+        <!-- Abre o painel lateral "Treinar os mais fracos": só aparece se houver recorde guardado (gerido pelo JS) -->
+        <button type="button" id="btn-abrir-fracos" class="btn-abrir-fracos escondido"
+                aria-expanded="false" aria-controls="painel-fracos">
+          Treinar os mais fracos <span class="seta-lateral" aria-hidden="true">›</span>
+        </button>
+        <!-- Checkboxes geradas dinamicamente pelo JS a partir do map_distrito_concelhos -->
+        <div id="lista-distritos-selecao" role="group" aria-label="Distritos"></div>
+        <p id="resumo-selecao"></p>
+        <p id="nota-recorde" class="nota-recorde"></p>
+      </aside>
+
+      <!-- Painel lateral: treinar os distritos mais fracos do recorde. Não cria um modo de jogo:
+           limita-se a marcar as checkboxes da lista de distritos. -->
+      <aside id="painel-fracos" class="escondido" aria-label="Treinar os distritos mais fracos">
+        <div class="fracos-cabecalho">
+          <h2>Treinar os mais fracos</h2>
+          <button type="button" id="fechar-fracos" class="fracos-fechar" aria-label="Fechar">×</button>
+        </div>
+        <p class="fracos-subtitulo">Com base no teu recorde</p>
+
+        <label class="fracos-checkbox">
+          <input type="checkbox" id="treino-checkbox">
+          <span>Selecionar os mais fracos</span>
+        </label>
+
+        <div class="fracos-contador">
+          <span>Número de distritos</span>
           <div class="treino-contador">
             <button type="button" id="treino-menos" class="treino-passo" aria-label="Menos um distrito">−</button>
             <input type="text" id="treino-n" class="treino-n" inputmode="numeric" autocomplete="off" maxlength="2"
                    value="1" aria-label="Número de distritos mais fracos a treinar">
             <button type="button" id="treino-mais" class="treino-passo" aria-label="Mais um distrito">+</button>
           </div>
-          <button type="button" id="btn-treino" class="btn-treino" aria-pressed="false">Treinar o distrito mais fraco</button>
-          <p id="treino-detalhe" class="treino-detalhe"></p>
         </div>
 
-        <!-- Checkboxes geradas dinamicamente pelo JS a partir do map_distrito_concelhos -->
-        <div id="lista-distritos-selecao" role="group" aria-label="Distritos"></div>
-        <p id="resumo-selecao"></p>
-        <p id="nota-recorde" class="nota-recorde"></p>
+        <p class="fracos-titulo-lista">Do mais fraco ao mais forte</p>
+        <ol id="treino-ranking" class="treino-ranking"></ol>
       </aside>
 
     </div>
