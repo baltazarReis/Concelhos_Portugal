@@ -3978,7 +3978,7 @@ export const dadosConcelhos = {
 "Armamar": {
     imagens: [
     "./images/Concelhos/Armamar1.png",
-    "./images/Concelhos/Armamar2.png",
+    "./images/Concelhos/Armamar2.jpg",
     "./images/Concelhos/Armamar3.png",
     "./images/Concelhos/Armamar4.png",
     ],
@@ -4002,7 +4002,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Carregal do Sal1.png",
     "./images/Concelhos/Carregal do Sal2.png",
     "./images/Concelhos/Carregal do Sal3.png",
-    "./images/Concelhos/Carregal do Sal4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4022,7 +4021,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Castro Daire1.png",
     "./images/Concelhos/Castro Daire2.png",
     "./images/Concelhos/Castro Daire3.png",
-    "./images/Concelhos/Castro Daire4.png",
+    "./images/Concelhos/Castro Daire4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4126,7 +4125,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Mortágua1.png",
     "./images/Concelhos/Mortágua2.png",
     "./images/Concelhos/Mortágua3.png",
-    "./images/Concelhos/Mortágua4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4236,7 +4234,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Resende1.png",
     "./images/Concelhos/Resende2.png",
     "./images/Concelhos/Resende3.png",
-    "./images/Concelhos/Resende4.png",
+    "./images/Concelhos/Resende4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
