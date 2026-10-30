@@ -33,6 +33,8 @@
             <span>Zoom com scroll</span>
           </div>
         </div>
+
+        <button type="button" id="btn-creditos" class="btn-creditos">Créditos e contactos</button>
       </div>
 
       <!-- Painel lateral: seleção dos distritos (aberto pelo botão "Escolher distritos") -->
@@ -2665,6 +2667,34 @@
       <button id="confirmar-ajuda-fechar" class="btn-confirmar-fechar">Fechar</button>
       <button id="confirmar-ajuda-continuar" class="btn-confirmar-continuar">Continuar mesmo assim</button>
     </div>
+  </div>
+</div>
+
+<!-- CRÉDITOS E CONTACTOS: aberto pelo botão do menu inicial. Os dados vêm do ficheiro creditos.js -->
+<div id="modal-creditos" class="escondido" role="dialog" aria-modal="true" aria-labelledby="creditos-titulo">
+  <div class="caixa-creditos">
+    <div class="creditos-cabecalho">
+      <h2 id="creditos-titulo">Créditos e contactos</h2>
+      <button type="button" id="fechar-creditos" class="fracos-fechar" aria-label="Fechar">×</button>
+    </div>
+
+    <div class="creditos-corpo">
+      <section class="creditos-secao">
+        <h3>Site e contacto</h3>
+        <ul id="creditos-contactos" class="creditos-contactos"></ul>
+      </section>
+
+      <section class="creditos-secao">
+        <h3>Créditos das fotografias</h3>
+        <p class="creditos-aviso">
+          Se alguma das fotografias utilizadas for sua e pretender que seja removida, contacte-me
+          através do contacto acima e removerei a(s) fotografia(s) assim que possível.
+        </p>
+        <ul id="creditos-lista" class="creditos-lista"></ul>
+      </section>
+    </div>
+
+    <button type="button" id="creditos-voltar" class="btn-creditos-voltar">Voltar ao menu</button>
   </div>
 </div>
 

@@ -955,6 +955,123 @@ function prepararRecorde(atual, resumoDistritos) {
 
 
 
+// INÍCIO: CRÉDITOS E CONTACTOS
+// Painel aberto pelo botão "Créditos e contactos" do menu inicial. Os dados (site,
+// contacto e créditos das fotografias) vêm do ficheiro creditos.js, que se carrega só
+// ao abrir o painel: se o ficheiro faltar, o jogo funciona na mesma e o painel avisa.
+const btnCreditos = document.getElementById("btn-creditos");
+const modalCreditos = document.getElementById("modal-creditos");
+const btnFecharCreditos = document.getElementById("fechar-creditos");
+const btnVoltarCreditos = document.getElementById("creditos-voltar");
+const elCreditosContactos = document.getElementById("creditos-contactos");
+const elCreditosLista = document.getElementById("creditos-lista");
+let creditosCarregados = false;
+
+// Só aceita links http(s) e mailto (evita, por exemplo, "javascript:")
+function urlSeguro(url) {
+  if (typeof url !== "string" || url.trim() === "") return null;
+  try {
+    const u = new URL(url.trim(), window.location.href);
+    return ["http:", "https:", "mailto:"].includes(u.protocol) ? u.href : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+// Texto com link (se o url for válido) ou só texto. Usa sempre textContent, nunca HTML.
+function criarTextoComLink(texto, url) {
+  const href = urlSeguro(url);
+  if (!href) return document.createTextNode(texto);
+
+  const a = document.createElement("a");
+  a.textContent = texto;
+  a.href = href;
+  if (!href.startsWith("mailto:")) {
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+  }
+  return a;
+}
+
+function criarAvisoVazio(texto) {
+  const li = document.createElement("li");
+  li.className = "creditos-vazio";
+  li.textContent = texto;
+  return li;
+}
+
+async function carregarCreditos() {
+  if (creditosCarregados) return;
+
+  try {
+    const { contactos, creditosFotografias } = await import("./creditos.js");
+
+    // Site e contacto
+    const linhas = [["Site", contactos?.site], ["Contacto", contactos?.contacto]]
+      .filter(([, item]) => item && typeof item.texto === "string" && item.texto.trim() !== "")
+      .map(([rotulo, item]) => {
+        const li = document.createElement("li");
+        const r = document.createElement("span");
+        r.className = "creditos-rotulo";
+        r.textContent = rotulo;
+        const valor = document.createElement("span");
+        valor.appendChild(criarTextoComLink(item.texto, item.url));
+        li.append(r, valor);
+        return li;
+      });
+    elCreditosContactos.replaceChildren(...(linhas.length ? linhas : [criarAvisoVazio("Em breve.")]));
+
+    // Créditos das fotografias
+    const entradas = (Array.isArray(creditosFotografias) ? creditosFotografias : [])
+      .filter(e => e && typeof e.nome === "string" && e.nome.trim() !== "")
+      .map(e => {
+        const li = document.createElement("li");
+        const nome = document.createElement("div");
+        nome.className = "credito-nome";
+        nome.appendChild(criarTextoComLink(e.nome, e.url));
+        li.appendChild(nome);
+        if (typeof e.descricao === "string" && e.descricao.trim() !== "") {
+          const d = document.createElement("div");
+          d.className = "credito-descricao";
+          d.textContent = e.descricao;
+          li.appendChild(d);
+        }
+        return li;
+      });
+    elCreditosLista.replaceChildren(...(entradas.length ? entradas : [criarAvisoVazio("Lista em preparação.")]));
+
+    creditosCarregados = true;
+  } catch (e) {
+    const aviso = "Não foi possível carregar esta informação.";
+    elCreditosContactos.replaceChildren(criarAvisoVazio(aviso));
+    elCreditosLista.replaceChildren(criarAvisoVazio(aviso));
+  }
+}
+
+function abrirCreditos() {
+  modalCreditos.classList.remove("escondido");
+  btnFecharCreditos.focus();
+  carregarCreditos();
+}
+
+function fecharCreditos() {
+  modalCreditos.classList.add("escondido");
+  btnCreditos.focus(); // devolve o foco ao botão do menu
+}
+
+btnCreditos.addEventListener("click", abrirCreditos);
+btnFecharCreditos.addEventListener("click", fecharCreditos);
+btnVoltarCreditos.addEventListener("click", fecharCreditos);
+
+// Clicar fora da caixa ou carregar em Esc equivale a fechar
+modalCreditos.addEventListener("click", (e) => {
+  if (e.target === modalCreditos) fecharCreditos();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !modalCreditos.classList.contains("escondido")) fecharCreditos();
+});
+// FIM: CRÉDITOS E CONTACTOS
+
 // INÍCIO: BOTÃO MENU (voltar ao menu / desistir do jogo)
 // Fica no canto superior esquerdo durante o jogo e diz "Menu".
 // 1.º clique: fica vermelho e pergunta "Desistir deste jogo?".

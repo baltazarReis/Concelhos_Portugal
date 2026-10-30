@@ -4321,10 +4321,9 @@ export const dadosConcelhos = {
 
 "Sátão": {
     imagens: [
-    "./images/Concelhos/Sátão1.png",
+    "./images/Concelhos/Sátão1.jpg",
     "./images/Concelhos/Sátão2.png",
-    "./images/Concelhos/Sátão3.png",
-    "./images/Concelhos/Sátão4.png",
+    "./images/Concelhos/Sátão3.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4342,7 +4341,7 @@ export const dadosConcelhos = {
 "Sernancelhe": {
     imagens: [
     "./images/Concelhos/Sernancelhe1.png",
-    "./images/Concelhos/Sernancelhe2.png",
+    "./images/Concelhos/Sernancelhe2.jpg",
     "./images/Concelhos/Sernancelhe3.png",
     "./images/Concelhos/Sernancelhe4.png",
     ],
@@ -4362,7 +4361,7 @@ export const dadosConcelhos = {
     "./images/Concelhos/Tabuaço1.png",
     "./images/Concelhos/Tabuaço2.png",
     "./images/Concelhos/Tabuaço3.png",
-    "./images/Concelhos/Tabuaço4.png",
+    "./images/Concelhos/Tabuaço4.jpg",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4381,7 +4380,7 @@ export const dadosConcelhos = {
     imagens: [
     "./images/Concelhos/Tarouca1.png",
     "./images/Concelhos/Tarouca2.png",
-    "./images/Concelhos/Tarouca3.png",
+    "./images/Concelhos/Tarouca3.jpg",
     "./images/Concelhos/Tarouca4.png",
     ],
     pistas:`
@@ -4404,7 +4403,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Tondela1.png",
     "./images/Concelhos/Tondela2.png",
     "./images/Concelhos/Tondela3.png",
-    "./images/Concelhos/Tondela4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4426,7 +4424,6 @@ export const dadosConcelhos = {
     "./images/Concelhos/Vila Nova de Paiva1.png",
     "./images/Concelhos/Vila Nova de Paiva2.png",
     "./images/Concelhos/Vila Nova de Paiva3.png",
-    "./images/Concelhos/Vila Nova de Paiva4.png",
     ],
     pistas:`
     <ul class="lista-pistas">
@@ -4467,7 +4464,7 @@ export const dadosConcelhos = {
 
 "Vouzela": {
     imagens: [
-    "./images/Concelhos/Vouzela1.png",
+    "./images/Concelhos/Vouzela1.jpg",
     "./images/Concelhos/Vouzela2.png",
     "./images/Concelhos/Vouzela3.png",
     "./images/Concelhos/Vouzela4.png",
