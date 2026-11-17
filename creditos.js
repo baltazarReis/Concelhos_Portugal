@@ -1,21 +1,16 @@
 // ============================================================
 // CRÉDITOS E CONTACTOS
 // Mostrados no menu inicial, no botão "Créditos e contactos".
-// Edita APENAS este ficheiro (tem de estar na mesma pasta que o script.js).
-// Os valores abaixo são EXEMPLOS: substitui-os pelos teus.
 // ============================================================
 
-// --- Site e contacto (aparecem primeiro, antes dos créditos das fotografias) ---
-// "texto" = o que aparece no ecrã | "url" = para onde leva o clique.
-// Se deixares "texto" vazio ("") a linha não aparece. Se deixares "url" vazio, aparece só o texto.
 export const contactos = {
   site: {
-    texto: "www.o-meu-site.pt",
-    url: "https://www.o-meu-site.pt",
+    texto: "baltazarreis.vercel.app",
+    url: "https://baltazarreis.vercel.app/",
   },
   contacto: {
-    texto: "o-meu-email@exemplo.com",
-    url: "mailto:o-meu-email@exemplo.com",
+    texto: "baltazar.reis.work@gmail.com",
+    url: "mailto:baltazar.reis.work@gmail.com",
   },
 };
 
@@ -23,7 +18,6 @@ export const contactos = {
 // Uma entrada por fotógrafo ou página:
 //   nome      -> nome do fotógrafo ou da página
 //   url       -> link (deixa "" se não existir)
-//   descricao -> opcional, ex.: "Fotografias dos concelhos de Aveiro e Ílhavo"
 export const creditosFotografias = [
   {
     nome: "Impulsive Addiction - Pedro Domingues",
